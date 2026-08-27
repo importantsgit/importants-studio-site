@@ -11,11 +11,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
         :root {
+            --bg: #070B14;
+            --bg-soft: #0B1120;
             --navy: #0F172A;
-            --gray: #475569;
-            --light-gray: #F1F5F9;
-            --border: #E2E8F0;
-            --blue: #2563EB;
+            --text: #E2E8F0;
+            --text-dim: #94A3B8;
+            --border: rgba(148, 163, 184, 0.15);
+            --blue: #3B82F6;
+            --blue-bright: #60A5FA;
             --blue-dark: #1D4ED8;
             --white: #FFFFFF;
         }
@@ -32,10 +35,11 @@
 
         body {
             font-family: "Pretendard Variable", Pretendard, "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
-            color: var(--navy);
-            background: var(--white);
+            color: var(--text);
+            background: var(--bg);
             line-height: 1.6;
             -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
         }
 
         .container {
@@ -44,14 +48,71 @@
             padding: 0 24px;
         }
 
+        ::selection {
+            background: var(--blue);
+            color: var(--white);
+        }
+
+        /* Custom cursor */
+        .cursor-dot,
+        .cursor-ring {
+            position: fixed;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            border-radius: 50%;
+            z-index: 9999;
+            transform: translate(-50%, -50%);
+        }
+
+        .cursor-dot {
+            width: 6px;
+            height: 6px;
+            background: var(--blue-bright);
+        }
+
+        .cursor-ring {
+            width: 36px;
+            height: 36px;
+            border: 1.5px solid rgba(96, 165, 250, 0.5);
+            transition: width 0.25s ease, height 0.25s ease, border-color 0.25s ease;
+        }
+
+        .cursor-ring.hovering {
+            width: 56px;
+            height: 56px;
+            border-color: rgba(96, 165, 250, 0.9);
+        }
+
+        @media (hover: none), (pointer: coarse) {
+            .cursor-dot,
+            .cursor-ring {
+                display: none;
+            }
+        }
+
+        /* Scroll progress */
+        .scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 2px;
+            width: 0%;
+            background: linear-gradient(90deg, var(--blue-dark), var(--blue-bright));
+            z-index: 100;
+        }
+
         /* Header */
         header {
-            position: sticky;
+            position: fixed;
             top: 0;
-            background: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(8px);
+            left: 0;
+            right: 0;
+            background: rgba(7, 11, 20, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
             border-bottom: 1px solid var(--border);
-            z-index: 10;
+            z-index: 50;
         }
 
         .header-inner {
@@ -66,31 +127,148 @@
             font-weight: 800;
             font-size: 17px;
             letter-spacing: -0.02em;
-            color: var(--navy);
+            color: var(--white);
             text-decoration: none;
         }
 
         .logo span {
-            color: var(--blue);
+            color: var(--blue-bright);
         }
 
         .header-cta {
             font-size: 14px;
             font-weight: 600;
-            color: var(--blue);
+            color: var(--blue-bright);
             text-decoration: none;
             padding: 8px 16px;
-            border: 1px solid var(--blue);
+            border: 1px solid rgba(96, 165, 250, 0.4);
             border-radius: 8px;
             transition: all 0.2s;
         }
 
         .header-cta:hover {
             background: var(--blue);
+            border-color: var(--blue);
             color: var(--white);
         }
 
-        /* Animations */
+        /* Hero */
+        .hero {
+            position: relative;
+            height: 100svh;
+            min-height: 560px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        #hero-canvas {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .hero-glow {
+            position: absolute;
+            width: 70vw;
+            height: 70vw;
+            max-width: 900px;
+            max-height: 900px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(37, 99, 235, 0.14) 0%, rgba(37, 99, 235, 0) 65%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            pointer-events: none;
+            padding: 0 24px;
+        }
+
+        .hero-content > * {
+            pointer-events: auto;
+        }
+
+        .hero h1 {
+            font-family: "Inter", sans-serif;
+            font-size: clamp(36px, 7vw, 64px);
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+            color: var(--white);
+        }
+
+        .hero h1 span {
+            color: var(--blue-bright);
+        }
+
+        body.gl-on .hero h1 {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            clip: rect(0 0 0 0);
+            white-space: nowrap;
+        }
+
+        .hero .tagline-en {
+            margin-top: clamp(160px, 28vh, 260px);
+            font-family: "Inter", sans-serif;
+            font-size: clamp(17px, 3vw, 22px);
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            color: var(--white);
+            text-shadow: 0 2px 16px rgba(7, 11, 20, 0.9);
+        }
+
+        body:not(.gl-on) .hero .tagline-en {
+            margin-top: 20px;
+        }
+
+        .hero .tagline-ko {
+            margin-top: 10px;
+            font-size: clamp(15px, 2.6vw, 18px);
+            font-weight: 500;
+            color: #CBD5E1;
+            text-shadow: 0 2px 16px rgba(7, 11, 20, 0.9);
+        }
+
+        .hero .cta {
+            display: inline-block;
+            margin-top: 32px;
+            padding: 14px 32px;
+            background: var(--blue);
+            color: var(--white);
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background 0.2s, box-shadow 0.3s;
+            will-change: transform;
+        }
+
+        .hero .cta:hover {
+            background: var(--blue-dark);
+            box-shadow: 0 8px 40px rgba(59, 130, 246, 0.45);
+        }
+
+        /* Hero entrance */
+        .hero-content > * {
+            opacity: 0;
+            animation: fadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        }
+
+        .hero-content > *:nth-child(1) { animation-delay: 0.05s; }
+        .hero-content > *:nth-child(2) { animation-delay: 0.9s; }
+        .hero-content > *:nth-child(3) { animation-delay: 1.05s; }
+        .hero-content > *:nth-child(4) { animation-delay: 1.25s; }
+
         @keyframes fadeUp {
             from {
                 opacity: 0;
@@ -101,16 +279,6 @@
                 transform: translateY(0);
             }
         }
-
-        .hero > * {
-            opacity: 0;
-            animation: fadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-        }
-
-        .hero > *:nth-child(1) { animation-delay: 0.05s; }
-        .hero > *:nth-child(2) { animation-delay: 0.18s; }
-        .hero > *:nth-child(3) { animation-delay: 0.28s; }
-        .hero > *:nth-child(4) { animation-delay: 0.42s; }
 
         .reveal {
             opacity: 0;
@@ -124,12 +292,58 @@
             transform: translateY(0);
         }
 
+        @keyframes cardIn {
+            from {
+                opacity: 0;
+                transform: translateY(36px) scale(0.96);
+            }
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        @keyframes iconPop {
+            0% {
+                opacity: 0;
+                transform: translateZ(30px) scale(0.4);
+            }
+            70% {
+                opacity: 1;
+                transform: translateZ(30px) scale(1.12);
+            }
+            100% {
+                opacity: 1;
+                transform: translateZ(30px) scale(1);
+            }
+        }
+
+        .reveal:not(.visible) .card {
+            opacity: 0;
+        }
+
+        .reveal.visible .card {
+            animation: cardIn 0.65s cubic-bezier(0.22, 1, 0.36, 1) backwards;
+        }
+
+        .reveal.visible .card:nth-child(1) { animation-delay: 0.1s; }
+        .reveal.visible .card:nth-child(2) { animation-delay: 0.28s; }
+        .reveal.visible .card:nth-child(3) { animation-delay: 0.46s; }
+
+        .reveal.visible .card .icon {
+            animation: iconPop 0.55s cubic-bezier(0.34, 1.56, 0.64, 1) backwards;
+        }
+
+        .reveal.visible .card:nth-child(1) .icon { animation-delay: 0.35s; }
+        .reveal.visible .card:nth-child(2) .icon { animation-delay: 0.53s; }
+        .reveal.visible .card:nth-child(3) .icon { animation-delay: 0.71s; }
+
         @media (prefers-reduced-motion: reduce) {
             html {
                 scroll-behavior: auto;
             }
 
-            .hero > * {
+            .hero-content > * {
                 opacity: 1;
                 animation: none;
             }
@@ -139,59 +353,21 @@
                 transform: none;
                 transition: none;
             }
-        }
 
-        /* Hero */
-        .hero {
-            padding: 120px 0 100px;
-            text-align: center;
-        }
+            .reveal:not(.visible) .card {
+                opacity: 1;
+            }
 
-        .hero h1 {
-            font-family: "Inter", sans-serif;
-            font-size: clamp(36px, 7vw, 64px);
-            font-weight: 800;
-            letter-spacing: -0.03em;
-            line-height: 1.1;
-        }
-
-        .hero h1 span {
-            color: var(--blue);
-        }
-
-        .hero .tagline-en {
-            margin-top: 20px;
-            font-size: clamp(16px, 3vw, 20px);
-            font-weight: 600;
-            color: var(--navy);
-        }
-
-        .hero .tagline-ko {
-            margin-top: 8px;
-            font-size: clamp(15px, 2.5vw, 17px);
-            color: var(--gray);
-        }
-
-        .hero .cta {
-            display: inline-block;
-            margin-top: 40px;
-            padding: 14px 32px;
-            background: var(--blue);
-            color: var(--white);
-            font-size: 16px;
-            font-weight: 600;
-            text-decoration: none;
-            border-radius: 10px;
-            transition: background 0.2s;
-        }
-
-        .hero .cta:hover {
-            background: var(--blue-dark);
+            .reveal.visible .card,
+            .reveal.visible .card .icon {
+                animation: none;
+            }
         }
 
         /* Sections */
         section {
-            padding: 80px 0;
+            position: relative;
+            padding: 100px 0;
         }
 
         section + section {
@@ -204,7 +380,7 @@
             font-weight: 600;
             letter-spacing: 0.08em;
             text-transform: uppercase;
-            color: var(--blue);
+            color: var(--blue-bright);
         }
 
         h2 {
@@ -212,13 +388,14 @@
             font-size: clamp(24px, 4vw, 32px);
             font-weight: 700;
             letter-spacing: -0.02em;
+            color: var(--white);
         }
 
         .section-body {
             margin-top: 20px;
             max-width: 640px;
             font-size: 16px;
-            color: var(--gray);
+            color: var(--text-dim);
         }
 
         .section-body p + p {
@@ -236,18 +413,38 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
+            perspective: 1200px;
         }
 
         .card {
-            background: var(--light-gray);
-            border-radius: 14px;
+            background: linear-gradient(160deg, rgba(30, 41, 59, 0.55), rgba(15, 23, 42, 0.55));
+            border: 1px solid var(--border);
+            border-radius: 16px;
             padding: 28px 24px;
-            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            transform-style: preserve-3d;
+            will-change: transform;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(320px circle at var(--mx, 50%) var(--my, 50%), rgba(96, 165, 250, 0.12), transparent 70%);
+            opacity: 0;
+            transition: opacity 0.3s;
+            pointer-events: none;
+        }
+
+        .card:hover::before {
+            opacity: 1;
         }
 
         .card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+            border-color: rgba(96, 165, 250, 0.45);
+            box-shadow: 0 20px 50px rgba(2, 6, 23, 0.6);
         }
 
         .card .icon {
@@ -256,15 +453,19 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: var(--white);
+            background: rgba(59, 130, 246, 0.12);
+            border: 1px solid rgba(59, 130, 246, 0.25);
             border-radius: 10px;
             font-size: 20px;
+            transform: translateZ(30px);
         }
 
         .card h3 {
             margin-top: 16px;
             font-size: 17px;
             font-weight: 700;
+            color: var(--white);
+            transform: translateZ(20px);
         }
 
         .card .en-title {
@@ -274,13 +475,13 @@
             font-weight: 600;
             letter-spacing: 0.04em;
             text-transform: uppercase;
-            color: var(--blue);
+            color: var(--blue-bright);
         }
 
         .card p {
             margin-top: 10px;
             font-size: 14px;
-            color: var(--gray);
+            color: var(--text-dim);
         }
 
         /* Contact */
@@ -305,25 +506,28 @@
             font-weight: 600;
             letter-spacing: 0.06em;
             text-transform: uppercase;
-            color: var(--blue);
+            color: var(--blue-bright);
         }
 
         .contact-item a {
-            color: var(--navy);
+            color: var(--text);
             text-decoration: none;
             border-bottom: 1px solid var(--border);
+            transition: border-color 0.2s, color 0.2s;
         }
 
         .contact-item a:hover {
-            border-bottom-color: var(--blue);
+            color: var(--blue-bright);
+            border-bottom-color: var(--blue-bright);
         }
 
         /* Footer */
         footer {
-            background: var(--navy);
-            color: #94A3B8;
+            background: #04060C;
+            color: #64748B;
             padding: 40px 0;
             font-size: 13px;
+            border-top: 1px solid var(--border);
         }
 
         footer .biz-name {
@@ -338,21 +542,25 @@
         }
 
         @media (max-width: 720px) {
-            .hero {
-                padding: 80px 0 64px;
-            }
-
             section {
-                padding: 56px 0;
+                padding: 64px 0;
             }
 
             .cards {
                 grid-template-columns: 1fr;
             }
+
+            .hero .tagline-en {
+                margin-top: clamp(120px, 24vh, 200px);
+            }
         }
     </style>
 </head>
 <body>
+    <div class="scroll-progress" id="scroll-progress"></div>
+    <div class="cursor-ring" id="cursor-ring"></div>
+    <div class="cursor-dot" id="cursor-dot"></div>
+
     <header>
         <div class="container header-inner">
             <a class="logo" href="#top">Importants <span>Studio</span></a>
@@ -361,12 +569,14 @@
     </header>
 
     <main id="top">
-        <div class="container">
-            <div class="hero">
+        <div class="hero" id="hero">
+            <canvas id="hero-canvas"></canvas>
+            <div class="hero-glow"></div>
+            <div class="hero-content">
                 <h1>Importants <span>Studio</span></h1>
                 <p class="tagline-en">Mobile App Development Company</p>
                 <p class="tagline-ko">아이디어를 iOS 앱으로 만듭니다</p>
-                <a class="cta" href="#contact">Get in Touch</a>
+                <a class="cta magnetic" href="#contact">Get in Touch</a>
             </div>
         </div>
 
@@ -430,9 +640,322 @@
         </div>
     </footer>
 
-    <script>
-        const reveals = document.querySelectorAll(".reveal");
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"
+        }
+    }
+    </script>
 
+    <script type="module">
+        const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+        function supportsWebGL() {
+            try {
+                const canvas = document.createElement("canvas");
+                return !!(canvas.getContext("webgl2") || canvas.getContext("webgl"));
+            } catch {
+                return false;
+            }
+        }
+
+        if (!prefersReducedMotion && supportsWebGL()) {
+            initHero();
+        }
+
+        async function initHero() {
+            const THREE = await import("three");
+            await document.fonts.load('800 100px "Inter"').catch(() => {});
+
+            const hero = document.getElementById("hero");
+            const canvas = document.getElementById("hero-canvas");
+            document.body.classList.add("gl-on");
+
+            const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: false });
+            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+            const scene = new THREE.Scene();
+            let camera;
+
+            const isCoarse = window.matchMedia("(pointer: coarse)").matches;
+
+            const SPRING = 0.012;
+            const DAMPING = 0.9;
+            const REPEL_RADIUS = isCoarse ? 90 : 120;
+            const REPEL_FORCE = 1.9;
+
+            let positions, velocities, targets, count;
+            let points = null;
+            let stars = null;
+
+            const mouse = { x: 99999, y: 99999, active: false };
+
+            function makeCircleTexture() {
+                const size = 64;
+                const c = document.createElement("canvas");
+                c.width = c.height = size;
+                const ctx = c.getContext("2d");
+                const g = ctx.createRadialGradient(size / 2, size / 2, 0, size / 2, size / 2, size / 2);
+                g.addColorStop(0, "rgba(255,255,255,1)");
+                g.addColorStop(0.55, "rgba(255,255,255,0.85)");
+                g.addColorStop(1, "rgba(255,255,255,0)");
+                ctx.fillStyle = g;
+                ctx.fillRect(0, 0, size, size);
+                const tex = new THREE.CanvasTexture(c);
+                tex.colorSpace = THREE.SRGBColorSpace;
+                return tex;
+            }
+
+            const circleTexture = makeCircleTexture();
+
+            function sampleTextTargets(width, height) {
+                const lines = ["IMPORTANTS", "STUDIO"];
+                const c = document.createElement("canvas");
+                const ctx = c.getContext("2d", { willReadFrequently: true });
+
+                let fontSize = 200;
+                ctx.font = `800 ${fontSize}px Inter, "Pretendard Variable", sans-serif`;
+                const widest = Math.max(...lines.map(l => ctx.measureText(l).width));
+                const maxWidth = Math.min(width * 0.86, 1100);
+                fontSize = Math.max(44, fontSize * (maxWidth / widest));
+
+                const lineHeight = fontSize * 1.12;
+                ctx.font = `800 ${fontSize}px Inter, "Pretendard Variable", sans-serif`;
+                const textWidth = Math.ceil(Math.max(...lines.map(l => ctx.measureText(l).width)));
+                const textHeight = Math.ceil(lineHeight * lines.length);
+
+                c.width = textWidth + 20;
+                c.height = textHeight + 20;
+                ctx.font = `800 ${fontSize}px Inter, "Pretendard Variable", sans-serif`;
+                ctx.textAlign = "center";
+                ctx.textBaseline = "middle";
+                ctx.fillStyle = "#fff";
+                lines.forEach((line, i) => {
+                    ctx.fillText(line, c.width / 2, 10 + lineHeight * (i + 0.5));
+                });
+
+                const data = ctx.getImageData(0, 0, c.width, c.height).data;
+                const area = width * height;
+                const budget = isCoarse ? 7000 : Math.min(16000, Math.max(9000, Math.floor(area / 90)));
+
+                const candidates = [];
+                const baseStep = 2;
+                for (let y = 0; y < c.height; y += baseStep) {
+                    for (let x = 0; x < c.width; x += baseStep) {
+                        if (data[(y * c.width + x) * 4 + 3] > 128) {
+                            candidates.push(x, y);
+                        }
+                    }
+                }
+
+                const total = candidates.length / 2;
+                const stride = Math.max(1, Math.floor(total / budget));
+                const result = [];
+                const offsetY = -height * 0.06;
+                for (let i = 0; i < total; i += stride) {
+                    const x = candidates[i * 2] - c.width / 2;
+                    const y = candidates[i * 2 + 1] - c.height / 2;
+                    result.push(x, -(y + offsetY));
+                }
+                return result;
+            }
+
+            function buildParticles(width, height) {
+                if (points) {
+                    points.geometry.dispose();
+                    points.material.dispose();
+                    scene.remove(points);
+                }
+
+                const targetList = sampleTextTargets(width, height);
+                count = targetList.length / 2;
+
+                positions = new Float32Array(count * 3);
+                velocities = new Float32Array(count * 2);
+                targets = new Float32Array(targetList);
+
+                const colors = new Float32Array(count * 3);
+                const white = new THREE.Color("#E2E8F0");
+                const blue = new THREE.Color("#3B82F6");
+                const brightBlue = new THREE.Color("#60A5FA");
+
+                for (let i = 0; i < count; i++) {
+                    const angle = Math.random() * Math.PI * 2;
+                    const radius = Math.max(width, height) * (0.6 + Math.random() * 0.5);
+                    positions[i * 3] = Math.cos(angle) * radius;
+                    positions[i * 3 + 1] = Math.sin(angle) * radius;
+                    positions[i * 3 + 2] = 0;
+
+                    const r = Math.random();
+                    const color = r < 0.78 ? white : (r < 0.92 ? blue : brightBlue);
+                    colors[i * 3] = color.r;
+                    colors[i * 3 + 1] = color.g;
+                    colors[i * 3 + 2] = color.b;
+                }
+
+                const geometry = new THREE.BufferGeometry();
+                geometry.setAttribute("position", new THREE.BufferAttribute(positions, 3));
+                geometry.setAttribute("color", new THREE.BufferAttribute(colors, 3));
+
+                const material = new THREE.PointsMaterial({
+                    size: isCoarse ? 2.6 : 2.2,
+                    map: circleTexture,
+                    vertexColors: true,
+                    transparent: true,
+                    opacity: 0.95,
+                    depthWrite: false,
+                    blending: THREE.AdditiveBlending
+                });
+
+                points = new THREE.Points(geometry, material);
+                scene.add(points);
+            }
+
+            function buildStars(width, height) {
+                if (stars) {
+                    stars.geometry.dispose();
+                    stars.material.dispose();
+                    scene.remove(stars);
+                }
+
+                const starCount = 160;
+                const starPositions = new Float32Array(starCount * 3);
+                for (let i = 0; i < starCount; i++) {
+                    starPositions[i * 3] = (Math.random() - 0.5) * width * 1.2;
+                    starPositions[i * 3 + 1] = (Math.random() - 0.5) * height * 1.2;
+                    starPositions[i * 3 + 2] = -50;
+                }
+
+                const geometry = new THREE.BufferGeometry();
+                geometry.setAttribute("position", new THREE.BufferAttribute(starPositions, 3));
+
+                const material = new THREE.PointsMaterial({
+                    size: 1.6,
+                    map: circleTexture,
+                    color: 0x64748b,
+                    transparent: true,
+                    opacity: 0.55,
+                    depthWrite: false
+                });
+
+                stars = new THREE.Points(geometry, material);
+                scene.add(stars);
+            }
+
+            function setupSize() {
+                const width = hero.clientWidth;
+                const height = hero.clientHeight;
+                renderer.setSize(width, height, false);
+                camera = new THREE.OrthographicCamera(-width / 2, width / 2, height / 2, -height / 2, 0.1, 1000);
+                camera.position.z = 100;
+                buildParticles(width, height);
+                buildStars(width, height);
+            }
+
+            setupSize();
+
+            let resizeTimer;
+            window.addEventListener("resize", () => {
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(setupSize, 200);
+            });
+
+            function toWorld(clientX, clientY) {
+                const rect = hero.getBoundingClientRect();
+                return {
+                    x: clientX - rect.left - rect.width / 2,
+                    y: -(clientY - rect.top - rect.height / 2)
+                };
+            }
+
+            window.addEventListener("pointermove", (e) => {
+                const w = toWorld(e.clientX, e.clientY);
+                mouse.x = w.x;
+                mouse.y = w.y;
+                mouse.active = true;
+            }, { passive: true });
+
+            window.addEventListener("pointerleave", () => {
+                mouse.active = false;
+                mouse.x = 99999;
+                mouse.y = 99999;
+            });
+
+            function explode(clientX, clientY) {
+                const w = toWorld(clientX, clientY);
+                for (let i = 0; i < count; i++) {
+                    const dx = positions[i * 3] - w.x;
+                    const dy = positions[i * 3 + 1] - w.y;
+                    const dist = Math.sqrt(dx * dx + dy * dy) || 1;
+                    const power = Math.min(46, 5200 / dist);
+                    velocities[i * 2] += (dx / dist) * power * (0.5 + Math.random());
+                    velocities[i * 2 + 1] += (dy / dist) * power * (0.5 + Math.random());
+                }
+            }
+
+            hero.addEventListener("pointerdown", (e) => {
+                if (e.target.closest("a")) return;
+                explode(e.clientX, e.clientY);
+            });
+
+            let running = true;
+            const visibilityObserver = new IntersectionObserver((entries) => {
+                running = entries[0].isIntersecting;
+            }, { threshold: 0 });
+            visibilityObserver.observe(hero);
+
+            const repelRadiusSq = REPEL_RADIUS * REPEL_RADIUS;
+            let time = 0;
+
+            function tick() {
+                requestAnimationFrame(tick);
+                if (!running || document.hidden) return;
+
+                time += 0.016;
+
+                for (let i = 0; i < count; i++) {
+                    const px = positions[i * 3];
+                    const py = positions[i * 3 + 1];
+
+                    let ax = (targets[i * 2] - px) * SPRING;
+                    let ay = (targets[i * 2 + 1] - py) * SPRING;
+
+                    if (mouse.active) {
+                        const dx = px - mouse.x;
+                        const dy = py - mouse.y;
+                        const distSq = dx * dx + dy * dy;
+                        if (distSq < repelRadiusSq && distSq > 0.01) {
+                            const dist = Math.sqrt(distSq);
+                            const force = ((REPEL_RADIUS - dist) / REPEL_RADIUS) * REPEL_FORCE;
+                            ax += (dx / dist) * force * REPEL_RADIUS * 0.06;
+                            ay += (dy / dist) * force * REPEL_RADIUS * 0.06;
+                        }
+                    }
+
+                    velocities[i * 2] = (velocities[i * 2] + ax) * DAMPING;
+                    velocities[i * 2 + 1] = (velocities[i * 2 + 1] + ay) * DAMPING;
+
+                    positions[i * 3] = px + velocities[i * 2];
+                    positions[i * 3 + 1] = py + velocities[i * 2 + 1];
+                }
+
+                points.geometry.attributes.position.needsUpdate = true;
+
+                if (stars) {
+                    stars.position.x = (mouse.active ? mouse.x : 0) * -0.015;
+                    stars.position.y = (mouse.active ? mouse.y : 0) * -0.015;
+                    stars.rotation.z = Math.sin(time * 0.05) * 0.02;
+                }
+
+                renderer.render(scene, camera);
+            }
+
+            tick();
+        }
+
+        // ---- Reveal on scroll ----
+        const reveals = document.querySelectorAll(".reveal");
         if ("IntersectionObserver" in window) {
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach((entry) => {
@@ -442,10 +965,74 @@
                     }
                 });
             }, { threshold: 0.15 });
-
             reveals.forEach((el) => observer.observe(el));
         } else {
             reveals.forEach((el) => el.classList.add("visible"));
+        }
+
+        // ---- Scroll progress ----
+        const progressBar = document.getElementById("scroll-progress");
+        window.addEventListener("scroll", () => {
+            const max = document.documentElement.scrollHeight - window.innerHeight;
+            progressBar.style.width = max > 0 ? `${(window.scrollY / max) * 100}%` : "0%";
+        }, { passive: true });
+
+        // ---- Custom cursor ----
+        const hasFinePointer = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+        if (hasFinePointer && !prefersReducedMotion) {
+            const dot = document.getElementById("cursor-dot");
+            const ring = document.getElementById("cursor-ring");
+            let cx = -100, cy = -100, rx = -100, ry = -100;
+
+            window.addEventListener("pointermove", (e) => {
+                cx = e.clientX;
+                cy = e.clientY;
+            }, { passive: true });
+
+            document.querySelectorAll("a, button, .card").forEach((el) => {
+                el.addEventListener("pointerenter", () => ring.classList.add("hovering"));
+                el.addEventListener("pointerleave", () => ring.classList.remove("hovering"));
+            });
+
+            (function cursorTick() {
+                rx += (cx - rx) * 0.16;
+                ry += (cy - ry) * 0.16;
+                dot.style.transform = `translate(${cx}px, ${cy}px) translate(-50%, -50%)`;
+                ring.style.transform = `translate(${rx}px, ${ry}px) translate(-50%, -50%)`;
+                requestAnimationFrame(cursorTick);
+            })();
+        }
+
+        // ---- Card 3D tilt ----
+        if (hasFinePointer && !prefersReducedMotion) {
+            document.querySelectorAll(".card").forEach((card) => {
+                card.addEventListener("pointermove", (e) => {
+                    const rect = card.getBoundingClientRect();
+                    const x = (e.clientX - rect.left) / rect.width;
+                    const y = (e.clientY - rect.top) / rect.height;
+                    card.style.setProperty("--mx", `${x * 100}%`);
+                    card.style.setProperty("--my", `${y * 100}%`);
+                    card.style.transform = `rotateY(${(x - 0.5) * 10}deg) rotateX(${(0.5 - y) * 10}deg) translateY(-4px)`;
+                });
+                card.addEventListener("pointerleave", () => {
+                    card.style.transform = "";
+                });
+            });
+        }
+
+        // ---- Magnetic CTA ----
+        if (hasFinePointer && !prefersReducedMotion) {
+            document.querySelectorAll(".magnetic").forEach((el) => {
+                el.addEventListener("pointermove", (e) => {
+                    const rect = el.getBoundingClientRect();
+                    const x = e.clientX - rect.left - rect.width / 2;
+                    const y = e.clientY - rect.top - rect.height / 2;
+                    el.style.transform = `translate(${x * 0.25}px, ${y * 0.25}px)`;
+                });
+                el.addEventListener("pointerleave", () => {
+                    el.style.transform = "";
+                });
+            });
         }
     </script>
 </body>
