@@ -541,6 +541,44 @@
             margin-top: 8px;
         }
 
+        /* Blogs */
+        .blog-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-top: 22px;
+        }
+
+        .blog-card {
+            flex: 1 1 220px;
+            padding: 18px 20px;
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            text-decoration: none;
+            transition: border-color 0.2s, transform 0.2s;
+        }
+
+        .blog-card:hover {
+            border-color: var(--blue-bright);
+            transform: translateY(-2px);
+        }
+
+        .blog-card .name {
+            display: block;
+            font-weight: 700;
+            font-size: 15px;
+            color: var(--white);
+        }
+
+        .blog-card .desc {
+            display: block;
+            margin-top: 6px;
+            font-size: 13px;
+            color: #94A3B8;
+            line-height: 1.6;
+        }
+
+
         @media (max-width: 720px) {
             section {
                 padding: 64px 0;
@@ -615,6 +653,27 @@
                         <p class="en-title">Maintenance &amp; Operations</p>
                         <p>출시 이후의 업데이트와 안정적인 운영을 책임집니다.</p>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blogs">
+            <div class="container reveal">
+                <p class="section-label">Blogs</p>
+                <h2>운영 중인 블로그</h2>
+                <div class="blog-links">
+                    <a class="blog-card" href="https://blog.importants-studio.com">
+                        <span class="name">혜택줍줍</span>
+                        <span class="desc">정부 지원금·복지 혜택·세금 환급 정보</span>
+                    </a>
+                    <a class="blog-card" href="https://car.importants-studio.com">
+                        <span class="name">차곡차곡</span>
+                        <span class="desc">자동차 유지비 절약과 운전 가이드</span>
+                    </a>
+                    <a class="blog-card" href="https://home.importants-studio.com">
+                        <span class="name">홈로그</span>
+                        <span class="desc">신혼부터 육아까지 필요한 생활 정보</span>
+                    </a>
                 </div>
             </div>
         </section>
