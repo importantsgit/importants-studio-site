@@ -1,1099 +1,364 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Importants Studio — Mobile App Development</title>
-    <meta name="description" content="Importants Studio는 iOS 앱을 기획·개발·운영하는 모바일 앱 개발 스튜디오입니다. Importants Studio is a mobile app development studio building iOS apps.">
-    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg: #070B14;
-            --bg-soft: #0B1120;
-            --navy: #0F172A;
-            --text: #E2E8F0;
-            --text-dim: #94A3B8;
-            --border: rgba(148, 163, 184, 0.15);
-            --blue: #3B82F6;
-            --blue-bright: #60A5FA;
-            --blue-dark: #1D4ED8;
-            --white: #FFFFFF;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: "Pretendard Variable", Pretendard, "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
-            color: var(--text);
-            background: var(--bg);
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-            overflow-x: hidden;
-        }
-
-        .container {
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-
-        ::selection {
-            background: var(--blue);
-            color: var(--white);
-        }
-
-        /* Custom cursor */
-        .cursor-dot,
-        .cursor-ring {
-            position: fixed;
-            top: 0;
-            left: 0;
-            pointer-events: none;
-            border-radius: 50%;
-            z-index: 9999;
-            transform: translate(-50%, -50%);
-        }
-
-        .cursor-dot {
-            width: 6px;
-            height: 6px;
-            background: var(--blue-bright);
-        }
-
-        .cursor-ring {
-            width: 36px;
-            height: 36px;
-            border: 1.5px solid rgba(96, 165, 250, 0.5);
-            transition: width 0.25s ease, height 0.25s ease, border-color 0.25s ease;
-        }
-
-        .cursor-ring.hovering {
-            width: 56px;
-            height: 56px;
-            border-color: rgba(96, 165, 250, 0.9);
-        }
-
-        @media (hover: none), (pointer: coarse) {
-            .cursor-dot,
-            .cursor-ring {
-                display: none;
-            }
-        }
-
-        /* Scroll progress */
-        .scroll-progress {
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 2px;
-            width: 0%;
-            background: linear-gradient(90deg, var(--blue-dark), var(--blue-bright));
-            z-index: 100;
-        }
-
-        /* Header */
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            background: rgba(7, 11, 20, 0.6);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border-bottom: 1px solid var(--border);
-            z-index: 50;
-        }
-
-        .header-inner {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 64px;
-        }
-
-        .logo {
-            font-family: "Inter", sans-serif;
-            font-weight: 800;
-            font-size: 17px;
-            letter-spacing: -0.02em;
-            color: var(--white);
-            text-decoration: none;
-        }
-
-        .logo span {
-            color: var(--blue-bright);
-        }
-
-        .header-cta {
-            font-size: 14px;
-            font-weight: 600;
-            color: var(--blue-bright);
-            text-decoration: none;
-            padding: 8px 16px;
-            border: 1px solid rgba(96, 165, 250, 0.4);
-            border-radius: 8px;
-            transition: all 0.2s;
-        }
-
-        .header-cta:hover {
-            background: var(--blue);
-            border-color: var(--blue);
-            color: var(--white);
-        }
-
-        /* Hero */
-        .hero {
-            position: relative;
-            height: 100svh;
-            min-height: 560px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            overflow: hidden;
-        }
-
-        #hero-canvas {
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            display: block;
-        }
-
-        .hero-glow {
-            position: absolute;
-            width: 70vw;
-            height: 70vw;
-            max-width: 900px;
-            max-height: 900px;
-            border-radius: 50%;
-            background: radial-gradient(circle, rgba(37, 99, 235, 0.14) 0%, rgba(37, 99, 235, 0) 65%);
-            pointer-events: none;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            pointer-events: none;
-            padding: 0 24px;
-        }
-
-        .hero-content > * {
-            pointer-events: auto;
-        }
-
-        .hero h1 {
-            font-family: "Inter", sans-serif;
-            font-size: clamp(36px, 7vw, 64px);
-            font-weight: 800;
-            letter-spacing: -0.03em;
-            line-height: 1.1;
-            color: var(--white);
-        }
-
-        .hero h1 span {
-            color: var(--blue-bright);
-        }
-
-        body.gl-on .hero h1 {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            overflow: hidden;
-            clip: rect(0 0 0 0);
-            white-space: nowrap;
-        }
-
-        .hero .tagline-en {
-            margin-top: clamp(160px, 28vh, 260px);
-            font-family: "Inter", sans-serif;
-            font-size: clamp(17px, 3vw, 22px);
-            font-weight: 700;
-            letter-spacing: 0.02em;
-            color: var(--white);
-            text-shadow: 0 2px 16px rgba(7, 11, 20, 0.9);
-        }
-
-        body:not(.gl-on) .hero .tagline-en {
-            margin-top: 20px;
-        }
-
-        .hero .tagline-ko {
-            margin-top: 10px;
-            font-size: clamp(15px, 2.6vw, 18px);
-            font-weight: 500;
-            color: #CBD5E1;
-            text-shadow: 0 2px 16px rgba(7, 11, 20, 0.9);
-        }
-
-        .hero .cta {
-            display: inline-block;
-            margin-top: 32px;
-            padding: 14px 32px;
-            background: var(--blue);
-            color: var(--white);
-            font-size: 16px;
-            font-weight: 600;
-            text-decoration: none;
-            border-radius: 10px;
-            transition: background 0.2s, box-shadow 0.3s;
-            will-change: transform;
-        }
-
-        .hero .cta:hover {
-            background: var(--blue-dark);
-            box-shadow: 0 8px 40px rgba(59, 130, 246, 0.45);
-        }
-
-        /* Hero entrance */
-        .hero-content > * {
-            opacity: 0;
-            animation: fadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-        }
-
-        .hero-content > *:nth-child(1) { animation-delay: 0.05s; }
-        .hero-content > *:nth-child(2) { animation-delay: 0.9s; }
-        .hero-content > *:nth-child(3) { animation-delay: 1.05s; }
-        .hero-content > *:nth-child(4) { animation-delay: 1.25s; }
-
-        @keyframes fadeUp {
-            from {
-                opacity: 0;
-                transform: translateY(24px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .reveal {
-            opacity: 0;
-            transform: translateY(28px);
-            transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
-                        transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
-        }
-
-        .reveal.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        @keyframes cardIn {
-            from {
-                opacity: 0;
-                transform: translateY(36px) scale(0.96);
-            }
-            to {
-                opacity: 1;
-                transform: none;
-            }
-        }
-
-        @keyframes iconPop {
-            0% {
-                opacity: 0;
-                transform: translateZ(30px) scale(0.4);
-            }
-            70% {
-                opacity: 1;
-                transform: translateZ(30px) scale(1.12);
-            }
-            100% {
-                opacity: 1;
-                transform: translateZ(30px) scale(1);
-            }
-        }
-
-        .reveal:not(.visible) .card {
-            opacity: 0;
-        }
-
-        .reveal.visible .card {
-            animation: cardIn 0.65s cubic-bezier(0.22, 1, 0.36, 1) backwards;
-        }
-
-        .reveal.visible .card:nth-child(1) { animation-delay: 0.1s; }
-        .reveal.visible .card:nth-child(2) { animation-delay: 0.28s; }
-        .reveal.visible .card:nth-child(3) { animation-delay: 0.46s; }
-
-        .reveal.visible .card .icon {
-            animation: iconPop 0.55s cubic-bezier(0.34, 1.56, 0.64, 1) backwards;
-        }
-
-        .reveal.visible .card:nth-child(1) .icon { animation-delay: 0.35s; }
-        .reveal.visible .card:nth-child(2) .icon { animation-delay: 0.53s; }
-        .reveal.visible .card:nth-child(3) .icon { animation-delay: 0.71s; }
-
-        @media (prefers-reduced-motion: reduce) {
-            html {
-                scroll-behavior: auto;
-            }
-
-            .hero-content > * {
-                opacity: 1;
-                animation: none;
-            }
-
-            .reveal {
-                opacity: 1;
-                transform: none;
-                transition: none;
-            }
-
-            .reveal:not(.visible) .card {
-                opacity: 1;
-            }
-
-            .reveal.visible .card,
-            .reveal.visible .card .icon {
-                animation: none;
-            }
-        }
-
-        /* Sections */
-        section {
-            position: relative;
-            padding: 100px 0;
-        }
-
-        section + section {
-            border-top: 1px solid var(--border);
-        }
-
-        .section-label {
-            font-family: "Inter", sans-serif;
-            font-size: 13px;
-            font-weight: 600;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            color: var(--blue-bright);
-        }
-
-        h2 {
-            margin-top: 8px;
-            font-size: clamp(24px, 4vw, 32px);
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            color: var(--white);
-        }
-
-        .section-body {
-            margin-top: 20px;
-            max-width: 640px;
-            font-size: 16px;
-            color: var(--text-dim);
-        }
-
-        .section-body p + p {
-            margin-top: 12px;
-        }
-
-        .section-body .en {
-            font-size: 15px;
-            color: #64748B;
-        }
-
-        /* Services */
-        .cards {
-            margin-top: 40px;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            perspective: 1200px;
-        }
-
-        .card {
-            background: linear-gradient(160deg, rgba(30, 41, 59, 0.55), rgba(15, 23, 42, 0.55));
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 28px 24px;
-            transition: border-color 0.3s ease, box-shadow 0.3s ease;
-            transform-style: preserve-3d;
-            will-change: transform;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .card::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: radial-gradient(320px circle at var(--mx, 50%) var(--my, 50%), rgba(96, 165, 250, 0.12), transparent 70%);
-            opacity: 0;
-            transition: opacity 0.3s;
-            pointer-events: none;
-        }
-
-        .card:hover::before {
-            opacity: 1;
-        }
-
-        .card:hover {
-            border-color: rgba(96, 165, 250, 0.45);
-            box-shadow: 0 20px 50px rgba(2, 6, 23, 0.6);
-        }
-
-        .card .icon {
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: rgba(59, 130, 246, 0.12);
-            border: 1px solid rgba(59, 130, 246, 0.25);
-            border-radius: 10px;
-            font-size: 20px;
-            transform: translateZ(30px);
-        }
-
-        .card h3 {
-            margin-top: 16px;
-            font-size: 17px;
-            font-weight: 700;
-            color: var(--white);
-            transform: translateZ(20px);
-        }
-
-        .card .en-title {
-            margin-top: 2px;
-            font-family: "Inter", sans-serif;
-            font-size: 12px;
-            font-weight: 600;
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-            color: var(--blue-bright);
-        }
-
-        .card p {
-            margin-top: 10px;
-            font-size: 14px;
-            color: var(--text-dim);
-        }
-
-        /* Contact */
-        .contact-list {
-            margin-top: 32px;
-            display: grid;
-            gap: 16px;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: baseline;
-            gap: 16px;
-            font-size: 16px;
-        }
-
-        .contact-item .label {
-            flex-shrink: 0;
-            width: 72px;
-            font-family: "Inter", sans-serif;
-            font-size: 12px;
-            font-weight: 600;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
-            color: var(--blue-bright);
-        }
-
-        .contact-item a {
-            color: var(--text);
-            text-decoration: none;
-            border-bottom: 1px solid var(--border);
-            transition: border-color 0.2s, color 0.2s;
-        }
-
-        .contact-item a:hover {
-            color: var(--blue-bright);
-            border-bottom-color: var(--blue-bright);
-        }
-
-        /* Footer */
-        footer {
-            background: #04060C;
-            color: #64748B;
-            padding: 40px 0;
-            font-size: 13px;
-            border-top: 1px solid var(--border);
-        }
-
-        footer .biz-name {
-            font-family: "Inter", sans-serif;
-            font-weight: 700;
-            font-size: 15px;
-            color: var(--white);
-        }
-
-        footer p {
-            margin-top: 8px;
-        }
-
-        /* Blogs */
-        .blog-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 14px;
-            margin-top: 22px;
-        }
-
-        .blog-card {
-            flex: 1 1 220px;
-            padding: 18px 20px;
-            border: 1px solid var(--border);
-            border-radius: 14px;
-            text-decoration: none;
-            transition: border-color 0.2s, transform 0.2s;
-        }
-
-        .blog-card:hover {
-            border-color: var(--blue-bright);
-            transform: translateY(-2px);
-        }
-
-        .blog-card .name {
-            display: block;
-            font-weight: 700;
-            font-size: 15px;
-            color: var(--white);
-        }
-
-        .blog-card .desc {
-            display: block;
-            margin-top: 6px;
-            font-size: 13px;
-            color: #94A3B8;
-            line-height: 1.6;
-        }
-
-
-        @media (max-width: 720px) {
-            section {
-                padding: 64px 0;
-            }
-
-            .cards {
-                grid-template-columns: 1fr;
-            }
-
-            .hero .tagline-en {
-                margin-top: clamp(120px, 24vh, 200px);
-            }
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Importants Studio</title>
+<meta name="description" content="기획부터 출시까지 모든 것을 Importants.Studio가 담당합니다.">
+<link rel="canonical" href="https://importants-studio.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Importants Studio">
+<meta property="og:description" content="기획부터 출시까지 모든 것을 Importants.Studio가 담당합니다.">
+<meta property="og:url" content="https://importants-studio.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8673949681156413" crossorigin="anonymous"></script>
+<style>
+:root{
+  --bg:#070B14; --bg-soft:#0B1120; --navy:#0F172A;
+  --line:#1c2740; --line-hot:#2b4470;
+  --text:#E2E8F0; --dim:#94A3B8;
+  --blue:#3B82F6; --blue-b:#60A5FA;
+  --sans:"Pretendard Variable",Inter,-apple-system,"Apple SD Gothic Neo",system-ui,sans-serif;
+  /* 제목만 SUIT. 획이 고르고 각이 덜 서서 큰 글씨에서 부드럽다. */
+  --title:"SUIT Variable","Pretendard Variable",system-ui,sans-serif;
+  --r:16px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--bg); color:var(--text);
+  font-family:var(--sans); -webkit-font-smoothing:antialiased;
+  word-break:keep-all; overflow-x:hidden;
+}
+a{color:inherit;text-decoration:none}
+
+/* 히어로 배경 캔버스. 아래로 갈수록 덮어서 본문 가독성을 지킨다. */
+#gl{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+#veil{position:fixed;inset:0;z-index:1;pointer-events:none;
+  background:linear-gradient(180deg,transparent 0%,transparent 40%,var(--bg) 86%)}
+
+.wrap{position:relative;z-index:2;max-width:880px;margin:0 auto;padding:0 24px 96px}
+
+.top{display:flex;align-items:center;justify-content:space-between;padding:26px 0}
+.mark{font-family:Inter,var(--sans);font-weight:800;font-size:15px;letter-spacing:.02em}
+.mark i{font-style:normal;color:var(--blue-b)}
+.top a{font-size:13px;color:var(--dim)}
+.top a:hover{color:var(--text)}
+
+.hero{padding:13vh 0 17vh}
+.hero h1{
+  position:relative; margin:0; font-family:var(--title);
+  font-size:clamp(29px,6vw,54px); font-weight:800;
+  line-height:1.34; letter-spacing:-.025em; text-wrap:balance; padding-left:22px;
+}
+/* 각진 실선 대신 위아래로 사라지는 선 */
+.hero h1::before{content:"";position:absolute;left:0;top:.18em;bottom:.18em;width:3px;
+  border-radius:3px;background:linear-gradient(180deg,transparent,var(--blue) 22%,var(--blue-b) 78%,transparent)}
+.hero h1 em{font-style:normal;color:var(--blue-b)}
+.hero p{margin:22px 0 0 22px;font-size:clamp(14px,2.4vw,17px);color:var(--dim);line-height:1.75}
+
+.sec{margin-top:88px}
+.sec>h2{
+  margin:0 0 20px; font-size:13px; font-weight:700; color:var(--dim);
+  letter-spacing:.06em;
+  display:flex; align-items:center; gap:12px;
+}
+.sec>h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--line),transparent)}
+
+.card{
+  position:relative; background:var(--bg-soft); border:1px solid var(--line);
+  border-radius:var(--r);
+  transition:border-color .35s ease,transform .35s ease,background .35s ease;
+}
+.card:hover{border-color:var(--line-hot);background:#0d1526;transform:translateY(-3px)}
+
+.apps{display:grid;gap:12px}
+.app{display:flex;gap:16px;align-items:flex-start;padding:18px}
+.app img{width:56px;height:56px;flex-shrink:0;border-radius:13px}
+.app .body{flex:1;min-width:0;display:block}
+.app .name{display:block;font-size:15px;font-weight:800;letter-spacing:-.01em;text-wrap:pretty}
+.app .desc{display:block;font-size:13.5px;color:var(--dim);line-height:1.65;margin-top:5px;text-wrap:pretty}
+.app .meta{display:block;font-size:11px;color:var(--dim);opacity:.7;margin-top:8px;letter-spacing:.04em}
+.app .go{align-self:center;color:var(--dim);font-size:18px;flex-shrink:0;transition:transform .35s ease,color .35s ease}
+.app:hover .go{transform:translateX(3px);color:var(--blue-b)}
+
+.wip{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}
+.wip .card{padding:18px;background:transparent;border-style:dashed}
+.wip .name{font-size:15px;font-weight:800}
+.wip .name::before{content:"";display:inline-block;width:7px;height:7px;border-radius:99px;
+  background:var(--blue);margin-right:9px;vertical-align:middle;animation:pulse 3.6s ease-in-out infinite}
+.wip .desc{font-size:13.5px;color:var(--dim);line-height:1.65;margin-top:6px;text-wrap:pretty}
+@keyframes pulse{0%,100%{opacity:.95}50%{opacity:.35}}
+
+.rows{display:grid;gap:10px}
+.row{display:flex;align-items:center;gap:14px;padding:16px 18px}
+.dot{width:8px;height:8px;flex-shrink:0;border-radius:99px;opacity:.9}
+.row .name{font-size:15px;font-weight:800;flex-shrink:0}
+.row .desc{font-size:13px;color:var(--dim);flex:1;min-width:0;line-height:1.55}
+
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}
+.tool{display:flex;flex-direction:column;gap:8px;padding:18px}
+.tool .head{display:flex;align-items:center;gap:10px}
+.tool .name{font-size:15px;font-weight:800}
+.tool .desc{font-size:13.5px;color:var(--dim);line-height:1.65;text-wrap:pretty}
+
+.contact{margin-top:88px;padding-top:26px;border-top:1px solid var(--line)}
+.contact p{margin:0;font-size:13.5px;color:var(--dim);line-height:1.75}
+.contact a{display:inline-block;margin-top:10px;font-size:15px;font-weight:700;color:var(--blue-b);
+  border-bottom:1px solid transparent;transition:border-color .18s}
+.contact a:hover{border-color:var(--blue-b)}
+
+.rise{opacity:0;transform:translateY(14px);
+  transition:opacity .8s cubic-bezier(.22,.61,.36,1),transform .8s cubic-bezier(.22,.61,.36,1)}
+.rise.on{opacity:1;transform:none}
+
+@media (max-width:560px){
+  .wrap{padding:0 18px 72px}
+  .hero{padding:11vh 0 13vh}
+  .row{flex-wrap:wrap;gap:8px 12px}
+  .row .desc{flex-basis:100%}
+}
+@media (prefers-reduced-motion:reduce){
+  .rise{opacity:1;transform:none;transition:none}
+  .wip .name::before{animation:none}
+  html{scroll-behavior:auto}
+}
+</style>
 </head>
 <body>
-    <div class="scroll-progress" id="scroll-progress"></div>
-    <div class="cursor-ring" id="cursor-ring"></div>
-    <div class="cursor-dot" id="cursor-dot"></div>
 
-    <header>
-        <div class="container header-inner">
-            <a class="logo" href="#top">Importants <span>Studio</span></a>
-            <a class="header-cta" href="#contact">Contact</a>
-        </div>
-    </header>
+<canvas id="gl"></canvas>
+<div id="veil"></div>
 
-    <main id="top">
-        <div class="hero" id="hero">
-            <canvas id="hero-canvas"></canvas>
-            <div class="hero-glow"></div>
-            <div class="hero-content">
-                <h1>Importants <span>Studio</span></h1>
-                <p class="tagline-en">Mobile App Development Company</p>
-                <p class="tagline-ko">아이디어를 iOS 앱으로 만듭니다</p>
-                <a class="cta magnetic" href="#contact">Get in Touch</a>
-            </div>
-        </div>
+<div class="wrap">
 
-        <section id="about">
-            <div class="container reveal">
-                <p class="section-label">About Us</p>
-                <h2>iOS 앱을 만드는 개발 스튜디오</h2>
-                <div class="section-body">
-                    <p>Importants Studio는 iOS 앱을 기획하고, 개발하고, 운영하는 모바일 앱 개발 스튜디오입니다. 사용자에게 정말 필요한 것에 집중해 완성도 높은 앱을 만듭니다.</p>
-                    <p class="en">Importants Studio is a mobile app development studio that designs, builds, and operates iOS applications — focused on crafting polished products that matter to users.</p>
-                </div>
-            </div>
-        </section>
+  <header class="top">
+    <span class="mark">Importants<i>.</i>Studio</span>
+    <a href="#contact">연락처</a>
+  </header>
 
-        <section id="services">
-            <div class="container reveal">
-                <p class="section-label">Services</p>
-                <h2>하는 일</h2>
-                <div class="cards">
-                    <div class="card">
-                        <div class="icon">📱</div>
-                        <h3>iOS 앱 개발</h3>
-                        <p class="en-title">iOS App Development</p>
-                        <p>Swift 기반의 네이티브 iOS 앱을 설계하고 개발합니다.</p>
-                    </div>
-                    <div class="card">
-                        <div class="icon">✏️</div>
-                        <h3>앱 기획 · 디자인</h3>
-                        <p class="en-title">Product Design</p>
-                        <p>아이디어를 구체적인 제품 경험으로 다듬습니다.</p>
-                    </div>
-                    <div class="card">
-                        <div class="icon">🔧</div>
-                        <h3>운영 · 유지보수</h3>
-                        <p class="en-title">Maintenance &amp; Operations</p>
-                        <p>출시 이후의 업데이트와 안정적인 운영을 책임집니다.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <section class="hero">
+    <h1>기획부터 출시까지<br><em>모든 것을 Importants.Studio가</em><br>담당합니다.</h1>
+    <p>앱, 블로그, 웹 도구를 혼자 만들고 운영합니다.</p>
+  </section>
 
-        <section id="blogs">
-            <div class="container reveal">
-                <p class="section-label">Blogs</p>
-                <h2>운영 중인 블로그</h2>
-                <div class="blog-links">
-                    <a class="blog-card" href="https://blog.importants-studio.com">
-                        <span class="name">혜택줍줍</span>
-                        <span class="desc">정부 지원금·복지 혜택·세금 환급 정보</span>
-                    </a>
-                    <a class="blog-card" href="https://car.importants-studio.com">
-                        <span class="name">차곡차곡</span>
-                        <span class="desc">자동차 유지비 절약과 운전 가이드</span>
-                    </a>
-                    <a class="blog-card" href="https://home.importants-studio.com">
-                        <span class="name">홈로그</span>
-                        <span class="desc">신혼부터 육아까지 필요한 생활 정보</span>
-                    </a>
-                </div>
-            </div>
-        </section>
+  <section class="sec rise">
+    <h2>앱</h2>
+    <div class="apps">
+      <a class="card app" href="https://apps.apple.com/kr/app/id6779294228" target="_blank" rel="noopener">
+        <img src="img/apps/janang.png" alt="잔상 아이콘" width="56" height="56" loading="lazy">
+        <span class="body">
+          <span class="name">잔상 — 필름 다이어리</span>
+          <span class="desc">기다려야 보이는 사진 일기. 찍는 순간 사진이 잠기고 정한 날에 현상됩니다.</span>
+          <span class="meta">사진 및 비디오 · 무료</span>
+        </span>
+        <span class="go">→</span>
+      </a>
+      <a class="card app" href="https://apps.apple.com/kr/app/id6782576170" target="_blank" rel="noopener">
+        <img src="img/apps/reckoner.png" alt="Reckoner 아이콘" width="56" height="56" loading="lazy">
+        <span class="body">
+          <span class="name">Reckoner — 점수 카운터</span>
+          <span class="desc">룰까지 세는 멀티 종목 점수기. 종목마다 다른 규칙을 앱이 대신 셉니다.</span>
+          <span class="meta">스포츠 · 무료</span>
+        </span>
+        <span class="go">→</span>
+      </a>
+      <a class="card app" href="https://apps.apple.com/kr/app/id6778281958" target="_blank" rel="noopener">
+        <img src="img/apps/floorlog.png" alt="FloorLog 아이콘" width="56" height="56" loading="lazy">
+        <span class="body">
+          <span class="name">FloorLog — 층간소음 기록</span>
+          <span class="desc">소음이 언제 얼마나 들렸는지 기록해 민원·조정 신청용 PDF 로 정리합니다.</span>
+          <span class="meta">유틸리티 · 무료</span>
+        </span>
+        <span class="go">→</span>
+      </a>
+      <a class="card app" href="https://apps.apple.com/kr/app/id6741704150" target="_blank" rel="noopener">
+        <img src="img/apps/goalmate.png" alt="골메이트 아이콘" width="56" height="56" loading="lazy">
+        <span class="body">
+          <span class="name">골메이트</span>
+          <span class="desc">목표를 이미 이룬 멘토가 오늘 할 일을 정해주고 주 2회 피드백을 줍니다.</span>
+          <span class="meta">교육 · 무료</span>
+        </span>
+        <span class="go">→</span>
+      </a>
+    </div>
+  </section>
 
-        <section id="contact">
-            <div class="container reveal">
-                <p class="section-label">Contact</p>
-                <h2>연락처</h2>
-                <div class="contact-list">
-                    <div class="contact-item">
-                        <span class="label">Email</span>
-                        <a href="mailto:contact@importants-studio.com">contact@importants-studio.com</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+  <section class="sec rise">
+    <h2>만들고 있는 것</h2>
+    <div class="wip">
+      <div class="card">
+        <div class="name">책칸</div>
+        <div class="desc">txt 와 PDF 를 읽는 리더. 디자인을 마쳤고 개발을 준비하고 있습니다.</div>
+      </div>
+      <div class="card">
+        <div class="name">Remere</div>
+        <div class="desc">골메이트의 후속. 멘토 대신 게임 방식으로 목표를 관리하도록 다시 만들고 있습니다.</div>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <div class="container">
-            <p class="biz-name">Importants Studio</p>
-            <p>contact@importants-studio.com</p>
-            <p>© 2026 Importants Studio. All rights reserved.</p>
-        </div>
-    </footer>
+  <section class="sec rise">
+    <h2>블로그</h2>
+    <div class="rows">
+      <a class="card row" href="https://blog.importants-studio.com" target="_blank" rel="noopener">
+        <span class="dot" style="background:#0e9f6e"></span>
+        <span class="name">혜택줍줍</span>
+        <span class="desc">정부 지원금과 세금 환급을 매일 정리합니다.</span>
+      </a>
+      <a class="card row" href="https://car.importants-studio.com" target="_blank" rel="noopener">
+        <span class="dot" style="background:#38bdf8"></span>
+        <span class="name">차곡차곡</span>
+        <span class="desc">자동차세, 보험료, 검사 기한을 챙기는 곳입니다.</span>
+      </a>
+      <a class="card row" href="https://home.importants-studio.com" target="_blank" rel="noopener">
+        <span class="dot" style="background:#f59e0b"></span>
+        <span class="name">홈로그</span>
+        <span class="desc">결혼과 육아에 드는 돈과 제도를 정리합니다.</span>
+      </a>
+    </div>
+  </section>
 
-    <script type="importmap">
-    {
-        "imports": {
-            "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"
-        }
+  <section class="sec rise">
+    <h2>도구 · 게임</h2>
+    <div class="grid2">
+      <a class="card tool" href="https://simsim.importants-studio.com" target="_blank" rel="noopener">
+        <span class="head"><span class="dot" style="background:#6c4cf1"></span><span class="name">심심풀이</span></span>
+        <span class="desc">커피 내기와 순서 정하기. 굴림판, 사다리타기, 주사위 대결이 있습니다.</span>
+      </a>
+      <a class="card tool" href="https://simsim.importants-studio.com/yeoncha/" target="_blank" rel="noopener">
+        <span class="head"><span class="dot" style="background:#6c4cf1"></span><span class="name">연차 계산기</span></span>
+        <span class="desc">내 연차를 언제 쓰면 가장 길게 쉴 수 있는지 계산합니다.</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="contact rise" id="contact">
+    <p>앱과 사이트에 대한 의견은 메일로 받습니다.</p>
+    <a href="mailto:contact@importants-studio.com">contact@importants-studio.com</a>
+  </section>
+
+</div>
+
+<script type="importmap">
+{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"}}
+</script>
+<script type="module">
+// 히어로 배경. 점들이 천천히 흐르고 가까운 것끼리 흐린 선으로 이어진다.
+// 눈에 띄면 글을 방해한다. 배경으로만 남도록 느리고 옅게 잡았다.
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const canvas = document.getElementById("gl");
+
+async function boot() {
+  if (reduce) { canvas.style.display = "none"; return; }
+  const THREE = await import("three");
+
+  const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: false });
+  renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+  const scene = new THREE.Scene();
+  const cam = new THREE.PerspectiveCamera(60, 1, 0.1, 100);
+  cam.position.z = 15;
+
+  // 좁은 화면은 점 수를 줄인다. 선 잇기가 O(n²) 이라 여기서 프레임이 갈린다.
+  const narrow = innerWidth < 700;
+  const COUNT = narrow ? 46 : 96;
+  const SPREAD = narrow ? 17 : 26;
+
+  const pos = new Float32Array(COUNT * 3);
+  const vel = new Float32Array(COUNT * 3);
+  for (let i = 0; i < COUNT; i += 1) {
+    pos[i * 3] = (Math.random() - 0.5) * SPREAD;
+    pos[i * 3 + 1] = (Math.random() - 0.5) * SPREAD * 0.62;
+    pos[i * 3 + 2] = (Math.random() - 0.5) * 9;
+    for (let k = 0; k < 3; k += 1) vel[i * 3 + k] = (Math.random() - 0.5) * 0.006;
+  }
+
+  const dotGeo = new THREE.BufferGeometry();
+  dotGeo.setAttribute("position", new THREE.BufferAttribute(pos, 3));
+  scene.add(new THREE.Points(dotGeo, new THREE.PointsMaterial({
+    color: 0x60a5fa, size: 0.09, transparent: true, opacity: 0.6,
+  })));
+
+  const MAX_SEG = COUNT * 7;
+  const linePos = new Float32Array(MAX_SEG * 6);
+  const lineGeo = new THREE.BufferGeometry();
+  lineGeo.setAttribute("position", new THREE.BufferAttribute(linePos, 3));
+  scene.add(new THREE.LineSegments(lineGeo, new THREE.LineBasicMaterial({
+    color: 0x3b82f6, transparent: true, opacity: 0.16,
+  })));
+
+  const LINK = narrow ? 4.2 : 4.8;
+  function relink() {
+    let n = 0;
+    for (let i = 0; i < COUNT && n < MAX_SEG; i += 1) {
+      for (let j = i + 1; j < COUNT && n < MAX_SEG; j += 1) {
+        const dx = pos[i * 3] - pos[j * 3];
+        const dy = pos[i * 3 + 1] - pos[j * 3 + 1];
+        const dz = pos[i * 3 + 2] - pos[j * 3 + 2];
+        if (dx * dx + dy * dy + dz * dz > LINK * LINK) continue;
+        linePos.set([pos[i * 3], pos[i * 3 + 1], pos[i * 3 + 2],
+                     pos[j * 3], pos[j * 3 + 1], pos[j * 3 + 2]], n * 6);
+        n += 1;
+      }
     }
-    </script>
+    lineGeo.setDrawRange(0, n * 2);
+    lineGeo.attributes.position.needsUpdate = true;
+  }
 
-    <script type="module">
-        const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let px = 0, py = 0, tx = 0, ty = 0;
+  addEventListener("pointermove", (e) => {
+    tx = (e.clientX / innerWidth - 0.5) * 0.26;
+    ty = (e.clientY / innerHeight - 0.5) * 0.26;
+  }, { passive: true });
 
-        function supportsWebGL() {
-            try {
-                const canvas = document.createElement("canvas");
-                return !!(canvas.getContext("webgl2") || canvas.getContext("webgl"));
-            } catch {
-                return false;
-            }
-        }
+  function size() {
+    renderer.setSize(innerWidth, innerHeight, false);
+    cam.aspect = innerWidth / innerHeight;
+    cam.updateProjectionMatrix();
+  }
+  addEventListener("resize", size);
+  size();
 
-        if (!prefersReducedMotion && supportsWebGL()) {
-            initHero();
-        }
+  // 히어로가 화면 밖으로 나가면 멈춘다. 안 보이는 걸 그리면 배터리만 쓴다.
+  let visible = true;
+  new IntersectionObserver(([e]) => { visible = e.isIntersecting; })
+    .observe(document.querySelector(".hero"));
+  addEventListener("visibilitychange", () => { visible = !document.hidden; });
 
-        async function initHero() {
-            const THREE = await import("three");
-            await document.fonts.load('800 100px "Inter"').catch(() => {});
+  const HALF = SPREAD / 2;
+  function tick() {
+    requestAnimationFrame(tick);
+    if (!visible) return;
+    for (let i = 0; i < COUNT; i += 1) {
+      for (let k = 0; k < 3; k += 1) {
+        const idx = i * 3 + k;
+        pos[idx] += vel[idx];
+        const lim = k === 1 ? HALF * 0.62 : k === 2 ? 4.5 : HALF;
+        if (pos[idx] > lim || pos[idx] < -lim) vel[idx] *= -1;
+      }
+    }
+    dotGeo.attributes.position.needsUpdate = true;
+    relink();
+    px += (tx - px) * 0.022;
+    py += (ty - py) * 0.022;
+    scene.rotation.y = px;
+    scene.rotation.x = py;
+    renderer.render(scene, cam);
+  }
+  tick();
+}
+boot().catch(() => { canvas.style.display = "none"; });
 
-            const hero = document.getElementById("hero");
-            const canvas = document.getElementById("hero-canvas");
-            document.body.classList.add("gl-on");
-
-            const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: false });
-            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-
-            const scene = new THREE.Scene();
-            let camera;
-
-            const isCoarse = window.matchMedia("(pointer: coarse)").matches;
-
-            const SPRING = 0.012;
-            const DAMPING = 0.9;
-            const REPEL_RADIUS = isCoarse ? 90 : 120;
-            const REPEL_FORCE = 1.9;
-
-            let positions, velocities, targets, count;
-            let points = null;
-            let stars = null;
-
-            const mouse = { x: 99999, y: 99999, active: false };
-
-            function makeCircleTexture() {
-                const size = 64;
-                const c = document.createElement("canvas");
-                c.width = c.height = size;
-                const ctx = c.getContext("2d");
-                const g = ctx.createRadialGradient(size / 2, size / 2, 0, size / 2, size / 2, size / 2);
-                g.addColorStop(0, "rgba(255,255,255,1)");
-                g.addColorStop(0.55, "rgba(255,255,255,0.85)");
-                g.addColorStop(1, "rgba(255,255,255,0)");
-                ctx.fillStyle = g;
-                ctx.fillRect(0, 0, size, size);
-                const tex = new THREE.CanvasTexture(c);
-                tex.colorSpace = THREE.SRGBColorSpace;
-                return tex;
-            }
-
-            const circleTexture = makeCircleTexture();
-
-            function sampleTextTargets(width, height) {
-                const lines = ["IMPORTANTS", "STUDIO"];
-                const c = document.createElement("canvas");
-                const ctx = c.getContext("2d", { willReadFrequently: true });
-
-                let fontSize = 200;
-                ctx.font = `800 ${fontSize}px Inter, "Pretendard Variable", sans-serif`;
-                const widest = Math.max(...lines.map(l => ctx.measureText(l).width));
-                const maxWidth = Math.min(width * 0.86, 1100);
-                fontSize = Math.max(44, fontSize * (maxWidth / widest));
-
-                const lineHeight = fontSize * 1.12;
-                ctx.font = `800 ${fontSize}px Inter, "Pretendard Variable", sans-serif`;
-                const textWidth = Math.ceil(Math.max(...lines.map(l => ctx.measureText(l).width)));
-                const textHeight = Math.ceil(lineHeight * lines.length);
-
-                c.width = textWidth + 20;
-                c.height = textHeight + 20;
-                ctx.font = `800 ${fontSize}px Inter, "Pretendard Variable", sans-serif`;
-                ctx.textAlign = "center";
-                ctx.textBaseline = "middle";
-                ctx.fillStyle = "#fff";
-                lines.forEach((line, i) => {
-                    ctx.fillText(line, c.width / 2, 10 + lineHeight * (i + 0.5));
-                });
-
-                const data = ctx.getImageData(0, 0, c.width, c.height).data;
-                const area = width * height;
-                const budget = isCoarse ? 7000 : Math.min(16000, Math.max(9000, Math.floor(area / 90)));
-
-                const candidates = [];
-                const baseStep = 2;
-                for (let y = 0; y < c.height; y += baseStep) {
-                    for (let x = 0; x < c.width; x += baseStep) {
-                        if (data[(y * c.width + x) * 4 + 3] > 128) {
-                            candidates.push(x, y);
-                        }
-                    }
-                }
-
-                const total = candidates.length / 2;
-                const stride = Math.max(1, Math.floor(total / budget));
-                const result = [];
-                const offsetY = -height * 0.06;
-                for (let i = 0; i < total; i += stride) {
-                    const x = candidates[i * 2] - c.width / 2;
-                    const y = candidates[i * 2 + 1] - c.height / 2;
-                    result.push(x, -(y + offsetY));
-                }
-                return result;
-            }
-
-            function buildParticles(width, height) {
-                if (points) {
-                    points.geometry.dispose();
-                    points.material.dispose();
-                    scene.remove(points);
-                }
-
-                const targetList = sampleTextTargets(width, height);
-                count = targetList.length / 2;
-
-                positions = new Float32Array(count * 3);
-                velocities = new Float32Array(count * 2);
-                targets = new Float32Array(targetList);
-
-                const colors = new Float32Array(count * 3);
-                const white = new THREE.Color("#E2E8F0");
-                const blue = new THREE.Color("#3B82F6");
-                const brightBlue = new THREE.Color("#60A5FA");
-
-                for (let i = 0; i < count; i++) {
-                    const angle = Math.random() * Math.PI * 2;
-                    const radius = Math.max(width, height) * (0.6 + Math.random() * 0.5);
-                    positions[i * 3] = Math.cos(angle) * radius;
-                    positions[i * 3 + 1] = Math.sin(angle) * radius;
-                    positions[i * 3 + 2] = 0;
-
-                    const r = Math.random();
-                    const color = r < 0.78 ? white : (r < 0.92 ? blue : brightBlue);
-                    colors[i * 3] = color.r;
-                    colors[i * 3 + 1] = color.g;
-                    colors[i * 3 + 2] = color.b;
-                }
-
-                const geometry = new THREE.BufferGeometry();
-                geometry.setAttribute("position", new THREE.BufferAttribute(positions, 3));
-                geometry.setAttribute("color", new THREE.BufferAttribute(colors, 3));
-
-                const material = new THREE.PointsMaterial({
-                    size: isCoarse ? 2.6 : 2.2,
-                    map: circleTexture,
-                    vertexColors: true,
-                    transparent: true,
-                    opacity: 0.95,
-                    depthWrite: false,
-                    blending: THREE.AdditiveBlending
-                });
-
-                points = new THREE.Points(geometry, material);
-                scene.add(points);
-            }
-
-            function buildStars(width, height) {
-                if (stars) {
-                    stars.geometry.dispose();
-                    stars.material.dispose();
-                    scene.remove(stars);
-                }
-
-                const starCount = 160;
-                const starPositions = new Float32Array(starCount * 3);
-                for (let i = 0; i < starCount; i++) {
-                    starPositions[i * 3] = (Math.random() - 0.5) * width * 1.2;
-                    starPositions[i * 3 + 1] = (Math.random() - 0.5) * height * 1.2;
-                    starPositions[i * 3 + 2] = -50;
-                }
-
-                const geometry = new THREE.BufferGeometry();
-                geometry.setAttribute("position", new THREE.BufferAttribute(starPositions, 3));
-
-                const material = new THREE.PointsMaterial({
-                    size: 1.6,
-                    map: circleTexture,
-                    color: 0x64748b,
-                    transparent: true,
-                    opacity: 0.55,
-                    depthWrite: false
-                });
-
-                stars = new THREE.Points(geometry, material);
-                scene.add(stars);
-            }
-
-            function setupSize() {
-                const width = hero.clientWidth;
-                const height = hero.clientHeight;
-                renderer.setSize(width, height, false);
-                camera = new THREE.OrthographicCamera(-width / 2, width / 2, height / 2, -height / 2, 0.1, 1000);
-                camera.position.z = 100;
-                buildParticles(width, height);
-                buildStars(width, height);
-            }
-
-            setupSize();
-
-            let resizeTimer;
-            window.addEventListener("resize", () => {
-                clearTimeout(resizeTimer);
-                resizeTimer = setTimeout(setupSize, 200);
-            });
-
-            function toWorld(clientX, clientY) {
-                const rect = hero.getBoundingClientRect();
-                return {
-                    x: clientX - rect.left - rect.width / 2,
-                    y: -(clientY - rect.top - rect.height / 2)
-                };
-            }
-
-            window.addEventListener("pointermove", (e) => {
-                const w = toWorld(e.clientX, e.clientY);
-                mouse.x = w.x;
-                mouse.y = w.y;
-                mouse.active = true;
-            }, { passive: true });
-
-            window.addEventListener("pointerleave", () => {
-                mouse.active = false;
-                mouse.x = 99999;
-                mouse.y = 99999;
-            });
-
-            function explode(clientX, clientY) {
-                const w = toWorld(clientX, clientY);
-                for (let i = 0; i < count; i++) {
-                    const dx = positions[i * 3] - w.x;
-                    const dy = positions[i * 3 + 1] - w.y;
-                    const dist = Math.sqrt(dx * dx + dy * dy) || 1;
-                    const power = Math.min(46, 5200 / dist);
-                    velocities[i * 2] += (dx / dist) * power * (0.5 + Math.random());
-                    velocities[i * 2 + 1] += (dy / dist) * power * (0.5 + Math.random());
-                }
-            }
-
-            hero.addEventListener("pointerdown", (e) => {
-                if (e.target.closest("a")) return;
-                explode(e.clientX, e.clientY);
-            });
-
-            let running = true;
-            const visibilityObserver = new IntersectionObserver((entries) => {
-                running = entries[0].isIntersecting;
-            }, { threshold: 0 });
-            visibilityObserver.observe(hero);
-
-            const repelRadiusSq = REPEL_RADIUS * REPEL_RADIUS;
-            let time = 0;
-
-            function tick() {
-                requestAnimationFrame(tick);
-                if (!running || document.hidden) return;
-
-                time += 0.016;
-
-                for (let i = 0; i < count; i++) {
-                    const px = positions[i * 3];
-                    const py = positions[i * 3 + 1];
-
-                    let ax = (targets[i * 2] - px) * SPRING;
-                    let ay = (targets[i * 2 + 1] - py) * SPRING;
-
-                    if (mouse.active) {
-                        const dx = px - mouse.x;
-                        const dy = py - mouse.y;
-                        const distSq = dx * dx + dy * dy;
-                        if (distSq < repelRadiusSq && distSq > 0.01) {
-                            const dist = Math.sqrt(distSq);
-                            const force = ((REPEL_RADIUS - dist) / REPEL_RADIUS) * REPEL_FORCE;
-                            ax += (dx / dist) * force * REPEL_RADIUS * 0.06;
-                            ay += (dy / dist) * force * REPEL_RADIUS * 0.06;
-                        }
-                    }
-
-                    velocities[i * 2] = (velocities[i * 2] + ax) * DAMPING;
-                    velocities[i * 2 + 1] = (velocities[i * 2 + 1] + ay) * DAMPING;
-
-                    positions[i * 3] = px + velocities[i * 2];
-                    positions[i * 3 + 1] = py + velocities[i * 2 + 1];
-                }
-
-                points.geometry.attributes.position.needsUpdate = true;
-
-                if (stars) {
-                    stars.position.x = (mouse.active ? mouse.x : 0) * -0.015;
-                    stars.position.y = (mouse.active ? mouse.y : 0) * -0.015;
-                    stars.rotation.z = Math.sin(time * 0.05) * 0.02;
-                }
-
-                renderer.render(scene, camera);
-            }
-
-            tick();
-        }
-
-        // ---- Reveal on scroll ----
-        const reveals = document.querySelectorAll(".reveal");
-        if ("IntersectionObserver" in window) {
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add("visible");
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.15 });
-            reveals.forEach((el) => observer.observe(el));
-        } else {
-            reveals.forEach((el) => el.classList.add("visible"));
-        }
-
-        // ---- Scroll progress ----
-        const progressBar = document.getElementById("scroll-progress");
-        window.addEventListener("scroll", () => {
-            const max = document.documentElement.scrollHeight - window.innerHeight;
-            progressBar.style.width = max > 0 ? `${(window.scrollY / max) * 100}%` : "0%";
-        }, { passive: true });
-
-        // ---- Custom cursor ----
-        const hasFinePointer = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
-        if (hasFinePointer && !prefersReducedMotion) {
-            const dot = document.getElementById("cursor-dot");
-            const ring = document.getElementById("cursor-ring");
-            let cx = -100, cy = -100, rx = -100, ry = -100;
-
-            window.addEventListener("pointermove", (e) => {
-                cx = e.clientX;
-                cy = e.clientY;
-            }, { passive: true });
-
-            document.querySelectorAll("a, button, .card").forEach((el) => {
-                el.addEventListener("pointerenter", () => ring.classList.add("hovering"));
-                el.addEventListener("pointerleave", () => ring.classList.remove("hovering"));
-            });
-
-            (function cursorTick() {
-                rx += (cx - rx) * 0.16;
-                ry += (cy - ry) * 0.16;
-                dot.style.transform = `translate(${cx}px, ${cy}px) translate(-50%, -50%)`;
-                ring.style.transform = `translate(${rx}px, ${ry}px) translate(-50%, -50%)`;
-                requestAnimationFrame(cursorTick);
-            })();
-        }
-
-        // ---- Card 3D tilt ----
-        if (hasFinePointer && !prefersReducedMotion) {
-            document.querySelectorAll(".card").forEach((card) => {
-                card.addEventListener("pointermove", (e) => {
-                    const rect = card.getBoundingClientRect();
-                    const x = (e.clientX - rect.left) / rect.width;
-                    const y = (e.clientY - rect.top) / rect.height;
-                    card.style.setProperty("--mx", `${x * 100}%`);
-                    card.style.setProperty("--my", `${y * 100}%`);
-                    card.style.transform = `rotateY(${(x - 0.5) * 10}deg) rotateX(${(0.5 - y) * 10}deg) translateY(-4px)`;
-                });
-                card.addEventListener("pointerleave", () => {
-                    card.style.transform = "";
-                });
-            });
-        }
-
-        // ---- Magnetic CTA ----
-        if (hasFinePointer && !prefersReducedMotion) {
-            document.querySelectorAll(".magnetic").forEach((el) => {
-                el.addEventListener("pointermove", (e) => {
-                    const rect = el.getBoundingClientRect();
-                    const x = e.clientX - rect.left - rect.width / 2;
-                    const y = e.clientY - rect.top - rect.height / 2;
-                    el.style.transform = `translate(${x * 0.25}px, ${y * 0.25}px)`;
-                });
-                el.addEventListener("pointerleave", () => {
-                    el.style.transform = "";
-                });
-            });
-        }
-    </script>
+const io = new IntersectionObserver((es) => {
+  es.forEach((e) => {
+    if (e.isIntersecting) { e.target.classList.add("on"); io.unobserve(e.target); }
+  });
+}, { threshold: 0.12 });
+document.querySelectorAll(".rise").forEach((el) => io.observe(el));
+</script>
 </body>
 </html>
