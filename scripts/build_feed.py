@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
-"""apex 매거진 홈이 읽을 feed.json 을 만든다.
+"""apex 매거진 홈의 feed.json 과 index.html 을 만든다.
 
-apex 는 Hugo 가 아니라 정적 HTML 한 장이다. 화면은 디자이너가 만들고, 이 스크립트는
-데이터만 낸다. 그래야 디자인 작업과 안 부딪힌다.
+apex 는 Hugo 가 아니라 정적 HTML 한 장이다. 처음에는 화면이 feed.json 을 자바스크립트로
+읽어 그리게 했는데, 그러면 크롤러가 보는 HTML 이 82자뿐이었다. 애드센스가 이 도메인을
+"가치가 별로 없는 콘텐츠" 로 막은 마당에 그건 더 나쁘다. 그래서 여기서 HTML 까지 만들어
+index.template.html 에 박아 index.html 로 낸다. 화면은 자바스크립트 없이 완성된다.
 
 블로그는 각자 Hugo 가 내는 index.xml(RSS)을 읽는다. 심심풀이는 글이 없어서 게임과
 도구 목록을 코드에 둔다.
@@ -11,15 +13,18 @@ apex 는 Hugo 가 아니라 정적 HTML 한 장이다. 화면은 디자이너가
 서버(GitHub Actions)에서 돌아 결과만 https 로 서빙되므로 혼합 콘텐츠 문제는 없다.
 인증서가 붙으면 http 를 지우면 된다.
 """
+import io
 import json
 import os
 import re
 import sys
 import urllib.request
 import xml.etree.ElementTree as ET
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 PER_BLOG = 5
+PLAY_COLOR = "#6c4cf1"
+KST = timezone(timedelta(hours=9))
 TIMEOUT = 20
 
 BLOGS = [
@@ -104,6 +109,77 @@ def items_of(root, site):
     return out
 
 
+def esc(t):
+    return (str(t or "").replace("&", "&amp;").replace("<", "&lt;")
+            .replace(">", "&gt;").replace('"', "&quot;"))
+
+
+def short_date(v):
+    """RSS 의 pubDate 를 "9. 8." 로. 못 읽으면 원문 그대로."""
+    for fmt in ("%a, %d %b %Y %H:%M:%S %z", "%a, %d %b %Y %H:%M:%S %Z"):
+        try:
+            d = datetime.strptime(v, fmt)
+            return "%d. %d." % (d.month, d.day)
+        except Exception:
+            pass
+    return v or ""
+
+
+def section_head(name, tagline, url, color):
+    return (
+        '<a class="sechead" href="%s">'
+        '<span class="dot" style="background:%s"></span>'
+        '<span class="secname">%s</span>'
+        '<span class="sectag">%s</span>'
+        '<span class="secmore" style="color:%s">전체 →</span></a>'
+        % (esc(url), esc(color), esc(name), esc(tagline), esc(color)))
+
+
+def render_html(data, template="index.template.html", out="index.html"):
+    """크롤러가 자바스크립트 없이 읽을 수 있게 HTML 로 박는다."""
+    blogs = []
+    for b in data["blogs"]:
+        posts = []
+        for p in b["posts"][:5]:
+            posts.append(
+                '<a class="post" href="%s"><span class="ptitle">%s</span>'
+                '<span class="psum">%s</span><span class="pdate">%s</span></a>'
+                % (esc(p["url"]), esc(p["title"]), esc(p["summary"]),
+                   esc(short_date(p["date"]))))
+        blogs.append('<section class="sec">%s<div class="posts">%s</div></section>'
+                     % (section_head(b["name"], b["tagline"], b["url"], b["color"]),
+                        "".join(posts)))
+
+    play = data["play"]
+    tiles = "".join(
+        '<a class="tile" href="%s"><span class="tkind">%s</span>'
+        '<span class="tname">%s</span></a>'
+        % (esc(i["url"]), esc(i["kind"]), esc(i["name"])) for i in play["items"])
+    play_html = ('<section class="sec">%s<div class="tiles">%s</div></section>'
+                 % (section_head(play["name"], play["tagline"], play["url"], PLAY_COLOR),
+                    tiles))
+
+    igs = "".join(
+        '<a class="ig" href="%s"><span class="igname">%s</span>'
+        '<span class="ighandle">%s</span></a>'
+        % (esc(i["url"]), esc(i["name"]), esc(i["handle"]))
+        for i in data["links"]["instagram"])
+
+    today = datetime.now(KST).strftime("%Y. ") + \
+        "%d. %d." % (datetime.now(KST).month, datetime.now(KST).day)
+
+    s = io.open(template, encoding="utf-8").read()
+    s = s.replace("<!--TODAY-->", today)
+    s = s.replace("<!--BLOGS-->", "\n".join(blogs))
+    s = s.replace("<!--PLAY-->", play_html)
+    s = s.replace("<!--IGS-->", '<div class="igs">%s</div>' % igs)
+    io.open(out, "w", encoding="utf-8").write(s)
+
+    body = re.sub(r"<script.*?</script>|<style.*?</style>", "", s, flags=re.S)
+    body = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", body)).strip()
+    return len(body)
+
+
 def main():
     blogs, warn = [], []
     for key, name, color, host, tagline in BLOGS:
@@ -139,9 +215,11 @@ def main():
     with open(out, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
+    chars = render_html(data)
+
     total = sum(len(b["posts"]) for b in blogs)
-    print("%s · 블로그 %d개 글 %d개 · 놀거리 %d개"
-          % (out, len(blogs), total, len(PLAY)))
+    print("%s · 블로그 %d개 글 %d개 · 놀거리 %d개 · index.html 본문 %d자"
+          % (out, len(blogs), total, len(PLAY), chars))
     for w in warn:
         print("  ⚠ %s" % w)
 
