@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About — Importants Studio</title>
+<meta name="description" content="기획부터 출시까지 모든 것을 Importants.Studio가 담당합니다.">
+<link rel="canonical" href="https://importants-studio.com/about/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Importants Studio">
+<meta property="og:description" content="기획부터 출시까지 모든 것을 Importants.Studio가 담당합니다.">
+<meta property="og:url" content="https://importants-studio.com/about/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css">
+<style>
+:root{
+  --bg:#070B14; --bg-soft:#0B1120; --navy:#0F172A;
+  --line:#1c2740; --line-hot:#2b4470;
+  --text:#E2E8F0; --dim:#94A3B8;
+  --blue:#3B82F6; --blue-b:#60A5FA;
+  --sans:"Pretendard Variable",Inter,-apple-system,"Apple SD Gothic Neo",system-ui,sans-serif;
+  /* 제목만 SUIT. 획이 고르고 각이 덜 서서 큰 글씨에서 부드럽다. */
+  --title:"SUIT Variable","Pretendard Variable",system-ui,sans-serif;
+  --r:16px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--bg); color:var(--text);
+  font-family:var(--sans); -webkit-font-smoothing:antialiased;
+  word-break:keep-all; overflow-x:hidden;
+}
+a{color:inherit;text-decoration:none}
+
+/* 히어로 배경 캔버스. 아래로 갈수록 덮어서 본문 가독성을 지킨다. */
+#gl{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+#veil{position:fixed;inset:0;z-index:1;pointer-events:none;
+  background:linear-gradient(180deg,transparent 0%,transparent 40%,var(--bg) 86%)}
+
+.wrap{position:relative;z-index:2;max-width:880px;margin:0 auto;padding:0 24px 96px}
+
+.top{display:flex;align-items:center;justify-content:space-between;padding:26px 0}
+.mark{font-family:Inter,var(--sans);font-weight:800;font-size:15px;letter-spacing:.02em}
+.mark i{font-style:normal;color:var(--blue-b)}
+.top a{font-size:13px;color:var(--dim)}
+.top a:hover{color:var(--text)}
+
+.hero{padding:13vh 0 17vh}
+.hero h1{
+  position:relative; margin:0; font-family:var(--title);
+  font-size:clamp(29px,6vw,54px); font-weight:800;
+  line-height:1.34; letter-spacing:-.025em; text-wrap:balance; padding-left:22px;
+}
+/* 각진 실선 대신 위아래로 사라지는 선 */
+.hero h1::before{content:"";position:absolute;left:0;top:.18em;bottom:.18em;width:3px;
+  border-radius:3px;background:linear-gradient(180deg,transparent,var(--blue) 22%,var(--blue-b) 78%,transparent)}
+.hero h1 em{font-style:normal;color:var(--blue-b)}
+.hero p{margin:22px 0 0 22px;font-size:clamp(14px,2.4vw,17px);color:var(--dim);line-height:1.75}
+
+.sec{margin-top:88px}
+.sec>h2{
+  margin:0 0 20px; font-size:13px; font-weight:700; color:var(--dim);
+  letter-spacing:.06em;
+  display:flex; align-items:center; gap:12px;
+}
+.sec>h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--line),transparent)}
+
+.card{
+  position:relative; background:var(--bg-soft); border:1px solid var(--line);
+  border-radius:var(--r);
+  transition:border-color .35s ease,transform .35s ease,background .35s ease;
+}
+.card:hover{border-color:var(--line-hot);background:#0d1526;transform:translateY(-3px)}
+
+.apps{display:grid;gap:12px}
+.app{display:flex;gap:16px;align-items:flex-start;padding:18px}
+.app img{width:56px;height:56px;flex-shrink:0;border-radius:13px}
+.app .body{flex:1;min-width:0;display:block}
+.app .name{display:block;font-size:15px;font-weight:800;letter-spacing:-.01em;text-wrap:pretty}
+.app .desc{display:block;font-size:13.5px;color:var(--dim);line-height:1.65;margin-top:5px;text-wrap:pretty}
+.app .meta{display:block;font-size:11px;color:var(--dim);opacity:.7;margin-top:8px;letter-spacing:.04em}
+.app .go{align-self:center;color:var(--dim);font-size:18px;flex-shrink:0;transition:transform .35s ease,color .35s ease}
+.app:hover .go{transform:translateX(3px);color:var(--blue-b)}
+
+.wip{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}
+.wip .card{padding:18px;background:transparent;border-style:dashed}
+.wip .name{font-size:15px;font-weight:800}
+.wip .name::before{content:"";display:inline-block;width:7px;height:7px;border-radius:99px;
+  background:var(--blue);margin-right:9px;vertical-align:middle;animation:pulse 3.6s ease-in-out infinite}
+.wip .desc{font-size:13.5px;color:var(--dim);line-height:1.65;margin-top:6px;text-wrap:pretty}
+@keyframes pulse{0%,100%{opacity:.95}50%{opacity:.35}}
+
+.rows{display:grid;gap:10px}
+.row{display:flex;align-items:center;gap:14px;padding:16px 18px}
+.dot{width:8px;height:8px;flex-shrink:0;border-radius:99px;opacity:.9}
+.row .name{font-size:15px;font-weight:800;flex-shrink:0}
+.row .desc{font-size:13px;color:var(--dim);flex:1;min-width:0;line-height:1.55}
+
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}
+.tool{display:flex;flex-direction:column;gap:8px;padding:18px}
+.tool .head{display:flex;align-items:center;gap:10px}
+.tool .name{font-size:15px;font-weight:800}
+.tool .desc{font-size:13.5px;color:var(--dim);line-height:1.65;text-wrap:pretty}
+
+.contact{margin-top:88px;padding-top:26px;border-top:1px solid var(--line)}
+.contact p{margin:0;font-size:13.5px;color:var(--dim);line-height:1.75}
+.contact a{display:inline-block;margin-top:10px;font-size:15px;font-weight:700;color:var(--blue-b);
+  border-bottom:1px solid transparent;transition:border-color .18s}
+.contact a:hover{border-color:var(--blue-b)}
+.contact .legal{margin-top:22px}
+.contact .legal a{margin-top:0;font-size:13px;font-weight:400;color:var(--dim)}
+.contact .legal a:hover{color:var(--text);border-color:transparent}
+
+.rise{opacity:0;transform:translateY(14px);
+  transition:opacity .8s cubic-bezier(.22,.61,.36,1),transform .8s cubic-bezier(.22,.61,.36,1)}
+.rise.on{opacity:1;transform:none}
+
+@media (max-width:560px){
+  .wrap{padding:0 18px 72px}
+  .hero{padding:11vh 0 13vh}
+  .row{flex-wrap:wrap;gap:8px 12px}
+  .row .desc{flex-basis:100%}
+}
+@media (prefers-reduced-motion:reduce){
+  .rise{opacity:1;transform:none;transition:none}
+  .wip .name::before{animation:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<canvas id="gl"></canvas>
+<div id="veil"></div>
+
+<div class="wrap">
+
+  <header class="top">
+    <a href="/" class="mark" style="text-decoration:none;color:inherit">Importants<i>.</i>Studio</a>
+    <a href="#contact">연락처</a>
+  </header>
+
+  <section class="hero">
+    <h1>기획부터 출시까지<br><em>모든 것을 Importants.Studio가</em><br>담당합니다.</h1>
+    <p>앱, 블로그, 웹 도구를 혼자 만들고 운영합니다.</p>
+  </section>
+
+  <section class="sec rise">
+    <h2>앱</h2>
+    <div class="apps">
+      <a class="card app" href="https://apps.apple.com/kr/app/id6779294228" target="_blank" rel="noopener">
+        <img src="img/apps/janang.png" alt="잔상 아이콘" width="56" height="56" loading="lazy">
+        <span class="body">
+          <span class="name">잔상 — 필름 다이어리</span>
+          <span class="desc">기다려야 보이는 사진 일기. 찍는 순간 사진이 잠기고 정한 날에 현상됩니다.</span>
+          <span class="meta">사진 및 비디오 · 무료</span>
+        </span>
+        <span class="go">→</span>
+      </a>
+      <a class="card app" href="https://apps.apple.com/kr/app/id6782576170" target="_blank" rel="noopener">
+        <img src="img/apps/reckoner.png" alt="Reckoner 아이콘" width="56" height="56" loading="lazy">
+        <span class="body">
+          <span class="name">Reckoner — 점수 카운터</span>
+          <span class="desc">룰까지 세는 멀티 종목 점수기. 종목마다 다른 규칙을 앱이 대신 셉니다.</span>
+          <span class="meta">스포츠 · 무료</span>
+        </span>
+        <span class="go">→</span>
+      </a>
+      <a class="card app" href="https://apps.apple.com/kr/app/id6778281958" target="_blank" rel="noopener">
+        <img src="img/apps/floorlog.png" alt="FloorLog 아이콘" width="56" height="56" loading="lazy">
+        <span class="body">
+          <span class="name">FloorLog — 층간소음 기록</span>
+          <span class="desc">소음이 언제 얼마나 들렸는지 기록해 민원·조정 신청용 PDF 로 정리합니다.</span>
+          <span class="meta">유틸리티 · 무료</span>
+        </span>
+        <span class="go">→</span>
+      </a>
+      <a class="card app" href="https://apps.apple.com/kr/app/id6741704150" target="_blank" rel="noopener">
+        <img src="img/apps/goalmate.png" alt="골메이트 아이콘" width="56" height="56" loading="lazy">
+        <span class="body">
+          <span class="name">골메이트</span>
+          <span class="desc">목표를 이미 이룬 멘토가 오늘 할 일을 정해주고 주 2회 피드백을 줍니다.</span>
+          <span class="meta">교육 · 무료</span>
+        </span>
+        <span class="go">→</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="sec rise">
+    <h2>만들고 있는 것</h2>
+    <div class="wip">
+      <div class="card">
+        <div class="name">책칸</div>
+        <div class="desc">txt 와 PDF 를 읽는 리더. 디자인을 마쳤고 개발을 준비하고 있습니다.</div>
+      </div>
+      <div class="card">
+        <div class="name">Remere</div>
+        <div class="desc">골메이트의 후속. 멘토 대신 게임 방식으로 목표를 관리하도록 다시 만들고 있습니다.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec rise">
+    <h2>블로그</h2>
+    <div class="rows">
+      <a class="card row" href="https://blog.importants-studio.com" target="_blank" rel="noopener">
+        <span class="dot" style="background:#0e9f6e"></span>
+        <span class="name">혜택줍줍</span>
+        <span class="desc">정부 지원금과 세금 환급을 매일 정리합니다.</span>
+      </a>
+      <a class="card row" href="https://car.importants-studio.com" target="_blank" rel="noopener">
+        <span class="dot" style="background:#38bdf8"></span>
+        <span class="name">차곡차곡</span>
+        <span class="desc">자동차세, 보험료, 검사 기한을 챙기는 곳입니다.</span>
+      </a>
+      <a class="card row" href="https://home.importants-studio.com" target="_blank" rel="noopener">
+        <span class="dot" style="background:#f59e0b"></span>
+        <span class="name">홈로그</span>
+        <span class="desc">결혼과 육아에 드는 돈과 제도를 정리합니다.</span>
+      </a>
+      <a class="card row" href="https://leisurely.importants-studio.com" target="_blank" rel="noopener">
+        <span class="dot" style="background:#a78bfa"></span>
+        <span class="name">느긋하게</span>
+        <span class="desc">연금과 건강보험, 은퇴 뒤의 살림을 정리합니다.</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="sec rise">
+    <h2>도구 · 게임</h2>
+    <div class="grid2">
+      <a class="card tool" href="https://simsim.importants-studio.com" target="_blank" rel="noopener">
+        <span class="head"><span class="dot" style="background:#6c4cf1"></span><span class="name">심심풀이</span></span>
+        <span class="desc">커피 내기와 순서 정하기. 굴림판, 사다리타기, 주사위 대결이 있습니다.</span>
+      </a>
+      <a class="card tool" href="https://simsim.importants-studio.com/yeoncha/" target="_blank" rel="noopener">
+        <span class="head"><span class="dot" style="background:#6c4cf1"></span><span class="name">연차 계산기</span></span>
+        <span class="desc">내 연차를 언제 쓰면 가장 길게 쉴 수 있는지 계산합니다.</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="contact rise" id="contact">
+    <p>앱과 사이트에 대한 의견은 메일로 받습니다.</p>
+    <a href="mailto:contact@importants-studio.com">contact@importants-studio.com</a>
+    <p class="legal"><a href="/privacy/">개인정보처리방침</a></p>
+  </section>
+
+</div>
+
+<script type="importmap">
+{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"}}
+</script>
+<script type="module">
+// 히어로 배경. 점들이 천천히 흐르고 가까운 것끼리 흐린 선으로 이어진다.
+// 눈에 띄면 글을 방해한다. 배경으로만 남도록 느리고 옅게 잡았다.
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const canvas = document.getElementById("gl");
+
+async function boot() {
+  if (reduce) { canvas.style.display = "none"; return; }
+  const THREE = await import("three");
+
+  const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: false });
+  renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+  const scene = new THREE.Scene();
+  const cam = new THREE.PerspectiveCamera(60, 1, 0.1, 100);
+  cam.position.z = 15;
+
+  // 좁은 화면은 점 수를 줄인다. 선 잇기가 O(n²) 이라 여기서 프레임이 갈린다.
+  const narrow = innerWidth < 700;
+  const COUNT = narrow ? 46 : 96;
+  const SPREAD = narrow ? 17 : 26;
+
+  const pos = new Float32Array(COUNT * 3);
+  const vel = new Float32Array(COUNT * 3);
+  for (let i = 0; i < COUNT; i += 1) {
+    pos[i * 3] = (Math.random() - 0.5) * SPREAD;
+    pos[i * 3 + 1] = (Math.random() - 0.5) * SPREAD * 0.62;
+    pos[i * 3 + 2] = (Math.random() - 0.5) * 9;
+    for (let k = 0; k < 3; k += 1) vel[i * 3 + k] = (Math.random() - 0.5) * 0.006;
+  }
+
+  const dotGeo = new THREE.BufferGeometry();
+  dotGeo.setAttribute("position", new THREE.BufferAttribute(pos, 3));
+  scene.add(new THREE.Points(dotGeo, new THREE.PointsMaterial({
+    color: 0x60a5fa, size: 0.09, transparent: true, opacity: 0.6,
+  })));
+
+  const MAX_SEG = COUNT * 7;
+  const linePos = new Float32Array(MAX_SEG * 6);
+  const lineGeo = new THREE.BufferGeometry();
+  lineGeo.setAttribute("position", new THREE.BufferAttribute(linePos, 3));
+  scene.add(new THREE.LineSegments(lineGeo, new THREE.LineBasicMaterial({
+    color: 0x3b82f6, transparent: true, opacity: 0.16,
+  })));
+
+  const LINK = narrow ? 4.2 : 4.8;
+  function relink() {
+    let n = 0;
+    for (let i = 0; i < COUNT && n < MAX_SEG; i += 1) {
+      for (let j = i + 1; j < COUNT && n < MAX_SEG; j += 1) {
+        const dx = pos[i * 3] - pos[j * 3];
+        const dy = pos[i * 3 + 1] - pos[j * 3 + 1];
+        const dz = pos[i * 3 + 2] - pos[j * 3 + 2];
+        if (dx * dx + dy * dy + dz * dz > LINK * LINK) continue;
+        linePos.set([pos[i * 3], pos[i * 3 + 1], pos[i * 3 + 2],
+                     pos[j * 3], pos[j * 3 + 1], pos[j * 3 + 2]], n * 6);
+        n += 1;
+      }
+    }
+    lineGeo.setDrawRange(0, n * 2);
+    lineGeo.attributes.position.needsUpdate = true;
+  }
+
+  let px = 0, py = 0, tx = 0, ty = 0;
+  addEventListener("pointermove", (e) => {
+    tx = (e.clientX / innerWidth - 0.5) * 0.26;
+    ty = (e.clientY / innerHeight - 0.5) * 0.26;
+  }, { passive: true });
+
+  function size() {
+    renderer.setSize(innerWidth, innerHeight, false);
+    cam.aspect = innerWidth / innerHeight;
+    cam.updateProjectionMatrix();
+  }
+  addEventListener("resize", size);
+  size();
+
+  // 히어로가 화면 밖으로 나가면 멈춘다. 안 보이는 걸 그리면 배터리만 쓴다.
+  let visible = true;
+  new IntersectionObserver(([e]) => { visible = e.isIntersecting; })
+    .observe(document.querySelector(".hero"));
+  addEventListener("visibilitychange", () => { visible = !document.hidden; });
+
+  const HALF = SPREAD / 2;
+  function tick() {
+    requestAnimationFrame(tick);
+    if (!visible) return;
+    for (let i = 0; i < COUNT; i += 1) {
+      for (let k = 0; k < 3; k += 1) {
+        const idx = i * 3 + k;
+        pos[idx] += vel[idx];
+        const lim = k === 1 ? HALF * 0.62 : k === 2 ? 4.5 : HALF;
+        if (pos[idx] > lim || pos[idx] < -lim) vel[idx] *= -1;
+      }
+    }
+    dotGeo.attributes.position.needsUpdate = true;
+    relink();
+    px += (tx - px) * 0.022;
+    py += (ty - py) * 0.022;
+    scene.rotation.y = px;
+    scene.rotation.x = py;
+    renderer.render(scene, cam);
+  }
+  tick();
+}
+boot().catch(() => { canvas.style.display = "none"; });
+
+const io = new IntersectionObserver((es) => {
+  es.forEach((e) => {
+    if (e.isIntersecting) { e.target.classList.add("on"); io.unobserve(e.target); }
+  });
+}, { threshold: 0.12 });
+document.querySelectorAll(".rise").forEach((el) => io.observe(el));
+</script>
+</body>
+</html>

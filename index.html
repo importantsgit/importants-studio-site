@@ -4,369 +4,206 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Importants Studio</title>
-<meta name="description" content="기획부터 출시까지 모든 것을 Importants.Studio가 담당합니다.">
+<meta name="description" content="블로그 여섯 개와 게임·도구를 만들고 운영합니다. 오늘 올라온 글부터 보세요.">
 <link rel="canonical" href="https://importants-studio.com/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Importants Studio">
-<meta property="og:description" content="기획부터 출시까지 모든 것을 Importants.Studio가 담당합니다.">
+<meta property="og:description" content="블로그 여섯 개와 게임·도구를 만들고 운영합니다.">
 <meta property="og:url" content="https://importants-studio.com/">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css">
 <style>
-:root{
-  --bg:#070B14; --bg-soft:#0B1120; --navy:#0F172A;
-  --line:#1c2740; --line-hot:#2b4470;
-  --text:#E2E8F0; --dim:#94A3B8;
-  --blue:#3B82F6; --blue-b:#60A5FA;
-  --sans:"Pretendard Variable",Inter,-apple-system,"Apple SD Gothic Neo",system-ui,sans-serif;
-  /* 제목만 SUIT. 획이 고르고 각이 덜 서서 큰 글씨에서 부드럽다. */
-  --title:"SUIT Variable","Pretendard Variable",system-ui,sans-serif;
-  --r:16px;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  margin:0; background:var(--bg); color:var(--text);
-  font-family:var(--sans); -webkit-font-smoothing:antialiased;
-  word-break:keep-all; overflow-x:hidden;
-}
-a{color:inherit;text-decoration:none}
-
-/* 히어로 배경 캔버스. 아래로 갈수록 덮어서 본문 가독성을 지킨다. */
-#gl{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
-#veil{position:fixed;inset:0;z-index:1;pointer-events:none;
-  background:linear-gradient(180deg,transparent 0%,transparent 40%,var(--bg) 86%)}
-
-.wrap{position:relative;z-index:2;max-width:880px;margin:0 auto;padding:0 24px 96px}
-
-.top{display:flex;align-items:center;justify-content:space-between;padding:26px 0}
-.mark{font-family:Inter,var(--sans);font-weight:800;font-size:15px;letter-spacing:.02em}
-.mark i{font-style:normal;color:var(--blue-b)}
-.top a{font-size:13px;color:var(--dim)}
-.top a:hover{color:var(--text)}
-
-.hero{padding:13vh 0 17vh}
-.hero h1{
-  position:relative; margin:0; font-family:var(--title);
-  font-size:clamp(29px,6vw,54px); font-weight:800;
-  line-height:1.34; letter-spacing:-.025em; text-wrap:balance; padding-left:22px;
-}
-/* 각진 실선 대신 위아래로 사라지는 선 */
-.hero h1::before{content:"";position:absolute;left:0;top:.18em;bottom:.18em;width:3px;
-  border-radius:3px;background:linear-gradient(180deg,transparent,var(--blue) 22%,var(--blue-b) 78%,transparent)}
-.hero h1 em{font-style:normal;color:var(--blue-b)}
-.hero p{margin:22px 0 0 22px;font-size:clamp(14px,2.4vw,17px);color:var(--dim);line-height:1.75}
-
-.sec{margin-top:88px}
-.sec>h2{
-  margin:0 0 20px; font-size:13px; font-weight:700; color:var(--dim);
-  letter-spacing:.06em;
-  display:flex; align-items:center; gap:12px;
-}
-.sec>h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--line),transparent)}
-
-.card{
-  position:relative; background:var(--bg-soft); border:1px solid var(--line);
-  border-radius:var(--r);
-  transition:border-color .35s ease,transform .35s ease,background .35s ease;
-}
-.card:hover{border-color:var(--line-hot);background:#0d1526;transform:translateY(-3px)}
-
-.apps{display:grid;gap:12px}
-.app{display:flex;gap:16px;align-items:flex-start;padding:18px}
-.app img{width:56px;height:56px;flex-shrink:0;border-radius:13px}
-.app .body{flex:1;min-width:0;display:block}
-.app .name{display:block;font-size:15px;font-weight:800;letter-spacing:-.01em;text-wrap:pretty}
-.app .desc{display:block;font-size:13.5px;color:var(--dim);line-height:1.65;margin-top:5px;text-wrap:pretty}
-.app .meta{display:block;font-size:11px;color:var(--dim);opacity:.7;margin-top:8px;letter-spacing:.04em}
-.app .go{align-self:center;color:var(--dim);font-size:18px;flex-shrink:0;transition:transform .35s ease,color .35s ease}
-.app:hover .go{transform:translateX(3px);color:var(--blue-b)}
-
-.wip{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}
-.wip .card{padding:18px;background:transparent;border-style:dashed}
-.wip .name{font-size:15px;font-weight:800}
-.wip .name::before{content:"";display:inline-block;width:7px;height:7px;border-radius:99px;
-  background:var(--blue);margin-right:9px;vertical-align:middle;animation:pulse 3.6s ease-in-out infinite}
-.wip .desc{font-size:13.5px;color:var(--dim);line-height:1.65;margin-top:6px;text-wrap:pretty}
-@keyframes pulse{0%,100%{opacity:.95}50%{opacity:.35}}
-
-.rows{display:grid;gap:10px}
-.row{display:flex;align-items:center;gap:14px;padding:16px 18px}
-.dot{width:8px;height:8px;flex-shrink:0;border-radius:99px;opacity:.9}
-.row .name{font-size:15px;font-weight:800;flex-shrink:0}
-.row .desc{font-size:13px;color:var(--dim);flex:1;min-width:0;line-height:1.55}
-
-.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}
-.tool{display:flex;flex-direction:column;gap:8px;padding:18px}
-.tool .head{display:flex;align-items:center;gap:10px}
-.tool .name{font-size:15px;font-weight:800}
-.tool .desc{font-size:13.5px;color:var(--dim);line-height:1.65;text-wrap:pretty}
-
-.contact{margin-top:88px;padding-top:26px;border-top:1px solid var(--line)}
-.contact p{margin:0;font-size:13.5px;color:var(--dim);line-height:1.75}
-.contact a{display:inline-block;margin-top:10px;font-size:15px;font-weight:700;color:var(--blue-b);
-  border-bottom:1px solid transparent;transition:border-color .18s}
-.contact a:hover{border-color:var(--blue-b)}
-.contact .legal{margin-top:22px}
-.contact .legal a{margin-top:0;font-size:13px;font-weight:400;color:var(--dim)}
-.contact .legal a:hover{color:var(--text);border-color:transparent}
-
-.rise{opacity:0;transform:translateY(14px);
-  transition:opacity .8s cubic-bezier(.22,.61,.36,1),transform .8s cubic-bezier(.22,.61,.36,1)}
-.rise.on{opacity:1;transform:none}
-
-@media (max-width:560px){
-  .wrap{padding:0 18px 72px}
-  .hero{padding:11vh 0 13vh}
-  .row{flex-wrap:wrap;gap:8px 12px}
-  .row .desc{flex-basis:100%}
-}
-@media (prefers-reduced-motion:reduce){
-  .rise{opacity:1;transform:none;transition:none}
-  .wip .name::before{animation:none}
-  html{scroll-behavior:auto}
-}
+:root{--bg:#faf9f6;--card:#ffffff;--ink:#1a1a17;--mut:#6f6d66;--line:#e6e3da;--chip:#f0eee7}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--ink);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{padding:0 20px 72px}
+.col{max-width:720px;margin:0 auto;display:flex;flex-direction:column}
+header{display:flex;align-items:center;justify-content:space-between;padding:20px 0;border-bottom:1px solid var(--ink)}
+.logo{text-decoration:none;font-size:17px;font-weight:800;letter-spacing:-0.01em;color:var(--ink)}
+.logo:hover{text-decoration:none}
+.logo span{color:var(--mut)}
+.nav{display:inline-block;border:1px solid var(--ink);color:var(--ink);font-size:13px;font-weight:600;padding:7px 14px;border-radius:99px;white-space:nowrap;text-decoration:none}
+.nav:hover{background:var(--ink);color:var(--bg);text-decoration:none}
+.hero{padding:36px 0 40px;border-bottom:1px solid var(--line)}
+.today{font-size:12px;color:var(--mut);letter-spacing:0.12em;margin-bottom:12px}
+h1{font-size:clamp(24px,5vw,34px);font-weight:800;line-height:1.4;margin:0;letter-spacing:-0.02em;word-break:keep-all;text-wrap:pretty}
+.sec{padding:32px 0;border-bottom:1px solid var(--line)}
+.sechead{display:flex;align-items:baseline;gap:10px;margin-bottom:18px;text-decoration:none}
+.sechead:hover{text-decoration:none}
+.dot{width:12px;height:12px;flex-shrink:0;align-self:center}
+.secname{font-size:19px;font-weight:800;letter-spacing:-0.01em;white-space:nowrap}
+.sectag{font-size:13px;color:var(--mut);flex:1;min-width:0;word-break:keep-all}
+.secmore{font-size:13px;font-weight:700;white-space:nowrap}
+.posts{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:0 32px}
+.post{display:flex;flex-direction:column;gap:5px;padding:14px 0;border-top:1px solid var(--line);text-decoration:none}
+.post:hover{text-decoration:none;opacity:.75}
+.ptitle{font-size:15px;font-weight:700;line-height:1.5;word-break:keep-all;text-wrap:pretty}
+.psum{font-size:13px;color:var(--mut);line-height:1.6;word-break:keep-all;text-wrap:pretty}
+.pdate{font-size:12px;color:var(--mut);opacity:.7;font-variant-numeric:tabular-nums}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.tile{display:flex;flex-direction:column;gap:4px;padding:14px 12px;background:var(--card);border:1px solid var(--line);border-radius:10px;text-decoration:none;min-width:0}
+.tile:hover{text-decoration:none;border-color:var(--ink)}
+.tkind{font-size:11px;color:var(--mut);letter-spacing:0.06em}
+.tname{font-size:14px;font-weight:700;word-break:keep-all}
+footer{padding:32px 0 0;display:flex;flex-direction:column;gap:20px}
+.igs{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.ig{display:flex;flex-direction:column;gap:2px;text-decoration:none}
+.igname{font-size:13px;font-weight:700}
+.ighandle{font-size:12px;color:var(--mut)}
+.fmeta{display:flex;gap:16px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:16px;font-size:12px;color:var(--mut)}
+.fmeta a{color:var(--mut)}
 </style>
 </head>
 <body>
+<div class="wrap"><div class="col">
 
-<canvas id="gl"></canvas>
-<div id="veil"></div>
-
-<div class="wrap">
-
-  <header class="top">
-    <span class="mark">Importants<i>.</i>Studio</span>
-    <a href="#contact">연락처</a>
+  <header>
+    <a class="logo" href="/">Importants<span>.</span>Studio</a>
+    <a class="nav" href="/about/">About</a>
   </header>
 
-  <section class="hero">
-    <h1>기획부터 출시까지<br><em>모든 것을 Importants.Studio가</em><br>담당합니다.</h1>
-    <p>앱, 블로그, 웹 도구를 혼자 만들고 운영합니다.</p>
-  </section>
+  <div class="hero">
+    <div class="today" id="today"></div>
+    <h1>오늘의 최신 글부터 만나보세요.</h1>
+  </div>
 
-  <section class="sec rise">
-    <h2>앱</h2>
-    <div class="apps">
-      <a class="card app" href="https://apps.apple.com/kr/app/id6779294228" target="_blank" rel="noopener">
-        <img src="img/apps/janang.png" alt="잔상 아이콘" width="56" height="56" loading="lazy">
-        <span class="body">
-          <span class="name">잔상 — 필름 다이어리</span>
-          <span class="desc">기다려야 보이는 사진 일기. 찍는 순간 사진이 잠기고 정한 날에 현상됩니다.</span>
-          <span class="meta">사진 및 비디오 · 무료</span>
-        </span>
-        <span class="go">→</span>
-      </a>
-      <a class="card app" href="https://apps.apple.com/kr/app/id6782576170" target="_blank" rel="noopener">
-        <img src="img/apps/reckoner.png" alt="Reckoner 아이콘" width="56" height="56" loading="lazy">
-        <span class="body">
-          <span class="name">Reckoner — 점수 카운터</span>
-          <span class="desc">룰까지 세는 멀티 종목 점수기. 종목마다 다른 규칙을 앱이 대신 셉니다.</span>
-          <span class="meta">스포츠 · 무료</span>
-        </span>
-        <span class="go">→</span>
-      </a>
-      <a class="card app" href="https://apps.apple.com/kr/app/id6778281958" target="_blank" rel="noopener">
-        <img src="img/apps/floorlog.png" alt="FloorLog 아이콘" width="56" height="56" loading="lazy">
-        <span class="body">
-          <span class="name">FloorLog — 층간소음 기록</span>
-          <span class="desc">소음이 언제 얼마나 들렸는지 기록해 민원·조정 신청용 PDF 로 정리합니다.</span>
-          <span class="meta">유틸리티 · 무료</span>
-        </span>
-        <span class="go">→</span>
-      </a>
-      <a class="card app" href="https://apps.apple.com/kr/app/id6741704150" target="_blank" rel="noopener">
-        <img src="img/apps/goalmate.png" alt="골메이트 아이콘" width="56" height="56" loading="lazy">
-        <span class="body">
-          <span class="name">골메이트</span>
-          <span class="desc">목표를 이미 이룬 멘토가 오늘 할 일을 정해주고 주 2회 피드백을 줍니다.</span>
-          <span class="meta">교육 · 무료</span>
-        </span>
-        <span class="go">→</span>
-      </a>
+  <div id="blogs"></div>
+  <section class="sec" id="playsec"></section>
+
+  <footer>
+    <div class="igs" id="igs"></div>
+    <div class="fmeta">
+      <a id="mail" href="mailto:contact@importants-studio.com">contact@importants-studio.com</a>
+      <a href="/privacy/" style="white-space:nowrap">개인정보처리방침</a>
     </div>
-  </section>
+  </footer>
 
-  <section class="sec rise">
-    <h2>만들고 있는 것</h2>
-    <div class="wip">
-      <div class="card">
-        <div class="name">책칸</div>
-        <div class="desc">txt 와 PDF 를 읽는 리더. 디자인을 마쳤고 개발을 준비하고 있습니다.</div>
-      </div>
-      <div class="card">
-        <div class="name">Remere</div>
-        <div class="desc">골메이트의 후속. 멘토 대신 게임 방식으로 목표를 관리하도록 다시 만들고 있습니다.</div>
-      </div>
-    </div>
-  </section>
+</div></div>
 
-  <section class="sec rise">
-    <h2>블로그</h2>
-    <div class="rows">
-      <a class="card row" href="https://blog.importants-studio.com" target="_blank" rel="noopener">
-        <span class="dot" style="background:#0e9f6e"></span>
-        <span class="name">혜택줍줍</span>
-        <span class="desc">정부 지원금과 세금 환급을 매일 정리합니다.</span>
-      </a>
-      <a class="card row" href="https://car.importants-studio.com" target="_blank" rel="noopener">
-        <span class="dot" style="background:#38bdf8"></span>
-        <span class="name">차곡차곡</span>
-        <span class="desc">자동차세, 보험료, 검사 기한을 챙기는 곳입니다.</span>
-      </a>
-      <a class="card row" href="https://home.importants-studio.com" target="_blank" rel="noopener">
-        <span class="dot" style="background:#f59e0b"></span>
-        <span class="name">홈로그</span>
-        <span class="desc">결혼과 육아에 드는 돈과 제도를 정리합니다.</span>
-      </a>
-      <a class="card row" href="https://leisurely.importants-studio.com" target="_blank" rel="noopener">
-        <span class="dot" style="background:#a78bfa"></span>
-        <span class="name">느긋하게</span>
-        <span class="desc">연금과 건강보험, 은퇴 뒤의 살림을 정리합니다.</span>
-      </a>
-    </div>
-  </section>
+<script>
+(function () {
+  "use strict";
 
-  <section class="sec rise">
-    <h2>도구 · 게임</h2>
-    <div class="grid2">
-      <a class="card tool" href="https://simsim.importants-studio.com" target="_blank" rel="noopener">
-        <span class="head"><span class="dot" style="background:#6c4cf1"></span><span class="name">심심풀이</span></span>
-        <span class="desc">커피 내기와 순서 정하기. 굴림판, 사다리타기, 주사위 대결이 있습니다.</span>
-      </a>
-      <a class="card tool" href="https://simsim.importants-studio.com/yeoncha/" target="_blank" rel="noopener">
-        <span class="head"><span class="dot" style="background:#6c4cf1"></span><span class="name">연차 계산기</span></span>
-        <span class="desc">내 연차를 언제 쓰면 가장 길게 쉴 수 있는지 계산합니다.</span>
-      </a>
-    </div>
-  </section>
+  var PLAY_COLOR = "#6c4cf1";
 
-  <section class="contact rise" id="contact">
-    <p>앱과 사이트에 대한 의견은 메일로 받습니다.</p>
-    <a href="mailto:contact@importants-studio.com">contact@importants-studio.com</a>
-    <p class="legal"><a href="/privacy/">개인정보처리방침</a></p>
-  </section>
-
-</div>
-
-<script type="importmap">
-{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"}}
-</script>
-<script type="module">
-// 히어로 배경. 점들이 천천히 흐르고 가까운 것끼리 흐린 선으로 이어진다.
-// 눈에 띄면 글을 방해한다. 배경으로만 남도록 느리고 옅게 잡았다.
-const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
-const canvas = document.getElementById("gl");
-
-async function boot() {
-  if (reduce) { canvas.style.display = "none"; return; }
-  const THREE = await import("three");
-
-  const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: false });
-  renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
-  const scene = new THREE.Scene();
-  const cam = new THREE.PerspectiveCamera(60, 1, 0.1, 100);
-  cam.position.z = 15;
-
-  // 좁은 화면은 점 수를 줄인다. 선 잇기가 O(n²) 이라 여기서 프레임이 갈린다.
-  const narrow = innerWidth < 700;
-  const COUNT = narrow ? 46 : 96;
-  const SPREAD = narrow ? 17 : 26;
-
-  const pos = new Float32Array(COUNT * 3);
-  const vel = new Float32Array(COUNT * 3);
-  for (let i = 0; i < COUNT; i += 1) {
-    pos[i * 3] = (Math.random() - 0.5) * SPREAD;
-    pos[i * 3 + 1] = (Math.random() - 0.5) * SPREAD * 0.62;
-    pos[i * 3 + 2] = (Math.random() - 0.5) * 9;
-    for (let k = 0; k < 3; k += 1) vel[i * 3 + k] = (Math.random() - 0.5) * 0.006;
-  }
-
-  const dotGeo = new THREE.BufferGeometry();
-  dotGeo.setAttribute("position", new THREE.BufferAttribute(pos, 3));
-  scene.add(new THREE.Points(dotGeo, new THREE.PointsMaterial({
-    color: 0x60a5fa, size: 0.09, transparent: true, opacity: 0.6,
-  })));
-
-  const MAX_SEG = COUNT * 7;
-  const linePos = new Float32Array(MAX_SEG * 6);
-  const lineGeo = new THREE.BufferGeometry();
-  lineGeo.setAttribute("position", new THREE.BufferAttribute(linePos, 3));
-  scene.add(new THREE.LineSegments(lineGeo, new THREE.LineBasicMaterial({
-    color: 0x3b82f6, transparent: true, opacity: 0.16,
-  })));
-
-  const LINK = narrow ? 4.2 : 4.8;
-  function relink() {
-    let n = 0;
-    for (let i = 0; i < COUNT && n < MAX_SEG; i += 1) {
-      for (let j = i + 1; j < COUNT && n < MAX_SEG; j += 1) {
-        const dx = pos[i * 3] - pos[j * 3];
-        const dy = pos[i * 3 + 1] - pos[j * 3 + 1];
-        const dz = pos[i * 3 + 2] - pos[j * 3 + 2];
-        if (dx * dx + dy * dy + dz * dz > LINK * LINK) continue;
-        linePos.set([pos[i * 3], pos[i * 3 + 1], pos[i * 3 + 2],
-                     pos[j * 3], pos[j * 3 + 1], pos[j * 3 + 2]], n * 6);
-        n += 1;
-      }
+  // feed.json 을 못 읽어도 어디로 가는지는 보여야 한다. 글 목록만 비운다.
+  // 가짜 제목을 넣지 않는다. 안 읽힌 것보다 틀린 게 나쁘다.
+  var FALLBACK = {
+    blogs: [
+      {name:"혜택줍줍",   color:"#0e9f6e", url:"https://blog.importants-studio.com",      tagline:"정부 지원금과 세금 환급을 매일 정리합니다",   posts:[]},
+      {name:"차곡차곡",   color:"#0d8a8a", url:"https://car.importants-studio.com",       tagline:"자동차세, 보험료, 검사 기한을 챙깁니다",      posts:[]},
+      {name:"홈로그",     color:"#d9527a", url:"https://home.importants-studio.com",      tagline:"결혼과 육아에 드는 돈과 제도를 정리합니다",   posts:[]},
+      {name:"느긋하게",   color:"#2c4a7c", url:"https://leisurely.importants-studio.com", tagline:"연금과 건강보험, 은퇴 뒤의 살림을 정리합니다", posts:[]},
+      {name:"돈의문법",   color:"#2f6fdb", url:"https://money.importants-studio.com",     tagline:"뉴스의 숫자가 무슨 뜻인지 풀어 씁니다",      posts:[]},
+      {name:"여행의밑줄", color:"#e07b39", url:"https://travel.importants-studio.com",    tagline:"떠나기 전에 확인해야 할 것을 짚습니다",       posts:[]}
+    ],
+    play: {name:"심심풀이", tagline:"심심할 때 즐겨보세요", url:"https://simsim.importants-studio.com", items:[]},
+    links: {
+      instagram: [
+        {name:"혜택줍줍", handle:"jupjup.money",     url:"https://www.instagram.com/jupjup.money/"},
+        {name:"차곡차곡", handle:"chagok.car",       url:"https://www.instagram.com/chagok.car/"},
+        {name:"홈로그",   handle:"homelog.family",   url:"https://www.instagram.com/homelog.family/"},
+        {name:"느긋하게", handle:"leisurely.retire", url:"https://www.instagram.com/leisurely.retire/"}
+      ],
+      email: "contact@importants-studio.com"
     }
-    lineGeo.setDrawRange(0, n * 2);
-    lineGeo.attributes.position.needsUpdate = true;
+  };
+
+  function el(tag, cls, text) {
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = text;
+    return n;
   }
 
-  let px = 0, py = 0, tx = 0, ty = 0;
-  addEventListener("pointermove", (e) => {
-    tx = (e.clientX / innerWidth - 0.5) * 0.26;
-    ty = (e.clientY / innerHeight - 0.5) * 0.26;
-  }, { passive: true });
-
-  function size() {
-    renderer.setSize(innerWidth, innerHeight, false);
-    cam.aspect = innerWidth / innerHeight;
-    cam.updateProjectionMatrix();
+  function shortDate(v) {
+    var d = new Date(v);
+    if (isNaN(d)) return v || "";
+    return (d.getMonth() + 1) + ". " + d.getDate() + ".";
   }
-  addEventListener("resize", size);
-  size();
 
-  // 히어로가 화면 밖으로 나가면 멈춘다. 안 보이는 걸 그리면 배터리만 쓴다.
-  let visible = true;
-  new IntersectionObserver(([e]) => { visible = e.isIntersecting; })
-    .observe(document.querySelector(".hero"));
-  addEventListener("visibilitychange", () => { visible = !document.hidden; });
+  function sectionHead(name, tagline, url, color) {
+    var a = el("a", "sechead");
+    a.href = url;
+    var dot = el("span", "dot");
+    dot.style.background = color;
+    var more = el("span", "secmore", "전체 →");
+    more.style.color = color;
+    a.appendChild(dot);
+    a.appendChild(el("span", "secname", name));
+    a.appendChild(el("span", "sectag", tagline || ""));
+    a.appendChild(more);
+    return a;
+  }
 
-  const HALF = SPREAD / 2;
-  function tick() {
-    requestAnimationFrame(tick);
-    if (!visible) return;
-    for (let i = 0; i < COUNT; i += 1) {
-      for (let k = 0; k < 3; k += 1) {
-        const idx = i * 3 + k;
-        pos[idx] += vel[idx];
-        const lim = k === 1 ? HALF * 0.62 : k === 2 ? 4.5 : HALF;
-        if (pos[idx] > lim || pos[idx] < -lim) vel[idx] *= -1;
-      }
+  function renderBlogs(blogs) {
+    var host = document.getElementById("blogs");
+    host.textContent = "";
+    blogs.forEach(function (b) {
+      var sec = el("section", "sec");
+      sec.appendChild(sectionHead(b.name, b.tagline, b.url, b.color));
+      var grid = el("div", "posts");
+      (b.posts || []).slice(0, 5).forEach(function (p) {
+        var a = el("a", "post");
+        a.href = p.url;
+        a.appendChild(el("span", "ptitle", p.title));
+        if (p.summary) a.appendChild(el("span", "psum", p.summary));
+        a.appendChild(el("span", "pdate", shortDate(p.date)));
+        grid.appendChild(a);
+      });
+      sec.appendChild(grid);
+      host.appendChild(sec);
+    });
+  }
+
+  function renderPlay(play) {
+    var sec = document.getElementById("playsec");
+    sec.textContent = "";
+    sec.appendChild(sectionHead(play.name, play.tagline, play.url, PLAY_COLOR));
+    var grid = el("div", "tiles");
+    (play.items || []).forEach(function (it) {
+      var a = el("a", "tile");
+      a.href = it.url;
+      a.appendChild(el("span", "tkind", it.kind));
+      a.appendChild(el("span", "tname", it.name));
+      grid.appendChild(a);
+    });
+    sec.appendChild(grid);
+  }
+
+  function renderLinks(links) {
+    var host = document.getElementById("igs");
+    host.textContent = "";
+    (links.instagram || []).forEach(function (ig) {
+      var a = el("a", "ig");
+      a.href = ig.url;
+      a.appendChild(el("span", "igname", ig.name));
+      a.appendChild(el("span", "ighandle", ig.handle));
+      host.appendChild(a);
+    });
+    if (links.email) {
+      var m = document.getElementById("mail");
+      m.href = "mailto:" + links.email;
+      m.textContent = links.email;
     }
-    dotGeo.attributes.position.needsUpdate = true;
-    relink();
-    px += (tx - px) * 0.022;
-    py += (ty - py) * 0.022;
-    scene.rotation.y = px;
-    scene.rotation.x = py;
-    renderer.render(scene, cam);
   }
-  tick();
-}
-boot().catch(() => { canvas.style.display = "none"; });
 
-const io = new IntersectionObserver((es) => {
-  es.forEach((e) => {
-    if (e.isIntersecting) { e.target.classList.add("on"); io.unobserve(e.target); }
-  });
-}, { threshold: 0.12 });
-document.querySelectorAll(".rise").forEach((el) => io.observe(el));
+  function render(data) {
+    renderBlogs(data.blogs || FALLBACK.blogs);
+    renderPlay(data.play || FALLBACK.play);
+    renderLinks(data.links || FALLBACK.links);
+  }
+
+  var d = new Date();
+  document.getElementById("today").textContent =
+    d.getFullYear() + ". " + (d.getMonth() + 1) + ". " + d.getDate() + ".";
+
+  render(FALLBACK);
+
+  fetch("/feed.json", {cache: "no-cache"})
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (j) { if (j) render(j); })
+    .catch(function () {});
+})();
 </script>
 </body>
 </html>
