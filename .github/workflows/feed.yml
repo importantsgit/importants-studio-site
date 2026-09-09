@@ -1,0 +1,39 @@
+name: feed
+
+# 매거진 홈이 읽을 feed.json 을 만든다. 공개 RSS 만 읽으므로 시크릿이 필요 없다.
+# 노트북과 무관하게 GitHub 쪽에서 돈다.
+on:
+  schedule:
+    - cron: "10 3,12 * * *"   # KST 12:10, 21:10 (글이 올라온 뒤)
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["scripts/build_feed.py", ".github/workflows/feed.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: feed
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 scripts/build_feed.py feed.json
+      - name: 바뀐 게 있을 때만 커밋
+        run: |
+          if [ -n "$(git status --porcelain feed.json)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add feed.json
+            git commit -m "feed.json 갱신"
+            git push
+          else
+            echo "변경 없음"
+          fi
