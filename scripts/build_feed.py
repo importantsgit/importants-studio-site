@@ -180,6 +180,28 @@ def render_html(data, template="index.template.html", out="index.html"):
     return len(body)
 
 
+def render_sitemap(out="sitemap.xml"):
+    """홈이 하루 두 번 바뀌므로 lastmod 도 같이 갱신한다.
+
+    손으로 쓴 파일은 9월 3일에 멈춰 있었고 /about/ 이 빠져 있었다. 페이지가 셋뿐이라
+    Hugo 를 들이는 대신 여기서 만든다."""
+    today = datetime.now(KST).strftime("%Y-%m-%d")
+    pages = [
+        ("https://importants-studio.com/",         today,        "daily",  "1.0"),
+        ("https://importants-studio.com/about/",   "2026-09-09", "monthly", "0.6"),
+        ("https://importants-studio.com/privacy/", "2026-09-07", "yearly",  "0.3"),
+    ]
+    body = "".join(
+        "  <url>\n    <loc>%s</loc>\n    <lastmod>%s</lastmod>\n"
+        "    <changefreq>%s</changefreq>\n    <priority>%s</priority>\n  </url>\n"
+        % p for p in pages)
+    io.open(out, "w", encoding="utf-8").write(
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        + body + "</urlset>\n")
+    return len(pages)
+
+
 def main():
     blogs, warn = [], []
     for key, name, color, host, tagline in BLOGS:
@@ -216,10 +238,12 @@ def main():
         json.dump(data, f, ensure_ascii=False, indent=2)
 
     chars = render_html(data)
+    pages = render_sitemap()
 
     total = sum(len(b["posts"]) for b in blogs)
     print("%s · 블로그 %d개 글 %d개 · 놀거리 %d개 · index.html 본문 %d자"
           % (out, len(blogs), total, len(PLAY), chars))
+    print("  sitemap.xml %d개" % pages)
     for w in warn:
         print("  ⚠ %s" % w)
 
