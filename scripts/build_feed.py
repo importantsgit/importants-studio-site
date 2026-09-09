@@ -24,7 +24,8 @@ TIMEOUT = 20
 
 BLOGS = [
     ("hyetaek",   "혜택줍줍",   "#0e9f6e", "blog",      "정부 지원금과 세금 환급을 매일 정리합니다"),
-    ("chagok",    "차곡차곡",   "#0e9f6e", "car",       "자동차세, 보험료, 검사 기한을 챙기는 곳입니다"),
+    # 혜택줍줍과 같은 초록을 쓰면 매거진 홈에서 두 블로그가 구분되지 않는다. 청록으로 뗀다.
+    ("chagok",    "차곡차곡",   "#0d8a8a", "car",       "자동차세, 보험료, 검사 기한을 챙깁니다"),
     ("homelog",   "홈로그",     "#d9527a", "home",      "결혼과 육아에 드는 돈과 제도를 정리합니다"),
     ("leisurely", "느긋하게",   "#2c4a7c", "leisurely", "연금과 건강보험, 은퇴 뒤의 살림을 정리합니다"),
     ("money",     "돈의문법",   "#2f6fdb", "money",     "뉴스의 숫자가 무슨 뜻인지 풀어 씁니다"),
@@ -126,7 +127,7 @@ def main():
         "play": {
             "url": SIMSIM,
             "name": "심심풀이",
-            "tagline": "심심할 때 눌러보는 것들",
+            "tagline": "심심할 때 즐겨보세요",
             "items": [{"kind": k, "name": n, "url": SIMSIM + u} for k, n, u in PLAY],
         },
         "profile": PROFILE,
