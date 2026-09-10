@@ -4,8 +4,14 @@ name: feed
 # 노트북과 무관하게 GitHub 쪽에서 돈다.
 on:
   schedule:
-    - cron: "10 3,12 * * *"   # KST 12:10, 21:10 (글이 올라온 뒤)
+    # GitHub 의 예약 실행은 무료 러너에서 자주 밀린다. 하루 두 번으로 잡았더니
+    # 4시간 늦게 오거나 아예 건너뛰어서 매거진 홈이 하루 묵었다. 촘촘히 걸어
+    # 그중 몇 번이라도 제때 돌게 한다. 빌드가 30초라 부담이 없다.
+    - cron: "5 */2 * * *"
   workflow_dispatch:
+  # 블로그 저장소가 글을 머지한 뒤 이 이벤트로 깨울 수 있다.
+  repository_dispatch:
+    types: [blog-updated]
   push:
     branches: [main]
     paths: ["scripts/build_feed.py", "index.template.html", ".github/workflows/feed.yml"]
