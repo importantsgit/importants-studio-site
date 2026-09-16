@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-15T22:46:03+00:00",
+  "generated": "2026-09-16T04:01:51+00:00",
   "blogs": [
     {
       "key": "hyetaek",
@@ -8,6 +8,18 @@
       "tagline": "정부 지원금과 세금 환급을 매일 정리합니다",
       "url": "https://blog.importants-studio.com",
       "posts": [
+        {
+          "title": "대중교통 신용카드 공제 40%, 내년 이용분부터 15%로 줄이는 개편안이 나왔습니다",
+          "url": "https://blog.importants-studio.com/posts/transit-card-tax-deduction-cut-2027/",
+          "summary": "출퇴근길 버스·지하철비를 신용카드로 결제하면 지금은 40%를 소득공제받습니다. 그런데 2026년 세제개편안이 이 우대공제율을 없애고 결제수단별 일반 공제율(신용카드 15%, 체크카드·현금영수증 30%)로 낮추는 안을 담아 국회에 제출됐습니다. 지금 당장 달라지는 건 없지만, 내년 이용분부터 적용될 이 개편안의 내용과 확정",
+          "date": "Wed, 16 Sep 2026 09:00:00 +0900"
+        },
+        {
+          "title": "월세 낸 돈, 연말정산에서 최대 170만원 돌려받습니다",
+          "url": "https://blog.importants-studio.com/posts/monthly-rent-tax-credit-2026/",
+          "summary": "총급여 8,000만원 이하 무주택 세대주라면 1년 동안 낸 월세의 15~17%를 세액공제로 돌려받습니다. 한도는 연 1,000만원이라 최대 170만원입니다. 대상 주택·서류 조건과 작년분을 놓쳤을 때 경정청구로 받는 방법까지 정리했습니다.",
+          "date": "Wed, 16 Sep 2026 09:00:00 +0900"
+        },
         {
           "title": "9월 재산세 고지서, 250만원 넘으면 나눠 낼 수 있습니다",
           "url": "https://blog.importants-studio.com/posts/property-tax-september-installment-2026/",
@@ -25,18 +37,6 @@
           "url": "https://blog.importants-studio.com/posts/credit-card-annual-fee-refund-2026/",
           "summary": "카드를 해지하면 이미 낸 연회비 중 남은 기간에 해당하는 금액을 일할계산해서 돌려받을 수 있습니다. 여신전문금융업법 시행령에 근거한 권리인데, 카드사가 먼저 알려주지 않고 회원이 해지하며 요청해야만 나갑니다. 계산 방법과 공제되는 항목, 반환 기한까지 정리했습니다.",
           "date": "Mon, 14 Sep 2026 09:00:00 +0900"
-        },
-        {
-          "title": "오늘의 생활경제 브리핑: 추석 민생대책·근로장려금 마감 (9월 14일)",
-          "url": "https://blog.importants-studio.com/posts/econ-briefing-20260914/",
-          "summary": "추석 연휴를 앞두고 온누리상품권 확대와 고속도로 통행료 면제가 발표됐습니다. 근로장려금 반기신청 마감 하루 전, 배우자 유산·사산휴가 신설 소식까지 정리했습니다.",
-          "date": "Mon, 14 Sep 2026 09:00:00 +0900"
-        },
-        {
-          "title": "오늘의 생활경제 브리핑: 근로장려금 확대·건강보험료 동결 (9월 13일)",
-          "url": "https://blog.importants-studio.com/posts/econ-briefing-20260913/",
-          "summary": "근로장려금 반기신청이 이틀 앞으로 다가온 가운데 세제개편안엔 확대안이 담겼습니다. 9월 18일 배우자 출산전후휴가·유산사산휴가 신설, 2027년 건강보험료율 동결과 고용보험료율 인상까지 정리했습니다.",
-          "date": "Sun, 13 Sep 2026 09:00:00 +0900"
         }
       ]
     },
@@ -47,6 +47,18 @@
       "tagline": "자동차세, 보험료, 검사 기한을 챙깁니다",
       "url": "https://car.importants-studio.com",
       "posts": [
+        {
+          "title": "미션오일 교환주기, 매뉴얼엔 '무교환'인데 정비소는 왜 갈자고 할까요",
+          "url": "https://car.importants-studio.com/posts/transmission-oil-change-interval-myth/",
+          "summary": "자동변속기 오일이 &#39;무점검·무교환&#39;이라는 매뉴얼과 정비소의 8만~10만km 권장 사이, 실제로는 뭐가 맞는지 현대자동차그룹 공식 자료와 정비 현장 기준으로 확인합니다.",
+          "date": "Wed, 16 Sep 2026 09:00:00 +0900"
+        },
+        {
+          "title": "전기차 보조금 추가 접수, 9월 17일부터 서울시가 다시 엽니다",
+          "url": "https://car.importants-studio.com/posts/ev-subsidy-reopens-sep-2026/",
+          "summary": "서울시가 추경예산을 확보해 전기차 구매보조금을 추가 공고했습니다. 승용 3,768대, 화물 900대, 승합 102대를 9월 17일부터 접수받습니다. 접수 기간과 우선순위 대상, 신청 전 확인할 점을 정리했습니다.",
+          "date": "Wed, 16 Sep 2026 09:00:00 +0900"
+        },
         {
           "title": "긴급차량 길 터주기 의무, 소방차는 과태료 최대 200만원입니다",
           "url": "https://car.importants-studio.com/posts/emergency-vehicle-yield-fine/",
@@ -64,18 +76,6 @@
           "url": "https://car.importants-studio.com/posts/old-diesel-car-early-scrap-subsidy/",
           "summary": "배출가스 5등급 경유차 조기폐차 지원금이 2026년을 끝으로 종료됩니다. 3.5톤 미만 기준 5등급 최대 300만 원, 4등급 최대 800만 원 지원 조건과 신청 방법을 정리했습니다.",
           "date": "Mon, 14 Sep 2026 09:00:00 +0900"
-        },
-        {
-          "title": "우회전 일시정지 기준, 신호위반과 보행자보호의무위반은 벌점이 다릅니다",
-          "url": "https://car.importants-studio.com/posts/right-turn-stop-violation-fine/",
-          "summary": "교차로에서 우회전할 때 언제 멈춰야 하는지 헷갈리셨다면 이 글을 보세요. 신호위반과 보행자보호의무위반은 범칙금은 같아도 벌점이 다르고, 어린이보호구역은 시간대에 따라 두 배로 오릅니다.",
-          "date": "Mon, 14 Sep 2026 09:00:00 +0900"
-        },
-        {
-          "title": "음주운전 방지장치 부착 조건부 운전면허, 10월부터 첫 대상자가 나옵니다",
-          "url": "https://car.importants-studio.com/posts/dui-interlock-conditional-license/",
-          "summary": "최근 5년 내 2회 이상 적발돼 면허가 취소된 운전자는 10월부터 방지장치를 단 차량만 몰 수 있는 조건부 면허를 받습니다. 대상 기준, 부착 기간, 미부착 시 처벌, 예상 비용을 정리했습니다.",
-          "date": "Sun, 13 Sep 2026 09:00:00 +0900"
         }
       ]
     },
@@ -86,6 +86,18 @@
       "tagline": "결혼과 육아에 드는 돈과 제도를 정리합니다",
       "url": "https://home.importants-studio.com",
       "posts": [
+        {
+          "title": "아기띠도 유모차·카시트처럼 인증번호로 조회할 수 있습니다",
+          "url": "https://home.importants-studio.com/posts/baby-carrier-safety-kc-certification-2026/",
+          "summary": "유아용 캐리어(아기띠·힙시트)는 어린이제품 안전 특별법상 안전확인대상 어린이제품입니다. 제품안전정보센터에서 인증번호를 조회하는 방법과 해외직구·중고 아기띠를 고를 때 봐야 할 점을 정리했습니다.",
+          "date": "Wed, 16 Sep 2026 09:00:00 +0900"
+        },
+        {
+          "title": "임신 사전건강관리 지원사업, 여성 13만원·남성 5만원 검사비 받는 법 (2026)",
+          "url": "https://home.importants-studio.com/posts/preconception-checkup-support-2026/",
+          "summary": "임신 사전건강관리 지원사업은 결혼 여부와 상관없이 20~49세 남녀에게 여성 최대 13만원, 남성 최대 5만원의 가임력 검사비를 지원합니다. 대상, 검사 항목, 사전신청이 필수인 이유까지 정리했습니다.",
+          "date": "Wed, 16 Sep 2026 09:00:00 +0900"
+        },
         {
           "title": "어린이집 입소 대기 신청, 3월에 보내려면 지금부터 순번 관리해야 합니다",
           "url": "https://home.importants-studio.com/posts/daycare-waitlist-application-guide/",
@@ -103,18 +115,6 @@
           "url": "https://home.importants-studio.com/posts/child-basic-allowance-2027-reform/",
           "summary": "첫만남이용권·부모급여·아동수당을 아이맞이지원금·아동기본수당으로 합치는 2027년 예산안이 나왔습니다. 지급액과 시행 시기, 아직 확정되지 않은 부분을 정리했습니다.",
           "date": "Mon, 14 Sep 2026 09:00:00 +0900"
-        },
-        {
-          "title": "혼인·출산 증여재산공제로 1억원까지 세금 없이 받는 법 (2026)",
-          "url": "https://home.importants-studio.com/posts/marriage-gift-tax-deduction-2026/",
-          "summary": "부모님께 결혼자금을 받을 때 기본 5000만원 외에 추가로 1억원까지 증여세 없이 받을 수 있는 혼인·출산 증여재산공제를 정리했습니다. 혼인세액공제와 헷갈리기 쉬운 지점, 대상 기간, 통합 한도 규칙까지 담았습니다.",
-          "date": "Mon, 14 Sep 2026 09:00:00 +0900"
-        },
-        {
-          "title": "유치원 입학 신청, 유보통합포털에서 이렇게 준비하세요 (처음학교로 통합)",
-          "url": "https://home.importants-studio.com/posts/kindergarten-admission-portal-2026/",
-          "summary": "유치원 입학 신청 창구가 처음학교로에서 유보통합포털로 바뀌었습니다. 통합 배경과 신청 방법, 우선모집·일반모집 구분, 지난해 일정을 기준으로 지금 확인해둘 것을 정리했습니다.",
-          "date": "Sun, 13 Sep 2026 09:00:00 +0900"
         }
       ]
     },
@@ -125,6 +125,18 @@
       "tagline": "연금과 건강보험, 은퇴 뒤의 살림을 정리합니다",
       "url": "https://leisurely.importants-studio.com",
       "posts": [
+        {
+          "title": "노인일자리 사업, 몇 살부터 어떤 유형에 신청할 수 있나요",
+          "url": "https://leisurely.importants-studio.com/posts/senior-job-program-2026/",
+          "summary": "노인일자리 및 사회활동 지원사업은 유형마다 신청 나이와 자격이 다릅니다. 공익활동형, 사회서비스형, 시장형, 취업알선형의 차이와 활동비, 모집 시기를 정리했습니다.",
+          "date": "Wed, 16 Sep 2026 09:00:00 +0900"
+        },
+        {
+          "title": "이혼해도 국민연금은 나눠 받습니다: 분할연금 조건과 신청 기한",
+          "url": "https://leisurely.importants-studio.com/posts/national-pension-divorce-split-2026/",
+          "summary": "혼인기간 5년 이상이면 이혼한 배우자의 노령연금도 나눠 받을 수 있습니다. 실질 혼인기간 계산법, 분할비율, 선청구와 청구기한까지 분할연금 조건을 정리했습니다.",
+          "date": "Wed, 16 Sep 2026 09:00:00 +0900"
+        },
         {
           "title": "국민연금 기준소득월액 상한액 659만원, 7월부터 내 보험료는 얼마나 오르나 (2026년)",
           "url": "https://leisurely.importants-studio.com/posts/national-pension-income-cap-2026/",
@@ -142,18 +154,6 @@
           "url": "https://leisurely.importants-studio.com/posts/national-pension-survivor-pension-2026/",
           "summary": "배우자가 국민연금 가입자였다면 사망 후 유족연금이 나오지만 본인 노령연금과 동시에 전액을 받을 수는 없습니다. 가입기간별 지급률과 배우자 지급정지 연령표, 실제로 많이 선택하는 방식을 정리했습니다.",
           "date": "Mon, 14 Sep 2026 09:00:00 +0900"
-        },
-        {
-          "title": "주택 다운사이징 양도소득세 비과세 조건, 집 줄이기 전에 확인할 것 (2026년 기준)",
-          "url": "https://leisurely.importants-studio.com/posts/home-downsizing-capital-gains-tax-2026/",
-          "summary": "은퇴를 앞두고 집을 줄일 때 양도가액 12억원까지는 양도소득세가 없습니다. 보유·거주기간별 장기보유특별공제와 일시적 2주택 3년 특례까지, 다운사이징 전에 확인할 세금 조건을 정리했습니다.",
-          "date": "Mon, 14 Sep 2026 09:00:00 +0900"
-        },
-        {
-          "title": "건강보험 피부양자 등록 조건, 가족 관계마다 다르게 봅니다 (2026년 기준)",
-          "url": "https://leisurely.importants-studio.com/posts/health-insurance-dependent-eligibility-2026/",
-          "summary": "퇴직 후 배우자나 자녀의 건강보험 피부양자로 들어가려면 소득 2,000만원, 재산세 과세표준 9억원 기준을 넘지 않아야 합니다. 배우자·부모·형제자매마다 다른 등록 조건과 재산 구간별 표를 정리했습니다.",
-          "date": "Sun, 13 Sep 2026 09:00:00 +0900"
         }
       ]
     },
@@ -164,6 +164,18 @@
       "tagline": "뉴스의 숫자가 무슨 뜻인지 풀어 씁니다",
       "url": "https://money.importants-studio.com",
       "posts": [
+        {
+          "title": "시가총액과 주가의 차이, 주가가 낮다고 싼 주식이 아닌 이유",
+          "url": "http://money.importants-studio.com/posts/market-cap-vs-stock-price/",
+          "summary": "코스피 시가총액 상위 10곳 중 7곳의 순위가 바뀌었다는 보도가 나왔습니다. 주가가 낮은 회사가 시총 1위인 경우가 왜 생기는지, 두 숫자가 다른 이유를 원리로 짚어봅니다.",
+          "date": "Wed, 16 Sep 2026 09:00:00 +0900"
+        },
+        {
+          "title": "종합부동산세 부부 공동명의, 12억과 18억 중 뭐가 유리할까",
+          "url": "http://money.importants-studio.com/posts/joint-ownership-comprehensive-real-estate-tax/",
+          "summary": "9월 16일부터 30일까지 부부 공동명의 1주택자의 종합부동산세 특례 신청 기간입니다. 신청하면 공제금액이 18억에서 12억으로 줄어드는데도 신청하는 사람이 있는 이유를, 종부세가 사람별로 매겨지는 원리부터 짚었습니다.",
+          "date": "Wed, 16 Sep 2026 09:00:00 +0900"
+        },
         {
           "title": "공매도 원리, 주식 없이 먼저 파는 게 어떻게 가능한가요",
           "url": "http://money.importants-studio.com/posts/how-short-selling-works/",
@@ -181,18 +193,6 @@
           "url": "http://money.importants-studio.com/posts/interest-rate-and-stock-price/",
           "summary": "미국 9월 FOMC의 금리 인상 확률이 86%까지 오르자 코스피가 개장과 함께 3%대 급락했습니다. 금리 전망 하나에 주가 전체가 흔들리는 이유를 할인율의 원리로 설명합니다.",
           "date": "Mon, 14 Sep 2026 09:00:00 +0900"
-        },
-        {
-          "title": "오늘의 경제 브리핑: 코스피 급락과 美 FOMC 갈등 (9월 14일)",
-          "url": "http://money.importants-studio.com/posts/econ-briefing-20260914/",
-          "summary": "코스피가 개장과 함께 3%대 급락해 6600선까지 밀렸습니다. 트럼프 대통령은 9월 FOMC를 앞두고 금리 인하를 압박하며 무역 중단까지 경고했고, 호르무즈 해협 회담은 막판 연기됐습니다.",
-          "date": "Mon, 14 Sep 2026 09:00:00 +0900"
-        },
-        {
-          "title": "배당락일이 이제 9월 30일이 아닐 수도 있는 이유",
-          "url": "http://money.importants-studio.com/posts/ex-dividend-date-record-date-change/",
-          "summary": "9월 말 분기배당 시즌을 앞두고 배당락일이 정해지는 원리와, 배당기준일을 분기 말로 고정했던 규정이 2025년 자본시장법 개정으로 어떻게 바뀌었는지 정리했습니다. 회사마다 적용 여부가 다른 이유도 짚었습니다.",
-          "date": "Sun, 13 Sep 2026 09:00:00 +0900"
         }
       ]
     },
@@ -203,6 +203,18 @@
       "tagline": "떠나기 전에 확인해야 할 것을 짚습니다",
       "url": "https://travel.importants-studio.com",
       "posts": [
+        {
+          "title": "EU 출입국시스템(EES) 시행, 유럽 입국 시 지문과 얼굴 등록이 필수입니다",
+          "url": "http://travel.importants-studio.com/posts/eu-ees-entry-exit-system-2026/",
+          "summary": "2025년 10월 12일 시작된 EU 출입국시스템(EES)이 2026년 4월 10일부터 완전 시행됩니다. 유럽 29개국 입국 시 지문·얼굴 등록 절차와 대상, 면제 조건, ETIAS와의 차이를 정리했습니다.",
+          "date": "Wed, 16 Sep 2026 09:00:00 +0900"
+        },
+        {
+          "title": "기내 액체 반입 100ml 규정, 처방약과 유아식은 예외입니다",
+          "url": "http://travel.importants-studio.com/posts/liquid-carry-on-100ml-rules-2026/",
+          "summary": "국제선 기내 액체·젤류 반입은 개별 용기 100ml 이하, 1인당 1L 지퍼백 1개가 기본입니다. 처방약과 유아식은 용량 제한 없이 예외지만 면세품은 환승 공항 규정에 따라 압수될 수 있습니다.",
+          "date": "Wed, 16 Sep 2026 09:00:00 +0900"
+        },
         {
           "title": "항공기 지연·결항 보상금, 국내선과 국제선 기준이 다릅니다",
           "url": "http://travel.importants-studio.com/posts/flight-delay-cancellation-compensation-2026/",
@@ -220,18 +232,6 @@
           "url": "http://travel.importants-studio.com/posts/international-driving-permit-guide-2026/",
           "summary": "국제운전면허증 수수료는 9,000원, 유효기간은 발급일로부터 1년입니다. 다만 인도네시아·미얀마처럼 협정 자체가 없어 현지에서 인정받지 못하는 나라도 있어 발급 전 확인이 필요합니다.",
           "date": "Mon, 14 Sep 2026 09:00:00 +0900"
-        },
-        {
-          "title": "여행자보험 휴대품 손해, 도난은 되는데 분실은 왜 안 될까요",
-          "url": "http://travel.importants-studio.com/posts/travel-insurance-belongings-coverage-2026/",
-          "summary": "여행자보험 휴대품손해 특약은 도난·파손만 보상하고 분실은 면책입니다. 여권·현금·카드는 애초에 대상이 아니고, 도난도 현지 경찰 신고서가 있어야 받습니다. 놓치기 쉬운 보상 조건을 정리했습니다.",
-          "date": "Mon, 14 Sep 2026 09:00:00 +0900"
-        },
-        {
-          "title": "DCC 해외원화결제, 수수료가 얼마나 더 붙는지 아시나요",
-          "url": "http://travel.importants-studio.com/posts/dcc-overseas-card-payment-fee/",
-          "summary": "해외에서 카드로 결제하거나 ATM에서 현금을 뽑을 때 뜨는 &#39;원화로 결제하시겠습니까&#39; 팝업에는 3~8%의 추가 수수료가 붙습니다. 카드 수수료 구조와 차단 방법을 정리했습니다.",
-          "date": "Sun, 13 Sep 2026 09:00:00 +0900"
         }
       ]
     }
