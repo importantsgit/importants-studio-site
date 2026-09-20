@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-20T04:08:11+00:00",
+  "generated": "2026-09-20T10:56:59+00:00",
   "blogs": [
     {
       "key": "hyetaek",
@@ -8,6 +8,18 @@
       "tagline": "정부 지원금과 세금 환급을 매일 정리합니다",
       "url": "https://blog.importants-studio.com",
       "posts": [
+        {
+          "title": "은행 수수료 면제 조건, 창구 대신 앱을 쓰면 대부분 사라집니다",
+          "url": "https://blog.importants-studio.com/posts/bank-fee-waiver-conditions-2026/",
+          "summary": "은행 이체·ATM 수수료는 조건만 맞추면 대부분 안 내도 되는 돈입니다. 만 65세 이상은 KB국민·신한·하나·우리·NH농협·IBK기업은행 6곳에서 타행 ATM 수수료가 면제되고, 카카오뱅크·케이뱅크·토스뱅크는 은행마다 무료 한도가 다릅니다. 창구·ATM·인터넷전문은행별 면제 조건을 정리했습니다.",
+          "date": "Sun, 20 Sep 2026 09:00:00 +0900"
+        },
+        {
+          "title": "장기주택저당차입금 이자상환액 소득공제, 내년부터 실거주 요건이 생기는 개편안이 나왔습니다",
+          "url": "https://blog.importants-studio.com/posts/mortgage-interest-deduction-residency-requirement-2027/",
+          "summary": "주택담보대출 이자를 갚으면 최대 2,000만원까지 소득공제받는 장기주택저당차입금 제도에 실거주 요건이 새로 생기는 개편안이 정기국회에 제출됐습니다. 개편안이 그대로 통과되면 2027년 이용분부터 세대주·세대원 구분 없이 그 집에 실제로 살아야만 공제받을 수 있고, 갭투자나 명의대여 대출은 대상에서 빠집니다. 지금 요건과 ",
+          "date": "Sun, 20 Sep 2026 09:00:00 +0900"
+        },
         {
           "title": "고향사랑기부, 20만원 내면 20만 4천원이 돌아옵니다",
           "url": "https://blog.importants-studio.com/posts/hometown-donation-tax-credit-2026/",
@@ -25,18 +37,6 @@
           "url": "https://blog.importants-studio.com/posts/unfiled-tax-refund-service-2026/",
           "summary": "프리랜서나 아르바이트로 번 돈에서 세금을 떼였는데 종합소득세 신고를 안 해서 그대로 돌려받지 못한 분들이 있습니다. 국세청이 9월 1일부터 최근 5개년 환급금을 증빙서류 없이 한 번에 조회하고 신고까지 마칠 수 있는 &#39;기한 후 환급 서비스&#39;를 시작했습니다. 이미 신고를 마친 사람이 쓰는 경정청구와 무엇이 다",
           "date": "Thu, 17 Sep 2026 09:00:00 +0900"
-        },
-        {
-          "title": "안 찾아간 지방세 322억원, 위택스에서 5분이면 확인됩니다",
-          "url": "https://blog.importants-studio.com/posts/local-tax-refund-2026/",
-          "summary": "행정안전부에 따르면 2025년 기준 지방세 미환급금이 87만 건, 322억원에 달합니다. 자동차세·재산세를 낸 적이 있다면 누구나 대상일 수 있는데, 위택스와 이택스에서 본인 인증만 하면 확인됩니다. 환급금이 생기는 이유부터 5년 소멸시효, 신청 방법까지 정리했습니다.",
-          "date": "Thu, 17 Sep 2026 09:00:00 +0900"
-        },
-        {
-          "title": "대중교통 신용카드 공제 40%, 내년 이용분부터 15%로 줄이는 개편안이 나왔습니다",
-          "url": "https://blog.importants-studio.com/posts/transit-card-tax-deduction-cut-2027/",
-          "summary": "출퇴근길 버스·지하철비를 신용카드로 결제하면 지금은 40%를 소득공제받습니다. 그런데 2026년 세제개편안이 이 우대공제율을 없애고 결제수단별 일반 공제율(신용카드 15%, 체크카드·현금영수증 30%)로 낮추는 안을 담아 국회에 제출됐습니다. 지금 당장 달라지는 건 없지만, 내년 이용분부터 적용될 이 개편안의 내용과 확정",
-          "date": "Wed, 16 Sep 2026 09:00:00 +0900"
         }
       ]
     },
@@ -47,6 +47,18 @@
       "tagline": "자동차세, 보험료, 검사 기한을 챙깁니다",
       "url": "https://car.importants-studio.com",
       "posts": [
+        {
+          "title": "안전거리 미확보, 범칙금은 얼마고 사고 나면 과실비율은 어떻게 될까요",
+          "url": "https://car.importants-studio.com/posts/safe-distance-violation-fine-fault-ratio/",
+          "summary": "안전거리 미확보는 과태료가 아니라 범칙금 대상입니다. 일반도로·고속도로 금액 차이와 벌점, 사고가 났을 때 과실비율이 어떻게 잡히는지까지 정리했습니다.",
+          "date": "Sun, 20 Sep 2026 09:00:00 +0900"
+        },
+        {
+          "title": "장애인 주차구역 과태료 200만원까지, 신고하면 포상금 나올까요",
+          "url": "https://car.importants-studio.com/posts/disabled-parking-violation-fine/",
+          "summary": "표지 없이 세우면 10만원, 통로를 막으면 50만원, 표지를 빌리거나 위조하면 200만원입니다. 안전신문고 신고 방법과 사진 요건, 포상금 여부까지 정리했습니다.",
+          "date": "Sun, 20 Sep 2026 09:00:00 +0900"
+        },
         {
           "title": "뺑소니·무보험차 사고 보상, 정부보장사업으로 받는 법",
           "url": "https://car.importants-studio.com/posts/hit-and-run-government-compensation/",
@@ -64,18 +76,6 @@
           "url": "https://car.importants-studio.com/posts/brake-pad-replacement-interval-warning-sound/",
           "summary": "브레이크 패드 마모 한계선과 삐걱거리는 경고음의 원리, 전륜·후륜 교체 주기 차이를 브렘보 공식 자료와 정비 정보로 확인합니다.",
           "date": "Thu, 17 Sep 2026 09:00:00 +0900"
-        },
-        {
-          "title": "자동차세 체납하면 번호판부터 뗀다는데, 정확한 기준은 이렇습니다",
-          "url": "https://car.importants-studio.com/posts/car-tax-nonpayment-consequences/",
-          "summary": "자동차세를 안 내면 가산세부터 번호판 영치, 재산 압류까지 이어질 수 있습니다. 지방세법령에 정해진 실제 요건과 금액, 해결 방법을 정리했습니다.",
-          "date": "Thu, 17 Sep 2026 09:00:00 +0900"
-        },
-        {
-          "title": "미션오일 교환주기, 매뉴얼엔 '무교환'인데 정비소는 왜 갈자고 할까요",
-          "url": "https://car.importants-studio.com/posts/transmission-oil-change-interval-myth/",
-          "summary": "자동변속기 오일이 &#39;무점검·무교환&#39;이라는 매뉴얼과 정비소의 8만~10만km 권장 사이, 실제로는 뭐가 맞는지 현대자동차그룹 공식 자료와 정비 현장 기준으로 확인합니다.",
-          "date": "Wed, 16 Sep 2026 09:00:00 +0900"
         }
       ]
     },
@@ -86,6 +86,18 @@
       "tagline": "결혼과 육아에 드는 돈과 제도를 정리합니다",
       "url": "https://home.importants-studio.com",
       "posts": [
+        {
+          "title": "양육비 선지급제, 10월 29일부터 소득 상관없이 신청할 수 있습니다",
+          "url": "https://home.importants-studio.com/posts/child-support-advance-payment-income-2026/",
+          "summary": "양육비 선지급제의 소득기준(중위소득 150% 이하)이 2026년 10월 29일부터 폐지됩니다. 소득과 상관없이 미지급 요건만 맞으면 자녀 1인당 월 20만원을 받을 수 있습니다. 대상, 신청 서류, 달라지는 조건을 정리했습니다.",
+          "date": "Sun, 20 Sep 2026 09:00:00 +0900"
+        },
+        {
+          "title": "행복주택 신혼부부 소득기준·자산기준, 이 두 가지부터 확인하세요 (2026년)",
+          "url": "https://home.importants-studio.com/posts/happy-house-newlywed-income-asset-2026/",
+          "summary": "행복주택 신혼부부 계층은 혼인 7년 이내이거나 만 6세 이하 자녀가 있으면 신청할 수 있습니다. 2026년 소득기준(100%·맞벌이 120%)과 자산기준(총자산 3억 4500만원, 자동차 4542만원 이하), 거주기간, 신청 방법을 정리했습니다.",
+          "date": "Sun, 20 Sep 2026 09:00:00 +0900"
+        },
         {
           "title": "독감 국가예방접종, 9월 21일부터 우리 아이도 무료입니다 (2026-2027절기)",
           "url": "https://home.importants-studio.com/posts/child-flu-vaccination-2026-2027/",
@@ -103,18 +115,6 @@
           "url": "https://home.importants-studio.com/posts/high-risk-pregnancy-medical-support-2026/",
           "summary": "고위험 임산부 의료비 지원사업은 19대 고위험 임신질환으로 입원치료를 받은 임산부에게 본인부담금과 비급여 진료비의 90%를 1인당 최대 300만원까지 지원합니다. 2024년부터 소득 기준도 없어졌습니다.",
           "date": "Thu, 17 Sep 2026 09:00:00 +0900"
-        },
-        {
-          "title": "다자녀 가족이면 KTX·SRT 기차 요금도 최대 반값입니다",
-          "url": "https://home.importants-studio.com/posts/multi-child-ktx-srt-discount-2026/",
-          "summary": "자녀가 2명 이상이면 KTX는 코레일멤버십, SRT는 SR 홈페이지에서 등록해 어른 운임을 30~50% 할인받습니다. 대상 조건과 할인율, 등록 방법을 코레일·SR 공식 자료 기준으로 정리했습니다.",
-          "date": "Thu, 17 Sep 2026 09:00:00 +0900"
-        },
-        {
-          "title": "아기띠도 유모차·카시트처럼 인증번호로 조회할 수 있습니다",
-          "url": "https://home.importants-studio.com/posts/baby-carrier-safety-kc-certification-2026/",
-          "summary": "유아용 캐리어(아기띠·힙시트)는 어린이제품 안전 특별법상 안전확인대상 어린이제품입니다. 제품안전정보센터에서 인증번호를 조회하는 방법과 해외직구·중고 아기띠를 고를 때 봐야 할 점을 정리했습니다.",
-          "date": "Wed, 16 Sep 2026 09:00:00 +0900"
         }
       ]
     },
@@ -126,9 +126,27 @@
       "url": "https://leisurely.importants-studio.com",
       "posts": [
         {
+          "title": "국민연금 예상수령액 조회 방법: 사이트와 모바일에서 직접 확인하기",
+          "url": "https://leisurely.importants-studio.com/posts/national-pension-estimated-amount-lookup-2026/",
+          "summary": "국민연금 예상수령액은 국민연금공단 전자민원과 모바일 앱, 통합연금포털에서 확인할 수 있습니다. 로그인 없는 간편계산과 인증 후 조회하는 방법이 어떻게 다른지, 절차와 주의할 점을 정리했습니다.",
+          "date": "Sun, 20 Sep 2026 09:00:00 +0900"
+        },
+        {
+          "title": "퇴직 후 건강보험료, 지역가입자 되면 얼마나 나오나요 (2026년 산정기준)",
+          "url": "https://leisurely.importants-studio.com/posts/health-insurance-regional-premium-calculation-2026/",
+          "summary": "퇴직 다음날부터 지역가입자로 자동 전환되면서 소득과 재산을 모두 반영한 보험료가 새로 매겨집니다. 2026년 보험료율 7.19%, 재산 점수당 211.5원 산정기준과 국민연금 반영 방식을 정리했습니다.",
+          "date": "Sun, 20 Sep 2026 09:00:00 +0900"
+        },
+        {
           "title": "경로우대 할인, 65세부터 지하철 말고도 이렇게 받습니다",
           "url": "https://leisurely.importants-studio.com/posts/senior-discount-benefits-2026/",
           "summary": "노인복지법에 따라 65세부터 새마을호·무궁화호는 30%, 통근열차는 50%, 수도권 전철과 고궁·국공립박물관은 100% 할인됩니다. 요일 제외 조건과 KTX 포함 여부, 통신비 감면과 헷갈리지 않는 법을 정리했습니다.",
+          "date": "Fri, 18 Sep 2026 09:00:00 +0900"
+        },
+        {
+          "title": "기초연금 국민연금 연계감액, 2026년 기준 얼마부터 깎이나요",
+          "url": "https://leisurely.importants-studio.com/posts/basic-pension-national-pension-reduction-2026/",
+          "summary": "국민연금을 월 52만 4,550원 넘게 받으면 기초연금이 연계감액 규정으로 줄어들 수 있습니다. 2026년 기준연금액 34만 9,700원을 기준으로 감액 시작점과 최소 50% 보장선, 계산식을 정리했습니다.",
           "date": "Fri, 18 Sep 2026 09:00:00 +0900"
         },
         {
@@ -136,24 +154,6 @@
           "url": "https://leisurely.importants-studio.com/posts/elderly-continued-employment-subsidy-2026/",
           "summary": "정년을 넘긴 근로자를 계속 고용하면 회사가 월 30만~40만원씩 최대 3년 지원받는 제도입니다. 정년연장·정년폐지·재고용 세 방식과 회사·근로자 자격 조건을 정리했습니다.",
           "date": "Thu, 17 Sep 2026 09:00:00 +0900"
-        },
-        {
-          "title": "연금저축·IRP 받을 때 세금, 나이 따라 5.5%·4.4%·3.3%로 갈립니다",
-          "url": "https://leisurely.importants-studio.com/posts/pension-account-income-tax-2026/",
-          "summary": "연금저축과 IRP는 넣을 때만 세액공제를 받고 끝나는 게 아닙니다. 받을 때도 세금이 붙는데 나이와 수령 방식, 연간 수령액에 따라 세율이 달라집니다. 55세부터 80세까지 구간별 세율과 1,500만원 기준을 정리했습니다.",
-          "date": "Thu, 17 Sep 2026 09:00:00 +0900"
-        },
-        {
-          "title": "노인일자리 사업, 몇 살부터 어떤 유형에 신청할 수 있나요",
-          "url": "https://leisurely.importants-studio.com/posts/senior-job-program-2026/",
-          "summary": "노인일자리 및 사회활동 지원사업은 유형마다 신청 나이와 자격이 다릅니다. 공익활동형, 사회서비스형, 시장형, 취업알선형의 차이와 활동비, 모집 시기를 정리했습니다.",
-          "date": "Wed, 16 Sep 2026 09:00:00 +0900"
-        },
-        {
-          "title": "이혼해도 국민연금은 나눠 받습니다: 분할연금 조건과 신청 기한",
-          "url": "https://leisurely.importants-studio.com/posts/national-pension-divorce-split-2026/",
-          "summary": "혼인기간 5년 이상이면 이혼한 배우자의 노령연금도 나눠 받을 수 있습니다. 실질 혼인기간 계산법, 분할비율, 선청구와 청구기한까지 분할연금 조건을 정리했습니다.",
-          "date": "Wed, 16 Sep 2026 09:00:00 +0900"
         }
       ]
     },
@@ -164,6 +164,18 @@
       "tagline": "뉴스의 숫자가 무슨 뜻인지 풀어 씁니다",
       "url": "https://money.importants-studio.com",
       "posts": [
+        {
+          "title": "기준금리 인상 이유, 두 달 연속 올린 한국은행 금통위가 본 것",
+          "url": "https://money.importants-studio.com/posts/why-bok-raised-base-rate-twice/",
+          "summary": "한국은행이 8월 27일 기준금리를 2.75%에서 3.00%로 올리며 두 달 연속 인상을 단행했습니다. 근원물가와 반도체 호황, 금통위 표결 구조까지 기준금리가 정해지는 원리를 짚어봅니다.",
+          "date": "Sun, 20 Sep 2026 09:00:00 +0900"
+        },
+        {
+          "title": "장기보유특별공제 개편, 보유 대신 거주 기간을 보는 이유",
+          "url": "https://money.importants-studio.com/posts/long-term-holding-deduction-residence-shift/",
+          "summary": "2026년 세제개편안에 장기보유특별공제를 보유 중심에서 거주 중심으로 바꾸는 안이 담겼습니다. 지금 공제율은 어떻게 계산되고, 개편안은 이 계산식의 어느 부분을 왜 건드리는지 원리를 짚어봅니다.",
+          "date": "Sun, 20 Sep 2026 09:00:00 +0900"
+        },
         {
           "title": "갭투자는 어떻게 가능한가, 전세대출 보증비율을 낮춘 이유",
           "url": "https://money.importants-studio.com/posts/gap-investment-jeonse-loan-regulation/",
@@ -181,18 +193,6 @@
           "url": "https://money.importants-studio.com/posts/presale-price-cap-system/",
           "summary": "국토교통부가 9월 15일 분양가상한제 기본형건축비를 ㎡당 232만8000원으로 4.07% 올려 고시했습니다. 상한제 아파트인데도 분양가가 오를 수 있는 이유를 택지비·건축비·가산비 계산 구조로 짚어봅니다.",
           "date": "Thu, 17 Sep 2026 09:00:00 +0900"
-        },
-        {
-          "title": "재건축 부담금, 1인당 7억이 나오는 계산 원리",
-          "url": "https://money.importants-studio.com/posts/reconstruction-excess-profit-levy/",
-          "summary": "한강맨션, 반포3주구 같은 단지에 조합원 1인당 수억 원대 재건축 부담금 청구서가 날아들고 있습니다. 2006년 도입된 재건축초과이익환수제가 17년 만에 실제로 걷히기 시작했는데, 이 부담금이 어떤 공식으로 계산되는지 원리를 짚어봅니다.",
-          "date": "Thu, 17 Sep 2026 09:00:00 +0900"
-        },
-        {
-          "title": "시가총액과 주가의 차이, 주가가 낮다고 싼 주식이 아닌 이유",
-          "url": "https://money.importants-studio.com/posts/market-cap-vs-stock-price/",
-          "summary": "코스피 시가총액 상위 10곳 중 7곳의 순위가 바뀌었다는 보도가 나왔습니다. 주가가 낮은 회사가 시총 1위인 경우가 왜 생기는지, 두 숫자가 다른 이유를 원리로 짚어봅니다.",
-          "date": "Wed, 16 Sep 2026 09:00:00 +0900"
         }
       ]
     },
@@ -203,6 +203,18 @@
       "tagline": "떠나기 전에 확인해야 할 것을 짚습니다",
       "url": "https://travel.importants-studio.com",
       "posts": [
+        {
+          "title": "미성년자 해외여행 서류, 여권보다 이 동의서부터 준비해야 합니다",
+          "url": "https://travel.importants-studio.com/posts/unaccompanied-minor-travel-documents-2026/",
+          "summary": "미성년자가 부모 없이, 또는 한 부모와만 해외에 나갈 때는 여권 발급 단계부터 법정대리인 동의서가 필요합니다. 일본은 미성년자 단독 숙박이 안 되고, 필리핀은 15세 미만이 부모 없이 입국하면 WEG를 따로 신청해야 합니다.",
+          "date": "Sun, 20 Sep 2026 09:00:00 +0900"
+        },
+        {
+          "title": "항공권 취소 수수료, 24시간 안에 취소하면 안 냅니다",
+          "url": "https://travel.importants-studio.com/posts/flight-ticket-cancellation-fee-2026/",
+          "summary": "여행사를 통해 국제선 항공권을 샀다면 발권 당일과 구매 후 24시간 이내 취소는 22개 주요 항공사가 위약금을 면제합니다. 그 이후엔 좌석 등급별로 위약금이 계단식으로 오르고, 아고다·트립닷컴 같은 여행사는 수수료가 하나 더 붙습니다.",
+          "date": "Sun, 20 Sep 2026 09:00:00 +0900"
+        },
         {
           "title": "해외 ATM 인출 수수료, 트래블카드도 이 돈은 못 막습니다",
           "url": "https://travel.importants-studio.com/posts/overseas-atm-withdrawal-fee-2026/",
@@ -220,18 +232,6 @@
           "url": "https://travel.importants-studio.com/posts/passport-validity-six-months-rule-2026/",
           "summary": "여권은 무조건 6개월 이상 남아야 한다는 말과 달리 실제 기준은 나라마다 다릅니다. 쉥겐은 출국예정일 기준 3개월, 베트남·인도네시아는 6개월이고 미국은 2025년 12월 CBP 갱신 목록에 한국이 예외국으로 포함돼 체류기간만 있으면 됩니다.",
           "date": "Thu, 17 Sep 2026 09:00:00 +0900"
-        },
-        {
-          "title": "태국 무비자 축소됐지만 한국인은 90일 그대로입니다",
-          "url": "https://travel.importants-studio.com/posts/thailand-visa-exemption-90-days-2026/",
-          "summary": "태국이 2026년 9월 15일부터 60개국 대상 무비자 체류기간을 60일에서 30일로 줄였지만, 한국은 1981년 비자면제협정에 따라 90일 체류가 그대로 유지됩니다. 입국 전에는 비자와 상관없이 TDAC(디지털 입국카드)를 3일 이내 제출해야 합니다.",
-          "date": "Thu, 17 Sep 2026 09:00:00 +0900"
-        },
-        {
-          "title": "EU 출입국시스템(EES) 시행, 유럽 입국 시 지문과 얼굴 등록이 필수입니다",
-          "url": "https://travel.importants-studio.com/posts/eu-ees-entry-exit-system-2026/",
-          "summary": "2025년 10월 12일 시작된 EU 출입국시스템(EES)이 2026년 4월 10일부터 완전 시행됩니다. 유럽 29개국 입국 시 지문·얼굴 등록 절차와 대상, 면제 조건, ETIAS와의 차이를 정리했습니다.",
-          "date": "Wed, 16 Sep 2026 09:00:00 +0900"
         }
       ]
     }
