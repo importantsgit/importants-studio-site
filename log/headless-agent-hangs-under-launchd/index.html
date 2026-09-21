@@ -3,18 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>터미널에서는 되는데 자동 실행은 굳었다 | Importants Studio</title>
-<meta name="description" content="9월 20일 자동 배치는 첫 요청도 보내지 못한 채 멈췄지만, 같은 명령은 내 터미널에서 즉시 실행됐습니다.">
+<title>터미널에서는 되던 배치가 멈춘 날 | Importants Studio</title>
+<meta name="description" content="9월 20일 자동 배치는 첫 요청도 보내지 못한 채 굳었고, 같은 명령은 내 터미널에서 즉시 실행됐지만 원인은 끝내 재현하지 못했습니다.">
 <link rel="canonical" href="https://importants-studio.com/log/headless-agent-hangs-under-launchd/">
 <meta name="robots" content="index, follow">
 <meta name="author" content="Importants Studio">
 <meta property="og:type" content="article">
-<meta property="og:title" content="터미널에서는 되는데 자동 실행은 굳었다">
-<meta property="og:description" content="9월 20일 자동 배치는 첫 요청도 보내지 못한 채 멈췄지만, 같은 명령은 내 터미널에서 즉시 실행됐습니다.">
+<meta property="og:title" content="터미널에서는 되던 배치가 멈춘 날">
+<meta property="og:description" content="9월 20일 자동 배치는 첫 요청도 보내지 못한 채 굳었고, 같은 명령은 내 터미널에서 즉시 실행됐지만 원인은 끝내 재현하지 못했습니다.">
 <meta property="og:url" content="https://importants-studio.com/log/headless-agent-hangs-under-launchd/">
 <meta property="article:published_time" content="2026-09-20T09:00:00+09:00">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8673949681156413" crossorigin="anonymous"></script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"터미널에서는 되는데 자동 실행은 굳었다","description":"9월 20일 자동 배치는 첫 요청도 보내지 못한 채 멈췄지만, 같은 명령은 내 터미널에서 즉시 실행됐습니다.","datePublished":"2026-09-20T09:00:00+09:00","author":{"@type":"Organization","name":"Importants Studio"},"publisher":{"@type":"Organization","name":"Importants Studio"},"mainEntityOfPage":"https://importants-studio.com/log/headless-agent-hangs-under-launchd/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"터미널에서는 되던 배치가 멈춘 날","description":"9월 20일 자동 배치는 첫 요청도 보내지 못한 채 굳었고, 같은 명령은 내 터미널에서 즉시 실행됐지만 원인은 끝내 재현하지 못했습니다.","datePublished":"2026-09-20T09:00:00+09:00","author":{"@type":"Organization","name":"Importants Studio"},"publisher":{"@type":"Organization","name":"Importants Studio"},"mainEntityOfPage":"https://importants-studio.com/log/headless-agent-hangs-under-launchd/"}</script>
 <style>
 :root{--bg:#faf9f6;--card:#ffffff;--ink:#1a1a17;--mut:#6f6d66;--line:#e6e3da;--chip:#f0eee7}
 *{box-sizing:border-box}
@@ -61,20 +61,23 @@ footer{padding:30px 0 0;margin-top:26px;border-top:1px solid var(--line)}
   </header>
 
   <article>
-    <h1>터미널에서는 되는데 자동 실행은 굳었다</h1>
+    <h1>터미널에서는 되던 배치가 멈춘 날</h1>
     <div class="meta"><span>2026년 9월 20일</span><span>Importants Studio</span></div>
-    <div class="body"><h2>오후 1시 반까지 아무것도 나오지 않았습니다</h2>
-<p>9월 20일 배치는 10시 30분에 시작했습니다. 평소처럼 에이전트가 작업을 시작할 것으로 봤는데, 오후 1시 반까지 결과가 하나도 나오지 않았습니다.</p>
-<p>프로세스를 확인하니 에이전트 프로세스 5개가 떠 있었습니다. 죽은 상태는 아니었습니다. 다만 3시간 동안 CPU를 3초 썼습니다. 세션 파일도 하나도 생기지 않았고 API 호출 기록도 없었습니다. 작업 중간에 실패한 것이 아니라, 첫 요청을 보내기 전에서 멈춘 상태였습니다.</p>
-<p>화면도 찍어 확인했습니다. 권한을 묻는 창은 없었고, 작업을 막는 대화상자도 없었습니다. 열린 파일을 봐도 네트워크나 잠금에 걸린 흔적은 없었습니다. 기다리면 뭔가 진행될 것이라고 생각했지만, 3시간 동안 바뀐 것은 없었습니다. 그 판단은 틀렸습니다.</p>
-<h2>같은 명령은 터미널에서 바로 끝났습니다</h2>
-<p>자동 실행에 들어간 명령을 내 터미널에서 그대로 실행했습니다. 같은 저장소를 썼고, 같은 플래그와 같은 세션 옵션을 넣었습니다. 표준입력까지 맞췄습니다. 터미널에서는 바로 응답했습니다.</p>
-<p>멈춘 프로세스를 모두 죽인 뒤, 내 셸에서 같은 스크립트를 다시 띄웠습니다. 12초 만에 세션 14개가 열렸습니다. 26분 뒤에는 12편이 PR로 올라왔습니다.</p>
-<p>스크립트와 프롬프트가 문제라고 봤던 쪽도 여기서 틀렸습니다. 같은 스크립트와 같은 프롬프트가 터미널에서는 움직였습니다. 갈린 것은 무엇을 실행했느냐가 아니라 누가 띄웠느냐였습니다.</p>
-<p>전날 오후에는 CLI 새 버전이 설치돼 있었습니다. 9월 20일 배치는 그 버전에서 처음 자동 실행한 배치였습니다. 정황은 새 버전 쪽을 가리킵니다. 하지만 자동 실행이 멈춘 이유가 그 버전이라는 증거는 없습니다.</p>
-<p>다음 날 같은 시각의 자동 실행은 정상이었습니다. 26분 만에 12편이 나왔습니다. 재현되지 않았습니다.</p>
-<p>원인을 못 찾았습니다. 재현이 안 되니 고칠 수도 없습니다. 지금은 안 돌았을 때 알아차리는 쪽을 먼저 만들 생각입니다.</p></div>
-    <div class="tail">지난 글: <a href="/log/launchd-skips-when-mac-is-off/">맥이 꺼진 날, 글 12편이 비었다</a><br>다음 글: <a href="/log/jeju-air-fee-table-error/">검수에서 제주항공 취소 표를 고쳤다</a><br><a href="/log/">목록으로</a></div>
+    <div class="body"><h2>멈춘 오후</h2>
+<p>9월 20일 배치는 10시 30분에 시작했습니다. 오후 1시 30분까지 아무것도 나오지 않았습니다.</p>
+<p>에이전트 프로세스 5개는 살아 있었지만, 3시간 동안 CPU를 3초 쓴 채 세션 파일 하나도 생기지 않고 API 호출 기록도 없는 상태로 첫 요청을 보내기 전에 멈춰, 오후 1시 30분까지 떠 있었습니다.</p>
+<p>화면도 찍어 확인했습니다. 권한을 묻는 창이나 진행을 막는 대화상자는 없었습니다. 열린 파일을 봤을 때도 네트워크나 잠금에 걸린 흔적은 없었습니다.</p>
+<p>10시 30분부터 오후 1시 30분까지 사라지지 않은 프로세스는 CPU를 완전히 0초만 쓴 것도 아니었지만, 세션 파일과 API 호출 기록이 모두 비어 있어서 실제 작업이 어디까지 갔는지는 첫 요청 전이라는 것만 확인할 수 있었습니다.</p>
+<h2>같은 명령은 바로 끝났습니다</h2>
+<p>자동 실행에 넣은 명령을 내 터미널에서 그대로 실행했습니다. 같은 저장소를 쓰고 같은 플래그와 같은 세션 옵션을 넣은 뒤 표준입력까지 맞춘 명령은 바로 응답했고 즉시 끝났습니다.</p>
+<p>이 차이가 가장 이상했습니다. 자동 실행 쪽에서는 5개 프로세스가 3시간 동안 CPU를 3초 쓰며 첫 요청도 보내지 못했습니다. 명령과 저장소, 플래그, 세션 옵션, 표준입력이 같았던 터미널에서는 멈추는 구간이 없었습니다.</p>
+<p>전날 오후에는 CLI 새 버전이 설치돼 있었습니다. 9월 20일 배치는 그 버전의 첫 자동 실행이었습니다. 정황은 그쪽을 가리켰습니다. 증거는 없습니다.</p>
+<p>멈춘 프로세스를 모두 죽였습니다. 내 셸에서 같은 스크립트를 다시 띄웠습니다. 12초 만에 세션 14개가 열렸고, 26분 뒤 12편이 PR로 올라왔습니다. 스크립트와 프롬프트에는 문제가 없었습니다. 실행 주체에 따라 결과가 갈렸습니다.</p>
+<h2>다음 날에는 재현되지 않았습니다</h2>
+<p>다음 날 같은 시각 자동 실행은 정상이었습니다. 26분 만에 12편이 나왔습니다. 전날과 같은 멈춤은 다시 나오지 않았습니다.</p>
+<p>CLI 새 버전이 원인인지도 확인하지 못했습니다. 자동 실행 환경에서만 생긴 일인지, 그날 한 번의 상태 문제였는지도 남아 있습니다.</p>
+<p>원인을 못 찾았습니다. 재현이 안 되니 고칠 수도 없습니다. 지금은 안 돌았을 때 알아차리는 쪽을 먼저 만들 생각입니다(다음 실행에서 다시 멈출지는 알 수 없습니다).</p></div>
+    <div class="tail">지난 글: <a href="/log/launchd-skips-when-mac-is-off/">맥이 꺼진 날, 글 12편이 비었다</a><br>다음 글: <a href="/log/jeju-air-fee-table-error/">검수에서 잡힌 제주항공 취소표</a><br><a href="/log/">목록으로</a></div>
   </article>
 
   <footer>
