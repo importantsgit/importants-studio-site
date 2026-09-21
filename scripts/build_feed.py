@@ -20,6 +20,9 @@ import re
 import sys
 import urllib.request
 import xml.etree.ElementTree as ET
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import build_posts
 from datetime import datetime, timedelta, timezone
 
 PER_BLOG = 5
@@ -50,6 +53,13 @@ PLAY = [
     ("도구", "연차 계산기",  "/tools/yeoncha/"),
     ("도구", "정산기",       "/tools/settle/"),
 ]
+
+LOG = {
+    "name": "운영기",
+    "url": "/log/",
+    "color": "#5a5a52",
+    "tagline": "혼자 만들고 운영하며 틀린 판단과 숫자를 적습니다",
+}
 
 PROFILE = {
     "url": "/profile/",
@@ -135,7 +145,7 @@ def section_head(name, tagline, url, color):
         % (esc(url), esc(color), esc(name), esc(tagline), esc(color)))
 
 
-def render_html(data, template="index.template.html", out="index.html"):
+def render_html(data, log_posts=(), template="index.template.html", out="index.html"):
     """크롤러가 자바스크립트 없이 읽을 수 있게 HTML 로 박는다."""
     blogs = []
     for b in data["blogs"]:
@@ -159,6 +169,18 @@ def render_html(data, template="index.template.html", out="index.html"):
                  % (section_head(play["name"], play["tagline"], play["url"], PLAY_COLOR),
                     tiles))
 
+    # 블로그 루프가 posts 라는 이름을 이미 쓰고 있다. 운영기는 log_posts 로 받는다.
+    log_html = ""
+    if log_posts:
+        items = "".join(
+            '<a class="post" href="/log/%s/"><span class="ptitle">%s</span>'
+            '<span class="psum">%s</span><span class="pdate">%s</span></a>'
+            % (esc(m["slug"]), esc(m["title"]), esc(m["summary"]), esc(short_date(m["date"])))
+            for m in log_posts[:4])
+        log_html = ('<section class="sec">%s<div class="posts">%s</div></section>'
+                    % (section_head(LOG["name"], LOG["tagline"], LOG["url"], LOG["color"]),
+                       items))
+
     igs = "".join(
         '<a class="ig" href="%s"><span class="igname">%s</span>'
         '<span class="ighandle">%s</span></a>'
@@ -172,6 +194,7 @@ def render_html(data, template="index.template.html", out="index.html"):
     s = s.replace("<!--TODAY-->", today)
     s = s.replace("<!--BLOGS-->", "\n".join(blogs))
     s = s.replace("<!--PLAY-->", play_html)
+    s = s.replace("<!--LOG-->", log_html)
     s = s.replace("<!--IGS-->", '<div class="igs">%s</div>' % igs)
     io.open(out, "w", encoding="utf-8").write(s)
 
@@ -180,7 +203,7 @@ def render_html(data, template="index.template.html", out="index.html"):
     return len(body)
 
 
-def render_sitemap(out="sitemap.xml"):
+def render_sitemap(posts=(), out="sitemap.xml"):
     """홈이 하루 두 번 바뀌므로 lastmod 도 같이 갱신한다.
 
     손으로 쓴 파일은 9월 3일에 멈춰 있었고 /about/ 이 빠져 있었다. 페이지가 몇 개뿐이라
@@ -195,7 +218,11 @@ def render_sitemap(out="sitemap.xml"):
         ("https://importants-studio.com/about/",   "2026-09-09", "monthly", "0.6"),
         ("https://importants-studio.com/privacy/", "2026-09-07", "yearly",  "0.3"),
         ("https://importants-studio.com/contact/", "2026-09-19", "yearly",  "0.3"),
+        ("https://importants-studio.com/log/",     today,        "weekly", "0.8"),
     ]
+    for m in posts:
+        pages.append(("https://importants-studio.com/log/%s/" % m["slug"],
+                      m["date"], "monthly", "0.7"))
     body = "".join(
         "  <url>\n    <loc>%s</loc>\n    <lastmod>%s</lastmod>\n"
         "    <changefreq>%s</changefreq>\n    <priority>%s</priority>\n  </url>\n"
@@ -242,13 +269,14 @@ def main():
     with open(out, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-    chars = render_html(data)
-    pages = render_sitemap()
+    posts = build_posts.render()
+    chars = render_html(data, log_posts=posts)
+    pages = render_sitemap(posts)
 
     total = sum(len(b["posts"]) for b in blogs)
     print("%s · 블로그 %d개 글 %d개 · 놀거리 %d개 · index.html 본문 %d자"
           % (out, len(blogs), total, len(PLAY), chars))
-    print("  sitemap.xml %d개" % pages)
+    print("  sitemap.xml %d개 · 운영기 %d편" % (pages, len(posts)))
     for w in warn:
         print("  ⚠ %s" % w)
 
