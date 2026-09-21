@@ -183,13 +183,18 @@ def render_html(data, template="index.template.html", out="index.html"):
 def render_sitemap(out="sitemap.xml"):
     """홈이 하루 두 번 바뀌므로 lastmod 도 같이 갱신한다.
 
-    손으로 쓴 파일은 9월 3일에 멈춰 있었고 /about/ 이 빠져 있었다. 페이지가 셋뿐이라
-    Hugo 를 들이는 대신 여기서 만든다."""
+    손으로 쓴 파일은 9월 3일에 멈춰 있었고 /about/ 이 빠져 있었다. 페이지가 몇 개뿐이라
+    Hugo 를 들이는 대신 여기서 만든다.
+
+    페이지를 새로 만들면 반드시 이 목록에도 넣어야 한다. 이 함수가 두 시간마다
+    sitemap.xml 을 통째로 다시 쓰기 때문에, 파일만 고치면 다음 실행에 지워진다.
+    2026-09-19 에 추가한 /contact/ 가 그렇게 사라졌다."""
     today = datetime.now(KST).strftime("%Y-%m-%d")
     pages = [
         ("https://importants-studio.com/",         today,        "daily",  "1.0"),
         ("https://importants-studio.com/about/",   "2026-09-09", "monthly", "0.6"),
         ("https://importants-studio.com/privacy/", "2026-09-07", "yearly",  "0.3"),
+        ("https://importants-studio.com/contact/", "2026-09-19", "yearly",  "0.3"),
     ]
     body = "".join(
         "  <url>\n    <loc>%s</loc>\n    <lastmod>%s</lastmod>\n"
