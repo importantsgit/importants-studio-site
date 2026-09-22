@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MCP 서버 만들기, 코드보다 먼저 볼 것 | Importants Studio</title>
+<meta name="description" content="클로드 코드에서 MCP 서버를 만들 때는 공식 문서의 빈자리부터 확인하고, SDK·플러그인으로 시작한 뒤 등록과 도구 목록 점검을 분리해야 합니다.">
+<link rel="canonical" href="https://importants-studio.com/guide/mcp-server-build/">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Importants Studio">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MCP 서버 만들기, 코드보다 먼저 볼 것">
+<meta property="og:description" content="클로드 코드에서 MCP 서버를 만들 때는 공식 문서의 빈자리부터 확인하고, SDK·플러그인으로 시작한 뒤 등록과 도구 목록 점검을 분리해야 합니다.">
+<meta property="og:url" content="https://importants-studio.com/guide/mcp-server-build/">
+<meta property="article:published_time" content="2026-09-19T09:00:00+09:00">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8673949681156413" crossorigin="anonymous"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"MCP 서버 만들기, 코드보다 먼저 볼 것","description":"클로드 코드에서 MCP 서버를 만들 때는 공식 문서의 빈자리부터 확인하고, SDK·플러그인으로 시작한 뒤 등록과 도구 목록 점검을 분리해야 합니다.","datePublished":"2026-09-19T09:00:00+09:00","author":{"@type":"Organization","name":"Importants Studio"},"publisher":{"@type":"Organization","name":"Importants Studio"},"mainEntityOfPage":"https://importants-studio.com/guide/mcp-server-build/"}</script>
+<style>
+:root{--bg:#faf9f6;--card:#ffffff;--ink:#1a1a17;--mut:#6f6d66;--line:#e6e3da;--chip:#f0eee7}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;-webkit-font-smoothing:antialiased;word-break:keep-all}
+a{color:var(--ink)}
+.wrap{padding:0 20px 72px}
+.col{max-width:680px;margin:0 auto}
+header{display:flex;align-items:center;justify-content:space-between;padding:20px 0;border-bottom:1px solid var(--ink)}
+.logo{font-size:17px;font-weight:800;letter-spacing:-0.01em;text-decoration:none}
+.logo span{color:var(--mut)}
+.nav{display:inline-block;border:1px solid var(--ink);font-size:13px;font-weight:600;padding:7px 14px;border-radius:99px;white-space:nowrap;text-decoration:none}
+.nav:hover{background:var(--ink);color:var(--bg)}
+article{padding:36px 0 0}
+h1{font-size:clamp(23px,4.6vw,31px);font-weight:800;line-height:1.42;margin:0 0 14px;letter-spacing:-0.02em;text-wrap:pretty}
+.meta{display:flex;gap:10px;font-size:13px;color:var(--mut);padding-bottom:22px;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}
+.body{padding-top:26px;font-size:16px;line-height:1.85}
+.body p{margin:0 0 20px}
+.body h2{font-size:19px;font-weight:800;letter-spacing:-0.01em;margin:38px 0 14px;padding-top:20px;border-top:1px solid var(--line);text-wrap:pretty}
+.body h3{font-size:16px;font-weight:700;margin:28px 0 10px}
+.body ul,.body ol{margin:0 0 20px;padding-left:22px}
+.body li{margin-bottom:9px}
+.body strong{font-weight:700}
+.body code{background:var(--chip);padding:2px 6px;border-radius:5px;font-size:14px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.body pre{background:var(--chip);padding:14px 16px;border-radius:9px;overflow-x:auto;font-size:13.5px;line-height:1.65;margin:0 0 20px}
+.body pre code{background:none;padding:0}
+.body blockquote{margin:0 0 20px;padding:2px 0 2px 16px;border-left:3px solid var(--line);color:var(--mut)}
+.body table{border-collapse:collapse;width:100%;margin:0 0 22px;font-size:14.5px}
+.body th,.body td{border-bottom:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top}
+.body th{font-weight:700;background:var(--chip)}
+.body hr{border:0;border-top:1px solid var(--line);margin:30px 0}
+.tail{margin-top:44px;padding-top:22px;border-top:1px solid var(--ink);font-size:14px;color:var(--mut);line-height:1.7}
+.tail a{color:var(--mut)}
+footer{padding:30px 0 0;margin-top:26px;border-top:1px solid var(--line)}
+.fmeta{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;color:var(--mut)}
+.fmeta a{color:var(--mut)}
+</style>
+</head>
+<body>
+<div class="wrap"><div class="col">
+
+  <header>
+    <a class="logo" href="/">Importants<span>.</span>Studio</a>
+    <a class="nav" href="/guide/">AI 도구 목록</a>
+  </header>
+
+  <article>
+    <h1>MCP 서버 만들기, 코드보다 먼저 볼 것</h1>
+    <div class="meta"><span>2026년 9월 19일</span><span>Importants Studio</span></div>
+    <div class="body"><p>직접 하나를 만들어 클로드 코드에 붙여 보려는 단계라면 이 글이 맞습니다. 이미 다른 MCP 서버를 써 봤지만, 내 API나 로컬 프로그램에 맞춘 도구가 필요해진 경우도 여기에 해당합니다.</p>
+<p>한 번 만든다고 바로 끝나지는 않습니다. 서버 구현, 실행 방식, 클로드 코드 등록, 도구 목록 확인은 각각 따로 확인해야 하며, 앞 단계가 멀쩡해 보여도 다음 단계에서 멈출 수 있으므로 처음부터 작업 순서를 나눠 잡는 편이 좋습니다.</p>
+<p>먼저 확인한 사실이 있습니다. 클로드 코드 공식 문서에는 MCP 서버를 만드는 코드 예제가 없습니다. 문서는 구현을 다른 곳으로 넘기며, 처음 시도할 때 놓치기 쉬운 지점도 남아 있습니다.</p>
+<h2>먼저 결론부터</h2>
+<ul><li>클로드 코드 공식 문서에는 MCP 서버 구현 코드 예제가 없고, MCP 공식 사이트와 <code>mcp-server-dev</code> 플러그인을 안내합니다.</li><li>처음 만든다면 MCP 공식 사이트의 TypeScript·Python SDK 문서나 플러그인 대화로 뼈대를 만드는 편이 빠릅니다.</li><li>로컬 HTTP 서버는 아래 명령으로 등록하며, 서버의 MCP 엔드포인트 주소를 정확히 넣어야 합니다.</li></ul>
+<pre><code>claude mcp add --transport http myserver http://localhost:3000/mcp</code></pre>
+<ul><li>npm 패키지로 실행하는 서버는 stdio 방식으로 등록하고, <code>npx</code> 뒤의 실행 명령까지 함께 전달합니다.</li></ul>
+<pre><code>claude mcp add --transport stdio myserver -- npx -y @myorg/mcp-server</code></pre>
+<ul><li>팀이 함께 쓸 서버는 <code>--scope project</code>를 붙여 <code>.mcp.json</code>에 저장한 뒤 커밋합니다.</li><li>연결 뒤 도구가 보이지 않으면 등록 상태, 서버 프로세스, 도구 목록 반환을 순서대로 나눠 확인해야 합니다.</li></ul>
+<h2>공식 문서에서 시작점을 고릅니다</h2>
+<p>출발점부터 다릅니다.</p>
+<p>공식 문서를 직접 확인해 보니 클로드 코드 문서는 서버를 만드는 소스 코드나 최소 구현을 싣지 않았고, 구현 방법은 <a href="https://modelcontextprotocol.io/docs/develop/build-server" target="_blank" rel="noopener">MCP 공식 사이트의 서버 만들기 문서</a>로 넘기며, 대화형 제작이 필요할 때는 <code>mcp-server-dev</code> 플러그인을 설치해 쓰도록 안내합니다.</p>
+<p>먼저 길을 고르세요.</p>
+<p>MCP 공식 사이트 문서는 TypeScript와 Python을 지원합니다. 기존 서비스의 언어와 배포 환경이 정해졌다면 해당 SDK 예제에서 시작하면 됩니다. 구현 방향이 아직 흐리다면 플러그인이 더 편합니다.</p>
+<pre><code>/mcp-server-dev:build-mcp-server</code></pre>
+<p>이 명령은 플러그인을 설치한 뒤 클로드 코드 안에서 실행합니다. 대화하면서 서버를 만들 수 있으므로, 처음부터 도구 정의와 실행 구조를 모두 설계할 필요가 없습니다(단, 실제 API 권한과 실행 환경은 직접 준비해야 합니다).</p>
+<h2>서버 구현의 출발점</h2>
+<p>서버는 도구를 노출하고 요청을 처리한 뒤 결과를 돌려주는 형태를 갖춰야 합니다. 어떤 도구를 만들지부터 작게 정하는 편이 좋습니다. 예를 들어 내부 API 하나를 조회하거나, 로컬 앱의 기능 하나를 실행하는 식입니다.</p>
+<p>처음부터 여러 도구를 넣으면 원인을 가리기 어렵습니다. SDK 예제나 플러그인으로 서버를 띄운 다음, 도구 하나가 정상 응답하는지 확인하고 범위를 넓히세요. 서버 구현과 클로드 코드 등록을 한 번에 바꾸면 어느 쪽에서 문제가 생겼는지 판단하기 어려워집니다.</p>
+<p>실행 방식도 초기에 정해야 합니다. HTTP 서버는 주소로 접속하고, stdio 서버는 클로드 코드가 지정한 명령을 실행해 표준 입출력으로 통신합니다. 배포 형태가 npm 패키지라면 stdio 등록 흐름이 자연스럽습니다.</p>
+<h2>Claude Code에 등록하는 방법</h2>
+<p>로컬에서 3000 포트로 실행 중인 HTTP 서버는 다음처럼 붙입니다.</p>
+<pre><code>claude mcp add --transport http myserver http://localhost:3000/mcp</code></pre>
+<p>npm으로 배포한 stdio 서버는 다음 명령을 씁니다.</p>
+<pre><code>claude mcp add --transport stdio myserver -- npx -y @myorg/mcp-server</code></pre>
+<p>HTTP와 stdio는 등록 명령의 모양만 다른 것이 아니라, 문제가 났을 때 확인할 대상도 달라집니다. HTTP는 서버 주소와 엔드포인트 응답을 먼저 보고, stdio는 클로드 코드가 실행할 명령이 터미널에서 실제로 프로세스를 띄우는지 확인해야 합니다.</p>
+<p>팀 설정은 프로젝트에 둡니다.</p>
+<pre><code>claude mcp add --scope project --transport http myserver http://localhost:3000/mcp</code></pre>
+<p>이 경우 설정은 <code>.mcp.json</code>에 들어가므로 파일을 커밋하면 됩니다. 서버 주소에 개인 환경 값이 들어간다면 팀이 그대로 실행할 수 있는지도 함께 점검해야 합니다.</p>
+<h2>도구 목록이 안 보일 때</h2>
+<p>먼저 등록 상태를 봅니다.</p>
+<pre><code>claude mcp list
+claude mcp get &lt;이름&gt;</code></pre>
+<p>HTTP 서버라면 서버가 살아 있는지부터 확인합니다.</p>
+<pre><code>curl -I &lt;url&gt;</code></pre>
+<p>stdio 서버라면 등록에 넣은 실행 명령을 터미널에서 직접 실행해 프로세스가 뜨는지 봅니다. 시작 시간이 길다면 아래처럼 클로드 코드의 대기 시간을 늘릴 수 있습니다.</p>
+<pre><code>MCP_TIMEOUT=60000 claude</code></pre>
+<p>세션 안에서는 <code>/mcp</code>를 열어 해당 서버가 실제로 어떤 도구를 내놓는지 확인합니다. 이 맥에 붙어 있는 서버 열두 개 가운데 로컬 데스크톱 앱에 연결한 하나를 확인했을 때, 연결은 되었지만 도구 목록을 받아 오지 못했고 상태 줄에는 요청 시간 초과가 표시됐습니다.</p>
+<p>이 경우 볼 곳은 도구 목록입니다.</p>
+<p>서버 연결이 성립했다면 등록 명령보다 도구 목록을 반환하는 서버 쪽을 살펴야 합니다. <code>/mcp</code>에서 목록이 비어 있거나 시간 초과가 난다면, 도구 등록 과정과 목록 응답이 멈추는 지점을 확인하는 순서가 맞습니다(로컬 앱 연동 서버에서 특히 구분이 필요합니다).</p>
+<h2>마무리</h2>
+<p>다음 작업은 작동하는 도구 하나를 정하고, MCP 공식 사이트의 SDK 예제 또는 플러그인으로 서버를 띄우는 일입니다. 그 뒤 등록 명령을 실행하고 <code>/mcp</code>에서 도구 이름이 보이는지 확인하세요. 이 순서면 구현 문제와 연결 문제를 섞지 않고 처리할 수 있습니다.</p>
+<p>클로드 코드 공식 문서에 제작 코드가 없는 점은 빠진 설명처럼 보일 수 있습니다. 다만 실제 문서가 서버 구현을 MCP 공식 사이트와 <code>mcp-server-dev</code> 플러그인으로 넘기기 때문에, 코드 작성법은 그 경로에서 찾고 클로드 코드 문서에서는 등록과 점검에 집중하는 편이 맞습니다.</p></div>
+    <div class="tail">지난 글: <a href="/guide/claude-code-usage-limit/">클로드 코드 사용량 한도에 걸렸을 때</a><br>다음 글: <a href="/guide/mcp-server-connect/">MCP 서버 설치 후 상태 확인법</a><br><a href="/guide/">목록으로</a></div>
+  </article>
+
+  <footer>
+    <div class="fmeta">
+      <a href="/">홈</a>
+      <a href="/guide/">AI 도구</a>
+      <a href="/about/">소개</a>
+      <a href="/contact/">문의</a>
+      <a href="/privacy/">개인정보처리방침</a>
+    </div>
+  </footer>
+
+</div></div>
+</body>
+</html>
