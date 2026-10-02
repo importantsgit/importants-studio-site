@@ -14,7 +14,7 @@ on:
     types: [blog-updated]
   push:
     branches: [main]
-    paths: ["scripts/build_feed.py", "scripts/build_posts.py", "index.template.html", "post.template.html", "log.template.html", "posts/**", ".github/workflows/feed.yml"]
+    paths: ["scripts/build_feed.py", "scripts/build_posts.py", "index.template.html", "post.template.html", "guide.template.html", "guide/**", "posts/**", ".github/workflows/feed.yml"]
 
 permissions:
   contents: write
@@ -34,10 +34,14 @@ jobs:
       - run: python3 scripts/build_feed.py feed.json
       - name: 바뀐 게 있을 때만 커밋
         run: |
-          if [ -n "$(git status --porcelain feed.json index.html sitemap.xml log)" ]; then
+          if [ -n "$(git status --porcelain feed.json index.html sitemap.xml guide)" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add feed.json index.html sitemap.xml log
+            # 경로를 하나라도 틀리면 git add 가 exit 128 로 죽는다.
+            # log 를 guide 로 바꾸고 워크플로를 안 고쳐서 2026-09-22 부터
+            # 열흘 동안 매거진 홈이 갱신되지 않았다. 빌드는 성공하고
+            # 커밋 직전에 터지는 형태라 눈에 안 띈다
+            git add feed.json index.html sitemap.xml guide
             git commit -m "매거진 홈 갱신"
             git push
           else
