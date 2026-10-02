@@ -42,7 +42,11 @@ BLOGS = [
 
 # 심심풀이는 글이 없다. 게임과 도구가 콘텐츠다.
 SIMSIM = "https://simsim.importants-studio.com"
-PLAY = [
+# 2026-10-02 비움. /games/ 와 /tools/ 가 레포에 없어서 아홉 개가 전부 404 였다.
+# 홈에서 404 로 나가는 링크는 심사에서 "사이트 탐색이 어려움" 의 직접 재료다.
+# 실제로 페이지를 만들면 그때 다시 채운다.
+PLAY = []
+_PLAY_WAS = [
     ("게임", "사다리타기",   "/games/ladder/"),
     ("게임", "룰렛",         "/games/roulette/"),
     ("게임", "주사위",       "/games/dice/"),
@@ -150,7 +154,9 @@ def render_html(data, log_posts=(), template="index.template.html", out="index.h
     blogs = []
     for b in data["blogs"]:
         posts = []
-        for p in b["posts"][:5]:
+        # 블로그마다 2편만. 5편씩 펼쳤더니 홈 링크 61개 중 46개가
+        # 서브도메인으로 나갔다. 여기는 소개 자리지 피드가 아니다
+        for p in b["posts"][:2]:
             posts.append(
                 '<a class="post" href="%s"><span class="ptitle">%s</span>'
                 '<span class="psum">%s</span><span class="pdate">%s</span></a>'
@@ -165,18 +171,23 @@ def render_html(data, log_posts=(), template="index.template.html", out="index.h
         '<a class="tile" href="%s"><span class="tkind">%s</span>'
         '<span class="tname">%s</span></a>'
         % (esc(i["url"]), esc(i["kind"]), esc(i["name"])) for i in play["items"])
+    # 항목이 없으면 섹션 자체를 내지 않는다. 빈 제목만 남으면 더 나쁘다
     play_html = ('<section class="sec">%s<div class="tiles">%s</div></section>'
                  % (section_head(play["name"], play["tagline"], play["url"], PLAY_COLOR),
-                    tiles))
+                    tiles)) if tiles else ""
 
     # 블로그 루프가 posts 라는 이름을 이미 쓰고 있다. 가이드 글은 log_posts 로 받는다.
+    #
+    # **자체 글을 전부 띄운다.** 4편만 띄우고 맨 아래 두었더니 홈 링크 61개 중
+    # 46개가 서브도메인으로 나가고 자체 글은 5개뿐이었다. 호스트명이 다르면
+    # 심사에서는 남의 사이트다. 남의 글 요약을 모아 바깥으로 보내는 페이지로 읽힌다
     log_html = ""
     if log_posts:
         items = "".join(
             '<a class="post" href="/guide/%s/"><span class="ptitle">%s</span>'
             '<span class="psum">%s</span><span class="pdate">%s</span></a>'
             % (esc(m["slug"]), esc(m["title"]), esc(m["summary"]), esc(short_date(m["date"])))
-            for m in log_posts[:4])
+            for m in log_posts)
         log_html = ('<section class="sec">%s<div class="posts">%s</div></section>'
                     % (section_head(LOG["name"], LOG["tagline"], LOG["url"], LOG["color"]),
                        items))
@@ -218,7 +229,9 @@ def render_sitemap(posts=(), out="sitemap.xml"):
         ("https://importants-studio.com/about/",   "2026-09-09", "monthly", "0.6"),
         ("https://importants-studio.com/privacy/", "2026-09-07", "yearly",  "0.3"),
         ("https://importants-studio.com/contact/", "2026-09-19", "yearly",  "0.3"),
-        ("https://importants-studio.com/log/",     today,        "weekly", "0.8"),
+        # 목록 주소는 /guide/ 다. /log/ 로 두었다가 404 가 사이트맵에 실렸고
+        # 정작 살아 있는 /guide/ 는 빠져 있었다. 이름을 바꿀 때 여기도 고친다
+        ("https://importants-studio.com/guide/",   today,        "weekly", "0.8"),
     ]
     for m in posts:
         pages.append(("https://importants-studio.com/guide/%s/" % m["slug"],

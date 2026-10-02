@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-02T01:46:24+00:00",
+  "generated": "2026-10-02T02:59:58+00:00",
   "blogs": [
     {
       "key": "hyetaek",
@@ -8,6 +8,18 @@
       "tagline": "정부 지원금과 세금 환급을 매일 정리합니다",
       "url": "https://blog.importants-studio.com",
       "posts": [
+        {
+          "title": "부가세 환급, 사업설비를 샀다면 10월 26일까지 예정신고해야 15일 안에 돌려받을 수 있습니다",
+          "url": "https://blog.importants-studio.com/posts/vat-early-refund-preliminary-2026/",
+          "summary": "개인 일반과세자가 올해 7~9월에 설비를 사서 매입세액이 더 컸다면, 예정고지서가 와도 10월 26일까지 예정신고하면 조기환급을 받을 수 있습니다. 일반환급과 시기 차이, 간이과세자가 환급을 못 받는 이유를 국세청 안내로 정리했습니다.",
+          "date": "Fri, 02 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "연말정산 인적공제, 부모님은 형제 중 한 명만 받고 맞벌이 자녀도 한 명에게만 몰아야 합니다",
+          "url": "https://blog.importants-studio.com/posts/yearend-tax-dependent-deduction-2026/",
+          "summary": "연말정산 인적공제는 부양가족의 나이와 소득이 기준에 맞아야 하고, 같은 가족을 두 사람이 받으면 한 명은 추가 세금과 가산세를 냅니다. 부모님·자녀·배우자별 기준과 중복됐을 때 누가 받는지, 지금 확인할 순서를 국세청 안내로 정리했습니다.",
+          "date": "Fri, 02 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "배당소득 분리과세 신청, 올해 받은 고배당기업 배당은 내년 5월 서류를 내야 적용됩니다",
           "url": "https://blog.importants-studio.com/posts/dividend-separate-taxation-2026/",
@@ -25,18 +37,6 @@
           "url": "https://blog.importants-studio.com/posts/withholding-tax-receipt-hometax-2026/",
           "summary": "근로소득 원천징수영수증은 홈택스 PC에서 발급하고, 손택스 모바일은 본인 확인용입니다. 은행이나 관공서에 내는 제출용은 PC에서 출력해야 합니다. 발급 경로, 근로소득과 사업소득 영수증의 차이, 영수증 하단에서 이미 낸 세금과 환급 여부를 읽는 법을 국세청 안내로 정리했습니다.",
           "date": "Wed, 30 Sep 2026 09:00:00 +0900"
-        },
-        {
-          "title": "카드포인트 조회, 삼성·현대·하나·롯데 한 번에 확인하고 1포인트부터 계좌로 받는 법",
-          "url": "https://blog.importants-studio.com/posts/card-point-lookup-cash-2026/",
-          "summary": "카드포인트 조회는 카드사 앱을 하나씩 열지 않아도 여신금융협회 통합조회 한 곳에서 끝납니다. 삼성·현대·하나·롯데 등 11개 카드사의 잔여 포인트를 보고, 1포인트부터 본인 명의 계좌로 받을 수 있습니다. 조회 방법과 입금 시간, 현금화가 안 되는 포인트, 유효기간 5년 소멸 기준을 정리했습니다.",
-          "date": "Wed, 30 Sep 2026 09:00:00 +0900"
-        },
-        {
-          "title": "국가건강검진 대상자, 2026년은 짝수년생이고 폐기능검사가 새로 생겼습니다",
-          "url": "https://blog.importants-studio.com/posts/national-health-checkup-target-2026/",
-          "summary": "2026년 국가건강검진(일반건강검진) 대상은 출생연도 끝자리가 짝수인 사람입니다. 비사무직 직장가입자는 매년 대상이고요. 2026년 1월부터는 만 56세·66세에게 폐기능검사가 새로 추가됐습니다. 대상 여부 확인 방법과 대상이 아닐 때 어떻게 되는지까지 정리했습니다.",
-          "date": "Tue, 29 Sep 2026 09:00:00 +0900"
         }
       ]
     },
@@ -47,6 +47,18 @@
       "tagline": "자동차세, 보험료, 검사 기한을 챙깁니다",
       "url": "https://car.importants-studio.com",
       "posts": [
+        {
+          "title": "윈터타이어 교체 시기, 눈이 오기 전 기온 영상 7도 아래가 기준입니다",
+          "url": "https://car.importants-studio.com/posts/winter-tire-timing/",
+          "summary": "윈터타이어는 눈 오는 날만 쓰는 타이어가 아닙니다. 제조사가 권하는 교체 기준 영상 7도, 눈길 제동거리 비교, 보관·렌탈·전기차까지 정리했습니다.",
+          "date": "Fri, 02 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "자동차 정기검사 비용, 공단은 중형 2만6500원이고 민간 검사소는 곳마다 다릅니다",
+          "url": "https://car.importants-studio.com/posts/car-inspection-fee/",
+          "summary": "자동차 정기검사 비용은 한국교통안전공단 기준 경형 1만7000원, 소형 2만3000원, 중형 2만6500원입니다. 종합검사 금액, 민간 검사소 차이, 감면 대상, 재검사 무료 조건을 정리했습니다.",
+          "date": "Fri, 02 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "블랙박스 SD카드 교체 주기, 전용 카드도 6개월에서 1년이 한계입니다",
           "url": "https://car.importants-studio.com/posts/blackbox-sd-card-replacement/",
@@ -64,18 +76,6 @@
           "url": "https://car.importants-studio.com/posts/license-renewal-documents/",
           "summary": "운전면허 갱신 준비물은 면허증과 6개월 이내 여권용 사진입니다. 1종 2매, 2종 1매입니다. 신체검사를 건강검진 결과로 대신하는 조건, 수수료, 대리 신청 때 챙길 서류를 정리했습니다.",
           "date": "Wed, 30 Sep 2026 09:00:00 +0900"
-        },
-        {
-          "title": "음주운전 처벌 수위, 혈중알코올농도 0.03%·0.08%·0.2%에서 갈립니다",
-          "url": "https://car.importants-studio.com/posts/dui-penalty-levels/",
-          "summary": "음주운전 처벌 수위는 혈중알코올농도 0.03%, 0.08%, 0.2%를 경계로 달라집니다. 구간별 징역·벌금, 면허 정지와 취소 기준, 주차장·자전거 적용 여부를 법령 원문으로 정리했습니다.",
-          "date": "Wed, 30 Sep 2026 09:00:00 +0900"
-        },
-        {
-          "title": "과태료 조회, 이파인과 위택스 결과가 다른 이유가 있습니다",
-          "url": "https://car.importants-studio.com/posts/fine-inquiry-efine-wetax/",
-          "summary": "과태료 조회는 위반 종류에 따라 사이트가 다릅니다. 속도위반은 이파인, 주정차위반은 위택스입니다. 미납 시 감경·가산금 기준까지 정리했습니다.",
-          "date": "Tue, 29 Sep 2026 09:00:00 +0900"
         }
       ]
     },
@@ -86,6 +86,18 @@
       "tagline": "결혼과 육아에 드는 돈과 제도를 정리합니다",
       "url": "https://home.importants-studio.com",
       "posts": [
+        {
+          "title": "신혼부부 혜택 2026, 결혼 직후부터 집 구할 때까지 챙길 제도 정리",
+          "url": "https://home.importants-studio.com/posts/newlywed-benefits-overview-2026/",
+          "summary": "신혼부부 혜택은 세금, 대출, 보증료, 지자체 축하금으로 나뉘고 신청 창구도 제각각입니다. 혼인세액공제 100만원, 증여공제 1억원, 버팀목·디딤돌 한도까지 2026년 기준으로 한 번에 모았습니다.",
+          "date": "Fri, 02 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "임신확인서 발급 후 할 일, 진료비 바우처부터 보건소 등록까지 순서대로",
+          "url": "https://home.importants-studio.com/posts/pregnancy-confirmation-after-steps-2026/",
+          "summary": "임신확인서는 산부인과에서 받습니다. 발급받은 뒤 임신·출산 진료비 지원(임신 1회당 100만 원), 정부24 맘편한 임신 통합신청, 보건소 임산부 등록까지 어디에 어떤 순서로 내는지 2026년 기준으로 정리했습니다.",
+          "date": "Fri, 02 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "가정양육수당 신청, 24개월부터 월 10만원 받는 조건과 방법 (2026)",
           "url": "https://home.importants-studio.com/posts/home-care-allowance-2026/",
@@ -103,18 +115,6 @@
           "url": "https://home.importants-studio.com/posts/toy-library-rental-guide-2026/",
           "summary": "장난감 대여는 지역 육아종합지원센터의 장난감도서관에서 회원으로 가입해 빌립니다. 서울과 수원 사례로 이용 대상, 연회비, 대여 개수·기간, 준비 서류와 택배 대여까지 정리했습니다.",
           "date": "Wed, 30 Sep 2026 09:00:00 +0900"
-        },
-        {
-          "title": "출산지원금 지역별로 다릅니다, 첫째 500만원 주는 곳도 50만원인 곳도 (2026)",
-          "url": "https://home.importants-studio.com/posts/local-birth-grant-by-region-2026/",
-          "summary": "출산지원금은 사는 지역에 따라 첫째 기준 수십만원에서 500만원까지 달라집니다. 경기도 양평군·평택시 사례로 거주 요건, 신청 기한, 분할 지급 방식과 2027년 개편 때 달라지는 점을 정리했습니다.",
-          "date": "Wed, 30 Sep 2026 09:00:00 +0900"
-        },
-        {
-          "title": "국민행복카드, 바우처 23종을 카드 한 장으로 씁니다",
-          "url": "https://home.importants-studio.com/posts/national-happy-card-2026/",
-          "summary": "국민행복카드는 임신·출산 진료비, 첫만남이용권, 보육료·유아학비, 아이돌봄서비스 등 국가 바우처 23종을 카드 한 장으로 쓰는 통합카드입니다. 발급 카드사, 신청 방법, 사용처와 잔액 확인법을 정리했습니다.",
-          "date": "Tue, 29 Sep 2026 09:00:00 +0900"
         }
       ]
     },
@@ -125,6 +125,18 @@
       "tagline": "연금과 건강보험, 은퇴 뒤의 살림을 정리합니다",
       "url": "https://leisurely.importants-studio.com",
       "posts": [
+        {
+          "title": "노인일자리 118만 개로 늘리는 2027년 예산안, 몇 살부터 자격이 되나요",
+          "url": "https://leisurely.importants-studio.com/posts/senior-job-budget-2027/",
+          "summary": "정부가 2027년 노인일자리를 115만 2천 개에서 118만 개로 늘리는 예산안을 냈습니다. 국회 심의 전입니다. 출생연도별로 만 60세와 65세가 되는 해, 공익활동형 자격과 월 29만원 활동비를 정리했습니다.",
+          "date": "Fri, 02 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "퇴직금 계산 방법, 마지막 3개월 평균임금이 기준이고 제도 유형에 따라 갈립니다",
+          "url": "https://leisurely.importants-studio.com/posts/severance-calculation-average-wage-2026/",
+          "summary": "퇴직금은 평균임금 30일분에 재직일수를 곱해 365로 나눕니다. 평균임금에 상여금과 연차수당이 들어가는 방식, 퇴직금제도·DB·DC에 따라 달라지는 지점, 지급 기한과 오늘 확인할 것을 정리했습니다.",
+          "date": "Fri, 02 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "국민연금 수령나이 68세 상향안이 나왔습니다, 지금 제도는 출생연도별로 이렇습니다",
           "url": "https://leisurely.importants-studio.com/posts/national-pension-start-age-68-proposal-2026/",
@@ -142,18 +154,6 @@
           "url": "https://leisurely.importants-studio.com/posts/basic-pension-apply-timing-2026/",
           "summary": "기초연금 신청은 만 65세 생일이 속한 달의 한 달 전 1일부터 가능합니다. 출생연도별 신청 시작 시점, 늦게 신청했을 때 지급이 갈리는 방식, 신청 방법과 서류를 정리했습니다.",
           "date": "Wed, 30 Sep 2026 09:00:00 +0900"
-        },
-        {
-          "title": "임금피크제 들어가면 국민연금 보험료와 연금액은 어떻게 달라지나요 (2026년 기준)",
-          "url": "https://leisurely.importants-studio.com/posts/wage-peak-national-pension-2026/",
-          "summary": "임금피크제로 월급이 줄면 국민연금 보험료는 언제 내려가고, 나중에 받는 연금액에는 얼마나 영향을 줄까요. 기준소득월액 20% 변경 기준, 출생연도별 노령연금 개시 나이와 정년 사이 공백을 정리했습니다.",
-          "date": "Wed, 30 Sep 2026 09:00:00 +0900"
-        },
-        {
-          "title": "국민내일배움카드, 대기업 다녀도 45세 넘으면 신청됩니다",
-          "url": "https://leisurely.importants-studio.com/posts/national-job-training-card-2026/",
-          "summary": "국민내일배움카드는 재직자와 자영업자마다 신청 조건이 다릅니다. 대기업 재직자는 45세 기준으로, 자영업자는 매출 기준으로 갈립니다. 지원 한도와 신청 방법을 정리했습니다.",
-          "date": "Tue, 29 Sep 2026 09:00:00 +0900"
         }
       ]
     },
@@ -164,6 +164,18 @@
       "tagline": "뉴스의 숫자가 무슨 뜻인지 풀어 씁니다",
       "url": "https://money.importants-studio.com",
       "posts": [
+        {
+          "title": "코픽스 뜻, 신규취급액·잔액·신잔액 기준은 왜 숫자가 다를까",
+          "url": "https://money.importants-studio.com/posts/cofix-new-vs-balance-explained/",
+          "summary": "코픽스(COFIX)가 무엇을 평균 낸 숫자인지, 같은 달인데도 신규취급액·잔액·신잔액 기준이 3.18%, 3.05%, 2.71%로 갈리는 이유, 내 대출이 어느 쪽을 따라가는지 원리부터 풀었습니다.",
+          "date": "Fri, 02 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "환율 계산, 곱할까 나눌까? 매매기준율과 은행 환율이 다른 이유까지",
+          "url": "https://money.importants-studio.com/posts/how-to-calculate-exchange-rate/",
+          "summary": "환율 계산은 곱하기와 나누기 두 가지면 끝납니다. 달러·엔화·위안화 계산 방법, 100엔 단위 표기, 매매기준율과 은행이 고시하는 살 때·팔 때 환율이 다른 이유를 한국은행 자료로 풀었습니다.",
+          "date": "Fri, 02 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "전세사기 예방, 전세가율과 근저당이 보증금을 깎는 구조부터 보세요",
           "url": "https://money.importants-studio.com/posts/jeonse-fraud-prevention-structure/",
@@ -181,18 +193,6 @@
           "url": "https://money.importants-studio.com/posts/ipo-subscription-allocation-explained/",
           "summary": "공모주 청약은 증거금을 넣고 신청하면 끝이 아니라 배정 방식이 핵심입니다. 균등배정과 비례배정이 어떻게 나뉘는지, 증거금은 왜 더 넣고 돌려받는지, 일정은 어디서 보는지 원리를 풀었습니다.",
           "date": "Wed, 30 Sep 2026 09:00:00 +0900"
-        },
-        {
-          "title": "종합부동산세 기준과 계산 순서, 공시가격이 고지서가 되기까지",
-          "url": "https://money.importants-studio.com/posts/comprehensive-real-estate-tax-structure/",
-          "summary": "종합부동산세는 6월 1일에 집을 가진 분에게 매겨지고 12월 1일부터 15일까지 냅니다. 공시가격에서 공제금액을 빼고, 공정시장가액비율을 곱하고, 세율표를 적용하는 순서를 가상의 수치로 풀었습니다.",
-          "date": "Wed, 30 Sep 2026 09:00:00 +0900"
-        },
-        {
-          "title": "LTV 뜻, 같은 집을 사도 대출 한도가 사람마다 다른 이유",
-          "url": "https://money.importants-studio.com/posts/ltv-loan-limit-explained/",
-          "summary": "LTV(담보인정비율)가 정확히 뭘 계산하는 수치인지, DSR·DTI와는 뭐가 다른지, 지역과 생애최초 여부에 따라 왜 대출 한도가 크게 벌어지는지 원리부터 정리했습니다.",
-          "date": "Tue, 29 Sep 2026 09:00:00 +0900"
         }
       ]
     },
@@ -203,6 +203,18 @@
       "tagline": "떠나기 전에 확인해야 할 것을 짚습니다",
       "url": "https://travel.importants-studio.com",
       "posts": [
+        {
+          "title": "일본 여행 준비물, 물건 목록보다 먼저 확인할 반입 규정과 서류입니다",
+          "url": "https://travel.importants-studio.com/posts/japan-travel-checklist-rules-2026/",
+          "summary": "일본 여행 준비물 중 공항에서 문제가 되는 것은 물건이 아니라 규정입니다. 감기약 성분, 육가공품, 면세 범위, 100V 전압, 입국 서류를 공식 자료 기준으로 정리했습니다.",
+          "date": "Fri, 02 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "일본 출국세 3,000엔으로 올랐습니다, 6월 30일까지 끊은 항공권은 1,000엔 그대로입니다",
+          "url": "https://travel.importants-studio.com/posts/japan-departure-tax-hike-2026/",
+          "summary": "일본 출국세(국제관광여객세)는 2026년 7월 1일부터 출국 1회당 3,000엔입니다. 6월 30일까지 발권한 항공권은 1,000엔이 적용되고, 만 2세 미만과 24시간 안 환승객은 내지 않습니다.",
+          "date": "Fri, 02 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "오사카 주유패스 가격, 2026년 판은 전자티켓으로만 팔고 구입 후 3개월 안에 써야 합니다",
           "url": "https://travel.importants-studio.com/posts/osaka-amazing-pass-price-2026/",
@@ -220,18 +232,6 @@
           "url": "https://travel.importants-studio.com/posts/tokyo-subway-ticket-price-2026/",
           "summary": "도쿄 지하철 패스(Tokyo Subway Ticket)는 2026년 3월 14일부터 24시간권 1,000엔, 48시간권 1,500엔, 72시간권 2,000엔으로 올랐습니다. 예전 후기의 800·1,200·1,500엔은 인상 전 금액입니다.",
           "date": "Wed, 30 Sep 2026 09:00:00 +0900"
-        },
-        {
-          "title": "여권 발급 준비물(성인), 사진 규격이 안 맞으면 접수가 반려될 수 있습니다",
-          "url": "https://travel.importants-studio.com/posts/passport-first-issue-documents-2026/",
-          "summary": "성인 여권 발급 준비물은 신청서, 신분증, 6개월 이내 여권용 사진 1매입니다. 사진 규격과 수수료 5만2천원, 25세 이상 남성의 국외여행허가, 긴급여권까지 접수 전에 확인할 것을 정리했습니다.",
-          "date": "Wed, 30 Sep 2026 09:00:00 +0900"
-        },
-        {
-          "title": "나리타 익스프레스 예약과 가격, 도쿄 시내 가기 전에 확인할 것",
-          "url": "https://travel.importants-studio.com/posts/narita-express-fare-reservation-guide-2026/",
-          "summary": "나리타 익스프레스는 전 좌석 지정석이라 예매가 필수입니다. 도쿄역 기준 편도 요금은 3,070엔대이고, 외국여권 전용 왕복권은 2026년 3월 5,000엔에서 5,200엔으로 올랐습니다. 좌석 예매는 승차일 1개월 전부터 시작됩니다.",
-          "date": "Tue, 29 Sep 2026 09:00:00 +0900"
         }
       ]
     }
@@ -240,53 +240,7 @@
     "url": "https://simsim.importants-studio.com",
     "name": "심심풀이",
     "tagline": "심심할 때 즐겨보세요",
-    "items": [
-      {
-        "kind": "게임",
-        "name": "사다리타기",
-        "url": "https://simsim.importants-studio.com/games/ladder/"
-      },
-      {
-        "kind": "게임",
-        "name": "룰렛",
-        "url": "https://simsim.importants-studio.com/games/roulette/"
-      },
-      {
-        "kind": "게임",
-        "name": "주사위",
-        "url": "https://simsim.importants-studio.com/games/dice/"
-      },
-      {
-        "kind": "게임",
-        "name": "폭탄 돌리기",
-        "url": "https://simsim.importants-studio.com/games/bomb/"
-      },
-      {
-        "kind": "게임",
-        "name": "서바이벌",
-        "url": "https://simsim.importants-studio.com/games/survival/"
-      },
-      {
-        "kind": "게임",
-        "name": "롤링 보드",
-        "url": "https://simsim.importants-studio.com/games/roll-board/"
-      },
-      {
-        "kind": "도구",
-        "name": "날짜 뽑기",
-        "url": "https://simsim.importants-studio.com/tools/date-pick/"
-      },
-      {
-        "kind": "도구",
-        "name": "연차 계산기",
-        "url": "https://simsim.importants-studio.com/tools/yeoncha/"
-      },
-      {
-        "kind": "도구",
-        "name": "정산기",
-        "url": "https://simsim.importants-studio.com/tools/settle/"
-      }
-    ]
+    "items": []
   },
   "profile": {
     "url": "/profile/",
