@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-04T05:01:32+00:00",
+  "generated": "2026-10-04T11:59:55+00:00",
   "blogs": [
     {
       "key": "hyetaek",
@@ -9,34 +9,34 @@
       "url": "https://blog.importants-studio.com",
       "posts": [
         {
+          "title": "기부금 세액공제 한도는 소득금액의 30%, 종교단체에만 냈다면 10%까지입니다",
+          "url": "https://blog.importants-studio.com/posts/donation-tax-credit-limit-2026/",
+          "summary": "기부금 세액공제는 1천만원까지 15%, 초과분은 30%를 돌려받고, 일반기부금 한도는 소득금액의 30%입니다. 종교단체에 낸 헌금은 한도 계산이 달라 넘긴 금액이 10년간 이월됩니다. 부모님 이름으로 낸 기부금도 올릴 수 있는 조건과 영수증을 구하는 방법까지 소득세법과 국세청 안내로 정리했습니다.",
+          "date": "Sun, 04 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "중소기업 취업자 소득세 감면, 신청서를 안 냈다면 경정청구로 돌려받을 수 있습니다",
+          "url": "https://blog.importants-studio.com/posts/sme-employee-income-tax-reduction-2026/",
+          "summary": "중소기업 취업자 소득세 감면은 청년이면 취업일부터 5년간 소득세의 90%를 연 200만원 한도로 깎아 줍니다. 신청서를 회사에 내지 않아 감면 없이 세금을 냈다면 경정청구로 돌려받을 수 있습니다. 대상 조건, 신청 방법, 환급 절차를 국세청 안내로 정리했습니다.",
+          "date": "Sun, 04 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "부가세 예정고지, 10월 26일에 한 번에 내기 빠듯하면 납부기한 연장을 신청할 수 있습니다",
+          "url": "https://blog.importants-studio.com/posts/vat-preliminary-notice-extension-2026/",
+          "summary": "개인 일반과세자는 10월 26일까지 부가세 예정고지서를 냅니다. 고지 금액이 정해지는 방식, 실적이 줄었을 때 예정신고로 바꾸는 방법, 쪼개 내기 어려울 때 쓰는 납부기한 연장 신청을 국세청 안내로 정리했습니다.",
+          "date": "Sat, 03 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "퇴직소득세 계산, 근속 10년에 퇴직금 4천만원이면 세금은 44만원 안팎입니다",
+          "url": "https://blog.importants-studio.com/posts/retirement-income-tax-calculation-2026/",
+          "summary": "퇴직소득세 계산 순서와 근속연수공제, 환산급여공제, 세율표를 국세청 안내로 정리했습니다. 근속 10년에 퇴직금 4천만원이면 세금이 44만원 안팎인 계산 예시와, 이미 세금을 떼고 받았어도 60일 안에 IRP에 넣으면 환급받는 방법까지 담았습니다.",
+          "date": "Sat, 03 Oct 2026 09:00:00 +0900"
+        },
+        {
           "title": "부가세 환급, 사업설비를 샀다면 10월 26일까지 예정신고해야 15일 안에 돌려받을 수 있습니다",
           "url": "https://blog.importants-studio.com/posts/vat-early-refund-preliminary-2026/",
           "summary": "개인 일반과세자가 올해 7~9월에 설비를 사서 매입세액이 더 컸다면, 예정고지서가 와도 10월 26일까지 예정신고하면 조기환급을 받을 수 있습니다. 일반환급과 시기 차이, 간이과세자가 환급을 못 받는 이유를 국세청 안내로 정리했습니다.",
           "date": "Fri, 02 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "연말정산 인적공제, 부모님은 형제 중 한 명만 받고 맞벌이 자녀도 한 명에게만 몰아야 합니다",
-          "url": "https://blog.importants-studio.com/posts/yearend-tax-dependent-deduction-2026/",
-          "summary": "연말정산 인적공제는 부양가족의 나이와 소득이 기준에 맞아야 하고, 같은 가족을 두 사람이 받으면 한 명은 추가 세금과 가산세를 냅니다. 부모님·자녀·배우자별 기준과 중복됐을 때 누가 받는지, 지금 확인할 순서를 국세청 안내로 정리했습니다.",
-          "date": "Fri, 02 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "배당소득 분리과세 신청, 올해 받은 고배당기업 배당은 내년 5월 서류를 내야 적용됩니다",
-          "url": "https://blog.importants-studio.com/posts/dividend-separate-taxation-2026/",
-          "summary": "배당소득 분리과세는 2026년 1월 1일 이후 받은 고배당기업 배당에 적용되고, 자동이 아니라 내년 5월 종합소득세 신고 때 신청서를 내야 합니다. 세율 구간, 대상 기업 확인처, 건강보험료와의 관계를 정부 안내로 정리했습니다.",
-          "date": "Thu, 01 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "상속인 금융거래 조회 신청 방법, 부모님 사망 후 1년 안에 정부24에서 한 번에 찾습니다",
-          "url": "https://blog.importants-studio.com/posts/heir-financial-transaction-inquiry-2026/",
-          "summary": "부모님이나 배우자가 세상을 떠난 뒤 어느 은행에 계좌가 있는지 모르면 상속인 금융거래 조회로 한 번에 확인합니다. 안심상속 원스톱 서비스는 사망일이 속한 달의 말일부터 1년 이내 신청할 수 있고, 금융거래는 20일 안에 문자로 알려줍니다. 신청 방법, 결과 확인 기간, 빚이 있을 때 3개월 기한까지 행정안전부와 금융감독원",
-          "date": "Thu, 01 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "원천징수영수증 발급방법, 홈택스에서 뽑고 결정세액과 기납부세액부터 확인해 보세요",
-          "url": "https://blog.importants-studio.com/posts/withholding-tax-receipt-hometax-2026/",
-          "summary": "근로소득 원천징수영수증은 홈택스 PC에서 발급하고, 손택스 모바일은 본인 확인용입니다. 은행이나 관공서에 내는 제출용은 PC에서 출력해야 합니다. 발급 경로, 근로소득과 사업소득 영수증의 차이, 영수증 하단에서 이미 낸 세금과 환급 여부를 읽는 법을 국세청 안내로 정리했습니다.",
-          "date": "Wed, 30 Sep 2026 09:00:00 +0900"
         }
       ]
     },
@@ -48,34 +48,34 @@
       "url": "https://car.importants-studio.com",
       "posts": [
         {
+          "title": "다이렉트 자동차보험 비교, 대면 가입보다 평균 19% 싸다는 집계의 속사정",
+          "url": "https://car.importants-studio.com/posts/direct-car-insurance-vs-agent/",
+          "summary": "다이렉트 자동차보험은 2025년 개인용 가입의 51.4%를 차지했고 평균 보험료가 대면보다 약 19% 낮았습니다. 비교견적 받는 곳, 보험료 계산 때 입력할 것, 가입 전 확인할 점을 정리했습니다.",
+          "date": "Sun, 04 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "모바일 운전면허증 발급 방법, 시험장에서 QR로 1000원이면 되지만 폰을 바꾸면 다시 가야 합니다",
+          "url": "https://car.importants-studio.com/posts/mobile-driver-license/",
+          "summary": "모바일 운전면허증 발급 방법은 두 가지입니다. 시험장 QR 발급은 1000원, IC 운전면허증 발급은 1만5000원이고 폰을 바꿔도 다시 태그하면 됩니다. 준비물과 재발급, 갱신 때 함께 받는 법을 정리했습니다.",
+          "date": "Sun, 04 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "워셔액 넣는 법, 겨울에는 물 대신 어는점 낮은 겨울용을 채워야 합니다",
+          "url": "https://car.importants-studio.com/posts/washer-fluid-winter-refill/",
+          "summary": "워셔액은 본네트를 열고 보조 탱크에 채우면 됩니다. 현대자동차 사용설명서 기준으로 겨울에는 빙결 방지용을 써야 하고, 안 나올 때 계속 누르면 모터가 상합니다.",
+          "date": "Sat, 03 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "자동차 배터리 방전, 시동이 안 걸리면 보험 긴급출동부터 부르세요",
+          "url": "https://car.importants-studio.com/posts/car-battery-dead-emergency/",
+          "summary": "자동차 배터리 방전으로 시동이 안 걸릴 때 자동차보험 긴급출동은 보험사별 연 6회 안팎까지 충전이 무료입니다. 직접 점프하는 순서와 방전 원인, 예방법을 정리했습니다.",
+          "date": "Sat, 03 Oct 2026 09:00:00 +0900"
+        },
+        {
           "title": "윈터타이어 교체 시기, 눈이 오기 전 기온 영상 7도 아래가 기준입니다",
           "url": "https://car.importants-studio.com/posts/winter-tire-timing/",
           "summary": "윈터타이어는 눈 오는 날만 쓰는 타이어가 아닙니다. 제조사가 권하는 교체 기준 영상 7도, 눈길 제동거리 비교, 보관·렌탈·전기차까지 정리했습니다.",
           "date": "Fri, 02 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "자동차 정기검사 비용, 공단은 중형 2만6500원이고 민간 검사소는 곳마다 다릅니다",
-          "url": "https://car.importants-studio.com/posts/car-inspection-fee/",
-          "summary": "자동차 정기검사 비용은 한국교통안전공단 기준 경형 1만7000원, 소형 2만3000원, 중형 2만6500원입니다. 종합검사 금액, 민간 검사소 차이, 감면 대상, 재검사 무료 조건을 정리했습니다.",
-          "date": "Fri, 02 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "블랙박스 SD카드 교체 주기, 전용 카드도 6개월에서 1년이 한계입니다",
-          "url": "https://car.importants-studio.com/posts/blackbox-sd-card-replacement/",
-          "summary": "블랙박스 SD카드 교체 주기는 일반 카드 3~6개월, 전용 카드 6개월~1년이 통상 안내입니다. 고내구성 카드의 수명 차이, 포맷 주기, 용량 고르는 법을 정리했습니다.",
-          "date": "Thu, 01 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "자동차 번호판 교체 비용과 서류, 중형 2매가 대전 9,400원 안양 13,000원입니다",
-          "url": "https://car.importants-studio.com/posts/license-plate-replacement/",
-          "summary": "자동차 번호판 교체는 훼손·분실, 녹색 번호판 교체, 번호 변경 때 할 수 있습니다. 대전·안양 수수료, 훼손과 분실 때 서류, 위임장으로 대신 가는 방법을 정리했습니다.",
-          "date": "Thu, 01 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "운전면허 갱신 준비물, 1종은 사진 2장 2종은 1장이고 신체검사는 건강검진으로 바꿉니다",
-          "url": "https://car.importants-studio.com/posts/license-renewal-documents/",
-          "summary": "운전면허 갱신 준비물은 면허증과 6개월 이내 여권용 사진입니다. 1종 2매, 2종 1매입니다. 신체검사를 건강검진 결과로 대신하는 조건, 수수료, 대리 신청 때 챙길 서류를 정리했습니다.",
-          "date": "Wed, 30 Sep 2026 09:00:00 +0900"
         }
       ]
     },
@@ -87,34 +87,34 @@
       "url": "https://home.importants-studio.com",
       "posts": [
         {
+          "title": "육아휴직 기간, 자녀 1명당 1년이고 조건이 맞으면 1년 6개월 (2026년 기준)",
+          "url": "https://home.importants-studio.com/posts/parental-leave-period-2026/",
+          "summary": "육아휴직 기간은 자녀 1명당 부모 각각 1년입니다. 부모가 각각 3개월 이상 쓰면 1년 6개월까지 늘고, 4번에 나눠 쓸 수 있습니다. 쌍둥이와 공무원 기준까지 정리했습니다.",
+          "date": "Sun, 04 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "육아휴직 사후지급금 폐지, 2025년부터는 휴직 중에 전액 받습니다",
+          "url": "https://home.importants-studio.com/posts/parental-leave-deferred-payment-2026/",
+          "summary": "육아휴직 사후지급금은 2025년 1월 1일부터 폐지됐습니다. 급여의 25%를 복직 6개월 뒤에 받던 옛 방식, 2024년 이전 휴직분의 신청 조건, 지금 급여 구간까지 정리했습니다.",
+          "date": "Sun, 04 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "어린이집 보육료 지원 2026, 0세반 58만 4천원부터 3~5세반 28만원까지",
+          "url": "https://home.importants-studio.com/posts/daycare-fee-subsidy-2026/",
+          "summary": "어린이집 보육료 지원은 소득과 무관하게 0~5세 모두 받습니다. 2026년 연령별 지원 단가, 복지로 신청 방법, 부모급여나 양육수당에서 바꾸는 법, 국민행복카드 결제까지 정리했습니다.",
+          "date": "Sat, 03 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "육아휴직 신청 방법, 휴직 30일 전까지 회사에 신청서를 냅니다 (2026년 기준)",
+          "url": "https://home.importants-studio.com/posts/parental-leave-application-2026/",
+          "summary": "육아휴직 신청은 휴직 시작 예정일 30일 전까지 신청서를 회사에 내는 것에서 시작합니다. 신청서에 적는 내용, 7일 전 신청이 가능한 예외, 회사가 거절할 수 있는 경우, 급여 신청 서류까지 2026년 기준으로 정리했습니다.",
+          "date": "Sat, 03 Oct 2026 09:00:00 +0900"
+        },
+        {
           "title": "신혼부부 혜택 2026, 결혼 직후부터 집 구할 때까지 챙길 제도 정리",
           "url": "https://home.importants-studio.com/posts/newlywed-benefits-overview-2026/",
           "summary": "신혼부부 혜택은 세금, 대출, 보증료, 지자체 축하금으로 나뉘고 신청 창구도 제각각입니다. 혼인세액공제 100만원, 증여공제 1억원, 버팀목·디딤돌 한도까지 2026년 기준으로 한 번에 모았습니다.",
           "date": "Fri, 02 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "임신확인서 발급 후 할 일, 진료비 바우처부터 보건소 등록까지 순서대로",
-          "url": "https://home.importants-studio.com/posts/pregnancy-confirmation-after-steps-2026/",
-          "summary": "임신확인서는 산부인과에서 받습니다. 발급받은 뒤 임신·출산 진료비 지원(임신 1회당 100만 원), 정부24 맘편한 임신 통합신청, 보건소 임산부 등록까지 어디에 어떤 순서로 내는지 2026년 기준으로 정리했습니다.",
-          "date": "Fri, 02 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "가정양육수당 신청, 24개월부터 월 10만원 받는 조건과 방법 (2026)",
-          "url": "https://home.importants-studio.com/posts/home-care-allowance-2026/",
-          "summary": "가정양육수당은 어린이집·유치원에 보내지 않는 24개월 이상 86개월 미만 아이에게 월 10만원부터 지급합니다. 부모급여가 끝나는 시점, 신청 방법, 지급일, 어린이집을 보내면 어떻게 되는지 정리했습니다.",
-          "date": "Thu, 01 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "스드메 계약 전 확인할 것, 계약금 환불 기준과 표준계약서 (2026)",
-          "url": "https://home.importants-studio.com/posts/wedding-package-contract-2026/",
-          "summary": "스드메 계약을 앞둔 예비부부를 위해 결혼준비대행서비스의 계약 해제 시 환급 기준, 청약철회 기간, 공정위 표준계약서가 기본서비스로 묶은 항목, 계약서에서 볼 지점을 정리했습니다.",
-          "date": "Thu, 01 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "장난감 대여, 장난감도서관 가입부터 대여 기간까지 (2026)",
-          "url": "https://home.importants-studio.com/posts/toy-library-rental-guide-2026/",
-          "summary": "장난감 대여는 지역 육아종합지원센터의 장난감도서관에서 회원으로 가입해 빌립니다. 서울과 수원 사례로 이용 대상, 연회비, 대여 개수·기간, 준비 서류와 택배 대여까지 정리했습니다.",
-          "date": "Wed, 30 Sep 2026 09:00:00 +0900"
         }
       ]
     },
@@ -126,34 +126,34 @@
       "url": "https://leisurely.importants-studio.com",
       "posts": [
         {
+          "title": "국민연금 임의계속가입, 60세 이후 65세 전까지 신청하고 보험료는 전액 본인 몫입니다",
+          "url": "https://leisurely.importants-studio.com/posts/national-pension-voluntary-continued-2026/",
+          "summary": "국민연금 임의계속가입은 60세가 넘어도 65세가 되기 전까지 신청해 보험료를 계속 낼 수 있는 제도입니다. 신청 기한, 제외 대상, 2026년 보험료율 9.5%, 출생연도별로 보험료를 낼 수 있는 기간을 정리했습니다.",
+          "date": "Sun, 04 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "노령연금 신청, 수급개시 나이가 되면 직접 청구해야 나옵니다",
+          "url": "https://leisurely.importants-studio.com/posts/old-age-pension-claim-2026/",
+          "summary": "노령연금은 가입기간 10년 이상이고 출생연도별 수급개시 나이에 이르러도 청구해야 나옵니다. 신청 방법과 서류, 첫 지급 시점, 늦게 청구했을 때 소급 5년 한도를 출생연도별로 정리했습니다.",
+          "date": "Sun, 04 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "국가건강검진 대상자, 올해 받는 해인지 가입 유형별로 확인하는 법 (2026년)",
+          "url": "https://leisurely.importants-studio.com/posts/national-health-checkup-target-2026/",
+          "summary": "국가건강검진 대상자는 직장·지역·피부양자 유형과 출생연도에 따라 갈립니다. 2026년 검진은 12월 31일까지이고, 퇴직하면 안내를 받는 방식이 달라집니다. 일반검진 주기와 50대가 걸리는 암검진 연령, 본인부담을 공단 안내 기준으로 정리했습니다.",
+          "date": "Sat, 03 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "퇴직금 지급기한은 14일, 넘기면 연 20% 지연이자가 붙습니다",
+          "url": "https://leisurely.importants-studio.com/posts/severance-payment-deadline-2026/",
+          "summary": "퇴직금은 퇴직일 다음 날부터 14일 이내에 받아야 합니다. 기한을 넘기면 연 20% 지연이자가 붙고, 합의로 기한을 늘려도 이자는 남습니다. 퇴직금제도와 DC형이 어떻게 다른지, 못 받았을 때 시효는 얼마인지 공식 안내로 정리했습니다.",
+          "date": "Sat, 03 Oct 2026 09:00:00 +0900"
+        },
+        {
           "title": "노인일자리 118만 개로 늘리는 2027년 예산안, 몇 살부터 자격이 되나요",
           "url": "https://leisurely.importants-studio.com/posts/senior-job-budget-2027/",
           "summary": "정부가 2027년 노인일자리를 115만 2천 개에서 118만 개로 늘리는 예산안을 냈습니다. 국회 심의 전입니다. 출생연도별로 만 60세와 65세가 되는 해, 공익활동형 자격과 월 29만원 활동비를 정리했습니다.",
           "date": "Fri, 02 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "퇴직금 계산 방법, 마지막 3개월 평균임금이 기준이고 제도 유형에 따라 갈립니다",
-          "url": "https://leisurely.importants-studio.com/posts/severance-calculation-average-wage-2026/",
-          "summary": "퇴직금은 평균임금 30일분에 재직일수를 곱해 365로 나눕니다. 평균임금에 상여금과 연차수당이 들어가는 방식, 퇴직금제도·DB·DC에 따라 달라지는 지점, 지급 기한과 오늘 확인할 것을 정리했습니다.",
-          "date": "Fri, 02 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "국민연금 수령나이 68세 상향안이 나왔습니다, 지금 제도는 출생연도별로 이렇습니다",
-          "url": "https://leisurely.importants-studio.com/posts/national-pension-start-age-68-proposal-2026/",
-          "summary": "9월 28일 국회 토론회에서 국민연금 수급 개시 연령을 68세로 올리자는 전문가 제안이 나왔습니다. 확정된 것은 없고 현행 수령나이는 출생연도별 61~65세 그대로입니다. 내 출생연도 줄과 확인할 곳을 정리했습니다.",
-          "date": "Thu, 01 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "퇴직금 중간정산 사유, 법에 정한 경우에만 가능하고 정산하면 퇴직소득세가 달라집니다",
-          "url": "https://leisurely.importants-studio.com/posts/severance-interim-settlement-2026/",
-          "summary": "퇴직금 중간정산은 시행령 제3조에 정한 사유가 있을 때만 가능합니다. 주택구입·전세금·의료비 등 사유별 조건, 신청 서류, 정산 뒤 근속연수와 퇴직소득세가 달라지는 구조를 정리했습니다.",
-          "date": "Thu, 01 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "기초연금 신청 시기, 만 65세 생일 한 달 전부터이고 늦으면 그 달치를 못 받습니다",
-          "url": "https://leisurely.importants-studio.com/posts/basic-pension-apply-timing-2026/",
-          "summary": "기초연금 신청은 만 65세 생일이 속한 달의 한 달 전 1일부터 가능합니다. 출생연도별 신청 시작 시점, 늦게 신청했을 때 지급이 갈리는 방식, 신청 방법과 서류를 정리했습니다.",
-          "date": "Wed, 30 Sep 2026 09:00:00 +0900"
         }
       ]
     },
@@ -165,34 +165,34 @@
       "url": "https://money.importants-studio.com",
       "posts": [
         {
+          "title": "금리인하요구권 뜻, 기준금리가 내려도 안 되고 내 신용이 좋아져야 되는 이유",
+          "url": "https://money.importants-studio.com/posts/interest-rate-reduction-request-right/",
+          "summary": "금리인하요구권이 무엇이고 왜 기준금리 하락만으로는 안 되는지, 신청해도 불이익이 없는지, 주담대에도 되는지, 자동신청 서비스까지 원리부터 풀었습니다.",
+          "date": "Sun, 04 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "원리금균등상환 vs 원금균등상환 차이, 같은 대출인데 총이자가 다르게 나오는 이유",
+          "url": "https://money.importants-studio.com/posts/equal-payment-vs-equal-principal/",
+          "summary": "원리금균등상환은 매달 같은 금액을, 원금균등상환은 매달 같은 원금을 갚습니다. 1억 원·연 5%·10년이라는 가상의 조건으로 월 상환액과 총이자가 어떻게 갈리는지, 초반 이자 비중과 중도상환까지 풀었습니다.",
+          "date": "Sun, 04 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "금통위 일정, 1년에 8번뿐인 기준금리 결정일과 당일 나오는 자료 읽는 법",
+          "url": "https://money.importants-studio.com/posts/mpc-meeting-schedule-explained/",
+          "summary": "금통위 일정은 통화정책방향 결정회의 8회와 금융안정회의 4회로 나뉩니다. 10월 22일 회의를 앞두고 어떤 날이 기준금리를 정하는 날인지, 당일과 2주 뒤에 어떤 자료가 나오는지 정리했습니다.",
+          "date": "Sat, 03 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "신용대출 금리는 어떻게 정해질까: 같은 은행에서도 사람마다 다른 이유",
+          "url": "https://money.importants-studio.com/posts/credit-loan-interest-rate-structure/",
+          "summary": "신용대출 금리는 지표금리에 가산금리를 더하고 우대금리를 빼서 만들어집니다. 같은 은행에서도 사람마다 금리가 다른 이유, 가산금리와 우대금리가 하는 일, 금리를 비교하고 인하를 요구하는 공식 경로를 원리 중심으로 풀었습니다.",
+          "date": "Sat, 03 Oct 2026 09:00:00 +0900"
+        },
+        {
           "title": "코픽스 뜻, 신규취급액·잔액·신잔액 기준은 왜 숫자가 다를까",
           "url": "https://money.importants-studio.com/posts/cofix-new-vs-balance-explained/",
           "summary": "코픽스(COFIX)가 무엇을 평균 낸 숫자인지, 같은 달인데도 신규취급액·잔액·신잔액 기준이 3.18%, 3.05%, 2.71%로 갈리는 이유, 내 대출이 어느 쪽을 따라가는지 원리부터 풀었습니다.",
           "date": "Fri, 02 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "환율 계산, 곱할까 나눌까? 매매기준율과 은행 환율이 다른 이유까지",
-          "url": "https://money.importants-studio.com/posts/how-to-calculate-exchange-rate/",
-          "summary": "환율 계산은 곱하기와 나누기 두 가지면 끝납니다. 달러·엔화·위안화 계산 방법, 100엔 단위 표기, 매매기준율과 은행이 고시하는 살 때·팔 때 환율이 다른 이유를 한국은행 자료로 풀었습니다.",
-          "date": "Fri, 02 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "전세사기 예방, 전세가율과 근저당이 보증금을 깎는 구조부터 보세요",
-          "url": "https://money.importants-studio.com/posts/jeonse-fraud-prevention-structure/",
-          "summary": "전세사기 예방의 출발점은 전세가율과 근저당입니다. 집값에서 선순위 빚과 내 보증금을 빼면 무엇이 남는지, 전세보증금반환보증이 어떤 계산으로 가입 여부를 가르는지, 계약서 특약은 어디를 막는지 원리 중심으로 정리했습니다.",
-          "date": "Thu, 01 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "청약통장 납입횟수와 예치금, 1순위는 이 두 가지 기준으로 갈립니다",
-          "url": "https://money.importants-studio.com/posts/housing-subscription-account-first-rank/",
-          "summary": "청약통장은 국민주택과 민영주택에서 1순위를 가르는 기준이 다릅니다. 납입횟수와 예치금이 각각 어디에 쓰이는지, 월 납입 인정액 25만원은 무슨 뜻인지, 해지와 전환 때 무엇이 남는지 원리를 풀었습니다.",
-          "date": "Thu, 01 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "공모주 청약 방법, 균등배정과 비례배정은 어떻게 다른가요",
-          "url": "https://money.importants-studio.com/posts/ipo-subscription-allocation-explained/",
-          "summary": "공모주 청약은 증거금을 넣고 신청하면 끝이 아니라 배정 방식이 핵심입니다. 균등배정과 비례배정이 어떻게 나뉘는지, 증거금은 왜 더 넣고 돌려받는지, 일정은 어디서 보는지 원리를 풀었습니다.",
-          "date": "Wed, 30 Sep 2026 09:00:00 +0900"
         }
       ]
     },
@@ -204,34 +204,34 @@
       "url": "https://travel.importants-studio.com",
       "posts": [
         {
+          "title": "여권 갱신 준비물, 온라인이면 사진 파일 하나, 방문이면 구여권까지 챙깁니다",
+          "url": "https://travel.importants-studio.com/posts/passport-renewal-documents-2026/",
+          "summary": "여권 갱신(재발급) 준비물은 온라인과 방문이 다릅니다. 정부24는 6개월 이내 사진 파일만, 방문은 신청서·신분증·사진·구여권이 필요합니다. 구여권 처리, 수수료, 잔여 유효기간 선택까지 정리했습니다.",
+          "date": "Sun, 04 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "일본 eSIM 무제한, 에어알로는 하루 3GB 넘으면 1Mbps입니다",
+          "url": "https://travel.importants-studio.com/posts/japan-esim-data-only-conditions-2026/",
+          "summary": "일본 eSIM은 대부분 데이터 전용입니다. 에어알로 일본 무제한은 하루 3GB 뒤 1Mbps, 전화번호 없음, 설치는 출국 전에 가능합니다. 기간별 요금과 KT 로밍 비교를 정리했습니다.",
+          "date": "Sun, 04 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "여권 영문 이름 변경, 사유가 정해져 있고 온라인 신청은 안 됩니다",
+          "url": "https://travel.importants-studio.com/posts/passport-english-name-change-rules-2026/",
+          "summary": "여권 영문 이름 변경은 외교부가 정한 사유에 해당할 때만 허용되고 온라인으로는 신청할 수 없습니다. 발음 불일치, 개명, 배우자 성 추가, 외자 이름 등 사유별 조건을 정리했습니다.",
+          "date": "Sat, 03 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "일본 환전 방법, 엔화는 어디서 마련하느냐에 따라 확인할 줄이 다릅니다",
+          "url": "https://travel.importants-studio.com/posts/japan-yen-exchange-methods-2026/",
+          "summary": "일본 환전은 은행 앱 환전, 트래블카드 충전, 세븐은행 ATM 인출 세 갈래입니다. 트래블로그는 엔화 환율우대 100%를 내세우지만 ATM 인출 한도, 현금 신고 기준 같은 줄은 따로 확인해야 합니다.",
+          "date": "Sat, 03 Oct 2026 09:00:00 +0900"
+        },
+        {
           "title": "일본 여행 준비물, 물건 목록보다 먼저 확인할 반입 규정과 서류입니다",
           "url": "https://travel.importants-studio.com/posts/japan-travel-checklist-rules-2026/",
           "summary": "일본 여행 준비물 중 공항에서 문제가 되는 것은 물건이 아니라 규정입니다. 감기약 성분, 육가공품, 면세 범위, 100V 전압, 입국 서류를 공식 자료 기준으로 정리했습니다.",
           "date": "Fri, 02 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "일본 출국세 3,000엔으로 올랐습니다, 6월 30일까지 끊은 항공권은 1,000엔 그대로입니다",
-          "url": "https://travel.importants-studio.com/posts/japan-departure-tax-hike-2026/",
-          "summary": "일본 출국세(국제관광여객세)는 2026년 7월 1일부터 출국 1회당 3,000엔입니다. 6월 30일까지 발권한 항공권은 1,000엔이 적용되고, 만 2세 미만과 24시간 안 환승객은 내지 않습니다.",
-          "date": "Fri, 02 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "오사카 주유패스 가격, 2026년 판은 전자티켓으로만 팔고 구입 후 3개월 안에 써야 합니다",
-          "url": "https://travel.importants-studio.com/posts/osaka-amazing-pass-price-2026/",
-          "summary": "오사카 주유패스 2026년 판은 1일권 3,500엔, 2일권 5,000엔이며 스마트폰 전자티켓으로만 판매합니다. 구입일부터 3개월 안에 써야 하고, 2026년 10월 1일부터 간사이공항판 28시간권(5,300엔)이 추가됐습니다.",
-          "date": "Thu, 01 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "일본 면세 한도, 일본에 들어갈 때와 한국에 돌아올 때 기준이 따로 있습니다",
-          "url": "https://travel.importants-studio.com/posts/japan-duty-free-allowance-2026/",
-          "summary": "일본 면세 한도는 입국할 때 일본 세관 기준(주류 3병, 해외시가 합계 20만엔)과 귀국할 때 한국 세관 기준(800달러, 주류 2L)이 따로 있습니다. 주류·담배·향수 한도와 초과 시 어떻게 되는지 2026년 10월 확인 기준으로 정리했습니다.",
-          "date": "Thu, 01 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "도쿄 지하철 패스 가격, 2026년 3월에 오른 요금부터 확인하세요",
-          "url": "https://travel.importants-studio.com/posts/tokyo-subway-ticket-price-2026/",
-          "summary": "도쿄 지하철 패스(Tokyo Subway Ticket)는 2026년 3월 14일부터 24시간권 1,000엔, 48시간권 1,500엔, 72시간권 2,000엔으로 올랐습니다. 예전 후기의 800·1,200·1,500엔은 인상 전 금액입니다.",
-          "date": "Wed, 30 Sep 2026 09:00:00 +0900"
         }
       ]
     }
