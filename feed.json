@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-05T00:33:24+00:00",
+  "generated": "2026-10-05T08:39:14+00:00",
   "blogs": [
     {
       "key": "hyetaek",
@@ -8,6 +8,18 @@
       "tagline": "정부 지원금과 세금 환급을 매일 정리합니다",
       "url": "https://blog.importants-studio.com",
       "posts": [
+        {
+          "title": "퇴사 후 연말정산, 재취업 여부에 따라 내년 2월과 내년 5월로 갈립니다",
+          "url": "https://blog.importants-studio.com/posts/resignation-year-end-tax-settlement-2026/",
+          "summary": "퇴사 후 연말정산은 같은 해에 재취업했는지에 따라 방법이 다릅니다. 재취업하면 새 회사에 전 직장 원천징수영수증을 내 합산하고, 재취업하지 않았다면 내년 5월 종합소득세 신고로 놓친 공제를 돌려받습니다. 국세청 안내로 정리했습니다.",
+          "date": "Mon, 05 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "현금영수증 소득공제, 총급여 25%를 넘긴 금액의 30%를 공제받습니다. 지출증빙용으로 끊었다면 고칠 수 있습니다",
+          "url": "https://blog.importants-studio.com/posts/cash-receipt-income-deduction-2026/",
+          "summary": "현금영수증 소득공제는 총급여의 25%를 넘게 쓴 금액의 30%를 연말정산에서 공제해 줍니다. 한도는 총급여 7천만원 이하면 연 300만원, 초과하면 250만원입니다. 지출증빙용으로 잘못 끊은 영수증을 소득공제용으로 바꾸는 방법과 홈택스에서 누락을 확인하는 순서까지 정리했습니다.",
+          "date": "Mon, 05 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "기부금 세액공제 한도는 소득금액의 30%, 종교단체에만 냈다면 10%까지입니다",
           "url": "https://blog.importants-studio.com/posts/donation-tax-credit-limit-2026/",
@@ -25,18 +37,6 @@
           "url": "https://blog.importants-studio.com/posts/vat-preliminary-notice-extension-2026/",
           "summary": "개인 일반과세자는 10월 26일까지 부가세 예정고지서를 냅니다. 고지 금액이 정해지는 방식, 실적이 줄었을 때 예정신고로 바꾸는 방법, 쪼개 내기 어려울 때 쓰는 납부기한 연장 신청을 국세청 안내로 정리했습니다.",
           "date": "Sat, 03 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "퇴직소득세 계산, 근속 10년에 퇴직금 4천만원이면 세금은 44만원 안팎입니다",
-          "url": "https://blog.importants-studio.com/posts/retirement-income-tax-calculation-2026/",
-          "summary": "퇴직소득세 계산 순서와 근속연수공제, 환산급여공제, 세율표를 국세청 안내로 정리했습니다. 근속 10년에 퇴직금 4천만원이면 세금이 44만원 안팎인 계산 예시와, 이미 세금을 떼고 받았어도 60일 안에 IRP에 넣으면 환급받는 방법까지 담았습니다.",
-          "date": "Sat, 03 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "부가세 환급, 사업설비를 샀다면 10월 26일까지 예정신고해야 15일 안에 돌려받을 수 있습니다",
-          "url": "https://blog.importants-studio.com/posts/vat-early-refund-preliminary-2026/",
-          "summary": "개인 일반과세자가 올해 7~9월에 설비를 사서 매입세액이 더 컸다면, 예정고지서가 와도 10월 26일까지 예정신고하면 조기환급을 받을 수 있습니다. 일반환급과 시기 차이, 간이과세자가 환급을 못 받는 이유를 국세청 안내로 정리했습니다.",
-          "date": "Fri, 02 Oct 2026 09:00:00 +0900"
         }
       ]
     },
@@ -47,6 +47,18 @@
       "tagline": "자동차세, 보험료, 검사 기한을 챙깁니다",
       "url": "https://car.importants-studio.com",
       "posts": [
+        {
+          "title": "자동차세 납부기간 12월 16일부터 31일, 지나면 3% 가산세가 붙습니다",
+          "url": "https://car.importants-studio.com/posts/car-tax-december-payment-period/",
+          "summary": "자동차세 2기분 납부기간은 12월 16일부터 31일입니다. 기한을 넘기면 3%가 붙고, 연체 조회와 납부 방법, 연납과의 차이까지 정리했습니다.",
+          "date": "Mon, 05 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "타이어 위치 교환 주기는 1만km, 공임은 한 대에 1만~2만원대입니다",
+          "url": "https://car.importants-studio.com/posts/tire-rotation-interval-cost/",
+          "summary": "타이어 위치 교환은 보통 1만km마다 한 번 합니다. 공임나라 단가표로 보면 승용차 4개에 2만2천원 안팎이고, 구동방식과 타이어 종류에 따라 바꾸는 방향이 달라집니다.",
+          "date": "Mon, 05 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "다이렉트 자동차보험 비교, 대면 가입보다 평균 19% 싸다는 집계의 속사정",
           "url": "https://car.importants-studio.com/posts/direct-car-insurance-vs-agent/",
@@ -64,18 +76,6 @@
           "url": "https://car.importants-studio.com/posts/washer-fluid-winter-refill/",
           "summary": "워셔액은 본네트를 열고 보조 탱크에 채우면 됩니다. 현대자동차 사용설명서 기준으로 겨울에는 빙결 방지용을 써야 하고, 안 나올 때 계속 누르면 모터가 상합니다.",
           "date": "Sat, 03 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "자동차 배터리 방전, 시동이 안 걸리면 보험 긴급출동부터 부르세요",
-          "url": "https://car.importants-studio.com/posts/car-battery-dead-emergency/",
-          "summary": "자동차 배터리 방전으로 시동이 안 걸릴 때 자동차보험 긴급출동은 보험사별 연 6회 안팎까지 충전이 무료입니다. 직접 점프하는 순서와 방전 원인, 예방법을 정리했습니다.",
-          "date": "Sat, 03 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "윈터타이어 교체 시기, 눈이 오기 전 기온 영상 7도 아래가 기준입니다",
-          "url": "https://car.importants-studio.com/posts/winter-tire-timing/",
-          "summary": "윈터타이어는 눈 오는 날만 쓰는 타이어가 아닙니다. 제조사가 권하는 교체 기준 영상 7도, 눈길 제동거리 비교, 보관·렌탈·전기차까지 정리했습니다.",
-          "date": "Fri, 02 Oct 2026 09:00:00 +0900"
         }
       ]
     },
@@ -86,6 +86,18 @@
       "tagline": "결혼과 육아에 드는 돈과 제도를 정리합니다",
       "url": "https://home.importants-studio.com",
       "posts": [
+        {
+          "title": "신혼부부 보금자리론, 부부 중 1명 소득 7천만원 이하면 10월 19일부터 신청 가능 (2026년 기준)",
+          "url": "https://home.importants-studio.com/posts/newlywed-bogeumjari-loan-2026/",
+          "summary": "신혼부부 보금자리론은 혼인신고 7년 이내면 부부 합산 소득 8천5백만원까지 신청합니다. 10월 19일부터는 합산이 넘어도 부부 중 1명 소득이 7천만원 이하면 가능합니다. 조건과 금리를 정리했습니다.",
+          "date": "Mon, 05 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "임산부 교통비 지원, 서울은 첫째 70만원부터 인천은 50만원까지 지역마다 다릅니다 (2026년 기준)",
+          "url": "https://home.importants-studio.com/posts/pregnant-transport-voucher-2026/",
+          "summary": "임산부 교통비 지원은 사는 지역에 따라 금액과 신청 방법이 다릅니다. 서울은 첫째 70만원, 인천은 50만원, 경기도는 분만취약지 6개 시군만 최대 100만원입니다.",
+          "date": "Mon, 05 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "육아휴직 기간, 자녀 1명당 1년이고 조건이 맞으면 1년 6개월 (2026년 기준)",
           "url": "https://home.importants-studio.com/posts/parental-leave-period-2026/",
@@ -103,18 +115,6 @@
           "url": "https://home.importants-studio.com/posts/daycare-fee-subsidy-2026/",
           "summary": "어린이집 보육료 지원은 소득과 무관하게 0~5세 모두 받습니다. 2026년 연령별 지원 단가, 복지로 신청 방법, 부모급여나 양육수당에서 바꾸는 법, 국민행복카드 결제까지 정리했습니다.",
           "date": "Sat, 03 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "육아휴직 신청 방법, 휴직 30일 전까지 회사에 신청서를 냅니다 (2026년 기준)",
-          "url": "https://home.importants-studio.com/posts/parental-leave-application-2026/",
-          "summary": "육아휴직 신청은 휴직 시작 예정일 30일 전까지 신청서를 회사에 내는 것에서 시작합니다. 신청서에 적는 내용, 7일 전 신청이 가능한 예외, 회사가 거절할 수 있는 경우, 급여 신청 서류까지 2026년 기준으로 정리했습니다.",
-          "date": "Sat, 03 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "신혼부부 혜택 2026, 결혼 직후부터 집 구할 때까지 챙길 제도 정리",
-          "url": "https://home.importants-studio.com/posts/newlywed-benefits-overview-2026/",
-          "summary": "신혼부부 혜택은 세금, 대출, 보증료, 지자체 축하금으로 나뉘고 신청 창구도 제각각입니다. 혼인세액공제 100만원, 증여공제 1억원, 버팀목·디딤돌 한도까지 2026년 기준으로 한 번에 모았습니다.",
-          "date": "Fri, 02 Oct 2026 09:00:00 +0900"
         }
       ]
     },
@@ -125,6 +125,18 @@
       "tagline": "연금과 건강보험, 은퇴 뒤의 살림을 정리합니다",
       "url": "https://leisurely.importants-studio.com",
       "posts": [
+        {
+          "title": "퇴직금 세금 몇 프로인가요? 같은 금액도 근속연수에 따라 0%대에서 10%대까지 갈립니다",
+          "url": "https://leisurely.importants-studio.com/posts/severance-tax-rate-by-tenure-2026/",
+          "summary": "퇴직금 세금은 정해진 비율이 아니라 근속연수와 금액으로 갈립니다. 근속 10·20·30년과 퇴직금 5천만~5억원을 가정한 실효세율 표, 공제 구조, 이미 낸 세금을 돌려받는 60일 기준을 정리했습니다.",
+          "date": "Mon, 05 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "퇴직연금 수령방법, 일시금이냐 연금이냐는 퇴직 때 나이와 가입기간이 가릅니다",
+          "url": "https://leisurely.importants-studio.com/posts/retirement-pension-payout-methods-2026/",
+          "summary": "IRP로 연금을 받는 요건은 55세 이상과 지급기간 5년 이상뿐입니다. 가입기간 10년은 DB·DC 제도 안에서 받을 때만 걸립니다. 퇴직 나이별로 IRP 이전이 의무인지, 연금으로 받으면 세금이 어떻게 달라지는지 정리했습니다.",
+          "date": "Mon, 05 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "국민연금 임의계속가입, 60세 이후 65세 전까지 신청하고 보험료는 전액 본인 몫입니다",
           "url": "https://leisurely.importants-studio.com/posts/national-pension-voluntary-continued-2026/",
@@ -142,18 +154,6 @@
           "url": "https://leisurely.importants-studio.com/posts/national-health-checkup-target-2026/",
           "summary": "국가건강검진 대상자는 직장·지역·피부양자 유형과 출생연도에 따라 갈립니다. 2026년 검진은 12월 31일까지이고, 퇴직하면 안내를 받는 방식이 달라집니다. 일반검진 주기와 50대가 걸리는 암검진 연령, 본인부담을 공단 안내 기준으로 정리했습니다.",
           "date": "Sat, 03 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "퇴직금 지급기한은 14일, 넘기면 연 20% 지연이자가 붙습니다",
-          "url": "https://leisurely.importants-studio.com/posts/severance-payment-deadline-2026/",
-          "summary": "퇴직금은 퇴직일 다음 날부터 14일 이내에 받아야 합니다. 기한을 넘기면 연 20% 지연이자가 붙고, 합의로 기한을 늘려도 이자는 남습니다. 퇴직금제도와 DC형이 어떻게 다른지, 못 받았을 때 시효는 얼마인지 공식 안내로 정리했습니다.",
-          "date": "Sat, 03 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "노인일자리 118만 개로 늘리는 2027년 예산안, 몇 살부터 자격이 되나요",
-          "url": "https://leisurely.importants-studio.com/posts/senior-job-budget-2027/",
-          "summary": "정부가 2027년 노인일자리를 115만 2천 개에서 118만 개로 늘리는 예산안을 냈습니다. 국회 심의 전입니다. 출생연도별로 만 60세와 65세가 되는 해, 공익활동형 자격과 월 29만원 활동비를 정리했습니다.",
-          "date": "Fri, 02 Oct 2026 09:00:00 +0900"
         }
       ]
     },
@@ -164,6 +164,18 @@
       "tagline": "뉴스의 숫자가 무슨 뜻인지 풀어 씁니다",
       "url": "https://money.importants-studio.com",
       "posts": [
+        {
+          "title": "외환보유액 뜻, 2026년 8월말에 143억 달러가 늘어난 이유와 숫자 읽는 법",
+          "url": "https://money.importants-studio.com/posts/foreign-exchange-reserves-explained/",
+          "summary": "외환보유액은 나라가 비상용으로 쌓아 둔 외화 자산입니다. 무엇으로 이뤄져 있는지, 2026년 8월말 4,422억 달러가 어떻게 나왔는지, 순위 공개는 왜 멈췄는지 풀었습니다.",
+          "date": "Mon, 05 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "주식 양도소득세, 국내주식은 대부분 안 내는데 해외주식은 왜 내나요",
+          "url": "https://money.importants-studio.com/posts/stock-capital-gains-tax-explained/",
+          "summary": "주식 양도소득세는 국내 상장주식과 해외주식이 과세 구조가 다릅니다. 대주주 기준, 세율, 연 250만원 기본공제, 손익통산이 어떻게 맞물리는지 국세청 자료로 풀었습니다.",
+          "date": "Mon, 05 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "금리인하요구권 뜻, 기준금리가 내려도 안 되고 내 신용이 좋아져야 되는 이유",
           "url": "https://money.importants-studio.com/posts/interest-rate-reduction-request-right/",
@@ -181,18 +193,6 @@
           "url": "https://money.importants-studio.com/posts/mpc-meeting-schedule-explained/",
           "summary": "금통위 일정은 통화정책방향 결정회의 8회와 금융안정회의 4회로 나뉩니다. 10월 22일 회의를 앞두고 어떤 날이 기준금리를 정하는 날인지, 당일과 2주 뒤에 어떤 자료가 나오는지 정리했습니다.",
           "date": "Sat, 03 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "신용대출 금리는 어떻게 정해질까: 같은 은행에서도 사람마다 다른 이유",
-          "url": "https://money.importants-studio.com/posts/credit-loan-interest-rate-structure/",
-          "summary": "신용대출 금리는 지표금리에 가산금리를 더하고 우대금리를 빼서 만들어집니다. 같은 은행에서도 사람마다 금리가 다른 이유, 가산금리와 우대금리가 하는 일, 금리를 비교하고 인하를 요구하는 공식 경로를 원리 중심으로 풀었습니다.",
-          "date": "Sat, 03 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "코픽스 뜻, 신규취급액·잔액·신잔액 기준은 왜 숫자가 다를까",
-          "url": "https://money.importants-studio.com/posts/cofix-new-vs-balance-explained/",
-          "summary": "코픽스(COFIX)가 무엇을 평균 낸 숫자인지, 같은 달인데도 신규취급액·잔액·신잔액 기준이 3.18%, 3.05%, 2.71%로 갈리는 이유, 내 대출이 어느 쪽을 따라가는지 원리부터 풀었습니다.",
-          "date": "Fri, 02 Oct 2026 09:00:00 +0900"
         }
       ]
     },
@@ -203,6 +203,18 @@
       "tagline": "떠나기 전에 확인해야 할 것을 짚습니다",
       "url": "https://travel.importants-studio.com",
       "posts": [
+        {
+          "title": "싱가포르 입국신고서 작성, 도착일 포함 3일 안에 무료로 내고 대행 사이트는 쓸 필요가 없습니다",
+          "url": "https://travel.importants-studio.com/posts/singapore-arrival-card-sgac-2026/",
+          "summary": "싱가포르 입국신고서(SG Arrival Card)는 도착일 포함 3일 전부터 ICA 공식 사이트나 MyICA 앱에서 무료로 제출합니다. 종이 카드는 2020년에 없어졌고, 수수료를 받는 대행 사이트는 ICA가 보증하지 않습니다.",
+          "date": "Mon, 05 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "필리핀 이트래블 작성방법, 도착 72시간 전부터 등록하고 외국인은 출국 때 쓰지 않습니다",
+          "url": "https://travel.importants-studio.com/posts/philippines-etravel-registration-2026/",
+          "summary": "필리핀 이트래블(eTravel)은 도착 72시간 전부터 무료로 등록하는 전자 입국신고입니다. 등록 대상, 입력 항목, 초록·빨간 QR코드의 차이, 가짜 사이트 구별법을 공식 안내 기준으로 정리했습니다.",
+          "date": "Mon, 05 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "여권 갱신 준비물, 온라인이면 사진 파일 하나, 방문이면 구여권까지 챙깁니다",
           "url": "https://travel.importants-studio.com/posts/passport-renewal-documents-2026/",
@@ -220,18 +232,6 @@
           "url": "https://travel.importants-studio.com/posts/passport-english-name-change-rules-2026/",
           "summary": "여권 영문 이름 변경은 외교부가 정한 사유에 해당할 때만 허용되고 온라인으로는 신청할 수 없습니다. 발음 불일치, 개명, 배우자 성 추가, 외자 이름 등 사유별 조건을 정리했습니다.",
           "date": "Sat, 03 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "일본 환전 방법, 엔화는 어디서 마련하느냐에 따라 확인할 줄이 다릅니다",
-          "url": "https://travel.importants-studio.com/posts/japan-yen-exchange-methods-2026/",
-          "summary": "일본 환전은 은행 앱 환전, 트래블카드 충전, 세븐은행 ATM 인출 세 갈래입니다. 트래블로그는 엔화 환율우대 100%를 내세우지만 ATM 인출 한도, 현금 신고 기준 같은 줄은 따로 확인해야 합니다.",
-          "date": "Sat, 03 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "일본 여행 준비물, 물건 목록보다 먼저 확인할 반입 규정과 서류입니다",
-          "url": "https://travel.importants-studio.com/posts/japan-travel-checklist-rules-2026/",
-          "summary": "일본 여행 준비물 중 공항에서 문제가 되는 것은 물건이 아니라 규정입니다. 감기약 성분, 육가공품, 면세 범위, 100V 전압, 입국 서류를 공식 자료 기준으로 정리했습니다.",
-          "date": "Fri, 02 Oct 2026 09:00:00 +0900"
         }
       ]
     }
