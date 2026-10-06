@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-06T08:44:32+00:00",
+  "generated": "2026-10-06T16:34:36+00:00",
   "blogs": [
     {
       "key": "hyetaek",
@@ -171,6 +171,12 @@
           "date": "Tue, 06 Oct 2026 09:00:00 +0900"
         },
         {
+          "title": "주식 PER 뜻, 숫자가 낮으면 싼 건지 계산법부터 마이너스일 때까지 풀어봤습니다",
+          "url": "https://money.importants-studio.com/posts/stock-per-meaning-explained/",
+          "summary": "주식 PER(주가수익비율)의 뜻과 계산법을 가상의 숫자로 풀었습니다. PER이 낮다고 무조건 싼 주식이 아닌 이유, PER이 마이너스로 나오거나 표시되지 않는 경우, PBR과의 차이까지 정리했습니다.",
+          "date": "Tue, 06 Oct 2026 09:00:00 +0900"
+        },
+        {
           "title": "외환보유액 뜻, 2026년 8월말에 143억 달러가 늘어난 이유와 숫자 읽는 법",
           "url": "https://money.importants-studio.com/posts/foreign-exchange-reserves-explained/",
           "summary": "외환보유액은 나라가 비상용으로 쌓아 둔 외화 자산입니다. 무엇으로 이뤄져 있는지, 2026년 8월말 4,422억 달러가 어떻게 나왔는지, 순위 공개는 왜 멈췄는지 풀었습니다.",
@@ -186,12 +192,6 @@
           "title": "금리인하요구권 뜻, 기준금리가 내려도 안 되고 내 신용이 좋아져야 되는 이유",
           "url": "https://money.importants-studio.com/posts/interest-rate-reduction-request-right/",
           "summary": "금리인하요구권이 무엇이고 왜 기준금리 하락만으로는 안 되는지, 신청해도 불이익이 없는지, 주담대에도 되는지, 자동신청 서비스까지 원리부터 풀었습니다.",
-          "date": "Sun, 04 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "원리금균등상환 vs 원금균등상환 차이, 같은 대출인데 총이자가 다르게 나오는 이유",
-          "url": "https://money.importants-studio.com/posts/equal-payment-vs-equal-principal/",
-          "summary": "원리금균등상환은 매달 같은 금액을, 원금균등상환은 매달 같은 원금을 갚습니다. 1억 원·연 5%·10년이라는 가상의 조건으로 월 상환액과 총이자가 어떻게 갈리는지, 초반 이자 비중과 중도상환까지 풀었습니다.",
           "date": "Sun, 04 Oct 2026 09:00:00 +0900"
         }
       ]
