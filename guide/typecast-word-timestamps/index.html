@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>타입캐스트 API 낱말 시각으로 자막 맞추다 막힌 곳 | Importants Studio</title>
+<meta name="description" content="타입캐스트 낱말 시각 API로 화면 글자를 맞추다가 긴 문장 중복 낭독, 모노 결합, 캐시 순번 문제를 겪고 요청·검사·저장 방식을 고친 기록입니다.">
+<link rel="canonical" href="https://importants-studio.com/guide/typecast-word-timestamps/">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Importants Studio">
+<meta property="og:type" content="article">
+<meta property="og:title" content="타입캐스트 API 낱말 시각으로 자막 맞추다 막힌 곳">
+<meta property="og:description" content="타입캐스트 낱말 시각 API로 화면 글자를 맞추다가 긴 문장 중복 낭독, 모노 결합, 캐시 순번 문제를 겪고 요청·검사·저장 방식을 고친 기록입니다.">
+<meta property="og:url" content="https://importants-studio.com/guide/typecast-word-timestamps/">
+<meta property="article:published_time" content="2026-10-06T09:00:00+09:00">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8673949681156413" crossorigin="anonymous"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"타입캐스트 API 낱말 시각으로 자막 맞추다 막힌 곳","description":"타입캐스트 낱말 시각 API로 화면 글자를 맞추다가 긴 문장 중복 낭독, 모노 결합, 캐시 순번 문제를 겪고 요청·검사·저장 방식을 고친 기록입니다.","datePublished":"2026-10-06T09:00:00+09:00","author":{"@type":"Organization","name":"Importants Studio"},"publisher":{"@type":"Organization","name":"Importants Studio"},"mainEntityOfPage":"https://importants-studio.com/guide/typecast-word-timestamps/"}</script>
+<style>
+:root{--bg:#faf9f6;--card:#ffffff;--ink:#1a1a17;--mut:#6f6d66;--line:#e6e3da;--chip:#f0eee7}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;-webkit-font-smoothing:antialiased;word-break:keep-all}
+a{color:var(--ink)}
+.wrap{padding:0 20px 72px}
+.col{max-width:680px;margin:0 auto}
+header{display:flex;align-items:center;justify-content:space-between;padding:20px 0;border-bottom:1px solid var(--ink)}
+.logo{font-size:17px;font-weight:800;letter-spacing:-0.01em;text-decoration:none}
+.logo span{color:var(--mut)}
+.nav{display:inline-block;border:1px solid var(--ink);font-size:13px;font-weight:600;padding:7px 14px;border-radius:99px;white-space:nowrap;text-decoration:none}
+.nav:hover{background:var(--ink);color:var(--bg)}
+article{padding:36px 0 0}
+h1{font-size:clamp(23px,4.6vw,31px);font-weight:800;line-height:1.42;margin:0 0 14px;letter-spacing:-0.02em;text-wrap:pretty}
+.meta{display:flex;gap:10px;font-size:13px;color:var(--mut);padding-bottom:22px;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}
+.body{padding-top:26px;font-size:16px;line-height:1.85}
+.body p{margin:0 0 20px}
+.body h2{font-size:19px;font-weight:800;letter-spacing:-0.01em;margin:38px 0 14px;padding-top:20px;border-top:1px solid var(--line);text-wrap:pretty}
+.body h3{font-size:16px;font-weight:700;margin:28px 0 10px}
+.body ul,.body ol{margin:0 0 20px;padding-left:22px}
+.body li{margin-bottom:9px}
+.body strong{font-weight:700}
+.body code{background:var(--chip);padding:2px 6px;border-radius:5px;font-size:14px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.body pre{background:var(--chip);padding:14px 16px;border-radius:9px;overflow-x:auto;font-size:13.5px;line-height:1.65;margin:0 0 20px}
+.body pre code{background:none;padding:0}
+.body blockquote{margin:0 0 20px;padding:2px 0 2px 16px;border-left:3px solid var(--line);color:var(--mut)}
+.body table{border-collapse:collapse;width:100%;margin:0 0 22px;font-size:14.5px}
+.body th,.body td{border-bottom:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top}
+.body th{font-weight:700;background:var(--chip)}
+.body hr{border:0;border-top:1px solid var(--line);margin:30px 0}
+.tail{margin-top:44px;padding-top:22px;border-top:1px solid var(--ink);font-size:14px;color:var(--mut);line-height:1.7}
+.tail a{color:var(--mut)}
+footer{padding:30px 0 0;margin-top:26px;border-top:1px solid var(--line)}
+.fmeta{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;color:var(--mut)}
+.fmeta a{color:var(--mut)}
+</style>
+</head>
+<body>
+<div class="wrap"><div class="col">
+
+  <header>
+    <a class="logo" href="/">Importants<span>.</span>Studio</a>
+    <a class="nav" href="/guide/">AI 도구 목록</a>
+  </header>
+
+  <article>
+    <h1>타입캐스트 API 낱말 시각으로 자막 맞추다 막힌 곳</h1>
+    <div class="meta"><span>2026년 10월 6일</span><span>Importants Studio</span></div>
+    <div class="body"><p>쇼츠 영상에서 말하는 낱말에 맞춰 화면 글자가 나타나게 만들려면 음성 파일만으로는 부족합니다. 어느 낱말이 언제 시작하고 끝나는지 알아야 자막 조각의 길이를 맞출 수 있기 때문입니다. 처음에는 음성을 합성한 뒤 별도 방식으로 시각을 잡으려 했지만, 타입캐스트 응답에서 낱말 단위 시각을 함께 받을 수 있는 방법을 찾았습니다.</p>
+<p>다만 요청 하나가 성공했다고 바로 영상 조립까지 이어지지는 않았습니다. 긴 문장이 두 번 읽히기도 했고 음성 조각과 룸톤을 붙이는 과정에서는 결과 파일이 조용히 짧아졌으며, 캐시 이름을 순번으로 정한 탓에 문장 하나를 고친 뒤 바뀌지 않은 음성까지 다시 결제한 일도 있었습니다.</p>
+<h2>먼저 결론부터</h2>
+<ul><li>화면 글자 동기화에는 <code>granularity=word</code>가 붙은 낱말 시각 엔드포인트를 사용합니다.</li><li>응답에는 base64 오디오와 <code>words</code> 배열이 함께 오며, 각 낱말에 초 단위 <code>start</code>, <code>end</code>가 들어 있습니다.</li></ul>
+<pre><code>POST https://api.typecast.ai/v1/text-to-speech/with-timestamps?granularity=word
+X-API-KEY: &lt;API 키&gt;</code></pre>
+<ul><li>여러 구간과 쉼을 한 요청에 넣는 <code>/text-to-speech/compose</code>는 낱말 시각을 주지 않아 화면 동기화에 쓸 수 없었습니다.</li><li>낱말 사이가 1초 넘게 벌어지면 경고를 남기고 문장을 고쳐 썼습니다.</li><li>합성 음성과 룸톤은 <code>-ar 44100 -ac 2</code>로 맞춘 뒤 이어 붙였습니다.</li><li>캐시는 순번이 아니라 본문·목소리·감정·세기의 해시로 저장하니 재합성 대상이 436자에서 140자로 줄었습니다.</li></ul>
+<h2>낱말 시각이 나오는 요청으로 바꿨습니다</h2>
+<p>처음에는 여러 문장과 쉼을 한 번에 처리할 수 있는 compose 경로가 더 편해 보였습니다. 하지만 이 경로가 돌려주는 것은 음성뿐입니다. 낱말별 시각이 빠져 영상 편집 단계에 필요한 정보가 없었습니다.</p>
+<p>낱말 시각 엔드포인트는 오디오와 <code>words</code> 배열을 같이 돌려줍니다. 각 항목의 <code>start</code>, <code>end</code>를 읽어 자막이 나타나는 시각과 사라지는 시각으로 사용했고, 음성을 다시 분석하지 않아도 됐습니다.</p>
+<pre><code>{
+  &quot;voice_id&quot;: &quot;tc_637cbfeef7f00f21e8a1c6c8&quot;,
+  &quot;text&quot;: &quot;읽을 문장&quot;,
+  &quot;model&quot;: &quot;ssfm-v30&quot;,
+  &quot;language&quot;: &quot;kor&quot;,
+  &quot;output&quot;: {
+    &quot;audio_format&quot;: &quot;wav&quot;,
+    &quot;target_lufs&quot;: -14,
+    &quot;remove_silence_ms&quot;: 250
+  },
+  &quot;prompt&quot;: {
+    &quot;emotion_type&quot;: &quot;smart&quot;,
+    &quot;previous_text&quot;: &quot;앞 문장&quot;,
+    &quot;next_text&quot;: &quot;뒤 문장&quot;
+  }
+}</code></pre>
+<p><code>smart</code>를 쓰면 앞뒤 문장을 보고 모델이 억양을 고르는데, 문장만 따로 합성하면 어색해질 수 있어 앞 문장과 뒤 문장은 요청에 넣었습니다. 다만 이 값은 캐시 키에는 넣지 않았습니다. 이웃 문장이 바뀔 때마다 같은 본문을 다시 합성하는 일이 생기기 때문입니다.</p>
+<h2>감정 이름을 잘못 넣어 422를 만났습니다</h2>
+<p>감정 이름을 <code>emotion_type</code>에 넣었다가 422 응답을 받았습니다. 이 필드에 들어가는 값은 <code>preset</code>, <code>embedding</code>, <code>smart</code> 셋뿐이고, toneup이나 happy 같은 이름을 직접 넣는 자리가 아닙니다.</p>
+<p>고정 감정을 쓸 때는 <code>emotion_type</code>을 <code>preset</code>으로 두고 감정 이름은 <code>emotion_preset</code>에 넣고, 세기는 <code>emotion_intensity</code>로 조절하며 범위는 0~2이고 기본값은 1.0입니다. 반대로 <code>smart</code>는 세기를 조절하지 못합니다.</p>
+<p>이 구분을 모르면 음성 품질 문제가 아니라 요청 형식 문제로 막힙니다. 응답이 안 올 때는 목소리나 문장보다 감정 필드부터 다시 봅니다.</p>
+<h2>긴 문장은 길이보다 낱말 간격을 봤습니다</h2>
+<p>45자 문장과 54자 문장에서 구간을 두 번 읽는 현상이 있었고, 낱말 시각 배열에는 2.0초, 2.9초짜리 구멍이 생기면서 파일 길이도 그만큼 늘었습니다. 처음에는 글자 수 제한이라고 생각했습니다.</p>
+<p>그런데 77자 문장은 멀쩡했습니다. 길이는 기준이 아닙니다. 대신 응답의 낱말 시각을 훑어 낱말 사이가 1초 넘게 벌어지면 경고를 찍도록 바꿨고, 경고가 난 문장은 다시 요청하지 않고 표현을 고쳐 썼습니다.</p>
+<p>나누는 위치도 문제입니다. 낱말 시각을 받으려면 문장별로 요청해야 했고 조각 사이에는 룸톤이 들어갔는데, 마침표와 물음표에서 나눈 조각은 자연스러웠지만 문장 중간에서 자른 조각은 말이 끊겨 들렸습니다.</p>
+<h2>모노 음성과 스테레오 룸톤을 그대로 붙이지 않았습니다</h2>
+<p>응답 오디오는 모노입니다. 반면 영상에 넣을 룸톤은 스테레오로 만들어 두었습니다. 처음에는 두 파일을 그대로 ffmpeg에 넘겼는데, 형식이 다른 조각을 조용히 버리는 일이 있었습니다.</p>
+<p>56초짜리여야 할 결과가 31초로 잘린 적이 있는데, 오류 메시지가 뚜렷하지 않아 합성 요청이 덜 왔는지부터 확인했습니다. 실제 원인은 결합 단계였습니다.</p>
+<p>이후 음성 조각과 룸톤을 모두 같은 형식으로 맞춘 뒤 이어 붙였습니다.</p>
+<pre><code>ffmpeg -i input.wav -ar 44100 -ac 2 output.wav</code></pre>
+<p>낱말 시각은 정상이어도 최종 음성의 길이나 위치가 달라지면 자막 시각도 함께 어긋납니다. 그래서 합성 응답을 받은 뒤에는 낱말 배열만 저장하지 않고 변환 뒤 음성 파일도 함께 확인합니다.</p>
+<h2>순번 캐시를 버리고 내용 해시로 바꿨습니다</h2>
+<p>처음 캐시는 <code>p00.wav</code>, <code>p01.wav</code>처럼 순번으로 저장했는데, 문장 하나를 둘로 나누자 뒤의 번호가 전부 밀렸고, 이미 만든 음성이 있어도 다른 파일로 인식되어 다시 합성됐습니다.</p>
+<p>이 방식에서는 문장 수정이 곧 대량 재요청입니다. 실제로 다시 합성하는 분량이 해시 캐시를 적용한 뒤 436자에서 140자로 줄었습니다. 비용 차이도 있었지만, 먼저 줄어든 쪽은 기다리는 시간입니다.</p>
+<p>캐시 키에는 본문, 목소리, 감정, 세기를 넣습니다. 앞뒤 문장은 요청에는 전달하되 키에서는 뺐습니다. 앞 문장이 바뀌었다는 이유만으로 바뀌지 않은 음성 파일까지 다시 만들 필요는 없었기 때문입니다.</p>
+<p>요금은 1글자에 1크레딧으로 계산됩니다. 무료 구간은 15,000자이며 상업적 이용이 안 되고 출처 표기가 필요합니다. Lite는 월 $15에 20만 자를 쓸 수 있고 상업 이용과 표기 조건이 달라집니다. 초과분은 10만 크레딧 단위로 청구되므로, 요청 전에 대시보드 잔액을 확인합니다. 잔액 조회 API는 찾지 못했습니다.</p></div>
+    <div class="tail">지난 글: <a href="/guide/srt-from-word-timestamps/">낱말 시각으로 SRT 자막을 만들다가 순서가 뒤집힌 날</a><br>다음 글: <a href="/guide/youtube-threads-video-api-blockers/">유튜브와 스레드에 영상을 API로 못 올린 이유</a><br><a href="/guide/">목록으로</a></div>
+  </article>
+
+  <footer>
+    <div class="fmeta">
+      <a href="/">홈</a>
+      <a href="/guide/">AI 도구</a>
+      <a href="/about/">소개</a>
+      <a href="/contact/">문의</a>
+      <a href="/privacy/">개인정보처리방침</a>
+    </div>
+  </footer>
+
+</div></div>
+</body>
+</html>

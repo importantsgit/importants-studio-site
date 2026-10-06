@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>폴더 이름 하나 바꾸고 홈페이지가 11일 멈춘 일 | Importants Studio</title>
+<meta name="description" content="광고 심사 탈락 원인을 글 부족으로 봤다가, 폴더 이름 변경 뒤 깃허브 액션이 커밋 단계에서 멈춘 사실과 홈페이지 링크 문제를 찾은 기록입니다.">
+<link rel="canonical" href="https://importants-studio.com/guide/github-actions-silent-failure/">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Importants Studio">
+<meta property="og:type" content="article">
+<meta property="og:title" content="폴더 이름 하나 바꾸고 홈페이지가 11일 멈춘 일">
+<meta property="og:description" content="광고 심사 탈락 원인을 글 부족으로 봤다가, 폴더 이름 변경 뒤 깃허브 액션이 커밋 단계에서 멈춘 사실과 홈페이지 링크 문제를 찾은 기록입니다.">
+<meta property="og:url" content="https://importants-studio.com/guide/github-actions-silent-failure/">
+<meta property="article:published_time" content="2026-10-06T09:00:00+09:00">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8673949681156413" crossorigin="anonymous"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"폴더 이름 하나 바꾸고 홈페이지가 11일 멈춘 일","description":"광고 심사 탈락 원인을 글 부족으로 봤다가, 폴더 이름 변경 뒤 깃허브 액션이 커밋 단계에서 멈춘 사실과 홈페이지 링크 문제를 찾은 기록입니다.","datePublished":"2026-10-06T09:00:00+09:00","author":{"@type":"Organization","name":"Importants Studio"},"publisher":{"@type":"Organization","name":"Importants Studio"},"mainEntityOfPage":"https://importants-studio.com/guide/github-actions-silent-failure/"}</script>
+<style>
+:root{--bg:#faf9f6;--card:#ffffff;--ink:#1a1a17;--mut:#6f6d66;--line:#e6e3da;--chip:#f0eee7}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;-webkit-font-smoothing:antialiased;word-break:keep-all}
+a{color:var(--ink)}
+.wrap{padding:0 20px 72px}
+.col{max-width:680px;margin:0 auto}
+header{display:flex;align-items:center;justify-content:space-between;padding:20px 0;border-bottom:1px solid var(--ink)}
+.logo{font-size:17px;font-weight:800;letter-spacing:-0.01em;text-decoration:none}
+.logo span{color:var(--mut)}
+.nav{display:inline-block;border:1px solid var(--ink);font-size:13px;font-weight:600;padding:7px 14px;border-radius:99px;white-space:nowrap;text-decoration:none}
+.nav:hover{background:var(--ink);color:var(--bg)}
+article{padding:36px 0 0}
+h1{font-size:clamp(23px,4.6vw,31px);font-weight:800;line-height:1.42;margin:0 0 14px;letter-spacing:-0.02em;text-wrap:pretty}
+.meta{display:flex;gap:10px;font-size:13px;color:var(--mut);padding-bottom:22px;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}
+.body{padding-top:26px;font-size:16px;line-height:1.85}
+.body p{margin:0 0 20px}
+.body h2{font-size:19px;font-weight:800;letter-spacing:-0.01em;margin:38px 0 14px;padding-top:20px;border-top:1px solid var(--line);text-wrap:pretty}
+.body h3{font-size:16px;font-weight:700;margin:28px 0 10px}
+.body ul,.body ol{margin:0 0 20px;padding-left:22px}
+.body li{margin-bottom:9px}
+.body strong{font-weight:700}
+.body code{background:var(--chip);padding:2px 6px;border-radius:5px;font-size:14px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.body pre{background:var(--chip);padding:14px 16px;border-radius:9px;overflow-x:auto;font-size:13.5px;line-height:1.65;margin:0 0 20px}
+.body pre code{background:none;padding:0}
+.body blockquote{margin:0 0 20px;padding:2px 0 2px 16px;border-left:3px solid var(--line);color:var(--mut)}
+.body table{border-collapse:collapse;width:100%;margin:0 0 22px;font-size:14.5px}
+.body th,.body td{border-bottom:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top}
+.body th{font-weight:700;background:var(--chip)}
+.body hr{border:0;border-top:1px solid var(--line);margin:30px 0}
+.tail{margin-top:44px;padding-top:22px;border-top:1px solid var(--ink);font-size:14px;color:var(--mut);line-height:1.7}
+.tail a{color:var(--mut)}
+footer{padding:30px 0 0;margin-top:26px;border-top:1px solid var(--line)}
+.fmeta{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;color:var(--mut)}
+.fmeta a{color:var(--mut)}
+</style>
+</head>
+<body>
+<div class="wrap"><div class="col">
+
+  <header>
+    <a class="logo" href="/">Importants<span>.</span>Studio</a>
+    <a class="nav" href="/guide/">AI 도구 목록</a>
+  </header>
+
+  <article>
+    <h1>폴더 이름 하나 바꾸고 홈페이지가 11일 멈춘 일</h1>
+    <div class="meta"><span>2026년 10월 6일</span><span>Importants Studio</span></div>
+    <div class="body"><p>광고 심사에서 콘텐츠를 보완하라는 통보를 받았는데, 심사 대상이 루트 도메인이라 처음에는 글이 모자라서 그런 줄 알았습니다. 새 글을 더 쓰기 전에 홈페이지부터 열어 보니 예상과 달랐습니다. 자체 글 목록이 한동안 그대로였습니다.</p>
+<p>원인은 글의 양이 아닙니다. 폴더 이름을 <code>log</code>에서 <code>guide</code>로 바꾼 뒤 홈페이지를 갱신하는 깃허브 액션이 마지막 커밋 단계에서 죽고 있었는데, 빌드는 초록색으로 끝나 있었기 때문에 처음에는 실패한 줄도 몰랐습니다. 멈춘 기간은 11일.</p>
+<h2>먼저 결론부터</h2>
+<ul><li>폴더 이름을 바꾼 뒤 홈페이지 갱신 액션의 <code>git add</code> 경로는 옛 이름을 계속 가리키고 있었습니다.</li><li>없는 경로를 <code>git add</code>에 넘기면 <code>exit 128</code>로 끝납니다. 이 경우 빌드가 성공했어도 생성물은 커밋되지 않습니다.</li><li>실패 지점은 로그 아래쪽인데, 위쪽의 빌드 성공 표시만 보고 액션 전체가 끝난 것으로 판단했습니다.</li><li>홈페이지에는 404 링크가 9개 있었고, 링크의 75%는 다른 호스트를 향하고 있었습니다.</li><li>고친 뒤 깨진 링크는 0개가 됐고, 자체 글 링크는 11개로 전체의 28%, 서브도메인 링크는 46%로 정리했습니다.</li><li>사이트맵은 고정 목록이 아니라 빌드할 때 실제 폴더를 훑어 다시 만들도록 바꿨습니다.</li></ul>
+<pre><code>git add guide</code></pre>
+<h2>빌드는 성공했는데 커밋에서 멈췄습니다</h2>
+<p>처음 액션 로그를 열었을 때는 문제가 없어 보였고, 정적 사이트 빌드가 끝났고 생성된 결과도 있었으니 심사 결과와 배포 과정은 관계없다고 생각했습니다.</p>
+<p>그런데 로그 끝부분에 <code>exit 128</code>. 홈페이지 결과물을 추가하는 줄이 예전 폴더 이름을 그대로 쓰고 있었고, 이름을 바꾼 뒤로는 존재하지 않는 경로를 <code>git add</code>하려다 멈춰 있었습니다.</p>
+<pre><code>git add log</code></pre>
+<p>빌드와 커밋은 다른 단계입니다. 빌드가 통과하면 화면에는 초록색 출력이 길게 쌓이고, 그 아래에서 커밋이 실패하면 결과물은 저장소에 들어가지 않은 채 홈페이지도 이전 상태에 머뭅니다. 실패 알림을 따로 보고 있지 않으니 멈춘 날도 알 수 없었습니다.</p>
+<p>홈페이지가 멈춘 이유는 배포 서버나 생성기 문제가 아니었습니다. 마지막에 남은 경로 하나였습니다.</p>
+<h2>이름을 바꾼 뒤 남은 참조를 찾았습니다</h2>
+<p><code>log</code>를 <code>guide</code>로 바꿀 때 글 파일은 옮겼고 홈페이지에서도 새 위치를 읽는다고 생각했지만, 실제로는 폴더 이름이 여러 설정에 흩어져 있었고 액션의 경로 목록과 <code>git add</code>, 사이트맵 생성 쪽에는 옛 이름이 남아 있었습니다.</p>
+<p>처음에는 홈페이지 템플릿만 살폈습니다. 그곳에서는 새 경로가 보였기 때문입니다. 하지만 액션은 빌드 뒤에 별도 명령으로 결과를 추가하고 있었고, 화면에 보이는 페이지와 저장소에 반영하는 명령은 서로 다른 파일입니다.</p>
+<p>그래서 폴더 이름 자체로 저장소 전체를 검색했습니다.</p>
+<pre><code>git grep &quot;log&quot;</code></pre>
+<p>이 검색에서 남은 참조를 찾았습니다. 이름을 바꾼 날 파일 이동만 확인한 것이 문제였는데, 경로 이름은 코드 안에서 링크가 되기도 하고 생성기 입력이 되기도 하며 자동 커밋 대상이 되기도 합니다. 이번에는 그중 자동 커밋 대상이 홈페이지를 멈췄습니다.</p>
+<h2>멈춘 홈페이지 뒤에서 링크 문제도 나왔습니다</h2>
+<p>액션을 고치고 홈페이지를 다시 만들자 그동안 쌓여 있던 문제가 함께 보였는데, 사이트맵에는 없는 주소가 들어 있었고 실제 폴더는 빠져 있었으며 목록을 직접 적어 두는 방식이라 폴더 이동과 생성 시점이 어긋난 상태였습니다.</p>
+<p>홈페이지 링크도 확인했습니다. 9개가 404였습니다. 만들다 만 페이지를 링크만 먼저 걸어 둔 경우였는데, 브라우저에서 눌러 보기 전까지는 목록에 제목이 나온다는 이유로 정상이라고 생각했습니다.</p>
+<p>더 불편했던 것은 링크 비율이었습니다. 홈페이지 링크의 75%가 다른 호스트로 나가고 있었고 자체 글은 9월 21일에 멈춘 10편뿐이었으니, 홈페이지를 처음 보는 쪽에서는 이 사이트 안에 읽을 글이 거의 없는 것처럼 보일 수 있었습니다.</p>
+<p>심사 통보에서 말한 콘텐츠 보완을 글을 더 쓰라는 뜻으로만 읽었지만, 실제로는 홈페이지가 새 글을 보여 주지 못했고 남아 있는 링크도 다른 곳으로 빠지고 있었습니다. 증상과 원인이 멀었습니다.</p>
+<h2>생성 결과와 링크를 같이 고쳤습니다</h2>
+<p>먼저 액션의 경로를 새 폴더 이름으로 바꾸고 빌드가 끝난 뒤 생성된 파일이 실제로 추가되고 커밋되는 로그까지 확인했는데, 초록색 빌드 출력이 아니라 마지막 명령의 종료 상태를 보게 된 계기입니다.</p>
+<p>사이트맵은 빌드할 때 실제 폴더를 훑어 다시 만듭니다. 주소 목록을 따로 유지하지 않으니 폴더 이름을 옮겨도 예전 주소만 남는 일이 줄어듭니다. 홈페이지에서는 404 링크를 걷어 내고 존재하는 자체 글을 우선 배치했습니다.</p>
+<p>고친 뒤 깨진 링크는 0개, 자체 글 링크는 11개로 전체의 28%가 됐고 서브도메인 링크는 46%입니다. 숫자만 바꾼 작업은 아닙니다. 홈페이지가 마지막 갱신 시점에 멈춰 있지 않은지 확인하고, 링크가 실제 페이지로 가는지도 같이 보는 흐름이 생겼습니다.</p>
+<p>광고 심사 결과를 받고 글부터 늘리지 않은 것이 다행이었고, 글을 더 썼어도 홈페이지 갱신 액션이 멈춘 상태였다면 새 글은 계속 보이지 않았을 겁니다. 이번에는 폴더 이름 하나를 바꾼 뒤 남은 경로가 배포 끝단에서 어떤 실패를 만드는지 확인했습니다.</p></div>
+    <div class="tail">지난 글: <a href="/guide/claude-code-install/">클로드 코드 설치 전 알아둘 다섯 가지</a><br>다음 글: <a href="/guide/instagram-reels-api-upload/">인스타그램 릴스를 API로 올릴 때 공개 URL을 없앤 방법</a><br><a href="/guide/">목록으로</a></div>
+  </article>
+
+  <footer>
+    <div class="fmeta">
+      <a href="/">홈</a>
+      <a href="/guide/">AI 도구</a>
+      <a href="/about/">소개</a>
+      <a href="/contact/">문의</a>
+      <a href="/privacy/">개인정보처리방침</a>
+    </div>
+  </footer>
+
+</div></div>
+</body>
+</html>

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-06T01:12:31+00:00",
+  "generated": "2026-10-06T03:02:17+00:00",
   "blogs": [
     {
       "key": "hyetaek",
@@ -8,6 +8,18 @@
       "tagline": "정부 지원금과 세금 환급을 매일 정리합니다",
       "url": "https://blog.importants-studio.com",
       "posts": [
+        {
+          "title": "건강검진 비용, 일반검진은 무료고 암검진은 최대 10%를 냅니다. 자비로 받았다면 연말정산에서 돌려받습니다",
+          "url": "https://blog.importants-studio.com/posts/health-checkup-cost-tax-credit-2026/",
+          "summary": "국가건강검진 비용은 일반검진이 무료이고 위암·간암·유방암·폐암 검진은 건강보험료 상위 50%가 10%를 냅니다. 대상이 아닌 해에 자비로 받은 건강검진비는 연말정산 의료비 세액공제 대상이라 15%가 돌아옵니다. 올해 영수증을 챙겨야 하는 이유와 계산 예시를 정리했습니다.",
+          "date": "Tue, 06 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "연말정산 소득공제, 같은 100만원을 공제받아도 세율 구간에 따라 돌려받는 돈이 6만원에서 45만원까지 갈립니다",
+          "url": "https://blog.importants-studio.com/posts/yearend-income-deduction-tax-bracket-2026/",
+          "summary": "연말정산 소득공제는 공제액이 그대로 환급되지 않고 내 과세표준 구간의 세율을 곱한 만큼만 세금이 줄어듭니다. 100만원을 공제받으면 6% 구간은 6만원, 15% 구간은 15만원, 24% 구간은 24만원이 줄어듭니다. 청약저축과 현금영수증 예시로 환급액을 계산하는 법과 종합한도 2,500만원을 정리했습니다.",
+          "date": "Tue, 06 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "퇴사 후 연말정산, 재취업 여부에 따라 내년 2월과 내년 5월로 갈립니다",
           "url": "https://blog.importants-studio.com/posts/resignation-year-end-tax-settlement-2026/",
@@ -25,18 +37,6 @@
           "url": "https://blog.importants-studio.com/posts/donation-tax-credit-limit-2026/",
           "summary": "기부금 세액공제는 1천만원까지 15%, 초과분은 30%를 돌려받고, 일반기부금 한도는 소득금액의 30%입니다. 종교단체에 낸 헌금은 한도 계산이 달라 넘긴 금액이 10년간 이월됩니다. 부모님 이름으로 낸 기부금도 올릴 수 있는 조건과 영수증을 구하는 방법까지 소득세법과 국세청 안내로 정리했습니다.",
           "date": "Sun, 04 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "중소기업 취업자 소득세 감면, 신청서를 안 냈다면 경정청구로 돌려받을 수 있습니다",
-          "url": "https://blog.importants-studio.com/posts/sme-employee-income-tax-reduction-2026/",
-          "summary": "중소기업 취업자 소득세 감면은 청년이면 취업일부터 5년간 소득세의 90%를 연 200만원 한도로 깎아 줍니다. 신청서를 회사에 내지 않아 감면 없이 세금을 냈다면 경정청구로 돌려받을 수 있습니다. 대상 조건, 신청 방법, 환급 절차를 국세청 안내로 정리했습니다.",
-          "date": "Sun, 04 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "부가세 예정고지, 10월 26일에 한 번에 내기 빠듯하면 납부기한 연장을 신청할 수 있습니다",
-          "url": "https://blog.importants-studio.com/posts/vat-preliminary-notice-extension-2026/",
-          "summary": "개인 일반과세자는 10월 26일까지 부가세 예정고지서를 냅니다. 고지 금액이 정해지는 방식, 실적이 줄었을 때 예정신고로 바꾸는 방법, 쪼개 내기 어려울 때 쓰는 납부기한 연장 신청을 국세청 안내로 정리했습니다.",
-          "date": "Sat, 03 Oct 2026 09:00:00 +0900"
         }
       ]
     },
@@ -47,6 +47,18 @@
       "tagline": "자동차세, 보험료, 검사 기한을 챙깁니다",
       "url": "https://car.importants-studio.com",
       "posts": [
+        {
+          "title": "스노우체인 종류 5가지, 눈길 성능과 장착 난이도를 비교했습니다",
+          "url": "https://car.importants-studio.com/posts/snow-chain-types/",
+          "summary": "스노우체인은 사슬형, 우레탄, 스파이더, 패브릭, 스프레이 5가지입니다. 종류별 장단점과 효과, 장착 방법, 달고 달릴 때 속도 기준을 정리했습니다.",
+          "date": "Tue, 06 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "하이패스 단말기 등록, 홈페이지에서 직접 하거나 판매점에 맡기면 됩니다",
+          "url": "https://car.importants-studio.com/posts/hipass-terminal-register/",
+          "summary": "하이패스 단말기는 사는 것과 등록하는 것이 별개입니다. 한국도로공사 안내 기준으로 직접 등록 순서, 내장형·중고 단말기 처리, 명의변경, 경차 구입 지원금 1만5천원까지 정리했습니다.",
+          "date": "Tue, 06 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "자동차세 납부기간 12월 16일부터 31일, 지나면 3% 가산세가 붙습니다",
           "url": "https://car.importants-studio.com/posts/car-tax-december-payment-period/",
@@ -64,18 +76,6 @@
           "url": "https://car.importants-studio.com/posts/direct-car-insurance-vs-agent/",
           "summary": "다이렉트 자동차보험은 2025년 개인용 가입의 51.4%를 차지했고 평균 보험료가 대면보다 약 19% 낮았습니다. 비교견적 받는 곳, 보험료 계산 때 입력할 것, 가입 전 확인할 점을 정리했습니다.",
           "date": "Sun, 04 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "모바일 운전면허증 발급 방법, 시험장에서 QR로 1000원이면 되지만 폰을 바꾸면 다시 가야 합니다",
-          "url": "https://car.importants-studio.com/posts/mobile-driver-license/",
-          "summary": "모바일 운전면허증 발급 방법은 두 가지입니다. 시험장 QR 발급은 1000원, IC 운전면허증 발급은 1만5000원이고 폰을 바꿔도 다시 태그하면 됩니다. 준비물과 재발급, 갱신 때 함께 받는 법을 정리했습니다.",
-          "date": "Sun, 04 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "워셔액 넣는 법, 겨울에는 물 대신 어는점 낮은 겨울용을 채워야 합니다",
-          "url": "https://car.importants-studio.com/posts/washer-fluid-winter-refill/",
-          "summary": "워셔액은 본네트를 열고 보조 탱크에 채우면 됩니다. 현대자동차 사용설명서 기준으로 겨울에는 빙결 방지용을 써야 하고, 안 나올 때 계속 누르면 모터가 상합니다.",
-          "date": "Sat, 03 Oct 2026 09:00:00 +0900"
         }
       ]
     },
@@ -86,6 +86,18 @@
       "tagline": "결혼과 육아에 드는 돈과 제도를 정리합니다",
       "url": "https://home.importants-studio.com",
       "posts": [
+        {
+          "title": "다둥이카드 혜택, 서울·경기·인천 모두 2자녀부터 막내 18세 이하까지 발급합니다 (2026년 기준)",
+          "url": "https://home.importants-studio.com/posts/multi-child-card-2026/",
+          "summary": "다둥이카드는 서울·경기·인천 모두 막내가 18세 이하인 2자녀 가정이 발급받습니다. 지역별 카드 이름, 신청처, 공영주차장 50% 감면 같은 혜택을 정리했습니다.",
+          "date": "Tue, 06 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "산전검사 지원, 보건소 무료 기본검사 받는 법과 지역별 주수 기준",
+          "url": "https://home.importants-studio.com/posts/prenatal-basic-test-support-2026/",
+          "summary": "산전검사 지원은 보건소에 등록한 임산부에게 임신 초기 혈액·소변검사를 무료로 해 주는 제도입니다. 대상 주수, 필요 서류, 지역마다 검사 항목이 다른 이유, 임신 사전건강관리와 헷갈리는 지점을 정리했습니다.",
+          "date": "Tue, 06 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "신혼부부 보금자리론, 부부 중 1명 소득 7천만원 이하면 10월 19일부터 신청 가능 (2026년 기준)",
           "url": "https://home.importants-studio.com/posts/newlywed-bogeumjari-loan-2026/",
@@ -103,18 +115,6 @@
           "url": "https://home.importants-studio.com/posts/parental-leave-period-2026/",
           "summary": "육아휴직 기간은 자녀 1명당 부모 각각 1년입니다. 부모가 각각 3개월 이상 쓰면 1년 6개월까지 늘고, 4번에 나눠 쓸 수 있습니다. 쌍둥이와 공무원 기준까지 정리했습니다.",
           "date": "Sun, 04 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "육아휴직 사후지급금 폐지, 2025년부터는 휴직 중에 전액 받습니다",
-          "url": "https://home.importants-studio.com/posts/parental-leave-deferred-payment-2026/",
-          "summary": "육아휴직 사후지급금은 2025년 1월 1일부터 폐지됐습니다. 급여의 25%를 복직 6개월 뒤에 받던 옛 방식, 2024년 이전 휴직분의 신청 조건, 지금 급여 구간까지 정리했습니다.",
-          "date": "Sun, 04 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "어린이집 보육료 지원 2026, 0세반 58만 4천원부터 3~5세반 28만원까지",
-          "url": "https://home.importants-studio.com/posts/daycare-fee-subsidy-2026/",
-          "summary": "어린이집 보육료 지원은 소득과 무관하게 0~5세 모두 받습니다. 2026년 연령별 지원 단가, 복지로 신청 방법, 부모급여나 양육수당에서 바꾸는 법, 국민행복카드 결제까지 정리했습니다.",
-          "date": "Sat, 03 Oct 2026 09:00:00 +0900"
         }
       ]
     },
@@ -125,6 +125,18 @@
       "tagline": "연금과 건강보험, 은퇴 뒤의 살림을 정리합니다",
       "url": "https://leisurely.importants-studio.com",
       "posts": [
+        {
+          "title": "정년퇴직 연령은 법으로 60세, 퇴직일은 직종과 생일에 따라 갈립니다",
+          "url": "https://leisurely.importants-studio.com/posts/retirement-age-by-job-2026/",
+          "summary": "정년퇴직 연령은 민간 회사원과 일반직 공무원이 60세, 교육공무원이 62세, 대학 교원이 65세입니다. 퇴직일은 직종마다 다르고, 국민연금을 받기까지 소득 공백이 몇 년인지는 출생연도로 갈립니다. 확정되지 않은 65세 연장 논의도 함께 짚었습니다.",
+          "date": "Tue, 06 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "치매안심센터 무료 선별검사는 만 60세부터입니다, 내 차례가 언제인지 출생연도로 찾아보세요",
+          "url": "https://leisurely.importants-studio.com/posts/dementia-care-center-screening-2026/",
+          "summary": "치매안심센터 선별검사는 만 60세 이상이면 신분증만 들고 가서 무료로 받습니다. 출생연도별로 60세가 되는 해, 검사 방식, 치매치료관리비 월 3만원과 소득기준, 우리 동네 센터 찾는 법을 공식 안내 기준으로 정리했습니다.",
+          "date": "Tue, 06 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "퇴직금 세금 몇 프로인가요? 같은 금액도 근속연수에 따라 0%대에서 10%대까지 갈립니다",
           "url": "https://leisurely.importants-studio.com/posts/severance-tax-rate-by-tenure-2026/",
@@ -142,18 +154,6 @@
           "url": "https://leisurely.importants-studio.com/posts/national-pension-voluntary-continued-2026/",
           "summary": "국민연금 임의계속가입은 60세가 넘어도 65세가 되기 전까지 신청해 보험료를 계속 낼 수 있는 제도입니다. 신청 기한, 제외 대상, 2026년 보험료율 9.5%, 출생연도별로 보험료를 낼 수 있는 기간을 정리했습니다.",
           "date": "Sun, 04 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "노령연금 신청, 수급개시 나이가 되면 직접 청구해야 나옵니다",
-          "url": "https://leisurely.importants-studio.com/posts/old-age-pension-claim-2026/",
-          "summary": "노령연금은 가입기간 10년 이상이고 출생연도별 수급개시 나이에 이르러도 청구해야 나옵니다. 신청 방법과 서류, 첫 지급 시점, 늦게 청구했을 때 소급 5년 한도를 출생연도별로 정리했습니다.",
-          "date": "Sun, 04 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "국가건강검진 대상자, 올해 받는 해인지 가입 유형별로 확인하는 법 (2026년)",
-          "url": "https://leisurely.importants-studio.com/posts/national-health-checkup-target-2026/",
-          "summary": "국가건강검진 대상자는 직장·지역·피부양자 유형과 출생연도에 따라 갈립니다. 2026년 검진은 12월 31일까지이고, 퇴직하면 안내를 받는 방식이 달라집니다. 일반검진 주기와 50대가 걸리는 암검진 연령, 본인부담을 공단 안내 기준으로 정리했습니다.",
-          "date": "Sat, 03 Oct 2026 09:00:00 +0900"
         }
       ]
     },
@@ -164,6 +164,12 @@
       "tagline": "뉴스의 숫자가 무슨 뜻인지 풀어 씁니다",
       "url": "https://money.importants-studio.com",
       "posts": [
+        {
+          "title": "예금 이자 계산 방법, 세전 이자와 세후 이자는 왜 다르게 찍히나요",
+          "url": "https://money.importants-studio.com/posts/deposit-interest-calculation/",
+          "summary": "예금 이자 계산은 원금, 연 이율, 맡긴 기간 세 가지만 알면 됩니다. 여기에 소득세 14%와 지방소득세 1.4%, 합쳐 15.4%가 빠지면서 세후 이자가 정해집니다. 가입 일수 계산과 중도해지, 금융소득 2천만원 기준까지 순서대로 풀었습니다.",
+          "date": "Tue, 06 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "외환보유액 뜻, 2026년 8월말에 143억 달러가 늘어난 이유와 숫자 읽는 법",
           "url": "https://money.importants-studio.com/posts/foreign-exchange-reserves-explained/",
@@ -187,12 +193,6 @@
           "url": "https://money.importants-studio.com/posts/equal-payment-vs-equal-principal/",
           "summary": "원리금균등상환은 매달 같은 금액을, 원금균등상환은 매달 같은 원금을 갚습니다. 1억 원·연 5%·10년이라는 가상의 조건으로 월 상환액과 총이자가 어떻게 갈리는지, 초반 이자 비중과 중도상환까지 풀었습니다.",
           "date": "Sun, 04 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "금통위 일정, 1년에 8번뿐인 기준금리 결정일과 당일 나오는 자료 읽는 법",
-          "url": "https://money.importants-studio.com/posts/mpc-meeting-schedule-explained/",
-          "summary": "금통위 일정은 통화정책방향 결정회의 8회와 금융안정회의 4회로 나뉩니다. 10월 22일 회의를 앞두고 어떤 날이 기준금리를 정하는 날인지, 당일과 2주 뒤에 어떤 자료가 나오는지 정리했습니다.",
-          "date": "Sat, 03 Oct 2026 09:00:00 +0900"
         }
       ]
     },
@@ -203,6 +203,18 @@
       "tagline": "떠나기 전에 확인해야 할 것을 짚습니다",
       "url": "https://travel.importants-studio.com",
       "posts": [
+        {
+          "title": "말레이시아 입국신고서 작성, 도착 3일 안에 MDAC를 무료로 등록하고 대행 사이트는 쓸 필요가 없습니다",
+          "url": "https://travel.importants-studio.com/posts/malaysia-mdac-registration-2026/",
+          "summary": "말레이시아 입국신고서(MDAC)는 도착 전 3일 이내(등록일 포함)에 이민청 공식 사이트에서 무료로 등록합니다. 대상, 여권 조건, PIN과 PDF 받는 법, 수수료를 받는 사칭 사이트 주의점을 정리했습니다.",
+          "date": "Tue, 06 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "태국 입국신고서 TDAC, 도착일 포함 3일 안에 공식 사이트에서 무료로 냅니다",
+          "url": "https://travel.importants-studio.com/posts/thailand-tdac-arrival-card-2026/",
+          "summary": "태국 입국신고서는 2025년 5월 1일부터 온라인 TDAC로 바뀌었습니다. 도착일 포함 3일 안에 공식 사이트에서 무료로 내며, 수천 바트를 받는 사이트는 공식이 아닙니다.",
+          "date": "Tue, 06 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "싱가포르 입국신고서 작성, 도착일 포함 3일 안에 무료로 내고 대행 사이트는 쓸 필요가 없습니다",
           "url": "https://travel.importants-studio.com/posts/singapore-arrival-card-sgac-2026/",
@@ -220,18 +232,6 @@
           "url": "https://travel.importants-studio.com/posts/passport-renewal-documents-2026/",
           "summary": "여권 갱신(재발급) 준비물은 온라인과 방문이 다릅니다. 정부24는 6개월 이내 사진 파일만, 방문은 신청서·신분증·사진·구여권이 필요합니다. 구여권 처리, 수수료, 잔여 유효기간 선택까지 정리했습니다.",
           "date": "Sun, 04 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "일본 eSIM 무제한, 에어알로는 하루 3GB 넘으면 1Mbps입니다",
-          "url": "https://travel.importants-studio.com/posts/japan-esim-data-only-conditions-2026/",
-          "summary": "일본 eSIM은 대부분 데이터 전용입니다. 에어알로 일본 무제한은 하루 3GB 뒤 1Mbps, 전화번호 없음, 설치는 출국 전에 가능합니다. 기간별 요금과 KT 로밍 비교를 정리했습니다.",
-          "date": "Sun, 04 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "여권 영문 이름 변경, 사유가 정해져 있고 온라인 신청은 안 됩니다",
-          "url": "https://travel.importants-studio.com/posts/passport-english-name-change-rules-2026/",
-          "summary": "여권 영문 이름 변경은 외교부가 정한 사유에 해당할 때만 허용되고 온라인으로는 신청할 수 없습니다. 발음 불일치, 개명, 배우자 성 추가, 외자 이름 등 사유별 조건을 정리했습니다.",
-          "date": "Sat, 03 Oct 2026 09:00:00 +0900"
         }
       ]
     }
