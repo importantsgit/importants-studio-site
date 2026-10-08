@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-08T01:34:19+00:00",
+  "generated": "2026-10-08T05:51:19+00:00",
   "blogs": [
     {
       "key": "hyetaek",
@@ -48,6 +48,18 @@
       "url": "https://car.importants-studio.com",
       "posts": [
         {
+          "title": "전기차 충전카드 발급, 출고 전에도 신청됩니다",
+          "url": "https://car.importants-studio.com/posts/ev-charging-card-issue/",
+          "summary": "환경부 전기차 충전카드는 무공해차 통합누리집에서 신청합니다. 출고 전 임시번호 발급, 차량번호 등록, 결제카드 연결 순서와 아이폰 모바일카드 제약을 정리했습니다.",
+          "date": "Thu, 08 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "타이어 교체 비용, 장착나라 공임은 1개 1만6천원부터",
+          "url": "https://car.importants-studio.com/posts/tire-replacement-cost/",
+          "summary": "타이어 교체 비용은 타이어값과 장착 공임으로 나뉩니다. 장착 중개 서비스인 장착나라 단가표 기준 16인치 이하 1만6천원, 18인치 2만2천원이고 밸런스와 폐타이어 처리가 포함됩니다. 2개만 갈 때 새 타이어를 어느 쪽에 다는지도 정리했습니다.",
+          "date": "Thu, 08 Oct 2026 09:00:00 +0900"
+        },
+        {
           "title": "운전면허 적성검사 장소, 시험장·경찰서·인터넷 중 어디서 받을까요",
           "url": "https://car.importants-studio.com/posts/license-test-place/",
           "summary": "운전면허 적성검사는 전국 면허시험장과 경찰서 교통민원실에서 받습니다. 인터넷으로 끝내는 조건, 신체검사를 병원에서 받는 방법, 신체검사장이 없는 지역까지 정리했습니다.",
@@ -64,18 +76,6 @@
           "url": "https://car.importants-studio.com/posts/snow-chain-types/",
           "summary": "스노우체인은 사슬형, 우레탄, 스파이더, 패브릭, 스프레이 5가지입니다. 종류별 장단점과 효과, 장착 방법, 달고 달릴 때 속도 기준을 정리했습니다.",
           "date": "Tue, 06 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "하이패스 단말기 등록, 홈페이지에서 직접 하거나 판매점에 맡기면 됩니다",
-          "url": "https://car.importants-studio.com/posts/hipass-terminal-register/",
-          "summary": "하이패스 단말기는 사는 것과 등록하는 것이 별개입니다. 한국도로공사 안내 기준으로 직접 등록 순서, 내장형·중고 단말기 처리, 명의변경, 경차 구입 지원금 1만5천원까지 정리했습니다.",
-          "date": "Tue, 06 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "자동차세 납부기간 12월 16일부터 31일, 지나면 3% 가산세가 붙습니다",
-          "url": "https://car.importants-studio.com/posts/car-tax-december-payment-period/",
-          "summary": "자동차세 2기분 납부기간은 12월 16일부터 31일입니다. 기한을 넘기면 3%가 붙고, 연체 조회와 납부 방법, 연납과의 차이까지 정리했습니다.",
-          "date": "Mon, 05 Oct 2026 09:00:00 +0900"
         }
       ]
     },
@@ -126,6 +126,18 @@
       "url": "https://leisurely.importants-studio.com",
       "posts": [
         {
+          "title": "기초연금 모의계산, 소득인정액은 이렇게 계산됩니다",
+          "url": "https://leisurely.importants-studio.com/posts/basic-pension-simulation-income-recognition-2026/",
+          "summary": "기초연금 모의계산은 복지로에서 해볼 수 있습니다. 입력 전에 소득인정액이 근로소득 116만원 공제, 재산 기본공제, 금융재산 2천만원 공제로 어떻게 짜이는지 단독가구 예시와 함께 정리했습니다.",
+          "date": "Thu, 08 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "퇴직금 IRP 해지 세금, 연금으로 받느냐가 갈립니다",
+          "url": "https://leisurely.importants-studio.com/posts/retirement-irp-withdrawal-tax/",
+          "summary": "퇴직금이 들어 있는 IRP를 연금 형태로 받지 않고 해지하면 퇴직소득세 감면이 사라지고, 운용수익에는 기타소득세 15%가 붙습니다. 퇴직 나이별로 IRP 이전이 의무인지, 돈의 종류별로 세금이 어떻게 갈리는지 정리했습니다.",
+          "date": "Thu, 08 Oct 2026 09:00:00 +0900"
+        },
+        {
           "title": "국민연금 납부기간 30년과 40년 차이, 가입기간별 연금액은 이렇게 달라집니다",
           "url": "https://leisurely.importants-studio.com/posts/national-pension-payment-period-2026/",
           "summary": "국민연금 납부기간이 10년이면 20년 가입자의 절반, 40년이면 30년의 약 1.3배 수준으로 산식이 움직입니다. 납부기간이 부족할 때 쓸 수 있는 추납·임의계속가입과 내 가입기간 확인 방법까지 공식 안내 기준으로 정리했습니다.",
@@ -142,18 +154,6 @@
           "url": "https://leisurely.importants-studio.com/posts/retirement-age-by-job-2026/",
           "summary": "정년퇴직 연령은 민간 회사원과 일반직 공무원이 60세, 교육공무원이 62세, 대학 교원이 65세입니다. 퇴직일은 직종마다 다르고, 국민연금을 받기까지 소득 공백이 몇 년인지는 출생연도로 갈립니다. 확정되지 않은 65세 연장 논의도 함께 짚었습니다.",
           "date": "Tue, 06 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "치매안심센터 무료 선별검사는 만 60세부터입니다, 내 차례가 언제인지 출생연도로 찾아보세요",
-          "url": "https://leisurely.importants-studio.com/posts/dementia-care-center-screening-2026/",
-          "summary": "치매안심센터 선별검사는 만 60세 이상이면 신분증만 들고 가서 무료로 받습니다. 출생연도별로 60세가 되는 해, 검사 방식, 치매치료관리비 월 3만원과 소득기준, 우리 동네 센터 찾는 법을 공식 안내 기준으로 정리했습니다.",
-          "date": "Tue, 06 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "퇴직금 세금 몇 프로인가요? 같은 금액도 근속연수에 따라 0%대에서 10%대까지 갈립니다",
-          "url": "https://leisurely.importants-studio.com/posts/severance-tax-rate-by-tenure-2026/",
-          "summary": "퇴직금 세금은 정해진 비율이 아니라 근속연수와 금액으로 갈립니다. 근속 10·20·30년과 퇴직금 5천만~5억원을 가정한 실효세율 표, 공제 구조, 이미 낸 세금을 돌려받는 60일 기준을 정리했습니다.",
-          "date": "Mon, 05 Oct 2026 09:00:00 +0900"
         }
       ]
     },
@@ -164,6 +164,18 @@
       "tagline": "뉴스의 숫자가 무슨 뜻인지 풀어 씁니다",
       "url": "https://money.importants-studio.com",
       "posts": [
+        {
+          "title": "DTI 뜻, 기존 대출을 이자만 보는 이유",
+          "url": "https://money.importants-studio.com/posts/dti-meaning-vs-dsr/",
+          "summary": "DTI(총부채상환비율)가 무엇을 나눈 값인지, 왜 기존 대출은 이자만 넣는지, 같은 소득에서 DSR과 숫자가 얼마나 벌어지는지 단순화한 가상의 수치로 풀었습니다.",
+          "date": "Thu, 08 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "스태그플레이션 뜻, 불황인데 물가는 오르는 이유",
+          "url": "https://money.importants-studio.com/posts/stagflation-explained/",
+          "summary": "스태그플레이션이 무엇인지, 경기가 나쁜데 물가는 왜 오르는지를 공급 충격과 정책 딜레마로 풀었습니다. 1970년대 미국 사례의 물가와 실업률 수치, 인플레이션과의 차이, 주식에 닿는 경로까지 원리만 정리합니다.",
+          "date": "Thu, 08 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "10년물 국채금리란, 기준금리와 따로 움직이는 이유를 기대와 기간 프리미엄으로 풀었습니다",
           "url": "https://money.importants-studio.com/posts/ten-year-treasury-yield-explained/",
@@ -181,18 +193,6 @@
           "url": "https://money.importants-studio.com/posts/deposit-interest-calculation/",
           "summary": "예금 이자 계산은 원금, 연 이율, 맡긴 기간 세 가지만 알면 됩니다. 여기에 소득세 14%와 지방소득세 1.4%, 합쳐 15.4%가 빠지면서 세후 이자가 정해집니다. 가입 일수 계산과 중도해지, 금융소득 2천만원 기준까지 순서대로 풀었습니다.",
           "date": "Tue, 06 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "주식 PER 뜻, 숫자가 낮으면 싼 건지 계산법부터 마이너스일 때까지 풀어봤습니다",
-          "url": "https://money.importants-studio.com/posts/stock-per-meaning-explained/",
-          "summary": "주식 PER(주가수익비율)의 뜻과 계산법을 가상의 숫자로 풀었습니다. PER이 낮다고 무조건 싼 주식이 아닌 이유, PER이 마이너스로 나오거나 표시되지 않는 경우, PBR과의 차이까지 정리했습니다.",
-          "date": "Tue, 06 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "외환보유액 뜻, 2026년 8월말에 143억 달러가 늘어난 이유와 숫자 읽는 법",
-          "url": "https://money.importants-studio.com/posts/foreign-exchange-reserves-explained/",
-          "summary": "외환보유액은 나라가 비상용으로 쌓아 둔 외화 자산입니다. 무엇으로 이뤄져 있는지, 2026년 8월말 4,422억 달러가 어떻게 나왔는지, 순위 공개는 왜 멈췄는지 풀었습니다.",
-          "date": "Mon, 05 Oct 2026 09:00:00 +0900"
         }
       ]
     },
@@ -203,6 +203,18 @@
       "tagline": "떠나기 전에 확인해야 할 것을 짚습니다",
       "url": "https://travel.importants-studio.com",
       "posts": [
+        {
+          "title": "베트남 입국 무비자 45일, 사전신고는 3일 전부터",
+          "url": "https://travel.importants-studio.com/posts/vietnam-entry-visa-free-pai-2026/",
+          "summary": "한국 여권은 베트남에 45일까지 비자 없이 들어갑니다. 2026년 4월부터 온라인 사전입국신고(PAI)가 생겼고 도착 3일 전부터 무료로 냅니다. 의무 공항과 건강신고서는 출처가 갈려 확인 방법까지 적었습니다.",
+          "date": "Thu, 08 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "인도네시아 입국신고서, 도착 3일 전부터 무료",
+          "url": "https://travel.importants-studio.com/posts/indonesia-all-indonesia-arrival-card-2026/",
+          "summary": "인도네시아 입국신고서는 종이가 아니라 온라인 All Indonesia로 냅니다. 도착 3일 전부터 무료로 쓰고 QR을 받습니다. 도착비자 50만 루피아, 인상안 상태, 여권 6개월 조건까지 정리했습니다.",
+          "date": "Thu, 08 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "대만 입국신고서 TWAC, 도착 7일 전부터 공식 사이트에서 무료로 냅니다",
           "url": "https://travel.importants-studio.com/posts/taiwan-twac-arrival-card-2026/",
@@ -220,18 +232,6 @@
           "url": "https://travel.importants-studio.com/posts/malaysia-mdac-registration-2026/",
           "summary": "말레이시아 입국신고서(MDAC)는 도착 전 3일 이내(등록일 포함)에 이민청 공식 사이트에서 무료로 등록합니다. 대상, 여권 조건, PIN과 PDF 받는 법, 수수료를 받는 사칭 사이트 주의점을 정리했습니다.",
           "date": "Tue, 06 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "태국 입국신고서 TDAC, 도착일 포함 3일 안에 공식 사이트에서 무료로 냅니다",
-          "url": "https://travel.importants-studio.com/posts/thailand-tdac-arrival-card-2026/",
-          "summary": "태국 입국신고서는 2025년 5월 1일부터 온라인 TDAC로 바뀌었습니다. 도착일 포함 3일 안에 공식 사이트에서 무료로 내며, 수천 바트를 받는 사이트는 공식이 아닙니다.",
-          "date": "Tue, 06 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "싱가포르 입국신고서 작성, 도착일 포함 3일 안에 무료로 내고 대행 사이트는 쓸 필요가 없습니다",
-          "url": "https://travel.importants-studio.com/posts/singapore-arrival-card-sgac-2026/",
-          "summary": "싱가포르 입국신고서(SG Arrival Card)는 도착일 포함 3일 전부터 ICA 공식 사이트나 MyICA 앱에서 무료로 제출합니다. 종이 카드는 2020년에 없어졌고, 수수료를 받는 대행 사이트는 ICA가 보증하지 않습니다.",
-          "date": "Mon, 05 Oct 2026 09:00:00 +0900"
         }
       ]
     }
