@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude 5.5에서 프롬프트 캐시 읽기 단가가 바뀐 자리 | Importants Studio</title>
+<meta name="description" content="같은 지시문과 예시를 반복해서 보내는 자동화에서 Sonnet 5와 5.5의 입력 단가는 같아도 캐시 읽기 비용이 달라지는 지점을 가격표로 대조했습니다.">
+<link rel="canonical" href="https://importants-studio.com/guide/claude-cache-read-price-5-5/">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Importants Studio">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Claude 5.5에서 프롬프트 캐시 읽기 단가가 바뀐 자리">
+<meta property="og:description" content="같은 지시문과 예시를 반복해서 보내는 자동화에서 Sonnet 5와 5.5의 입력 단가는 같아도 캐시 읽기 비용이 달라지는 지점을 가격표로 대조했습니다.">
+<meta property="og:url" content="https://importants-studio.com/guide/claude-cache-read-price-5-5/">
+<meta property="article:published_time" content="2026-10-12T09:00:00+09:00">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8673949681156413" crossorigin="anonymous"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Claude 5.5에서 프롬프트 캐시 읽기 단가가 바뀐 자리","description":"같은 지시문과 예시를 반복해서 보내는 자동화에서 Sonnet 5와 5.5의 입력 단가는 같아도 캐시 읽기 비용이 달라지는 지점을 가격표로 대조했습니다.","datePublished":"2026-10-12T09:00:00+09:00","author":{"@type":"Organization","name":"Importants Studio"},"publisher":{"@type":"Organization","name":"Importants Studio"},"mainEntityOfPage":"https://importants-studio.com/guide/claude-cache-read-price-5-5/"}</script>
+<style>
+:root{--bg:#faf9f6;--card:#ffffff;--ink:#1a1a17;--mut:#6f6d66;--line:#e6e3da;--chip:#f0eee7}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;-webkit-font-smoothing:antialiased;word-break:keep-all}
+a{color:var(--ink)}
+.wrap{padding:0 20px 72px}
+.col{max-width:680px;margin:0 auto}
+header{display:flex;align-items:center;justify-content:space-between;padding:20px 0;border-bottom:1px solid var(--ink)}
+.logo{font-size:17px;font-weight:800;letter-spacing:-0.01em;text-decoration:none}
+.logo span{color:var(--mut)}
+.nav{display:inline-block;border:1px solid var(--ink);font-size:13px;font-weight:600;padding:7px 14px;border-radius:99px;white-space:nowrap;text-decoration:none}
+.nav:hover{background:var(--ink);color:var(--bg)}
+article{padding:36px 0 0}
+h1{font-size:clamp(23px,4.6vw,31px);font-weight:800;line-height:1.42;margin:0 0 14px;letter-spacing:-0.02em;text-wrap:pretty}
+.meta{display:flex;gap:10px;font-size:13px;color:var(--mut);padding-bottom:22px;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}
+.body{padding-top:26px;font-size:16px;line-height:1.85}
+.body p{margin:0 0 20px}
+.body h2{font-size:19px;font-weight:800;letter-spacing:-0.01em;margin:38px 0 14px;padding-top:20px;border-top:1px solid var(--line);text-wrap:pretty}
+.body h3{font-size:16px;font-weight:700;margin:28px 0 10px}
+.body ul,.body ol{margin:0 0 20px;padding-left:22px}
+.body li{margin-bottom:9px}
+.body strong{font-weight:700}
+.body code{background:var(--chip);padding:2px 6px;border-radius:5px;font-size:14px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.body pre{background:var(--chip);padding:14px 16px;border-radius:9px;overflow-x:auto;font-size:13.5px;line-height:1.65;margin:0 0 20px}
+.body pre code{background:none;padding:0}
+.body blockquote{margin:0 0 20px;padding:2px 0 2px 16px;border-left:3px solid var(--line);color:var(--mut)}
+.body table{border-collapse:collapse;width:100%;margin:0 0 22px;font-size:14.5px}
+.body th,.body td{border-bottom:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top}
+.body th{font-weight:700;background:var(--chip)}
+.body hr{border:0;border-top:1px solid var(--line);margin:30px 0}
+.tail{margin-top:44px;padding-top:22px;border-top:1px solid var(--ink);font-size:14px;color:var(--mut);line-height:1.7}
+.tail a{color:var(--mut)}
+footer{padding:30px 0 0;margin-top:26px;border-top:1px solid var(--line)}
+.fmeta{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;color:var(--mut)}
+.fmeta a{color:var(--mut)}
+</style>
+</head>
+<body>
+<div class="wrap"><div class="col">
+
+  <header>
+    <a class="logo" href="/">Importants<span>.</span>Studio</a>
+    <a class="nav" href="/guide/">AI 도구 목록</a>
+  </header>
+
+  <article>
+    <h1>Claude 5.5에서 프롬프트 캐시 읽기 단가가 바뀐 자리</h1>
+    <div class="meta"><span>2026년 10월 12일</span><span>Importants Studio</span></div>
+    <div class="body"><p>이 저장소의 자동화는 지시문, 규칙, 예시 글처럼 앞부분이 같은 입력을 매일 수십 번 모델에 보냅니다. 모델 이름을 바꿀 때 보통은 기본 입력과 출력 단가만 먼저 보게 되는데, 이번에는 반복 입력의 비용이 정말 같아지는지 확인하려고 공식 가격 페이지를 직접 열었습니다.</p>
+<p>처음에는 Sonnet 5와 Sonnet 5.5의 입력 단가가 같은 2달러라는 줄만 보였는데, 캐시 읽기 칸을 나란히 놓으니 값이 달랐습니다. 입력 단가가 같다고 반복 입력 비용까지 같지는 않았습니다.</p>
+<h2>먼저 결론부터</h2>
+<ul><li>Sonnet 5.5의 캐시 읽기는 100만 토큰당 0.10달러이고, Sonnet 5는 0.20달러입니다.</li><li>두 모델의 기본 입력 단가는 모두 2달러, 출력 단가는 모두 10달러입니다.</li><li>Opus 5.5와 Sonnet 5.5의 캐시 읽기 배수는 기본 입력의 0.05배입니다.</li><li>Fable 5.1과 Mythos 5.1은 0.025배, 그 밖의 모델은 표준 0.1배로 적혀 있습니다.</li><li>Sonnet 5.5의 5분 캐시 쓰기는 2.50달러이며, 기본 입력보다 0.50달러 높습니다.</li><li>이 글에서는 내 파이프라인의 캐시 적중률이나 실제 청구액을 측정하지 않았습니다. 가격표의 숫자만 대조한 기록입니다.</li></ul>
+<h2>입력 단가만 보고 같은 비용으로 읽었습니다</h2>
+<p>가격표를 보기 전에는 Sonnet 5와 Sonnet 5.5를 같은 입력 단가로 묶어 두기 쉬웠습니다. 둘 다 100만 토큰당 입력 2달러, 출력 10달러이니, 자동화에서 앞부분이 계속 반복되더라도 모델만 바꾸면 입력 비용 구조가 크게 달라지지 않는다고 읽힐 자리였습니다.</p>
+<p>표를 옆으로 옮겨 보니 차이는 캐시 읽기 칸에 있었습니다.</p>
+<table><thead><tr><th>모델</th><th>입력</th><th>캐시 읽기</th><th>출력</th></tr></thead><tbody><tr><td>Sonnet 5.5</td><td>2달러</td><td>0.10달러</td><td>10달러</td></tr><tr><td>Sonnet 5</td><td>2달러</td><td>0.20달러</td><td>10달러</td></tr><tr><td>Sonnet 4.6</td><td>3달러</td><td>0.30달러</td><td>15달러</td></tr></tbody></table>
+<p>Sonnet 5.5는 기본 입력의 0.05배, Sonnet 5는 표준 0.1배입니다. 기본 입력에서는 차이가 없어 보였던 조합이 캐시 읽기에서는 절반으로 갈렸고, 처음 표를 훑을 때는 이 차이가 보이지 않았습니다.</p>
+<h2>읽기 배수는 모델별로 갈립니다</h2>
+<p>공식 가격 페이지의 각주에는 캐시 적중과 갱신의 읽기 단가 배수가 따로 적혀 있었습니다. Fable 5.1과 Mythos 5.1은 기본 입력의 0.025배, Opus 5.5와 Sonnet 5.5는 0.05배입니다.</p>
+<p>그 밖의 모델은 0.1배입니다. 같은 캐시 읽기라는 이름 아래에서도 배수는 한 가지가 아니었습니다.</p>
+<p>Fable 5.1은 입력 10달러, 캐시 읽기 0.25달러로 표에 나타납니다. Fable 5는 입력 10달러인데 캐시 읽기는 1달러입니다. Opus 계열도 마찬가지여서, Opus 5.5는 입력 4달러와 캐시 읽기 0.20달러이고 Opus 5는 입력 5달러와 캐시 읽기 0.50달러입니다.</p>
+<p>모델 세대 이름만 바꾸어 본다면 놓치기 쉬운 부분이었습니다. 반복되는 긴 앞부분을 캐시에서 읽는 흐름이라면 기본 입력 단가보다 이 칸을 먼저 봐야 했고, 표를 읽는 순서도 그쪽으로 바뀌었습니다.</p>
+<h2>Sonnet 5.5에서는 쓰기 추가분을 바로 넘습니다</h2>
+<p>Sonnet 5.5의 5분 캐시 쓰기는 2.50달러로, 기본 입력 2달러보다 0.50달러 높습니다. 캐시 읽기는 0.10달러이므로 기본 입력으로 다시 보내는 경우와 비교하면 한 번 읽을 때 1.90달러 차이가 납니다.</p>
+<p>계산식은 아래와 같습니다.</p>
+<pre><code>기본 입력 2달러 - 캐시 읽기 0.10달러 = 1.90달러
+5분 캐시 쓰기 2.50달러 - 기본 입력 2달러 = 0.50달러</code></pre>
+<p>가격표 기준으로는 한 번 다시 읽는 비용의 차이가 쓰기 추가분을 넘습니다. 다만 캐시가 실제로 적중했다는 가정 위의 계산이고, 내 자동화에서 적중률을 재거나 청구서에서 이 차이를 확인한 값은 아닙니다.</p>
+<p>1시간 캐시 쓰기는 4달러입니다. 쓰기 시간에 따라 비용이 달라지니 5분 쓰기 계산을 그대로 1시간 항목에 옮길 수는 없었고, 표에 있는 항목을 분리해서 봐야 했습니다.</p>
+<h2>가격표의 각주도 같이 읽었습니다</h2>
+<p>Sonnet 5의 2달러와 10달러는 처음에 한시 가격으로 적혀 있었습니다. 각주를 보면 8월 31일까지 적용하려던 가격이었는데, 9월 1일에 입력 3달러와 출력 15달러로 오를 예정이 취소되면서 표준 가격이 됐다고 나옵니다.</p>
+<p>표의 숫자만 떼어 보면 이 부분이 빠집니다. 현재 단가와 함께 그 단가가 어떻게 남았는지가 각주에 붙어 있었습니다.</p>
+<p>또 4.7 이후 모델은 새 토크나이저를 쓰고, 같은 글을 입력해도 토큰 수가 약 30% 더 나온다고 적혀 있습니다. 캐시 읽기 단가가 낮아졌더라도 토큰 수를 전 세대와 같은 감각으로 읽으면 비용 비교가 흔들릴 수 있는 자리였습니다.</p>
+<p>Batch API는 입력과 출력 모두 50% 할인입니다. 이번 확인은 캐시 읽기 단가에 맞췄지만, 배치로 넘길 수 있는 작업이라면 입력과 출력의 할인 조건이 따로 붙습니다.</p>
+<h2>실제 청구액 대신 가격표에서 멈췄습니다</h2>
+<p>이번에는 가격 페이지를 2026-10-12에 직접 열어 단가와 각주를 대조했습니다. 내 파이프라인에서 캐시가 얼마나 적중하는지, Sonnet 5에서 Sonnet 5.5로 바꿨을 때 청구액이 얼마나 달라지는지는 아직 재지 않았습니다.</p>
+<p>그래서 이 글의 1.90달러도 실제 절감액이 아닙니다. 표의 입력과 읽기 단가를 뺀 값일 뿐, 자동화의 입력 길이와 캐시 적중 여부, 쓰기 시간은 이 계산에 들어가지 않았습니다.</p>
+<p>그래도 입력 2달러라는 같은 숫자만 보고 반복 비용까지 같다고 읽었던 부분은 이번에 바로잡혔습니다. 다음 가격 비교에서는 기본 입력, 캐시 쓰기, 캐시 읽기, 토크나이저 각주를 한 줄씩 함께 옮겨 볼 생각입니다.</p></div>
+    <div class="tail">지난 글: <a href="/guide/ten-to-twenty-posts-rules/">AI로 글을 10편에서 20편으로 늘리며 정한 규칙</a><br><a href="/guide/">목록으로</a></div>
+  </article>
+
+  <footer>
+    <div class="fmeta">
+      <a href="/">홈</a>
+      <a href="/guide/">AI 도구</a>
+      <a href="/about/">소개</a>
+      <a href="/contact/">문의</a>
+      <a href="/privacy/">개인정보처리방침</a>
+    </div>
+  </footer>
+
+</div></div>
+</body>
+</html>
