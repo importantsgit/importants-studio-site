@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-13T01:33:13+00:00",
+  "generated": "2026-10-13T06:06:46+00:00",
   "blogs": [
     {
       "key": "hyetaek",
@@ -8,6 +8,18 @@
       "tagline": "정부 지원금과 세금 환급을 매일 정리합니다",
       "url": "https://blog.importants-studio.com",
       "posts": [
+        {
+          "title": "세금 환급금 조회, 5년 지나면 국고로 갑니다",
+          "url": "https://blog.importants-studio.com/posts/national-tax-refund-lookup-2026/",
+          "summary": "세금 환급금 조회는 홈택스 국세환급금 찾기, 손택스, 정부24에서 할 수 있습니다. 최초 지급요구일부터 5년 안에 찾아가지 않으면 국고로 귀속됩니다. 조회 방법과 환급계좌 신고, 1년이 지난 환급금 처리 순서를 정리했습니다.",
+          "date": "Tue, 13 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "임차권등기명령 신청방법, 이사는 등기 후에",
+          "url": "https://blog.importants-studio.com/posts/lease-registration-order-application-2026/",
+          "summary": "임차권등기명령은 계약이 끝났는데 보증금을 못 받았을 때 이사 전에 법원에 신청하는 제도입니다. 등기가 끝나면 이사해도 대항력과 우선변제권이 유지됩니다. 신청 방법, 서류, 비용, 등기된 집에 들어가려는 분이 알아야 할 점을 정리했습니다.",
+          "date": "Tue, 13 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "전세보증금 반환보증 보증료, 돌려받는 법",
           "url": "https://blog.importants-studio.com/posts/jeonse-deposit-guarantee-fee-2026/",
@@ -25,18 +37,6 @@
           "url": "https://blog.importants-studio.com/posts/interim-tax-estimate-filing-2026/",
           "summary": "개인사업자는 11월 중순까지 작년 종합소득세의 절반이 적힌 중간예납 고지서를 받고 11월 30일까지 냅니다. 올해 1~6월 소득이 줄었다면 추계액 신고로 고지서 금액 대신 실제 소득 기준 세액만 낼 수 있습니다. 신고 요건 30%, 50만원 미만일 때 신고서를 꼭 내야 하는 이유, 분납 기준을 국세청 안내로 정리했습니다.",
           "date": "Sun, 11 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "건강보험료 환급, 11월 30일까지 집중 지급합니다",
-          "url": "https://blog.importants-studio.com/posts/health-insurance-premium-refund-2026/",
-          "summary": "국민건강보험공단이 10월 1일부터 11월 30일까지 찾아가지 않은 건강보험료 환급금을 집중 지급합니다. 이중 납부나 자격 소급 상실로 생긴 환급금이 어떤 경우인지, 누리집과 앱에서 조회하는 경로, 신청 주체, 3년 소멸시효, 사전계좌 등록과 문자 사칭 주의점을 정리했습니다.",
-          "date": "Thu, 08 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "연말정산 계산기 대신 손으로 세금 계산하는 순서",
-          "url": "https://blog.importants-studio.com/posts/yearend-tax-manual-calculation-2026/",
-          "summary": "연말정산 세금은 총급여에서 근로소득공제를 빼고, 소득공제를 빼고, 기본세율을 곱하는 순서로 나옵니다. 총급여 5천만원이면 근로소득공제가 1,225만원이고, 소득공제 합계를 1,000만원으로 가정하면 산출세액은 290만 2,500원입니다. 국세청 구간표로 직접 계산해 보고 세액공제 단계에서 어디를 확인할지 정리했습니다.",
-          "date": "Thu, 08 Oct 2026 09:00:00 +0900"
         }
       ]
     },
@@ -47,6 +47,18 @@
       "tagline": "자동차세, 보험료, 검사 기한을 챙깁니다",
       "url": "https://car.importants-studio.com",
       "posts": [
+        {
+          "title": "무면허 운전 처벌, 면허정지 중에도 해당됩니다",
+          "url": "https://car.importants-studio.com/posts/unlicensed-driving-penalty/",
+          "summary": "무면허 운전은 도로교통법 제152조에 따라 1년 이하 징역이나 300만원 이하 벌금 범위로 처벌합니다. 면허정지 기간 운전, 오토바이 무면허, 차를 내준 사람의 책임, 면허 재취득 제한 기간까지 법 조문으로 정리했습니다.",
+          "date": "Tue, 13 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "신호위반 과태료 7만원, 범칙금은 6만원",
+          "url": "https://car.importants-studio.com/posts/signal-violation-fine-amount/",
+          "summary": "신호위반 과태료는 승용차 기준 7만원, 경찰에게 직접 적발되면 범칙금 6만원에 벌점이 붙습니다. 같은 위반인데 금액이 다른 이유와 확인 방법을 정리했습니다.",
+          "date": "Tue, 13 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "운전면허 재발급 비용, 일반 1만원 모바일 1만5천원",
           "url": "https://car.importants-studio.com/posts/driver-license-reissue/",
@@ -64,18 +76,6 @@
           "url": "https://car.importants-studio.com/posts/car-acquisition-tax-rate/",
           "summary": "자동차 취득세는 비영업용 승용차 7%, 경차 4%를 차량가에 곱합니다. 곱하는 금액은 부가가치세를 뺀 값이고, 중고차는 시가표준액 하한이 있습니다. 신고는 취득일부터 60일 안입니다.",
           "date": "Sun, 11 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "전기차 충전카드 발급, 출고 전에도 신청됩니다",
-          "url": "https://car.importants-studio.com/posts/ev-charging-card-issue/",
-          "summary": "환경부 전기차 충전카드는 무공해차 통합누리집에서 신청합니다. 출고 전 임시번호 발급, 차량번호 등록, 결제카드 연결 순서와 아이폰 모바일카드 제약을 정리했습니다.",
-          "date": "Thu, 08 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "타이어 교체 비용, 장착나라 공임은 1개 1만6천원부터",
-          "url": "https://car.importants-studio.com/posts/tire-replacement-cost/",
-          "summary": "타이어 교체 비용은 타이어값과 장착 공임으로 나뉩니다. 장착 중개 서비스인 장착나라 단가표 기준 16인치 이하 1만6천원, 18인치 2만2천원이고 밸런스와 폐타이어 처리가 포함됩니다. 2개만 갈 때 새 타이어를 어느 쪽에 다는지도 정리했습니다.",
-          "date": "Thu, 08 Oct 2026 09:00:00 +0900"
         }
       ]
     },
@@ -86,6 +86,12 @@
       "tagline": "결혼과 육아에 드는 돈과 제도를 정리합니다",
       "url": "https://home.importants-studio.com",
       "posts": [
+        {
+          "title": "전세보증보험 가입조건, 무주택 신혼부부 40% 할인",
+          "url": "https://home.importants-studio.com/posts/jeonse-deposit-guarantee-conditions-2026/",
+          "summary": "주택도시보증공사(HUG) 전세보증금반환보증 가입조건을 정리했습니다. 보증금 한도 수도권 7억원 이하, 주택가격 90%와 선순위채권 기준, 신청 기한, 무주택 신혼부부 보증료 40% 할인 조건까지 공식 안내 기준으로 확인합니다.",
+          "date": "Tue, 13 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "아기 여권 사진 규격, 입 벌려도 되는 나이",
           "url": "https://home.importants-studio.com/posts/baby-passport-photo-guide-2026/",
@@ -109,12 +115,6 @@
           "url": "https://home.importants-studio.com/posts/postpartum-care-center-cost-2026/",
           "summary": "산후조리원 비용은 보건복지부가 공개한 2025년 하반기 요금표를 평균 내면 2주 일반실 약 373만원, 특실 약 543만원입니다(같은 등급 안에서 가장 비싼 방 기준). 서울 특실 평균, 산모 실태조사의 지출 평균 286만 5천원과 숫자가 다른 이유, 첫만남이용권 결제와 지자체 지원 확인법을 정리했습니다.",
           "date": "Sun, 11 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "결혼식 비용 평균, 식대가 60%를 넘습니다",
-          "url": "https://home.importants-studio.com/posts/wedding-cost-average-2026/",
-          "summary": "한국소비자원 참가격 2026년 8월 조회 기준 결혼식 비용은 전국 평균 2,213만 원입니다. 식대 비중, 서울·지방 차이, 옵션이 빠진 금액이라는 점까지 정리했습니다.",
-          "date": "Thu, 08 Oct 2026 09:00:00 +0900"
         }
       ]
     },
@@ -125,6 +125,18 @@
       "tagline": "연금과 건강보험, 은퇴 뒤의 살림을 정리합니다",
       "url": "https://leisurely.importants-studio.com",
       "posts": [
+        {
+          "title": "국민연금 장애연금, 초진일 기준 납부요건 3가지",
+          "url": "https://leisurely.importants-studio.com/posts/national-pension-disability-pension-2026/",
+          "summary": "국민연금 장애연금은 노령연금을 받기 전에 장애가 남았을 때 나오는 연금입니다. 출생연도별 신청 가능 나이 상한, 초진일 기준 보험료 납부요건 3가지, 1~4급 지급 비율과 산재보험 중복 감액을 공단 안내로 정리했습니다.",
+          "date": "Tue, 13 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "주택연금 조건, 부부 나이와 집 종류에 따라 갈립니다",
+          "url": "https://leisurely.importants-studio.com/posts/housing-pension-conditions-2026/",
+          "summary": "주택연금은 부부 중 1명이 55세 이상이고 합산 공시가격 12억원 이하면 가입합니다. 월지급금은 젊은 쪽 나이로 계산하고, 오피스텔·다주택·전세 낀 집은 따로 갈립니다.",
+          "date": "Tue, 13 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "공무원연금 수령나이, 퇴직연도에 따라 갈립니다",
           "url": "https://leisurely.importants-studio.com/posts/public-servant-pension-start-age-2026/",
@@ -142,18 +154,6 @@
           "url": "https://leisurely.importants-studio.com/posts/national-pension-income-tax-2026/",
           "summary": "국민연금도 받을 때 소득세가 붙습니다. 2002년 이후 낸 보험료에 해당하는 노령연금만 과세 대상이고 장애·유족연금은 비과세입니다. 연금소득공제 구간표와 연 1,200만원 예시 계산, 연말정산 시기를 정리했습니다.",
           "date": "Sun, 11 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "요양원 비용, 본인부담률은 20%에서 갈립니다",
-          "url": "https://leisurely.importants-studio.com/posts/nursing-home-cost-long-term-care-2026/",
-          "summary": "요양원 비용은 장기요양 급여비용의 20%가 기본 본인부담이고, 소득·재산이나 수급 자격에 따라 12%, 8%, 면제로 갈립니다. 식사재료비 같은 비급여는 따로 내야 해서 월 계산 순서를 정리했습니다.",
-          "date": "Sun, 11 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "기초연금 모의계산, 소득인정액은 이렇게 계산됩니다",
-          "url": "https://leisurely.importants-studio.com/posts/basic-pension-simulation-income-recognition-2026/",
-          "summary": "기초연금 모의계산은 복지로에서 해볼 수 있습니다. 입력 전에 소득인정액이 근로소득 116만원 공제, 재산 기본공제, 금융재산 2천만원 공제로 어떻게 짜이는지 단독가구 예시와 함께 정리했습니다.",
-          "date": "Thu, 08 Oct 2026 09:00:00 +0900"
         }
       ]
     },
@@ -164,6 +164,18 @@
       "tagline": "뉴스의 숫자가 무슨 뜻인지 풀어 씁니다",
       "url": "https://money.importants-studio.com",
       "posts": [
+        {
+          "title": "반대매매 뜻, 미수와 신용융자는 시점이 다릅니다",
+          "url": "https://money.importants-studio.com/posts/margin-forced-liquidation-explained/",
+          "summary": "반대매매는 증권사에 빌린 돈을 제때 갚지 못하거나 담보가 모자랄 때 증권사가 주식을 대신 파는 절차입니다. 미수와 신용융자의 차이, 담보비율 140% 기준의 뜻을 가상의 수치로 풀었습니다.",
+          "date": "Tue, 13 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "상장폐지 뜻, 조건과 정리매매 순서",
+          "url": "https://money.importants-studio.com/posts/delisting-meaning-conditions/",
+          "summary": "상장폐지가 무슨 뜻인지, 관리종목 지정에서 정리매매까지 어떤 순서로 진행되는지, 올해 7월부터 달라진 시가총액·동전주 기준을 한국거래소 공시와 금융위원회 자료로 풀었습니다.",
+          "date": "Tue, 13 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "마이너스통장 금리, 쓴 만큼만 이자 붙는 구조",
           "url": "https://money.importants-studio.com/posts/minus-account-interest-structure/",
@@ -181,18 +193,6 @@
           "url": "https://money.importants-studio.com/posts/current-account-balance-explained/",
           "summary": "경상수지가 무엇인지, 상품수지·서비스수지·본원소득수지·이전소득수지로 어떻게 나뉘는지 풀었습니다. 가상의 수치로 항목별 합산을 따라가 보고, 흑자가 환율과 어떻게 이어지는지 원리만 설명합니다.",
           "date": "Sun, 11 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "대환대출 뜻, 갈아탈 때 따져볼 비용 구조",
-          "url": "https://money.importants-studio.com/posts/loan-refinance-meaning/",
-          "summary": "대환대출이 무엇인지, 금리가 낮아져도 갈아타면 손해일 수 있는 이유, 중도상환수수료가 붙는 기간과 손익분기점 계산법을 단순화한 가상의 수치로 풀었습니다.",
-          "date": "Sun, 11 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "DTI 뜻, 기존 대출을 이자만 보는 이유",
-          "url": "https://money.importants-studio.com/posts/dti-meaning-vs-dsr/",
-          "summary": "DTI(총부채상환비율)가 무엇을 나눈 값인지, 왜 기존 대출은 이자만 넣는지, 같은 소득에서 DSR과 숫자가 얼마나 벌어지는지 단순화한 가상의 수치로 풀었습니다.",
-          "date": "Thu, 08 Oct 2026 09:00:00 +0900"
         }
       ]
     },
@@ -203,6 +203,18 @@
       "tagline": "떠나기 전에 확인해야 할 것을 짚습니다",
       "url": "https://travel.importants-studio.com",
       "posts": [
+        {
+          "title": "여권 분실 신고, 찾아도 다시 못 씁니다",
+          "url": "https://travel.importants-studio.com/posts/passport-loss-report-2026/",
+          "summary": "여권은 분실 신고를 하는 순간 효력이 사라지고 나중에 찾아도 다시 쓸 수 없습니다. 신고 방법, 재발급 수수료, 분실 횟수별 유효기간 제한, 해외에서 잃어버렸을 때의 순서를 정리했습니다.",
+          "date": "Tue, 13 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "일본 콘센트 전압, 돼지코만으로 안 되는 기기",
+          "url": "https://travel.importants-studio.com/posts/japan-outlet-voltage-100v-2026/",
+          "summary": "일본 콘센트는 2핀이고 전압은 전국 100V, 주파수는 동일본 50Hz와 서일본 60Hz로 갈립니다. 외교부 공관 안내 세 건을 기준으로 돼지코로 되는 기기와 안 되는 기기를 정리했습니다.",
+          "date": "Tue, 13 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "간사이공항 라피트 요금과 공항급행 차이",
           "url": "https://travel.importants-studio.com/posts/kansai-airport-rapit-fare-2026/",
@@ -220,18 +232,6 @@
           "url": "https://travel.importants-studio.com/posts/vietnam-exchange-cash-declaration-2026/",
           "summary": "베트남 입국 때 5,000달러 상당 외화나 1,500만 동을 넘는 현금은 신고 대상입니다. 한국 출국은 1만 달러 초과부터입니다. 두 기준과 미신고 벌금 구간을 정리했습니다.",
           "date": "Sun, 11 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "해외여행자보험 비교, 보험료보다 먼저 볼 특약 4가지",
-          "url": "https://travel.importants-studio.com/posts/overseas-travel-insurance-compare-2026/",
-          "summary": "해외여행자보험은 보험료를 나란히 놓기 전에 실손 중복, 항공기 지연 보상 범위, 휴대품 분실 제외, 청약서 고지 항목을 봐야 합니다. 금융감독원과 생활법령 기준으로 가입 전 확인할 줄을 짚었습니다.",
-          "date": "Sun, 11 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "베트남 입국 무비자 45일, 사전신고는 3일 전부터",
-          "url": "https://travel.importants-studio.com/posts/vietnam-entry-visa-free-pai-2026/",
-          "summary": "한국 여권은 베트남에 45일까지 비자 없이 들어갑니다. 2026년 4월부터 온라인 사전입국신고(PAI)가 생겼고 도착 3일 전부터 무료로 냅니다. 의무 공항과 건강신고서는 출처가 갈려 확인 방법까지 적었습니다.",
-          "date": "Thu, 08 Oct 2026 09:00:00 +0900"
         }
       ]
     }
