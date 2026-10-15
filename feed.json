@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-15T03:52:20+00:00",
+  "generated": "2026-10-15T09:00:10+00:00",
   "blogs": [
     {
       "key": "hyetaek",
@@ -8,6 +8,18 @@
       "tagline": "정부 지원금과 세금 환급을 매일 정리합니다",
       "url": "https://blog.importants-studio.com",
       "posts": [
+        {
+          "title": "실손보험 청구서류, 3만원 이하는 두 가지면 됩니다",
+          "url": "https://blog.importants-studio.com/posts/silson-claim-documents-2026/",
+          "summary": "실손보험 청구서류는 통원 진료비 금액에 따라 달라집니다. 3만원 이하는 진단명이 적힌 청구서와 영수증, 3만원 초과 10만원 이하는 질병분류기호가 적힌 처방전이 더해지고, 10만원을 넘으면 진단서 같은 추가 서류가 필요할 수 있습니다. 입원 서류와 제외 진료과, 실손24로 보낼 수 있는 서류, 3년 청구 기한까지 정리했습",
+          "date": "Thu, 15 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "월세 현금영수증, 세액공제 못 받으면 직접 신고합니다",
+          "url": "https://blog.importants-studio.com/posts/monthly-rent-cash-receipt-2026/",
+          "summary": "월세 세액공제를 받을 수 없는 총급여 8,000만원 초과 근로자도 월세는 현금영수증 발급 대상입니다. 집주인이 끊어 주지 않아도 임차인이 홈택스에서 직접 신고하면 월세 지급일마다 발급됩니다. 소득공제로 얼마나 돌려받는지, 세액공제와 어떻게 고르는지 정리했습니다.",
+          "date": "Thu, 15 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "증여세 면제 한도, 자녀 5천만원은 10년 합산입니다",
           "url": "https://blog.importants-studio.com/posts/gift-tax-exemption-limit-2026/",
@@ -25,18 +37,6 @@
           "url": "https://blog.importants-studio.com/posts/national-tax-refund-lookup-2026/",
           "summary": "세금 환급금 조회는 홈택스 국세환급금 찾기, 손택스, 정부24에서 할 수 있습니다. 최초 지급요구일부터 5년 안에 찾아가지 않으면 국고로 귀속됩니다. 조회 방법과 환급계좌 신고, 1년이 지난 환급금 처리 순서를 정리했습니다.",
           "date": "Tue, 13 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "임차권등기명령 신청방법, 이사는 등기 후에",
-          "url": "https://blog.importants-studio.com/posts/lease-registration-order-application-2026/",
-          "summary": "임차권등기명령은 계약이 끝났는데 보증금을 못 받았을 때 이사 전에 법원에 신청하는 제도입니다. 등기가 끝나면 이사해도 대항력과 우선변제권이 유지됩니다. 신청 방법, 서류, 비용, 등기된 집에 들어가려는 분이 알아야 할 점을 정리했습니다.",
-          "date": "Tue, 13 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "전세보증금 반환보증 보증료, 돌려받는 법",
-          "url": "https://blog.importants-studio.com/posts/jeonse-deposit-guarantee-fee-2026/",
-          "summary": "전세보증금 반환보증 보증료는 보증금 3억원 아파트라도 부채비율에 따라 2년에 64만원에서 92만원까지 갈립니다. 이 돈은 연말정산 세액공제 대상이고, 조건이 맞으면 지자체가 최대 40만원까지 돌려줍니다. 계산식과 요율, 신청처를 정리했습니다.",
-          "date": "Mon, 12 Oct 2026 09:00:00 +0900"
         }
       ]
     },
@@ -47,6 +47,12 @@
       "tagline": "자동차세, 보험료, 검사 기한을 챙깁니다",
       "url": "https://car.importants-studio.com",
       "posts": [
+        {
+          "title": "엔진경고등 주황색과 깜빡임, 계속 주행해도 될까",
+          "url": "https://car.importants-studio.com/posts/car-engine-warning-light/",
+          "summary": "엔진경고등이 주황색으로 켜졌을 때와 깜빡일 때, 현대·기아 취급설명서가 안내하는 의미와 조치를 정리했습니다. 시동 직후 한 번 깜빡이는 정상 신호와 그 밖의 점등·점멸을 구분하고, 적색 오일 압력 경고등과의 차이까지 다룹니다.",
+          "date": "Thu, 15 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "속도위반 과태료 4만~13만원, 범칙금은 3만~12만원",
           "url": "https://car.importants-studio.com/posts/speeding-fine-amount/",
@@ -70,12 +76,6 @@
           "url": "https://car.importants-studio.com/posts/signal-violation-fine-amount/",
           "summary": "신호위반 과태료는 승용차 기준 7만원, 경찰에게 직접 적발되면 범칙금 6만원에 벌점이 붙습니다. 같은 위반인데 금액이 다른 이유와 확인 방법을 정리했습니다.",
           "date": "Tue, 13 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "운전면허 재발급 비용, 일반 1만원 모바일 1만5천원",
-          "url": "https://car.importants-studio.com/posts/driver-license-reissue/",
-          "summary": "운전면허 재발급은 분실·훼손이면 받을 수 있고 일반 면허증 1만원, 모바일IC 1만5천원입니다. 온라인 신청 조건, 준비물, 처리 기간, 분실신고 취소가 안 되는 점까지 정리했습니다.",
-          "date": "Mon, 12 Oct 2026 09:00:00 +0900"
         }
       ]
     },
@@ -86,6 +86,18 @@
       "tagline": "결혼과 육아에 드는 돈과 제도를 정리합니다",
       "url": "https://home.importants-studio.com",
       "posts": [
+        {
+          "title": "전세 계약갱신청구권, 5% 인상 상한과 거절 사유",
+          "url": "https://home.importants-studio.com/posts/jeonse-renewal-right-2026/",
+          "summary": "전세 계약갱신청구권(법령상 계약갱신요구권)을 쓸 수 있는 시기, 횟수, 보증금 5% 인상 상한, 집주인이 거절할 수 있는 사유를 생활법령정보 기준으로 정리했습니다. 신혼부부 첫 만기 전에 확인할 점도 담았습니다.",
+          "date": "Thu, 15 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "태아검진휴가 기준, 주수별 횟수와 임금 삭감 금지",
+          "url": "https://home.importants-studio.com/posts/fetal-checkup-leave-2026/",
+          "summary": "태아검진휴가는 근로기준법 제74조의2에 따라 임신한 근로자가 정기검진 시간을 청구하면 회사가 허용해야 하는 제도입니다. 주수별 횟수, 임금, 신청 방법, 5인 미만 사업장 쟁점을 정리했습니다.",
+          "date": "Thu, 15 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "산후도우미 업체 고르는 법, 제공기관 조회부터",
           "url": "https://home.importants-studio.com/posts/postpartum-helper-choose-agency-2026/",
@@ -103,18 +115,6 @@
           "url": "https://home.importants-studio.com/posts/baby-passport-photo-guide-2026/",
           "summary": "아기 여권 사진은 성인과 같은 규격(가로 3.5cm, 세로 4.5cm)이지만 36개월 이하는 입을 조금 벌려도 됩니다. 옷, 어플 보정, 촬영 팁과 8세 미만 수수료·신청 서류를 외교부 안내로 정리했습니다.",
           "date": "Mon, 12 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "전입신고 확정일자 한 번에 끝내는 순서",
-          "url": "https://home.importants-studio.com/posts/move-in-report-fixed-date-guide-2026/",
-          "summary": "신혼집 전입신고와 확정일자를 따로 받아야 하는지, 임대차 신고와는 어떻게 이어지는지, 월세도 해당되는지, 준비물은 무엇인지 생활법령정보 기준으로 순서대로 정리했습니다.",
-          "date": "Mon, 12 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "부부 공동명의 종부세 특례, 신혼집 명의 정하기",
-          "url": "https://home.importants-studio.com/posts/couple-joint-ownership-2026/",
-          "summary": "신혼집을 부부 공동명의로 하면 종합부동산세 공제와 특례 신청, 취득세와 증여세는 어떻게 달라지는지 국세청 안내 기준으로 정리했습니다. 특례 신청기한과 혼인관계증명서 첨부도 담았습니다.",
-          "date": "Sun, 11 Oct 2026 09:00:00 +0900"
         }
       ]
     },
@@ -125,6 +125,18 @@
       "tagline": "연금과 건강보험, 은퇴 뒤의 살림을 정리합니다",
       "url": "https://leisurely.importants-studio.com",
       "posts": [
+        {
+          "title": "부양가족연금 대상과 금액, 배우자 자녀 부모 기준",
+          "url": "https://leisurely.importants-studio.com/posts/dependent-family-pension-2026/",
+          "summary": "부양가족연금은 연금에 얹히는 가족수당 성격의 급여입니다. 배우자 연 306,630원, 자녀·부모 1인당 연 204,360원이고 부모는 출생연도별로 나이 기준이 갈립니다.",
+          "date": "Thu, 15 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "주간보호센터 비용, 등급과 이용시간이 가릅니다",
+          "url": "https://leisurely.importants-studio.com/posts/senior-day-care-center-cost-2026/",
+          "summary": "주간보호센터 비용은 하루 급여비용에 본인부담 15%를 곱하고, 식사재료비 같은 비급여를 더해 정해집니다. 등급별 월 한도액과 이용시간별 급여비용, 감경 기준과 예시 계산을 정리했습니다.",
+          "date": "Thu, 15 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "실버타운 비용, 보증금과 월 이용료 구조",
           "url": "https://leisurely.importants-studio.com/posts/silver-town-cost-housing/",
@@ -142,18 +154,6 @@
           "url": "https://leisurely.importants-studio.com/posts/national-pension-disability-pension-2026/",
           "summary": "국민연금 장애연금은 노령연금을 받기 전에 장애가 남았을 때 나오는 연금입니다. 출생연도별 신청 가능 나이 상한, 초진일 기준 보험료 납부요건 3가지, 1~4급 지급 비율과 산재보험 중복 감액을 공단 안내로 정리했습니다.",
           "date": "Tue, 13 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "주택연금 조건, 부부 나이와 집 종류에 따라 갈립니다",
-          "url": "https://leisurely.importants-studio.com/posts/housing-pension-conditions-2026/",
-          "summary": "주택연금은 부부 중 1명이 55세 이상이고 합산 공시가격 12억원 이하면 가입합니다. 월지급금은 젊은 쪽 나이로 계산하고, 오피스텔·다주택·전세 낀 집은 따로 갈립니다.",
-          "date": "Tue, 13 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "공무원연금 수령나이, 퇴직연도에 따라 갈립니다",
-          "url": "https://leisurely.importants-studio.com/posts/public-servant-pension-start-age-2026/",
-          "summary": "공무원연금 수령나이는 출생연도가 아니라 퇴직연도로 갈립니다. 1996년 이후 임용자는 2024~2026년 퇴직 62세, 2033년 이후 65세입니다. 사학연금과 1995년 이전 임용자 기준도 짚었습니다.",
-          "date": "Mon, 12 Oct 2026 09:00:00 +0900"
         }
       ]
     },
@@ -164,6 +164,18 @@
       "tagline": "뉴스의 숫자가 무슨 뜻인지 풀어 씁니다",
       "url": "https://money.importants-studio.com",
       "posts": [
+        {
+          "title": "배당락 뜻과 배당락일 주가가 움직이는 이유",
+          "url": "https://money.importants-studio.com/posts/ex-dividend-meaning-price/",
+          "summary": "배당락은 배당을 받을 권리가 사라졌다는 표시입니다. 배당락일에 거래소가 기준가격을 깎아 주는지, 주가가 내려가는 건 왜인지, 주식배당·권리락과는 무엇이 다른지 한국거래소 자료로 풀었습니다.",
+          "date": "Thu, 15 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "전세가율 높으면 위험한 이유, 계산부터 해봤습니다",
+          "url": "https://money.importants-studio.com/posts/jeonse-to-sale-price-ratio-explained/",
+          "summary": "전세가율은 매매가 대비 전세보증금의 비율입니다. 계산하는 법, 비율이 높을수록 보증금 회수가 불안해지는 구조, 80%나 70% 같은 말이 어디서 나왔는지, 계약 전 직접 확인하는 곳을 풀었습니다.",
+          "date": "Thu, 15 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "옵션만기일 뜻과 쿼드러플 위칭 차이",
           "url": "https://money.importants-studio.com/posts/option-expiry-date-explained/",
@@ -181,18 +193,6 @@
           "url": "https://money.importants-studio.com/posts/margin-forced-liquidation-explained/",
           "summary": "반대매매는 증권사에 빌린 돈을 제때 갚지 못하거나 담보가 모자랄 때 증권사가 주식을 대신 파는 절차입니다. 미수와 신용융자의 차이, 담보비율 140% 기준의 뜻을 가상의 수치로 풀었습니다.",
           "date": "Tue, 13 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "상장폐지 뜻, 조건과 정리매매 순서",
-          "url": "https://money.importants-studio.com/posts/delisting-meaning-conditions/",
-          "summary": "상장폐지가 무슨 뜻인지, 관리종목 지정에서 정리매매까지 어떤 순서로 진행되는지, 올해 7월부터 달라진 시가총액·동전주 기준을 한국거래소 공시와 금융위원회 자료로 풀었습니다.",
-          "date": "Tue, 13 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "마이너스통장 금리, 쓴 만큼만 이자 붙는 구조",
-          "url": "https://money.importants-studio.com/posts/minus-account-interest-structure/",
-          "summary": "마이너스통장 이자가 쓴 잔액과 날수로 계산되는 구조를 단순화한 가상의 수치로 풀고, 안 써도 한도가 대출 심사에서 따로 잡히는 이유와 금리가 바뀌는 시점을 확인하는 법을 정리했습니다.",
-          "date": "Mon, 12 Oct 2026 09:00:00 +0900"
         }
       ]
     },
@@ -203,6 +203,18 @@
       "tagline": "떠나기 전에 확인해야 할 것을 짚습니다",
       "url": "https://travel.importants-studio.com",
       "posts": [
+        {
+          "title": "인천공항 스마트패스, 한 번 등록하면 5년",
+          "url": "https://travel.importants-studio.com/posts/incheon-smart-pass-registration-2026/",
+          "summary": "인천공항 스마트패스는 안면정보를 한 번 등록하면 5년간 쓰고, 탑승권은 출국할 때마다 등록합니다. 만 7세 이상이 쓸 수 있고 14세 미만은 법정대리인 동의가 필요하며, 여권을 재발급받으면 다시 등록해야 합니다.",
+          "date": "Thu, 15 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "일본 숙박세, 도쿄 교토 오사카 1박 요금표",
+          "url": "https://travel.importants-studio.com/posts/japan-accommodation-tax-2026/",
+          "summary": "일본 숙박세는 도시마다 따로 정합니다. 교토는 2026년 3월부터 1인 1박 200~10,000엔, 오사카는 5,000엔 이상부터 200~500엔, 도쿄는 현재 10,000엔 이상에 100~200엔이고 2027년 4월부터 숙박료의 3%로 바뀝니다.",
+          "date": "Thu, 15 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "여권 사진 규칙, 귀가 아니라 얼굴이 기준입니다",
           "url": "https://travel.importants-studio.com/posts/passport-photo-rules-2026/",
@@ -220,18 +232,6 @@
           "url": "https://travel.importants-studio.com/posts/passport-loss-report-2026/",
           "summary": "여권은 분실 신고를 하는 순간 효력이 사라지고 나중에 찾아도 다시 쓸 수 없습니다. 신고 방법, 재발급 수수료, 분실 횟수별 유효기간 제한, 해외에서 잃어버렸을 때의 순서를 정리했습니다.",
           "date": "Tue, 13 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "일본 콘센트 전압, 돼지코만으로 안 되는 기기",
-          "url": "https://travel.importants-studio.com/posts/japan-outlet-voltage-100v-2026/",
-          "summary": "일본 콘센트는 2핀이고 전압은 전국 100V, 주파수는 동일본 50Hz와 서일본 60Hz로 갈립니다. 외교부 공관 안내 세 건을 기준으로 돼지코로 되는 기기와 안 되는 기기를 정리했습니다.",
-          "date": "Tue, 13 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "간사이공항 라피트 요금과 공항급행 차이",
-          "url": "https://travel.importants-studio.com/posts/kansai-airport-rapit-fare-2026/",
-          "summary": "간사이공항에서 난바까지 라피트는 최단 34분, 공항급행은 약 45분입니다. 라피트는 승차권 외에 특급권이 700엔(슈퍼 910엔)이고, 열차 안에서 사면 300엔이 더 붙습니다. 디지털 티켓은 편도 1,410엔부터입니다.",
-          "date": "Mon, 12 Oct 2026 09:00:00 +0900"
         }
       ]
     }
