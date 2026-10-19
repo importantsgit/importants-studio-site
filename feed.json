@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-19T01:34:44+00:00",
+  "generated": "2026-10-19T03:54:32+00:00",
   "blogs": [
     {
       "key": "hyetaek",
@@ -8,6 +8,18 @@
       "tagline": "정부 지원금과 세금 환급을 매일 정리합니다",
       "url": "https://blog.importants-studio.com",
       "posts": [
+        {
+          "title": "연말정산 간소화에 안 뜨는 공제, 영수증은 직접",
+          "url": "https://blog.importants-studio.com/posts/yearend-simplified-missing-items-2026/",
+          "summary": "연말정산 간소화 서비스에서 조회되지 않는 안경·교복 구입비는 영수증을 직접 받아 회사에 내야 공제됩니다. 국세청이 &#39;조회되지 않을 수 있음&#39;으로 분류한 항목과 지난해 간소화 일정, 의료비 신고센터를 정리했습니다.",
+          "date": "Mon, 19 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "중도상환수수료, 대출 3년이 지나면 부과 금지",
+          "url": "https://blog.importants-studio.com/posts/prepayment-fee-three-year-rule-2026/",
+          "summary": "중도상환수수료는 대출계약이 성립한 날부터 3년 이내에 갚을 때만 부과할 수 있습니다. 2025년 1월 13일 이후 신규 대출은 5대 은행 주담대 평균 요율이 고정 0.65%, 변동 0.65%로 내려갔습니다. 내 대출이 어디에 해당하는지 보는 순서와 갈아타기 전 계산 방법을 정리했습니다.",
+          "date": "Mon, 19 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "양도세 비과세 조건, 12억 넘으면 초과분만 과세",
           "url": "https://blog.importants-studio.com/posts/capital-gains-tax-exemption-conditions-2026/",
@@ -25,18 +37,6 @@
           "url": "https://blog.importants-studio.com/posts/health-checkup-paid-leave-2026/",
           "summary": "건강검진을 받는 시간을 유급으로 해야 하는지는 노동관계법령에 별도 규정이 없다는 것이 고용노동부 답변입니다. 회사 취업규칙이나 단체협약에 공가가 있으면 그대로 쓰고, 없으면 유급 처리 의무가 없습니다. 공무원은 복무규정상 공가 사유라 사정이 다릅니다. 연차를 쓰기 전에 확인할 것을 정리했습니다.",
           "date": "Fri, 16 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "예금자보호 한도 1억, 대출이 있으면 먼저 뺍니다",
-          "url": "https://blog.importants-studio.com/posts/deposit-protection-limit-loan-offset-2026/",
-          "summary": "예금자보호 한도는 2025년 9월 1일부터 1억원입니다. 원금과 이자를 합쳐 금융회사별로 1인당 적용하고, 같은 회사에 대출이 있으면 대출금을 먼저 뺀 예금이 기준입니다. 이자 계산, 보호되는 상품과 안 되는 상품, 퇴직연금 별도 한도, 신협·새마을금고 기준을 정리했습니다.",
-          "date": "Fri, 16 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "실손보험 청구서류, 3만원 이하는 두 가지면 됩니다",
-          "url": "https://blog.importants-studio.com/posts/silson-claim-documents-2026/",
-          "summary": "실손보험 청구서류는 통원 진료비 금액에 따라 달라집니다. 3만원 이하는 진단명이 적힌 청구서와 영수증, 3만원 초과 10만원 이하는 질병분류기호가 적힌 처방전이 더해지고, 10만원을 넘으면 진단서 같은 추가 서류가 필요할 수 있습니다. 입원 서류와 제외 진료과, 실손24로 보낼 수 있는 서류, 3년 청구 기한까지 정리했습",
-          "date": "Thu, 15 Oct 2026 09:00:00 +0900"
         }
       ]
     },
@@ -47,6 +47,18 @@
       "tagline": "자동차세, 보험료, 검사 기한을 챙깁니다",
       "url": "https://car.importants-studio.com",
       "posts": [
+        {
+          "title": "이륜차 보험 미가입 과태료, 11일째부터 늘어납니다",
+          "url": "https://car.importants-studio.com/posts/motorcycle-insurance-penalty/",
+          "summary": "책임보험과 대물보험을 둘 다 안 들면 10일까지는 9천원, 11일째부터 하루 1천800원씩 붙고 상한은 30만원입니다. 책임보험만 빠졌다면 6천원에 하루 1천200원입니다. 운행하면 형사처벌 조항도 있고 배달 일은 6월부터 보험이 필수입니다.",
+          "date": "Mon, 19 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "자동차 보험료 계산, 등급이 가격을 정합니다",
+          "url": "https://car.importants-studio.com/posts/car-insurance-premium-calculation/",
+          "summary": "자동차 보험료는 할인할증등급에서 크게 갈립니다. 할인할증등급 29단계가 금액을 얼마나 바꾸는지, 같은 조건으로 견적을 비교하는 순서를 정리했습니다.",
+          "date": "Mon, 19 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "운전자보험 필요할까, 자동차보험 특약과 비교",
           "url": "https://car.importants-studio.com/posts/driver-insurance-vs-car-insurance/",
@@ -64,18 +76,6 @@
           "url": "https://car.importants-studio.com/posts/car-accident-settlement-before-signing/",
           "summary": "자동차 사고 합의금은 사고마다 달라 금액표로 못 박을 수 없습니다. 계산에 들어가는 과실상계, 합의 전 가불금, 합의 후 추가 청구가 되는 경우를 정리했습니다.",
           "date": "Fri, 16 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "엔진경고등 주황색과 깜빡임, 계속 주행해도 될까",
-          "url": "https://car.importants-studio.com/posts/car-engine-warning-light/",
-          "summary": "엔진경고등이 주황색으로 켜졌을 때와 깜빡일 때, 현대·기아 취급설명서가 안내하는 의미와 조치를 정리했습니다. 시동 직후 한 번 깜빡이는 정상 신호와 그 밖의 점등·점멸을 구분하고, 적색 오일 압력 경고등과의 차이까지 다룹니다.",
-          "date": "Thu, 15 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "속도위반 과태료 4만~13만원, 범칙금은 3만~12만원",
-          "url": "https://car.importants-studio.com/posts/speeding-fine-amount/",
-          "summary": "속도위반 과태료는 승용차 기준 초과 속도에 따라 4만원에서 13만원, 경찰에게 직접 적발되면 범칙금 3만원에서 12만원에 벌점이 붙습니다. 구간별 금액과 조회 방법을 정리했습니다.",
-          "date": "Wed, 14 Oct 2026 09:00:00 +0900"
         }
       ]
     },
@@ -86,6 +86,18 @@
       "tagline": "결혼과 육아에 드는 돈과 제도를 정리합니다",
       "url": "https://home.importants-studio.com",
       "posts": [
+        {
+          "title": "국공립 어린이집 차이, 민간·가정과 같은 것과 다른 것",
+          "url": "https://home.importants-studio.com/posts/public-daycare-difference-2026/",
+          "summary": "국공립 어린이집은 국가나 지자체가 운영하는 곳입니다. 영유아보육법의 7가지 유형, 보육료와 필요경비 기준, 운영위원회와 정보공시처럼 유형과 상관없이 같은 것을 법 조문 기준으로 정리했습니다.",
+          "date": "Mon, 19 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "육아휴직 중 알바, 주 15시간·월 150만원 기준",
+          "url": "https://home.importants-studio.com/posts/parental-leave-part-time-job-2026/",
+          "summary": "육아휴직 중 알바를 하면 육아휴직 급여가 어떻게 되는지, 고용보험법 시행규칙의 두 가지 기준(주 소정근로시간 15시간, 월 150만원)과 급여 신청서에 취업 사실을 적는 방법을 정리했습니다.",
+          "date": "Mon, 19 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "신혼부부 적금, 지자체 매칭 사례와 상품 찾는 법",
           "url": "https://home.importants-studio.com/posts/newlywed-savings-local-match/",
@@ -103,18 +115,6 @@
           "url": "https://home.importants-studio.com/posts/first-meeting-voucher-where-to-use-2026/",
           "summary": "첫만남이용권은 유흥·사행·레저 업종, 면세점, 전자상거래상품권을 뺀 전 업종에서 쓸 수 있습니다. 온라인 쇼핑몰, 백화점, 병원, 식당이 되는지와 사용기한을 지자체 안내 기준으로 정리했습니다.",
           "date": "Fri, 16 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "전세 계약갱신청구권, 5% 인상 상한과 거절 사유",
-          "url": "https://home.importants-studio.com/posts/jeonse-renewal-right-2026/",
-          "summary": "전세 계약갱신청구권(법령상 계약갱신요구권)을 쓸 수 있는 시기, 횟수, 보증금 5% 인상 상한, 집주인이 거절할 수 있는 사유를 생활법령정보 기준으로 정리했습니다. 신혼부부 첫 만기 전에 확인할 점도 담았습니다.",
-          "date": "Thu, 15 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "태아검진휴가 기준, 주수별 횟수와 임금 삭감 금지",
-          "url": "https://home.importants-studio.com/posts/fetal-checkup-leave-2026/",
-          "summary": "태아검진휴가는 근로기준법 제74조의2에 따라 임신한 근로자가 정기검진 시간을 청구하면 회사가 허용해야 하는 제도입니다. 주수별 횟수, 임금, 신청 방법, 5인 미만 사업장 쟁점을 정리했습니다.",
-          "date": "Thu, 15 Oct 2026 09:00:00 +0900"
         }
       ]
     },
@@ -125,6 +125,18 @@
       "tagline": "연금과 건강보험, 은퇴 뒤의 살림을 정리합니다",
       "url": "https://leisurely.importants-studio.com",
       "posts": [
+        {
+          "title": "국민연금 임의가입 금액과 해지, 나이가 가릅니다",
+          "url": "https://leisurely.importants-studio.com/posts/national-pension-voluntary-join-2026/",
+          "summary": "국민연금 임의가입은 18세 이상 60세 미만이 대상이고, 보험료는 지역가입자 중위수 기준소득월액 이상에서 정해집니다. 2026년 기준 금액, 해지 규정, 시작 나이별 가입 가능 기간을 정리했습니다.",
+          "date": "Mon, 19 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "중장년내일센터, 재직 중에도 이용할 수 있습니다",
+          "url": "https://leisurely.importants-studio.com/posts/mid-career-center-use-2026/",
+          "summary": "중장년내일센터는 퇴직한 뒤에만 가는 곳이 아닙니다. 40세 이상이면 재직 중에는 생애경력설계, 퇴직 전에는 전직스쿨, 퇴직 후에는 재도약 프로그램으로 나뉘고 모두 무료입니다. 상황별 프로그램과 신청 경로를 정리했습니다.",
+          "date": "Mon, 19 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "노인일자리센터 신청, 어느 기관이 맡나요",
           "url": "https://leisurely.importants-studio.com/posts/senior-job-center-apply-2026/",
@@ -142,18 +154,6 @@
           "url": "https://leisurely.importants-studio.com/posts/dependent-loss-timing-2026/",
           "summary": "건강보험 피부양자 자격은 소득이 생긴 달, 가족의 퇴직일, 공단이 확인한 날 중 어느 쪽이냐에 따라 빠지는 날이 달라집니다. 재산세 과세자료가 11월에 바뀌는 점과 상실 뒤 선택지를 정리했습니다.",
           "date": "Fri, 16 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "장기요양등급 신청, 접수부터 결과까지 30일",
-          "url": "https://leisurely.importants-studio.com/posts/long-term-care-grade-apply-2026/",
-          "summary": "장기요양등급 신청은 공단 지사 방문, 우편, 팩스, 인터넷으로 합니다. 65세 이상인지에 따라 인터넷 신청 가능 여부와 의사소견서 제출 시점이 갈리고, 판정은 접수 후 30일 안에 끝나는 것이 원칙입니다.",
-          "date": "Fri, 16 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "부양가족연금 대상과 금액, 배우자 자녀 부모 기준",
-          "url": "https://leisurely.importants-studio.com/posts/dependent-family-pension-2026/",
-          "summary": "부양가족연금은 연금에 얹히는 가족수당 성격의 급여입니다. 배우자 연 306,630원, 자녀·부모 1인당 연 204,360원이고 부모는 출생연도별로 나이 기준이 갈립니다.",
-          "date": "Thu, 15 Oct 2026 09:00:00 +0900"
         }
       ]
     },
@@ -164,6 +164,18 @@
       "tagline": "뉴스의 숫자가 무슨 뜻인지 풀어 씁니다",
       "url": "https://money.importants-studio.com",
       "posts": [
+        {
+          "title": "기준환율 뜻, 매매기준율과 재정환율의 차이",
+          "url": "https://money.importants-studio.com/posts/base-exchange-rate-meaning/",
+          "summary": "뉴스에 나오는 기준환율은 규정상 매매기준율을 가리킵니다. 달러는 오후 4시 시간가중평균, 위안은 거래량 가중평균, 그 밖의 통화는 달러로 재정한 값입니다. 외국환거래규정 원문으로 풀었습니다.",
+          "date": "Mon, 19 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "코스닥 뜻, 코스피와 갈리는 세 가지 기준",
+          "url": "https://money.importants-studio.com/posts/kosdaq-meaning-vs-kospi/",
+          "summary": "코스닥은 1996년 7월 벤처기업의 자금조달을 위해 열린 시장입니다. 코스피와 상장 문턱, 지수, 세금이 어떻게 다른지 한국거래소 자료로 풀어, 뉴스에 나오는 &#39;코스닥 약세&#39; 같은 말을 혼자 읽게 정리했습니다.",
+          "date": "Mon, 19 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "영업이익 뜻, 순이익과 다른 이유",
           "url": "https://money.importants-studio.com/posts/operating-profit-meaning-vs-net-profit/",
@@ -181,18 +193,6 @@
           "url": "https://money.importants-studio.com/posts/stress-dsr-limit-calculation/",
           "summary": "스트레스 DSR은 실제 이자는 그대로 두고 한도 계산에만 가산금리를 얹는 제도입니다. 수도권·규제지역 주담대 하한이 3%로 올랐을 때 같은 소득의 한도가 어떻게 달라지는지, 가상의 수치로 풀었습니다.",
           "date": "Fri, 16 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "증권거래세율, 코스피와 코스닥은 뭐가 다른가",
-          "url": "https://money.importants-studio.com/posts/securities-transaction-tax-rate-explained/",
-          "summary": "증권거래세는 주식을 팔 때 판 금액에 붙는 세금입니다. 코스피 0.05%에 농어촌특별세 0.15%, 코스닥 0.20%가 어떻게 같은 부담이 되는지 시행령 개정이유와 계산으로 풀었습니다.",
-          "date": "Fri, 16 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "배당락 뜻과 배당락일 주가가 움직이는 이유",
-          "url": "https://money.importants-studio.com/posts/ex-dividend-meaning-price/",
-          "summary": "배당락은 배당을 받을 권리가 사라졌다는 표시입니다. 배당락일에 거래소가 기준가격을 깎아 주는지, 주가가 내려가는 건 왜인지, 주식배당·권리락과는 무엇이 다른지 한국거래소 자료로 풀었습니다.",
-          "date": "Thu, 15 Oct 2026 09:00:00 +0900"
         }
       ]
     },
@@ -203,6 +203,18 @@
       "tagline": "떠나기 전에 확인해야 할 것을 짚습니다",
       "url": "https://travel.importants-studio.com",
       "posts": [
+        {
+          "title": "오사카 교통패스 비교, 엔조이 에코카드 본전은 3~5번",
+          "url": "https://travel.importants-studio.com/posts/osaka-transport-pass-compare-2026/",
+          "summary": "오사카 교통패스는 엔조이 에코카드(평일 820엔, 주말 620엔), 30시간권(1,200엔), 주유패스(3,500엔)로 갈립니다. 지하철 구간별로 몇 번 타면 본전인지 표로 계산했습니다.",
+          "date": "Mon, 19 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "일본 교통카드, 보증금 500엔에 반환 수수료 220엔",
+          "url": "https://travel.importants-studio.com/posts/japan-transport-ic-card-deposit-refund-2026/",
+          "summary": "ICOCA와 PASMO는 보증금 500엔이 들어 있고 반환하면 수수료 220엔을 뺍니다. TOURIST PASMO는 보증금이 없는 대신 28일 안에 쓰고 남은 잔액은 환불되지 않습니다.",
+          "date": "Mon, 19 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "큐코드 대상국, 10월 20일부터 케냐 추가",
           "url": "https://travel.importants-studio.com/posts/korea-entry-q-code-quarantine-2026/",
@@ -220,18 +232,6 @@
           "url": "https://travel.importants-studio.com/posts/incheon-smart-pass-registration-2026/",
           "summary": "인천공항 스마트패스는 안면정보를 한 번 등록하면 5년간 쓰고, 탑승권은 출국할 때마다 등록합니다. 만 7세 이상이 쓸 수 있고 14세 미만은 법정대리인 동의가 필요하며, 여권을 재발급받으면 다시 등록해야 합니다.",
           "date": "Thu, 15 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "일본 숙박세, 도쿄 교토 오사카 1박 요금표",
-          "url": "https://travel.importants-studio.com/posts/japan-accommodation-tax-2026/",
-          "summary": "일본 숙박세는 도시마다 따로 정합니다. 교토는 2026년 3월부터 1인 1박 200~10,000엔, 오사카는 5,000엔 이상부터 200~500엔, 도쿄는 현재 10,000엔 이상에 100~200엔이고 2027년 4월부터 숙박료의 3%로 바뀝니다.",
-          "date": "Thu, 15 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "여권 사진 규칙, 귀가 아니라 얼굴이 기준입니다",
-          "url": "https://travel.importants-studio.com/posts/passport-photo-rules-2026/",
-          "summary": "여권 사진 규칙의 현행 기준은 외교부 여권안내(2022년 10월 개정)입니다. 귀를 드러내라는 조항은 없고 얼굴 전체가 완전히 노출되어야 합니다. 앞머리와 안경 반사, 필터·AI 보정이 반려 사유입니다.",
-          "date": "Wed, 14 Oct 2026 09:00:00 +0900"
         }
       ]
     }
