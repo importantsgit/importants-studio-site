@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-20T04:06:36+00:00",
+  "generated": "2026-10-20T11:09:23+00:00",
   "blogs": [
     {
       "key": "hyetaek",
@@ -8,6 +8,18 @@
       "tagline": "정부 지원금과 세금 환급을 매일 정리합니다",
       "url": "https://blog.importants-studio.com",
       "posts": [
+        {
+          "title": "경정청구 기한, 연말정산은 3월 10일 기준 5년",
+          "url": "https://blog.importants-studio.com/posts/claim-deadline-yearend-2026/",
+          "summary": "연말정산에서 놓친 공제를 돌려받는 경정청구는 5년 안에 해야 하는데, 5년이 어느 날짜부터인지는 법에 적혀 있습니다. 국세기본법과 소득세법 조문으로 계산한 귀속연도별 마감일, 종합소득세 신고를 한 경우의 기준, 처리 기간 2개월까지 정리했습니다.",
+          "date": "Tue, 20 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "월세 세액공제 조건, 주말부부 각각 받는 요건",
+          "url": "https://blog.importants-studio.com/posts/monthly-rent-tax-credit-spouse-2026/",
+          "summary": "월세 세액공제는 무주택 세대의 세대주가 총급여 8,000만원 이하일 때 받습니다. 올해부터는 시·군·구가 다른 곳에 따로 사는 배우자도 세대주에 이어 추가로 공제받을 수 있고, 부부 월세는 합쳐서 연 1,000만원까지 인정됩니다. 조건 표와 계산 예시를 정리했습니다.",
+          "date": "Tue, 20 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "연말정산 간소화에 안 뜨는 공제, 영수증은 직접",
           "url": "https://blog.importants-studio.com/posts/yearend-simplified-missing-items-2026/",
@@ -25,18 +37,6 @@
           "url": "https://blog.importants-studio.com/posts/capital-gains-tax-exemption-conditions-2026/",
           "summary": "1세대 1주택 양도세 비과세는 양도일 현재 1주택을 2년 이상 보유해야 받습니다. 취득 당시 조정대상지역이었다면 거주 요건이 붙고, 양도가액이 12억원을 넘으면 초과분 비율만큼만 과세합니다. 보유기간 계산, 12억 초과 계산 예시, 일시적 2주택 특례와 신고 기한을 정리했습니다.",
           "date": "Sun, 18 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "연말정산 신용카드 공제 계산, 25% 넘는 만큼만",
-          "url": "https://blog.importants-studio.com/posts/credit-card-deduction-calculation-2026/",
-          "summary": "신용카드 소득공제는 총급여의 25%를 넘게 쓴 금액부터 시작하고, 신용카드는 15%, 체크카드와 현금영수증은 30%를 공제합니다. 총급여 4천만원 예시로 25% 문턱과 공제액을 계산하고, 면세점·해외 결제·자동차 구입처럼 공제에서 빠지는 사용처를 국세청 안내로 정리했습니다.",
-          "date": "Sun, 18 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "건강검진 공가, 법에는 없고 취업규칙에 있습니다",
-          "url": "https://blog.importants-studio.com/posts/health-checkup-paid-leave-2026/",
-          "summary": "건강검진을 받는 시간을 유급으로 해야 하는지는 노동관계법령에 별도 규정이 없다는 것이 고용노동부 답변입니다. 회사 취업규칙이나 단체협약에 공가가 있으면 그대로 쓰고, 없으면 유급 처리 의무가 없습니다. 공무원은 복무규정상 공가 사유라 사정이 다릅니다. 연차를 쓰기 전에 확인할 것을 정리했습니다.",
-          "date": "Fri, 16 Oct 2026 09:00:00 +0900"
         }
       ]
     },
@@ -47,6 +47,18 @@
       "tagline": "자동차세, 보험료, 검사 기한을 챙깁니다",
       "url": "https://car.importants-studio.com",
       "posts": [
+        {
+          "title": "12대 중과실 종류, 보험 들어도 처벌되는 12가지",
+          "url": "https://car.importants-studio.com/posts/12-major-negligence-traffic-accident/",
+          "summary": "12대 중과실은 교통사고처리 특례법 제3조 제2항 단서의 12개 호를 부르는 말입니다. 신호위반부터 화물 낙하까지 종류와, 보험·합의가 있어도 재판에 넘겨질 수 있는 이유를 정리했습니다.",
+          "date": "Tue, 20 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "자동차 번호판 종류, 색깔로 보는 용도",
+          "url": "https://car.importants-studio.com/posts/car-license-plate-types/",
+          "summary": "자가용은 흰색, 택시 같은 운수사업용은 황색, 전기차는 파란색 바탕입니다. 연녹색은 취득가액 8,000만원 이상 법인 승용차 번호판이고 2024년 1월 1일 이후 등록·대여분부터 적용됩니다.",
+          "date": "Tue, 20 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "이륜차 보험 미가입 과태료, 11일째부터 늘어납니다",
           "url": "https://car.importants-studio.com/posts/motorcycle-insurance-penalty/",
@@ -64,18 +76,6 @@
           "url": "https://car.importants-studio.com/posts/driver-insurance-vs-car-insurance/",
           "summary": "운전자보험이 맡는 벌금·형사합의금·변호사비용을 내 자동차보험 법률비용 특약이 대신하는 경우가 있습니다. 두 보험의 보장 대상과 중복 가입 때 달라지는 점을 정리했습니다.",
           "date": "Sun, 18 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "특별교통안전교육 대상, 시간과 미이수 범칙금",
-          "url": "https://car.importants-studio.com/posts/special-traffic-safety-education/",
-          "summary": "면허 정지·취소 뒤에 받는 특별교통안전교육은 의무교육과 권장교육 모두 3~48시간입니다. 미이수 시 범칙금 10만원(음주 재적발자는 15만원), 음주운전 교육 시간과 수강료, 예약처를 정리했습니다.",
-          "date": "Sun, 18 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "자동차 사고 합의금, 서명하기 전에 확인할 네 가지",
-          "url": "https://car.importants-studio.com/posts/car-accident-settlement-before-signing/",
-          "summary": "자동차 사고 합의금은 사고마다 달라 금액표로 못 박을 수 없습니다. 계산에 들어가는 과실상계, 합의 전 가불금, 합의 후 추가 청구가 되는 경우를 정리했습니다.",
-          "date": "Fri, 16 Oct 2026 09:00:00 +0900"
         }
       ]
     },
@@ -86,6 +86,18 @@
       "tagline": "결혼과 육아에 드는 돈과 제도를 정리합니다",
       "url": "https://home.importants-studio.com",
       "posts": [
+        {
+          "title": "돌잔치 환불 기준, 행사 1개월 전까지가 분기점",
+          "url": "https://home.importants-studio.com/posts/first-birthday-party-refund-2026/",
+          "summary": "돌잔치 계약을 취소하면 계약금을 돌려받을 수 있을까요. 소비자분쟁해결기준의 연회시설 운영업 항목에서 행사 1개월 전, 7일 전을 기준으로 환급과 위약금이 어떻게 갈리는지, 계약 전 확인할 것을 정리했습니다.",
+          "date": "Tue, 20 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "혼인신고 증인 2명, 법에 적힌 조건은 성년뿐",
+          "url": "https://home.importants-studio.com/posts/marriage-witness-requirements/",
+          "summary": "혼인신고서에는 성년자 증인 2명의 서명이 필요합니다. 민법과 가족관계등록법 조문에 적힌 증인 조건, 증인이 없을 때, 서명을 대신 써 줘도 되는지, 증인이 같이 가야 하는지를 정리했습니다.",
+          "date": "Tue, 20 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "국공립 어린이집 차이, 민간·가정과 같은 것과 다른 것",
           "url": "https://home.importants-studio.com/posts/public-daycare-difference-2026/",
@@ -103,18 +115,6 @@
           "url": "https://home.importants-studio.com/posts/newlywed-savings-local-match/",
           "summary": "신혼부부 적금은 은행 상품만 있는 게 아닙니다. 대구 달성군은 월 10만원씩 24개월을 넣으면 군이 1:1로 매칭해 지원하는 사업을 열었습니다. 모집 방식과 은행 상품을 비교하는 방법을 정리했습니다.",
           "date": "Sun, 18 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "육아휴직 건강보험료 경감, 유예 신청은 14일 안에",
-          "url": "https://home.importants-studio.com/posts/parental-leave-health-insurance-premium/",
-          "summary": "육아휴직 중 직장가입자 건강보험료가 어떻게 줄어드는지, 납입고지 유예를 신청하면 복직 뒤 보험료가 어떻게 정산되는지, 신청 기한과 분할납부 횟수를 국민건강보험공단 기준으로 정리했습니다.",
-          "date": "Sun, 18 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "첫만남이용권 사용처, 되는 곳과 안 되는 업종",
-          "url": "https://home.importants-studio.com/posts/first-meeting-voucher-where-to-use-2026/",
-          "summary": "첫만남이용권은 유흥·사행·레저 업종, 면세점, 전자상거래상품권을 뺀 전 업종에서 쓸 수 있습니다. 온라인 쇼핑몰, 백화점, 병원, 식당이 되는지와 사용기한을 지자체 안내 기준으로 정리했습니다.",
-          "date": "Fri, 16 Oct 2026 09:00:00 +0900"
         }
       ]
     },
@@ -125,6 +125,18 @@
       "tagline": "연금과 건강보험, 은퇴 뒤의 살림을 정리합니다",
       "url": "https://leisurely.importants-studio.com",
       "posts": [
+        {
+          "title": "노후 생활비 부부 298만원, 연금은 얼마나 채울까요",
+          "url": "https://leisurely.importants-studio.com/posts/retirement-living-cost-2026/",
+          "summary": "국민연금연구원 조사에서 50세 이상이 꼽은 노후 생활비는 부부 최소 216만6천원, 적정 298만1천원입니다. 부부 수급자 평균 연금액과 비교하고, 출생연도별로 은퇴 후 연금이 나오기까지 비는 햇수를 정리했습니다.",
+          "date": "Tue, 20 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "임금피크제 나이, 법이 아닌 회사 규칙이 정합니다",
+          "url": "https://leisurely.importants-studio.com/posts/wage-peak-age-rules-2026/",
+          "summary": "임금피크제는 몇 세부터 적용될까요. 법에 정해진 것은 정년 60세와 연령차별 금지뿐이고, 시작 나이와 감액 폭은 회사 규칙이 정합니다. 시작 나이와 정년으로 감액 기간을 가늠하는 표를 담았습니다.",
+          "date": "Tue, 20 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "국민연금 임의가입 금액과 해지, 나이가 가릅니다",
           "url": "https://leisurely.importants-studio.com/posts/national-pension-voluntary-join-2026/",
@@ -142,18 +154,6 @@
           "url": "https://leisurely.importants-studio.com/posts/senior-job-center-apply-2026/",
           "summary": "노인일자리는 &#39;노인일자리센터&#39;라는 한 곳이 아니라 시군구, 시니어클럽, 노인복지관, 대한노인회 등 여러 수행기관이 나눠 맡습니다. 어디에 어떤 서류를 내는지, 나이로 갈리는 지점은 무엇인지 정리했습니다.",
           "date": "Sun, 18 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "장기요양 복지용구, 본인부담 15%와 연 160만원",
-          "url": "https://leisurely.importants-studio.com/posts/long-term-care-welfare-equipment-2026/",
-          "summary": "장기요양 복지용구는 구입과 대여를 합쳐 연 160만원 안에서 쓰고, 본인부담은 기본 15%입니다. 감경을 받으면 9%나 6%로 내려가고, 한도를 넘으면 초과분은 전액 본인 몫입니다. 예시 계산과 이용 순서를 정리했습니다.",
-          "date": "Sun, 18 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "건강보험 피부양자 상실 시점, 신고 여부가 가릅니다",
-          "url": "https://leisurely.importants-studio.com/posts/dependent-loss-timing-2026/",
-          "summary": "건강보험 피부양자 자격은 소득이 생긴 달, 가족의 퇴직일, 공단이 확인한 날 중 어느 쪽이냐에 따라 빠지는 날이 달라집니다. 재산세 과세자료가 11월에 바뀌는 점과 상실 뒤 선택지를 정리했습니다.",
-          "date": "Fri, 16 Oct 2026 09:00:00 +0900"
         }
       ]
     },
@@ -164,6 +164,18 @@
       "tagline": "뉴스의 숫자가 무슨 뜻인지 풀어 씁니다",
       "url": "https://money.importants-studio.com",
       "posts": [
+        {
+          "title": "미수금 뜻, 주식 외상이 생기는 구조",
+          "url": "https://money.importants-studio.com/posts/margin-receivable-meaning/",
+          "summary": "주식 미수금은 산 주식의 대금 중 아직 못 낸 외상 잔액입니다. 매수금의 30% 이상을 내고 나머지를 외상으로 사는 구조, 결제일, 갚지 못했을 때의 반대매매와 미수동결계좌까지 가상의 수치로 풀었습니다.",
+          "date": "Tue, 20 Oct 2026 09:00:00 +0900"
+        },
+        {
+          "title": "채권 금리 뜻, 나라마다 다르게 나오는 이유",
+          "url": "https://money.importants-studio.com/posts/bond-interest-rate-meaning/",
+          "summary": "뉴스에 나오는 채권 금리가 표면금리가 아니라 시장에서 매일 바뀌는 수익률이라는 것, 한국·미국·일본 채권 금리가 서로 다른 이유를 기대, 신용, 통화로 나눠 설명합니다.",
+          "date": "Tue, 20 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "기준환율 뜻, 매매기준율과 재정환율의 차이",
           "url": "https://money.importants-studio.com/posts/base-exchange-rate-meaning/",
@@ -181,18 +193,6 @@
           "url": "https://money.importants-studio.com/posts/operating-profit-meaning-vs-net-profit/",
           "summary": "영업이익은 매출에서 만드는 데 든 비용과 관리비를 뺀 본업의 이익입니다. 매출이익, 순이익과 어디서 갈리는지 단계별로 풀고, 영업이익이 흑자인데 순이익이 줄어드는 경우를 가상의 수치로 계산했습니다.",
           "date": "Sun, 18 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "유상증자 뜻, 주주배정 청약이 흘러가는 순서",
-          "url": "https://money.importants-studio.com/posts/rights-issue-subscription-process/",
-          "summary": "유상증자는 회사가 새 주식을 팔아 돈을 모으는 일입니다. 주주배정이면 기존 주주에게 먼저 살 권리가 오는데, 권리락과 청약, 실권주까지 흐름을 단순화한 가상의 숫자로 풀었습니다.",
-          "date": "Sun, 18 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "스트레스 DSR 계산, 한도가 줄어드는 원리",
-          "url": "https://money.importants-studio.com/posts/stress-dsr-limit-calculation/",
-          "summary": "스트레스 DSR은 실제 이자는 그대로 두고 한도 계산에만 가산금리를 얹는 제도입니다. 수도권·규제지역 주담대 하한이 3%로 올랐을 때 같은 소득의 한도가 어떻게 달라지는지, 가상의 수치로 풀었습니다.",
-          "date": "Fri, 16 Oct 2026 09:00:00 +0900"
         }
       ]
     },
@@ -203,6 +203,12 @@
       "tagline": "떠나기 전에 확인해야 할 것을 짚습니다",
       "url": "https://travel.importants-studio.com",
       "posts": [
+        {
+          "title": "후쿠오카 교통패스, 지하철은 640엔이 상한입니다",
+          "url": "https://travel.importants-studio.com/posts/fukuoka-transport-pass-compare-2026/",
+          "summary": "후쿠오카 교통패스는 지하철 1일권 640엔, 니시테쓰 버스 1,200엔, 전철 포함 2,800엔으로 갈립니다. 터치결제 하루 상한도 640엔이라 구간별 본전 횟수를 표로 계산했습니다.",
+          "date": "Tue, 20 Oct 2026 09:00:00 +0900"
+        },
         {
           "title": "오사카 교통패스 비교, 엔조이 에코카드 본전은 3~5번",
           "url": "https://travel.importants-studio.com/posts/osaka-transport-pass-compare-2026/",
@@ -226,12 +232,6 @@
           "url": "https://travel.importants-studio.com/posts/travel-wallet-fee-structure-2026/",
           "summary": "트래블월렛은 원화·달러·엔·유로 충전 수수료와 해외 결제 수수료가 0%입니다. ATM 출금은 월 500달러까지 무료이고 초과분에 2%가 붙으며, 1회 400달러·1일 1,000달러·월 2,000달러 한도도 있습니다.",
           "date": "Fri, 16 Oct 2026 09:00:00 +0900"
-        },
-        {
-          "title": "인천공항 스마트패스, 한 번 등록하면 5년",
-          "url": "https://travel.importants-studio.com/posts/incheon-smart-pass-registration-2026/",
-          "summary": "인천공항 스마트패스는 안면정보를 한 번 등록하면 5년간 쓰고, 탑승권은 출국할 때마다 등록합니다. 만 7세 이상이 쓸 수 있고 14세 미만은 법정대리인 동의가 필요하며, 여권을 재발급받으면 다시 등록해야 합니다.",
-          "date": "Thu, 15 Oct 2026 09:00:00 +0900"
         }
       ]
     }
