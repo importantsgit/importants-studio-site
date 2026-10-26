@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Opus 5.5 빠른 모드를 켜기 전에 확인한 조건 | Importants Studio</title>
+<meta name="description" content="Opus 5.5 빠른 모드를 켜기 전 공식 문서에서 가격, 레이트 리밋, 캐시, 표준 속도 전환 조건을 확인한 기록입니다.">
+<link rel="canonical" href="https://importants-studio.com/guide/opus-5-5-fast-mode-conditions/">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Importants Studio">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Opus 5.5 빠른 모드를 켜기 전에 확인한 조건">
+<meta property="og:description" content="Opus 5.5 빠른 모드를 켜기 전 공식 문서에서 가격, 레이트 리밋, 캐시, 표준 속도 전환 조건을 확인한 기록입니다.">
+<meta property="og:url" content="https://importants-studio.com/guide/opus-5-5-fast-mode-conditions/">
+<meta property="article:published_time" content="2026-10-26T09:00:00+09:00">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8673949681156413" crossorigin="anonymous"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Opus 5.5 빠른 모드를 켜기 전에 확인한 조건","description":"Opus 5.5 빠른 모드를 켜기 전 공식 문서에서 가격, 레이트 리밋, 캐시, 표준 속도 전환 조건을 확인한 기록입니다.","datePublished":"2026-10-26T09:00:00+09:00","author":{"@type":"Organization","name":"Importants Studio"},"publisher":{"@type":"Organization","name":"Importants Studio"},"mainEntityOfPage":"https://importants-studio.com/guide/opus-5-5-fast-mode-conditions/"}</script>
+<style>
+:root{--bg:#faf9f6;--card:#ffffff;--ink:#1a1a17;--mut:#6f6d66;--line:#e6e3da;--chip:#f0eee7}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;-webkit-font-smoothing:antialiased;word-break:keep-all}
+a{color:var(--ink)}
+.wrap{padding:0 20px 72px}
+.col{max-width:680px;margin:0 auto}
+header{display:flex;align-items:center;justify-content:space-between;padding:20px 0;border-bottom:1px solid var(--ink)}
+.logo{font-size:17px;font-weight:800;letter-spacing:-0.01em;text-decoration:none}
+.logo span{color:var(--mut)}
+.nav{display:inline-block;border:1px solid var(--ink);font-size:13px;font-weight:600;padding:7px 14px;border-radius:99px;white-space:nowrap;text-decoration:none}
+.nav:hover{background:var(--ink);color:var(--bg)}
+article{padding:36px 0 0}
+h1{font-size:clamp(23px,4.6vw,31px);font-weight:800;line-height:1.42;margin:0 0 14px;letter-spacing:-0.02em;text-wrap:pretty}
+.meta{display:flex;gap:10px;font-size:13px;color:var(--mut);padding-bottom:22px;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}
+.body{padding-top:26px;font-size:16px;line-height:1.85}
+.body p{margin:0 0 20px}
+.body h2{font-size:19px;font-weight:800;letter-spacing:-0.01em;margin:38px 0 14px;padding-top:20px;border-top:1px solid var(--line);text-wrap:pretty}
+.body h3{font-size:16px;font-weight:700;margin:28px 0 10px}
+.body ul,.body ol{margin:0 0 20px;padding-left:22px}
+.body li{margin-bottom:9px}
+.body strong{font-weight:700}
+.body code{background:var(--chip);padding:2px 6px;border-radius:5px;font-size:14px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.body pre{background:var(--chip);padding:14px 16px;border-radius:9px;overflow-x:auto;font-size:13.5px;line-height:1.65;margin:0 0 20px}
+.body pre code{background:none;padding:0}
+.body blockquote{margin:0 0 20px;padding:2px 0 2px 16px;border-left:3px solid var(--line);color:var(--mut)}
+.body table{border-collapse:collapse;width:100%;margin:0 0 22px;font-size:14.5px}
+.body th,.body td{border-bottom:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top}
+.body th{font-weight:700;background:var(--chip)}
+.body hr{border:0;border-top:1px solid var(--line);margin:30px 0}
+.tail{margin-top:44px;padding-top:22px;border-top:1px solid var(--ink);font-size:14px;color:var(--mut);line-height:1.7}
+.tail a{color:var(--mut)}
+footer{padding:30px 0 0;margin-top:26px;border-top:1px solid var(--line)}
+.fmeta{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;color:var(--mut)}
+.fmeta a{color:var(--mut)}
+</style>
+</head>
+<body>
+<div class="wrap"><div class="col">
+
+  <header>
+    <a class="logo" href="/">Importants<span>.</span>Studio</a>
+    <a class="nav" href="/guide/">AI 도구 목록</a>
+  </header>
+
+  <article>
+    <h1>Opus 5.5 빠른 모드를 켜기 전에 확인한 조건</h1>
+    <div class="meta"><span>2026년 10월 26일</span><span>Importants Studio</span></div>
+    <div class="body"><p>Opus 5.5 빠른 모드는 요청 본문에 <code>speed: &quot;fast&quot;</code>만 넣으면 된다고 읽었고, 처음에는 파이프라인에 바로 넣어도 될 설정처럼 보였습니다. 그런데 가격 페이지와 빠른 모드 문서, 릴리스 노트를 함께 열어 보니 속도만 바뀌는 옵션으로 처리하기 어려웠습니다.</p>
+<p>이 저장소에서는 아직 빠른 모드를 호출하지 않았습니다. 속도를 직접 재지도 않았습니다. 대신 켜기 전에 막혔던 지점은 접근 조건, 비용, 429 뒤의 처리였습니다. 문서에 흩어진 조건을 먼저 한 자리에 모았습니다.</p>
+<h2>먼저 결론부터</h2>
+<ul><li>Opus 5.5는 연구 프리뷰가 끝난 상태라 베타 헤더나 접근 신청 없이 빠른 모드를 쓸 수 있습니다.</li><li>요청 본문에 아래 값을 넣으면 됩니다.</li></ul>
+<pre><code>{
+  &quot;speed&quot;: &quot;fast&quot;
+}</code></pre>
+<ul><li>문서가 말하는 효과는 첫 토큰 시간 단축이 아니라 출력 토큰 속도이며, 최대 2.5배 빠른 출력 토큰 속도로 설명됩니다.</li><li>Opus 5.5 빠른 모드 가격은 입력 $8, 출력 $40이고 표준은 입력 $4, 출력 $20입니다. 입출력 모두 2배였습니다.</li><li>Batch API와 Priority Tier 약정에는 빠른 모드를 함께 쓸 수 없습니다.</li><li>빠른 모드 전용 레이트 리밋을 넘으면 429와 <code>retry-after</code> 헤더가 돌아옵니다.</li><li>SDK는 빠른 모드 429를 기본으로 2번 재시도합니다. 바로 표준 속도로 내리려면 이 재시도를 끄고 직접 처리해야 합니다.</li><li>빠른 속도에서 표준 속도로 내려가는 요청은 프롬프트 캐시를 공유하지 않습니다. 여기서 비용 계산이 다시 갈립니다.</li></ul>
+<h2>Opus 5.5는 헤더 없이 켜집니다</h2>
+<p>릴리스 노트의 10월 15일 항목에서 먼저 확인한 내용은 접근 조건이었는데, Opus 5.5의 빠른 모드는 연구 프리뷰가 끝났고 더는 접근을 신청할 필요가 없다고 적혀 있습니다.</p>
+<p>그래서 Opus 5.5에는 <code>speed</code>만 보내면 됩니다. 베타 헤더를 덧붙이는 흐름을 따로 만들 필요도 없습니다. 이 부분은 생각보다 빨리 끝났습니다.</p>
+<p>다만 같은 방식이 다른 모델에 그대로 적용되지는 않습니다. Opus 5와 Opus 4.8은 아직 연구 프리뷰이며 <code>fast-mode-2026-02-01</code> 베타 헤더가 필요합니다. 헤더 없이 <code>speed</code>를 보내면 400이 돌아오는 조건입니다.</p>
+<p>지원하지 않는 모델에 빠른 모드를 넣으면 에러가 납니다. 예외는 Opus 4.6이었습니다. 이 모델은 에러 대신 표준 속도로 처리되고, 응답의 <code>usage.speed</code>에는 <code>&quot;standard&quot;</code>가 찍히므로, 요청이 성공했다는 사실만으로 빠른 모드가 적용됐다고 판단하면 안 됩니다.</p>
+<h2>빨라지는 곳은 첫 토큰이 아닙니다</h2>
+<p>처음 문구만 보고는 응답 시작도 빨라질 것이라 생각하기 쉽지만, 문서는 빠른 모드를 “최대 2.5배 높은 출력 토큰 속도”로 설명합니다. 첫 토큰이 나오는 시간보다, 출력이 이어지는 구간에 효과가 있다는 뜻입니다.</p>
+<p>그래서 스트리밍에서 차이가 가장 잘 보인다고 적혀 있습니다. 긴 응답을 계속 받는 요청과 짧은 답 하나를 받는 요청은 체감이 같지 않을 수 있습니다. 문서의 2.5배도 이 저장소에서 측정한 값은 아닙니다. 상한 표현입니다.</p>
+<p>같은 모델이라는 설명도 확인했습니다. 빠른 모드는 지능이나 기능을 바꾸지 않습니다. 처리 속도와 가격 조건을 바꾸는 선택지입니다. 모델 교체 실험으로 기록하면 안 되는 구분입니다.</p>
+<h2>가격표를 나란히 놓고 봤습니다</h2>
+<p>가격 페이지를 보기 전에는 빠른 모드의 비용을 대략적인 할증으로 생각했습니다. 표를 나란히 놓으니 계산은 더 단순했습니다. Opus 5.5는 빠른 모드 입력 $8, 출력 $40이고 표준 모드는 입력 $4, 출력 $20입니다.</p>
+<p>입력도 2배였습니다. 출력도 2배였습니다.</p>
+<p>Opus 5와 Opus 4.8도 같은 배수였습니다. 빠른 모드는 입력 $10, 출력 $50이며 표준은 입력 $5, 출력 $25입니다. 모델별 금액은 다릅니다. 그래도 빠른 모드가 표준의 2배라는 구조는 같았습니다.</p>
+<p>200k 입력 토큰을 넘는 요청도 예외가 아니어서, 빠른 모드 배수는 전체 컨텍스트에 적용됩니다. 프롬프트 캐싱 배수와 데이터 레지던시 배수도 빠른 모드 가격에 다시 적용됩니다. 속도만 보고 요청 단가를 계산하면 빠지는 항목입니다.</p>
+<h2>429 뒤에 표준으로 내리면 캐시가 갈립니다</h2>
+<p>빠른 모드에는 전용 레이트 리밋이 있어서, 초과하면 <code>retry-after</code> 헤더가 붙은 429가 돌아옵니다. 응답 헤더에는 <code>anthropic-fast-input-tokens-limit</code>, <code>anthropic-fast-output-tokens-remaining</code>처럼 빠른 모드 전용 값도 들어갑니다.</p>
+<p>Opus 5.5는 Start, Build, Scale 티어에 기본 빠른 모드 한도가 있습니다. Evaluation 티어에서는 티어를 올려야 사용할 수 있습니다. 호출 코드만 바꾸면 끝나는 조건은 아니었습니다.</p>
+<p>여기서 문서의 SDK 기본 동작을 다시 봤습니다. 빠른 모드 429가 오면 SDK는 기본으로 2번 자동 재시도합니다. 표준 속도로 즉시 내려가는 흐름을 만들려면 첫 요청의 <code>max_retries</code>를 0으로 두고, 429를 잡은 뒤 <code>speed</code>를 뺀 요청을 다시 보내야 합니다.</p>
+<p>문제는 캐시였습니다. 빠른 속도와 표준 속도 요청은 캐시된 접두부를 공유하지 않는다고 문서에 적혀 있어서, 빠른 모드가 막혀 표준으로 내려가는 순간 앞 요청에서 기대했던 프롬프트 캐시도 적중하지 않습니다. 문서 본문을 읽다가 가장 늦게 발견한 줄이었습니다.</p>
+<p>처리 속도는 응답의 <code>usage.speed</code>로 확인할 수 있습니다. <code>&quot;fast&quot;</code> 또는 <code>&quot;standard&quot;</code>가 들어갑니다. 429 처리와 모델별 예외가 있습니다. 그러니 요청에 넣은 값보다 응답에 찍힌 값을 기록하는 쪽이 맞겠습니다.</p>
+<h2>아직 켜지 않은 이유</h2>
+<p>이 저장소의 파이프라인에서는 빠른 모드를 아직 켜지 않았습니다. 그래서 2.5배가 실제로 어느 정도였는지, 429가 어느 시점에 났는지, 표준 전환 뒤 캐시 비용이 어떻게 달라졌는지는 확인하지 못했습니다.</p>
+<p>대신 문서를 읽으며 적용 순서는 정해졌습니다. 먼저 Opus 5.5 요청에 빠른 모드를 넣고 <code>usage.speed</code>를 남긴 뒤, 빠른 모드 전용 한도와 429 응답을 관찰해야 합니다. 그다음에만 재시도 횟수와 표준 속도 전환을 코드에 넣을 수 있습니다.</p>
+<p>빠른 모드는 한 줄입니다. 그 한 줄 뒤에는 가격표, 별도 한도, 재시도, 캐시 분리가 붙어 있었습니다.</p></div>
+    <div class="tail">지난 글: <a href="/guide/check-threshold-from-distribution/">검수 기준을 평균이 아니라 두 분포가 갈라지는 자리에 두었다</a><br><a href="/guide/">목록으로</a></div>
+  </article>
+
+  <footer>
+    <div class="fmeta">
+      <a href="/">홈</a>
+      <a href="/guide/">AI 도구</a>
+      <a href="/about/">소개</a>
+      <a href="/contact/">문의</a>
+      <a href="/privacy/">개인정보처리방침</a>
+    </div>
+  </footer>
+
+</div></div>
+</body>
+</html>
