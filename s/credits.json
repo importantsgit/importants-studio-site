@@ -70,5 +70,257 @@
   "license": "cc0",
   "source": "https://freesound.org/people/SpaceJoe/sounds/485725",
   "id": "2a6b0153-a14c-445a-bfc5-9127186e4ce0"
+ },
+ "slash0": {
+  "title": "knifeSlice.ogg",
+  "creator": "Kenney (kenney.nl)",
+  "license": "cc0",
+  "source": "https://kenney.nl/assets/rpg-audio",
+  "pack": "RPG Audio"
+ },
+ "slash1": {
+  "title": "knifeSlice2.ogg",
+  "creator": "Kenney (kenney.nl)",
+  "license": "cc0",
+  "source": "https://kenney.nl/assets/rpg-audio",
+  "pack": "RPG Audio"
+ },
+ "slash2": {
+  "title": "chop.ogg",
+  "creator": "Kenney (kenney.nl)",
+  "license": "cc0",
+  "source": "https://kenney.nl/assets/rpg-audio",
+  "pack": "RPG Audio"
+ },
+ "stab0": {
+  "title": "drawKnife1.ogg",
+  "creator": "Kenney (kenney.nl)",
+  "license": "cc0",
+  "source": "https://kenney.nl/assets/rpg-audio",
+  "pack": "RPG Audio"
+ },
+ "stab1": {
+  "title": "drawKnife2.ogg",
+  "creator": "Kenney (kenney.nl)",
+  "license": "cc0",
+  "source": "https://kenney.nl/assets/rpg-audio",
+  "pack": "RPG Audio"
+ },
+ "stab2": {
+  "title": "drawKnife3.ogg",
+  "creator": "Kenney (kenney.nl)",
+  "license": "cc0",
+  "source": "https://kenney.nl/assets/rpg-audio",
+  "pack": "RPG Audio"
+ },
+ "hitbody0": {
+  "title": "impactPunch_medium_000.ogg",
+  "creator": "Kenney (kenney.nl)",
+  "license": "cc0",
+  "source": "https://kenney.nl/assets/impact-sounds",
+  "pack": "Impact Sounds"
+ },
+ "hitbody1": {
+  "title": "impactPunch_medium_001.ogg",
+  "creator": "Kenney (kenney.nl)",
+  "license": "cc0",
+  "source": "https://kenney.nl/assets/impact-sounds",
+  "pack": "Impact Sounds"
+ },
+ "hitbody2": {
+  "title": "impactPunch_medium_002.ogg",
+  "creator": "Kenney (kenney.nl)",
+  "license": "cc0",
+  "source": "https://kenney.nl/assets/impact-sounds",
+  "pack": "Impact Sounds"
+ },
+ "hitbody3": {
+  "title": "impactPunch_medium_003.ogg",
+  "creator": "Kenney (kenney.nl)",
+  "license": "cc0",
+  "source": "https://kenney.nl/assets/impact-sounds",
+  "pack": "Impact Sounds"
+ },
+ "hitheavy0": {
+  "title": "impactPunch_heavy_000.ogg",
+  "creator": "Kenney (kenney.nl)",
+  "license": "cc0",
+  "source": "https://kenney.nl/assets/impact-sounds",
+  "pack": "Impact Sounds"
+ },
+ "hitheavy1": {
+  "title": "impactPunch_heavy_001.ogg",
+  "creator": "Kenney (kenney.nl)",
+  "license": "cc0",
+  "source": "https://kenney.nl/assets/impact-sounds",
+  "pack": "Impact Sounds"
+ },
+ "hitheavy2": {
+  "title": "impactPunch_heavy_002.ogg",
+  "creator": "Kenney (kenney.nl)",
+  "license": "cc0",
+  "source": "https://kenney.nl/assets/impact-sounds",
+  "pack": "Impact Sounds"
+ },
+ "hammerhit0": {
+  "title": "impactPlate_heavy_000.ogg",
+  "creator": "Kenney (kenney.nl)",
+  "license": "cc0",
+  "source": "https://kenney.nl/assets/impact-sounds",
+  "pack": "Impact Sounds"
+ },
+ "hammerhit1": {
+  "title": "impactPlate_heavy_001.ogg",
+  "creator": "Kenney (kenney.nl)",
+  "license": "cc0",
+  "source": "https://kenney.nl/assets/impact-sounds",
+  "pack": "Impact Sounds"
+ },
+ "hammerhit2": {
+  "title": "impactPlate_heavy_002.ogg",
+  "creator": "Kenney (kenney.nl)",
+  "license": "cc0",
+  "source": "https://kenney.nl/assets/impact-sounds",
+  "pack": "Impact Sounds"
+ },
+ "clash0": {
+  "title": "impactMetal_light_000.ogg",
+  "creator": "Kenney (kenney.nl)",
+  "license": "cc0",
+  "source": "https://kenney.nl/assets/impact-sounds",
+  "pack": "Impact Sounds"
+ },
+ "clash1": {
+  "title": "impactMetal_light_001.ogg",
+  "creator": "Kenney (kenney.nl)",
+  "license": "cc0",
+  "source": "https://kenney.nl/assets/impact-sounds",
+  "pack": "Impact Sounds"
+ },
+ "clash2": {
+  "title": "impactMetal_medium_000.ogg",
+  "creator": "Kenney (kenney.nl)",
+  "license": "cc0",
+  "source": "https://kenney.nl/assets/impact-sounds",
+  "pack": "Impact Sounds"
+ },
+ "clash3": {
+  "title": "impactMetal_medium_001.ogg",
+  "creator": "Kenney (kenney.nl)",
+  "license": "cc0",
+  "source": "https://kenney.nl/assets/impact-sounds",
+  "pack": "Impact Sounds"
+ },
+ "clashbig0": {
+  "title": "impactBell_heavy_000.ogg",
+  "creator": "Kenney (kenney.nl)",
+  "license": "cc0",
+  "source": "https://kenney.nl/assets/impact-sounds",
+  "pack": "Impact Sounds"
+ },
+ "clashbig1": {
+  "title": "impactBell_heavy_001.ogg",
+  "creator": "Kenney (kenney.nl)",
+  "license": "cc0",
+  "source": "https://kenney.nl/assets/impact-sounds",
+  "pack": "Impact Sounds"
+ },
+ "arrowhit0": {
+  "title": "impactWood_light_000.ogg",
+  "creator": "Kenney (kenney.nl)",
+  "license": "cc0",
+  "source": "https://kenney.nl/assets/impact-sounds",
+  "pack": "Impact Sounds"
+ },
+ "arrowhit1": {
+  "title": "impactWood_light_001.ogg",
+  "creator": "Kenney (kenney.nl)",
+  "license": "cc0",
+  "source": "https://kenney.nl/assets/impact-sounds",
+  "pack": "Impact Sounds"
+ },
+ "arrowhit2": {
+  "title": "impactWood_light_002.ogg",
+  "creator": "Kenney (kenney.nl)",
+  "license": "cc0",
+  "source": "https://kenney.nl/assets/impact-sounds",
+  "pack": "Impact Sounds"
+ },
+ "fall0": {
+  "title": "impactSoft_heavy_000.ogg",
+  "creator": "Kenney (kenney.nl)",
+  "license": "cc0",
+  "source": "https://kenney.nl/assets/impact-sounds",
+  "pack": "Impact Sounds"
+ },
+ "fall1": {
+  "title": "impactSoft_heavy_001.ogg",
+  "creator": "Kenney (kenney.nl)",
+  "license": "cc0",
+  "source": "https://kenney.nl/assets/impact-sounds",
+  "pack": "Impact Sounds"
+ },
+ "fall2": {
+  "title": "impactSoft_heavy_002.ogg",
+  "creator": "Kenney (kenney.nl)",
+  "license": "cc0",
+  "source": "https://kenney.nl/assets/impact-sounds",
+  "pack": "Impact Sounds"
+ },
+ "dodge0": {
+  "title": "cloth1.ogg",
+  "creator": "Kenney (kenney.nl)",
+  "license": "cc0",
+  "source": "https://kenney.nl/assets/rpg-audio",
+  "pack": "RPG Audio"
+ },
+ "dodge1": {
+  "title": "cloth2.ogg",
+  "creator": "Kenney (kenney.nl)",
+  "license": "cc0",
+  "source": "https://kenney.nl/assets/rpg-audio",
+  "pack": "RPG Audio"
+ },
+ "dodge2": {
+  "title": "cloth3.ogg",
+  "creator": "Kenney (kenney.nl)",
+  "license": "cc0",
+  "source": "https://kenney.nl/assets/rpg-audio",
+  "pack": "RPG Audio"
+ },
+ "step0": {
+  "title": "footstep_grass_000.ogg",
+  "creator": "Kenney (kenney.nl)",
+  "license": "cc0",
+  "source": "https://kenney.nl/assets/impact-sounds",
+  "pack": "Impact Sounds"
+ },
+ "step1": {
+  "title": "footstep_grass_001.ogg",
+  "creator": "Kenney (kenney.nl)",
+  "license": "cc0",
+  "source": "https://kenney.nl/assets/impact-sounds",
+  "pack": "Impact Sounds"
+ },
+ "step2": {
+  "title": "footstep_grass_002.ogg",
+  "creator": "Kenney (kenney.nl)",
+  "license": "cc0",
+  "source": "https://kenney.nl/assets/impact-sounds",
+  "pack": "Impact Sounds"
+ },
+ "trip0": {
+  "title": "impactWood_heavy_000.ogg",
+  "creator": "Kenney (kenney.nl)",
+  "license": "cc0",
+  "source": "https://kenney.nl/assets/impact-sounds",
+  "pack": "Impact Sounds"
+ },
+ "trip1": {
+  "title": "impactWood_heavy_001.ogg",
+  "creator": "Kenney (kenney.nl)",
+  "license": "cc0",
+  "source": "https://kenney.nl/assets/impact-sounds",
+  "pack": "Impact Sounds"
  }
 }
