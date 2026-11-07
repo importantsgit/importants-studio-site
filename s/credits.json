@@ -1,0 +1,74 @@
+{
+ "beep": {
+  "query": "countdown beep short",
+  "title": "beepH.mp3",
+  "creator": "Hydranos",
+  "license": "cc0",
+  "source": "https://freesound.org/people/Hydranos/sounds/237716",
+  "id": "bd7cee36-2b94-4bbc-bbab-c7e84ec0f756"
+ },
+ "go": {
+  "query": "air horn",
+  "title": "Bicycle air horn 001 (3).wav",
+  "creator": "ristooooo1",
+  "license": "cc0",
+  "source": "https://freesound.org/people/ristooooo1/sounds/539143",
+  "id": "321a8172-a221-4599-8326-49f64375aeef"
+ },
+ "pop": {
+  "query": "firework explosion",
+  "title": "fireworkblast.wav",
+  "creator": "nfrae",
+  "license": "cc0",
+  "source": "https://freesound.org/people/nfrae/sounds/167242",
+  "id": "3498005b-5644-4182-b80f-59ca929d8b93"
+ },
+ "whistle": {
+  "query": "firework launch whistle",
+  "title": "Bottle Rocket Launch #2.wav",
+  "creator": "Bryce835",
+  "license": "cc0",
+  "source": "https://freesound.org/people/Bryce835/sounds/695731",
+  "id": "8e1f7384-9932-4125-8ba2-b6db0dc55830"
+ },
+ "tick": {
+  "query": "click tick short",
+  "title": "Soft UI Button Click",
+  "creator": "Jummit",
+  "license": "cc0",
+  "source": "https://freesound.org/people/Jummit/sounds/528561",
+  "id": "aa763a9d-65bd-4f53-b1ad-a38a4dc1e475"
+ },
+ "fanfare": {
+  "query": "fanfare win",
+  "title": "game-win.mp3",
+  "creator": "mickleness",
+  "license": "cc0",
+  "source": "https://freesound.org/people/mickleness/sounds/269198",
+  "id": "c816b555-f64b-4280-991a-94418d906826"
+ },
+ "cheer": {
+  "query": "crowd cheering",
+  "title": "Crowd Cheer 4",
+  "creator": "Krizin",
+  "license": "cc0",
+  "source": "https://freesound.org/people/Krizin/sounds/651640",
+  "id": "95485baf-98a7-43ad-9315-c608fddd9492"
+ },
+ "dice": {
+  "query": "dice roll table",
+  "title": "D10_Table3.mp3",
+  "creator": "rj13",
+  "license": "cc0",
+  "source": "https://freesound.org/people/rj13/sounds/580377",
+  "id": "ffb38fad-4b87-4792-991d-9a0eb83584dd"
+ },
+ "coin": {
+  "query": "coin flip",
+  "title": "Coin Flip - 2",
+  "creator": "SpaceJoe",
+  "license": "cc0",
+  "source": "https://freesound.org/people/SpaceJoe/sounds/485725",
+  "id": "2a6b0153-a14c-445a-bfc5-9127186e4ce0"
+ }
+}

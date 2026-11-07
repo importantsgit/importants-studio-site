@@ -1,237 +1,110 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://importants-studio.com/</loc>
-    <lastmod>2026-11-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://importants-studio.com/about/</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://importants-studio.com/privacy/</loc>
-    <lastmod>2026-09-07</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://importants-studio.com/contact/</loc>
-    <lastmod>2026-09-19</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://importants-studio.com/guide/</loc>
-    <lastmod>2026-11-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://importants-studio.com/guide/opus-5-5-fast-mode-conditions/</loc>
-    <lastmod>2026-10-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://importants-studio.com/guide/check-threshold-from-distribution/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://importants-studio.com/guide/claude-api-version-2026-10-21-migration/</loc>
-    <lastmod>2026-10-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://importants-studio.com/guide/gemini-flash-price-changes-2027/</loc>
-    <lastmod>2026-10-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://importants-studio.com/guide/tool-use-system-prompt-tokens-5-5/</loc>
-    <lastmod>2026-10-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://importants-studio.com/guide/claude-default-effort-differs-5-5/</loc>
-    <lastmod>2026-10-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://importants-studio.com/guide/opus-5-5-vs-opus-5-price-table/</loc>
-    <lastmod>2026-10-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://importants-studio.com/guide/proofread-reasoning-token-cost/</loc>
-    <lastmod>2026-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://importants-studio.com/guide/haiku-5-5-100k-prompt-price-tier/</loc>
-    <lastmod>2026-10-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://importants-studio.com/guide/claude-cache-read-price-5-5/</loc>
-    <lastmod>2026-10-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://importants-studio.com/guide/ten-to-twenty-posts-rules/</loc>
-    <lastmod>2026-10-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://importants-studio.com/guide/image-model-ignores-no-text/</loc>
-    <lastmod>2026-10-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://importants-studio.com/guide/ai-post-fact-check-layers/</loc>
-    <lastmod>2026-10-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://importants-studio.com/guide/youtube-threads-video-api-blockers/</loc>
-    <lastmod>2026-10-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://importants-studio.com/guide/typecast-word-timestamps/</loc>
-    <lastmod>2026-10-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://importants-studio.com/guide/srt-from-word-timestamps/</loc>
-    <lastmod>2026-10-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://importants-studio.com/guide/shorts-bgm-seamless-loop/</loc>
-    <lastmod>2026-10-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://importants-studio.com/guide/remotion-shorts-pipeline/</loc>
-    <lastmod>2026-10-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://importants-studio.com/guide/prompt-cannot-fix-measure-instead/</loc>
-    <lastmod>2026-10-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://importants-studio.com/guide/page-one-but-no-clicks/</loc>
-    <lastmod>2026-10-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://importants-studio.com/guide/naver-searchad-keyword-volume/</loc>
-    <lastmod>2026-10-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://importants-studio.com/guide/instagram-reels-api-upload/</loc>
-    <lastmod>2026-10-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://importants-studio.com/guide/github-actions-silent-failure/</loc>
-    <lastmod>2026-10-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://importants-studio.com/guide/git-add-all-stray-files/</loc>
-    <lastmod>2026-10-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://importants-studio.com/guide/claude-code-install/</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://importants-studio.com/guide/mcp-server-connect/</loc>
-    <lastmod>2026-09-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://importants-studio.com/guide/mcp-server-build/</loc>
-    <lastmod>2026-09-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://importants-studio.com/guide/claude-code-usage-limit/</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://importants-studio.com/guide/claude-md-guide/</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://importants-studio.com/guide/claude-code-scheduled-run/</loc>
-    <lastmod>2026-09-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://importants-studio.com/guide/gemini-image-cost/</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://importants-studio.com/guide/prompt-ai-tell/</loc>
-    <lastmod>2026-09-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://importants-studio.com/guide/ai-agent-build/</loc>
-    <lastmod>2026-09-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://importants-studio.com/guide/blog-ai-automation/</loc>
-    <lastmod>2026-09-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
+<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>https://importants-studio.com/</loc></url>
+<url><loc>https://importants-studio.com/about/</loc></url>
+<url><loc>https://importants-studio.com/blog/</loc></url>
+<url><loc>https://importants-studio.com/blog/49jae-date/</loc></url>
+<url><loc>https://importants-studio.com/blog/after-death-deadlines/</loc></url>
+<url><loc>https://importants-studio.com/blog/condolence-envelope/</loc></url>
+<url><loc>https://importants-studio.com/blog/funeral-etiquette/</loc></url>
+<url><loc>https://importants-studio.com/blog/funeral-messages/</loc></url>
+<url><loc>https://importants-studio.com/blog/history-quiz/</loc></url>
+<url><loc>https://importants-studio.com/blog/idiom-daily/</loc></url>
+<url><loc>https://importants-studio.com/blog/iphone-txt/</loc></url>
+<url><loc>https://importants-studio.com/blog/ladder-odds/</loc></url>
+<url><loc>https://importants-studio.com/blog/loanword/</loc></url>
+<url><loc>https://importants-studio.com/blog/lotto-odds/</loc></url>
+<url><loc>https://importants-studio.com/blog/nonsense-quiz/</loc></url>
+<url><loc>https://importants-studio.com/blog/pdf-merge/</loc></url>
+<url><loc>https://importants-studio.com/blog/photo-size/</loc></url>
+<url><loc>https://importants-studio.com/blog/saisiot/</loc></url>
+<url><loc>https://importants-studio.com/blog/space-quiz/</loc></url>
+<url><loc>https://importants-studio.com/blog/spelling-daily-words/</loc></url>
+<url><loc>https://importants-studio.com/blog/spelling-dwae-an/</loc></url>
+<url><loc>https://importants-studio.com/blog/spelling-similar-words/</loc></url>
+<url><loc>https://importants-studio.com/blog/trivia-body/</loc></url>
+<url><loc>https://importants-studio.com/blog/trivia-life/</loc></url>
+<url><loc>https://importants-studio.com/contact/</loc></url>
+<url><loc>https://importants-studio.com/guide/</loc></url>
+<url><loc>https://importants-studio.com/guide/ai-agent-build/</loc></url>
+<url><loc>https://importants-studio.com/guide/ai-post-fact-check-layers/</loc></url>
+<url><loc>https://importants-studio.com/guide/blog-ai-automation/</loc></url>
+<url><loc>https://importants-studio.com/guide/check-threshold-from-distribution/</loc></url>
+<url><loc>https://importants-studio.com/guide/claude-api-version-2026-10-21-migration/</loc></url>
+<url><loc>https://importants-studio.com/guide/claude-cache-read-price-5-5/</loc></url>
+<url><loc>https://importants-studio.com/guide/claude-code-install/</loc></url>
+<url><loc>https://importants-studio.com/guide/claude-code-scheduled-run/</loc></url>
+<url><loc>https://importants-studio.com/guide/claude-code-usage-limit/</loc></url>
+<url><loc>https://importants-studio.com/guide/claude-default-effort-differs-5-5/</loc></url>
+<url><loc>https://importants-studio.com/guide/claude-md-guide/</loc></url>
+<url><loc>https://importants-studio.com/guide/gemini-flash-price-changes-2027/</loc></url>
+<url><loc>https://importants-studio.com/guide/gemini-image-cost/</loc></url>
+<url><loc>https://importants-studio.com/guide/git-add-all-stray-files/</loc></url>
+<url><loc>https://importants-studio.com/guide/github-actions-silent-failure/</loc></url>
+<url><loc>https://importants-studio.com/guide/haiku-5-5-100k-prompt-price-tier/</loc></url>
+<url><loc>https://importants-studio.com/guide/image-model-ignores-no-text/</loc></url>
+<url><loc>https://importants-studio.com/guide/instagram-reels-api-upload/</loc></url>
+<url><loc>https://importants-studio.com/guide/mcp-server-build/</loc></url>
+<url><loc>https://importants-studio.com/guide/mcp-server-connect/</loc></url>
+<url><loc>https://importants-studio.com/guide/naver-searchad-keyword-volume/</loc></url>
+<url><loc>https://importants-studio.com/guide/opus-5-5-fast-mode-conditions/</loc></url>
+<url><loc>https://importants-studio.com/guide/opus-5-5-vs-opus-5-price-table/</loc></url>
+<url><loc>https://importants-studio.com/guide/page-one-but-no-clicks/</loc></url>
+<url><loc>https://importants-studio.com/guide/prompt-ai-tell/</loc></url>
+<url><loc>https://importants-studio.com/guide/prompt-cannot-fix-measure-instead/</loc></url>
+<url><loc>https://importants-studio.com/guide/proofread-reasoning-token-cost/</loc></url>
+<url><loc>https://importants-studio.com/guide/remotion-shorts-pipeline/</loc></url>
+<url><loc>https://importants-studio.com/guide/shorts-bgm-seamless-loop/</loc></url>
+<url><loc>https://importants-studio.com/guide/srt-from-word-timestamps/</loc></url>
+<url><loc>https://importants-studio.com/guide/ten-to-twenty-posts-rules/</loc></url>
+<url><loc>https://importants-studio.com/guide/tool-use-system-prompt-tokens-5-5/</loc></url>
+<url><loc>https://importants-studio.com/guide/typecast-word-timestamps/</loc></url>
+<url><loc>https://importants-studio.com/guide/youtube-threads-video-api-blockers/</loc></url>
+<url><loc>https://importants-studio.com/privacy/</loc></url>
+<url><loc>https://importants-studio.com/privacy/chaekkan/</loc></url>
+<url><loc>https://importants-studio.com/privacy/luckybite/</loc></url>
+<url><loc>https://importants-studio.com/privacy/maejeum/</loc></url>
+<url><loc>https://importants-studio.com/privacy/officekit/</loc></url>
+<url><loc>https://importants-studio.com/privacy/quizbite/</loc></url>
+<url><loc>https://importants-studio.com/tools/</loc></url>
+<url><loc>https://importants-studio.com/tools/49je/</loc></url>
+<url><loc>https://importants-studio.com/tools/age/</loc></url>
+<url><loc>https://importants-studio.com/tools/baby-100/</loc></url>
+<url><loc>https://importants-studio.com/tools/char-count/</loc></url>
+<url><loc>https://importants-studio.com/tools/coin/</loc></url>
+<url><loc>https://importants-studio.com/tools/date-calc/</loc></url>
+<url><loc>https://importants-studio.com/tools/dday/</loc></url>
+<url><loc>https://importants-studio.com/tools/decibel/</loc></url>
+<url><loc>https://importants-studio.com/tools/dice/</loc></url>
+<url><loc>https://importants-studio.com/tools/dinner-menu/</loc></url>
+<url><loc>https://importants-studio.com/tools/discharge/</loc></url>
+<url><loc>https://importants-studio.com/tools/discount/</loc></url>
+<url><loc>https://importants-studio.com/tools/draw/</loc></url>
+<url><loc>https://importants-studio.com/tools/id-photo/</loc></url>
+<url><loc>https://importants-studio.com/tools/idiom-quiz/</loc></url>
+<url><loc>https://importants-studio.com/tools/ladder/</loc></url>
+<url><loc>https://importants-studio.com/tools/lotto/</loc></url>
+<url><loc>https://importants-studio.com/tools/lunar/</loc></url>
+<url><loc>https://importants-studio.com/tools/lunch-menu/</loc></url>
+<url><loc>https://importants-studio.com/tools/nonsense-quiz/</loc></url>
+<url><loc>https://importants-studio.com/tools/order/</loc></url>
+<url><loc>https://importants-studio.com/tools/pdf-compress/</loc></url>
+<url><loc>https://importants-studio.com/tools/pdf-merge/</loc></url>
+<url><loc>https://importants-studio.com/tools/pdf-split/</loc></url>
+<url><loc>https://importants-studio.com/tools/percent/</loc></url>
+<url><loc>https://importants-studio.com/tools/photo-size/</loc></url>
+<url><loc>https://importants-studio.com/tools/photo-to-pdf/</loc></url>
+<url><loc>https://importants-studio.com/tools/pyeong/</loc></url>
+<url><loc>https://importants-studio.com/tools/random-number/</loc></url>
+<url><loc>https://importants-studio.com/tools/roulette/</loc></url>
+<url><loc>https://importants-studio.com/tools/rps/</loc></url>
+<url><loc>https://importants-studio.com/tools/scoreboard/</loc></url>
+<url><loc>https://importants-studio.com/tools/seats/</loc></url>
+<url><loc>https://importants-studio.com/tools/son-eomneun-nal/</loc></url>
+<url><loc>https://importants-studio.com/tools/spelling-quiz/</loc></url>
+<url><loc>https://importants-studio.com/tools/stopwatch/</loc></url>
+<url><loc>https://importants-studio.com/tools/team/</loc></url>
+<url><loc>https://importants-studio.com/tools/time-calc/</loc></url>
+<url><loc>https://importants-studio.com/tools/timer/</loc></url>
+<url><loc>https://importants-studio.com/tools/trivia-quiz/</loc></url>
+<url><loc>https://importants-studio.com/tools/winner-draw/</loc></url>
 </urlset>
