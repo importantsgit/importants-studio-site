@@ -5,32 +5,36 @@ window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(argume
   
 
   <h2>1. 수집하는 정보</h2>
-  <p><strong>앱에서 직접 수집·저장하는 정보</strong></p><ul><li>회원가입·로그인 없이 사용 가능합니다.</li><li>운영 서버가 없으며, 앱이 개발자에게 개인정보를 전송하지 않습니다.</li><li>기기에만 저장: 사용자가 입력한 참가자 이름·프리셋(모임 명단), 사용자가 사진첩에서 고른 참가자 사진, 게임 기록(당첨·순위), 스킬·방장 모드·공정 모드 등 설정. 앱 삭제 시 함께 삭제되며, 개발자는 접근할 수 없습니다.</li></ul><p><strong>사진·카메라·마이크·음성 인식·AI</strong></p><ul><li>사진: 참가자 사진을 고를 때만 사용자가 선택한 사진에 접근하며, 기기 안에만 저장합니다.</li><li>카메라: 게임 플레이를 위한 얼굴 위치 및 표정 분석(웃음, 눈 감김 등)을 위해 기기 내에서만 데이터를 처리하며, 촬영된 영상이나 사진을 저장하거나 외부로 전송하지 않습니다. 모든 데이터는 메모리 상에서만 처리되어 화면을 나가면 즉시 삭제되며, 개인을 식별하거나 광고 및 분석 목적으로 사용하지 않습니다.</li><li>마이크·음성 인식: AI 법정에서 변론을 말로 입력할 때만 사용합니다. 기기에서 음성 인식을 지원하면 기기 안에서 글자로 바꾸며, 녹음 파일을 저장하거나 개발자에게 전송하지 않습니다. 기기가 지원하지 않는 경우 Apple의 음성 인식 서비스가 처리할 수 있으며, 이는 Apple 개인정보처리방침을 따릅니다.</li><li>AI 게임: Apple Intelligence의 기기 내 모델(Foundation Models)로만 처리하며, 입력한 내용(변론, 상황 등)을 개발자나 외부 AI 서비스로 보내지 않습니다.</li></ul><p><strong>제3자 SDK를 통한 정보 수집</strong></p><ul><li><strong>Google AdMob(광고)</strong>: 광고 식별자(IDFA, 추적 동의 시), IP 주소 기반 대략적 위치, 광고 노출·클릭 정보, 기기 정보. <br>목적: 광고 게재, 맞춤 광고, 광고 성과 측정.</li><li><strong>Google Analytics for Firebase(분석)</strong>: 앱 사용 이벤트(실행, 화면, 버튼 등), 기기 모델, OS 버전, 언어, 국가, 앱 인스턴스 식별자, 인앱 구매 이벤트. <br>목적: 서비스 이용 통계, 기능 개선.</li><li><strong>Firebase Crashlytics(오류 수집)</strong>: 충돌 로그, 기기 상태, 앱 버전, 설치 식별자. <br>목적: 오류 분석, 안정성 개선.</li></ul><p>SDK가 수집한 정보는 Google 서버로 전송되며, <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>에 따라 처리됩니다.</p>
+  <p><strong>앱에서 직접 수집·저장하는 정보</strong></p><ul><li>회원가입·로그인 없이 사용 가능합니다.</li><li>운영 서버가 없으며, 앱이 개발자에게 개인정보를 전송하지 않습니다.</li><li>기기에만 저장: 사용자가 입력한 참가자 이름·프리셋(모임 명단), 사용자가 사진첩에서 고른 참가자 사진, 게임 기록(당첨·순위), 스킬·방장 모드·공정 모드 등 설정. 앱 삭제 시 함께 삭제되며, 개발자는 접근할 수 없습니다.</li></ul><p><strong>사진·카메라·마이크·음성 인식·AI</strong></p><ul><li>사진: 참가자 사진을 고를 때만 사용자가 선택한 사진에 접근하며, 기기 안에만 저장합니다.</li><li>카메라: 카메라 게임(얼굴 룰렛·웃으면 탈락·눈싸움)에서만 사용합니다. 얼굴 위치·표정 정보와 결과 카드 얼굴 사진의 처리는 <a href="#face-data">2. 얼굴 데이터</a>에 따릅니다.</li><li>마이크·음성 인식: AI 법정에서 변론을 말로 입력할 때만 사용합니다. 기기에서 음성 인식을 지원하면 기기 안에서 글자로 바꾸며, 녹음 파일을 저장하거나 개발자에게 전송하지 않습니다. 기기가 지원하지 않는 경우 Apple의 음성 인식 서비스가 처리할 수 있으며, 이는 Apple 개인정보처리방침을 따릅니다.</li><li>AI 게임: Apple Intelligence의 기기 내 모델(Foundation Models)로만 처리하며, 입력한 내용(변론, 상황 등)을 개발자나 외부 AI 서비스로 보내지 않습니다.</li></ul><p><strong>제3자 SDK를 통한 정보 수집</strong></p><ul><li><strong>Google AdMob(광고)</strong>: 광고 식별자(IDFA, 추적 동의 시), IP 주소 기반 대략적 위치, 광고 노출·클릭 정보, 기기 정보. <br>목적: 광고 게재, 맞춤 광고, 광고 성과 측정.</li><li><strong>Google Analytics for Firebase(분석)</strong>: 앱 사용 이벤트(실행, 화면, 버튼 등), 기기 모델, OS 버전, 언어, 국가, 앱 인스턴스 식별자, 인앱 구매 이벤트. <br>목적: 서비스 이용 통계, 기능 개선.</li><li><strong>Firebase Crashlytics(오류 수집)</strong>: 충돌 로그, 기기 상태, 앱 버전, 설치 식별자. <br>목적: 오류 분석, 안정성 개선.</li></ul><p>SDK가 수집한 정보는 Google 서버로 전송되며, <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>에 따라 처리됩니다.</p>
 
-  <h2>2. 수집 및 이용 목적</h2>
+  <h2 id="face-data">2. 얼굴 데이터 (TrueDepth 카메라 / ARKit)</h2>
+  <ul><li><strong>사용처</strong>: &#x27;눈싸움&#x27; 및 &#x27;표정 분석&#x27; 기능이 활성화된 &#x27;웃으면 탈락&#x27; 게임에서 사용됩니다. 이 두 게임은 Face ID 기기의 TrueDepth 카메라를 활용한 ARKit 얼굴 트래킹 기술을 사용합니다. (&#x27;얼굴 룰렛&#x27; 및 &#x27;표정 분석&#x27; 기능이 꺼진 상태의 &#x27;웃으면 탈락&#x27;은 Apple Vision 얼굴 감지 기능이 적용된 일반 카메라를 사용하며, TrueDepth 카메라는 사용하지 않습니다.)</li><li><strong>수집 항목</strong>: (a) 화면상 각 얼굴의 위치 및 (b) ARKit에서 추출한 표정 값(눈 깜빡임, 미소, 눈썹, 볼, 코, 턱에 대한 0에서 1 사이의 수치)만을 수집합니다. 뽑기 한입은 깊이 맵(depth maps)이나 3D 얼굴 메시를 사용하지 않으며, 얼굴 템플릿을 생성하거나 개인을 식별하지 않습니다.</li><li><strong>목적</strong>: 화면에서 게임을 실행하기 위한 목적으로만 사용됩니다. 즉, 눈 깜빡임 횟수 계산, 미소 감지, 표정 점수 표시, 각 플레이어의 얼굴 옆에 마커를 표시하는 용도로만 사용됩니다.</li><li><strong>저장 및 보유</strong>: 데이터는 기기 메모리 내에서 실시간으로만 처리됩니다. 기기 저장소에는 절대 기록되지 않으며, 얼굴이 카메라 시야를 벗어나거나 게임 화면을 닫으면 즉시 폐기됩니다.</li><li><strong>공유</strong>: 얼굴 데이터는 개발자, 서버 또는 Google AdMob 및 Firebase를 포함한 제3자에게 전송되지 않습니다. 또한 광고, 분석 또는 개인 식별 용도로도 사용되지 않습니다. 분석 도구는 플레이어 수와 게임 모드 정보만 수신합니다.</li><li><strong>결과 카드 내 얼굴 사진</strong>: 카메라 게임이 시작되면, 뽑기 한입은 결과 카드에 표시하기 위해 일반 카메라 이미지에서 각 플레이어의 얼굴 영역을 잘라냅니다. 이 사진은 메모리에만 유지되며 게임 화면을 닫으면 삭제됩니다. 사용자가 공유 버튼을 누르고 전송 위치를 직접 선택하는 경우에만 기기 외부로 나갑니다. 결과 카드에는 표정 값이 포함되지 않습니다.</li><li><strong>삭제</strong>: 데이터가 저장되지 않으므로 게임 화면을 닫는 것만으로 모든 데이터가 삭제됩니다. 카메라 접근 권한은 iPhone 설정 &gt; 뽑기 한입 &gt; 카메라에서 언제든지 끌 수 있습니다.</li></ul>
+  <p id="face-data-en"><strong>Face Data (TrueDepth camera / ARKit) — English</strong></p><ul><li><strong>Where it is used</strong>: &quot;Staring Contest&quot;, and &quot;Try Not to Laugh&quot; when &quot;Expression Analysis&quot; is turned on. These two use ARKit face tracking with the TrueDepth camera on Face ID devices. (&quot;Face Roulette&quot; and &quot;Try Not to Laugh&quot; with Expression Analysis off use the regular camera with Apple Vision face detection and do not use the TrueDepth camera.)</li><li><strong>What is collected</strong>: only (a) the position of each face on the screen and (b) facial expression values from ARKit (numbers from 0 to 1 for eye blinks, smile, eyebrows, cheeks, nose and jaw). The app does not use depth maps or the 3D face mesh, does not create face templates, and does not identify who a person is.</li><li><strong>Purpose</strong>: only to run the game on screen: counting eye blinks, detecting smiles, showing expression scores, and showing each player&#x27;s marker next to their face.</li><li><strong>Storage and retention</strong>: the data is processed in real time in the device&#x27;s memory only. It is never written to device storage. It is discarded when a face leaves the camera view or when the game screen is closed.</li><li><strong>Sharing</strong>: face data is not sent to the developer, to any server, or to any third party, including Google AdMob and Firebase. It is not used for advertising, analytics, or identifying individuals. The analytics tool only receives the number of players and the game mode.</li><li><strong>Face photo on the result card</strong>: when a camera game starts, the app cuts each player&#x27;s face out of the regular camera image to show it on the result card. This photo is kept in memory only and is deleted when the game screen is closed. It leaves the device only if the user taps the Share button and chooses where to send it. The result card does not contain expression values.</li><li><strong>Deletion</strong>: since nothing is stored, closing the game screen deletes everything. Camera access can be turned off anytime in iPhone Settings &gt; Lucky Bite &gt; Camera.</li></ul>
+
+  <h2>3. 수집 및 이용 목적</h2>
   <ul><li>앱 내 저장 정보: 뽑기 게임 제공, 참가자 명단·게임 기록 관리, 사용자 설정 유지.</li><li>제3자 SDK: 광고 제공 및 성과 측정, 서비스 이용 통계, 앱 오류 분석 및 개선.</li></ul>
 
-  <h2>3. 제3자 제공 및 처리위탁</h2>
+  <h2>4. 제3자 제공 및 처리위탁</h2>
   <ul><li>앱은 별도의 개인정보를 제3자에게 제공하거나 처리위탁하지 않습니다.</li><li>제3자 SDK(Google AdMob, Analytics, Crashlytics)에서 수집된 정보는 Google이 자체 서버에서 처리하며, Google 정책을 따릅니다.</li></ul>
 
-  <h2>4. 보유 및 파기</h2>
+  <h2>5. 보유 및 파기</h2>
   <ul><li>앱 내 저장 정보는 기기에서만 보관되며, 앱 삭제 시 모두 삭제됩니다.</li><li>제3자 SDK가 수집한 정보의 보유 기간은 Google 정책에 따릅니다.</li></ul>
 
-  <h2>5. 결제</h2>
+  <h2>6. 결제</h2>
   <ul><li>모든 결제는 Apple 인앱 결제로 처리되며, 개발자는 카드번호 등 결제 정보를 수집·보관하지 않습니다.</li><li>구매 복원은 Apple 영수증으로 확인합니다.</li></ul>
 
-  <h2>6. 알림</h2>
+  <h2>7. 알림</h2>
   <ul><li>앱은 알림을 보내지 않습니다.</li></ul>
 
-  <h2>7. 이용자의 권리와 선택</h2>
+  <h2>8. 이용자의 권리와 선택</h2>
   <ul><li>기기 설정 &gt; 개인정보 보호 &gt; 추적에서 광고 추적 허용을 철회할 수 있습니다.</li><li>설정 &gt; 개인정보 보호 &gt; Apple 광고에서 맞춤 광고를 제한할 수 있습니다.</li><li>앱 삭제로 기기 내 저장된 모든 정보가 삭제됩니다.</li><li><a href="https://adssettings.google.com">Google 광고 설정</a>에서 맞춤 광고를 해제할 수 있습니다.</li></ul>
 
-  <h2>8. 아동의 개인정보</h2>
+  <h2>9. 아동의 개인정보</h2>
   <ul><li>앱은 아동을 대상으로 하지 않으며, 14세 미만 아동의 개인정보를 고의로 수집하지 않습니다.</li></ul>
 
-  <h2>9. 방침의 변경</h2>
+  <h2>10. 방침의 변경</h2>
   <ul><li>개인정보처리방침이 변경될 경우 이 페이지에 게시합니다.</li></ul>
 
-  <h2>10. 문의</h2>
-  <ul><li>개인정보 관련 문의: contact@importants-studio.com</li></ul><p class="meta">시행일: 2026년 11월 9일 · 앱: 뽑기 한입 (Lucky Bite, iOS) · 운영: Importants Studio</p>
+  <h2>11. 문의</h2>
+  <ul><li>개인정보 관련 문의: contact@importants-studio.com</li></ul><p class="meta">시행일: 2026년 11월 10일 · 앱: 뽑기 한입 (Lucky Bite, iOS) · 운영: Importants Studio</p>
 </div> </article> </main> <footer class="foot"><div class="wrap"> <div class="links"><a href="/about/">소개</a><a href="/contact/">문의</a><a href="/tools/">도구</a><a href="/days/">날짜·공휴일</a><a href="/privacy/">개인정보 처리방침</a></div> <div>Importants Studio · 사업자등록번호 789-07-03491 · contact@importants-studio.com</div> <div>© 2026 Importants Studio · 임폴턴츠 스튜디오</div> <details class="fam"><summary>패밀리 사이트</summary><ul><li><a href="https://importants-studio.com/" aria-current="page">홈페이지</a></li><li><a href="https://apps.importants-studio.com/">앱 소개</a></li><li><a href="https://importants-studio.com/tools/">웹 도구</a></li><li><a href="https://importants-studio.com/blog/">블로그</a></li><li><a href="https://importants-studio.com/blogs/">정보 아카이브</a></li></ul></details> </div></footer> </body></html> 
