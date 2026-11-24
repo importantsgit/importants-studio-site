@@ -5,25 +5,25 @@ window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(argume
   
 
   <h2>1. 수집하는 정보</h2>
-  <p><strong>앱에서 직접 수집·저장하는 정보</strong></p><ul><li>회원가입·로그인 없이 사용 가능합니다.</li><li>앱이 개발자에게 개인정보나 경기 기록을 전송하지 않습니다. 공지사항과 도움말 내용만 서버(Supabase)에서 내려받으며, 이때 이용자 정보는 보내지 않습니다.</li><li>기기에만 저장: 사용자가 입력한 팀 이름, 경기 기록(점수, 경기 시각), 설정. 앱 삭제 시 함께 삭제되며, 개발자는 접근할 수 없습니다.</li></ul><p><strong>리모컨·Apple Watch</strong></p><ul><li>리모컨: 같은 공간에 있는 기기끼리 직접 연결합니다. 점수와 팀 이름은 연결된 기기 사이에서만 오가며, 서버를 거치지 않습니다.</li><li>Apple Watch: 사용자의 iPhone과만 연결합니다.</li></ul><p><strong>제3자 SDK를 통한 정보 수집</strong></p><ul><li>Google Analytics for Firebase(분석, 버전 1.4부터): 앱 사용 이벤트(실행, 화면, 종목·경기 모드, 버튼 등), 기기 모델, OS 버전, 언어, 국가, 앱 인스턴스 식별자. 팀 이름·점수·전적 내용은 보내지 않습니다. 목적: 서비스 이용 통계, 기능 개선.</li></ul><p>SDK가 수집한 정보는 Google 서버로 전송되며, <a href="https://policies.google.com/privacy" rel="noopener">Google 개인정보처리방침</a>에 따라 처리됩니다. 앱은 광고를 게재하지 않으며 광고 SDK를 사용하지 않습니다.</p>
+  <p><strong>앱에서 직접 수집·저장하는 정보</strong></p><ul><li>회원가입·로그인 없이 사용 가능합니다.</li><li>앱이 개발자에게 개인정보나 경기 기록을 전송하지 않습니다. 공지사항과 도움말 내용만 서버(Supabase)에서 내려받으며, 이때 이용자 정보는 보내지 않습니다.</li><li>기기에만 저장: 사용자가 입력한 팀 이름·선수 이름·한 줄 소개·실력, 사용자가 사진첩에서 고른 선수 사진, 경기 기록(점수, 경기 시각), 대진 기록, 설정. 앱 삭제 시 함께 삭제되며, 개발자는 접근할 수 없습니다.</li></ul><p><strong>리모컨·Apple Watch</strong></p><ul><li>리모컨: 같은 공간에 있는 기기끼리 직접 연결합니다. 점수와 팀 이름은 연결된 기기 사이에서만 오가며, 서버를 거치지 않습니다.</li><li>Apple Watch: 사용자의 iPhone과만 연결합니다.</li></ul><p><strong>사진</strong></p><ul><li>선수 사진을 고를 때만 사용자가 선택한 사진에 접근하며, 기기 안에만 저장합니다.</li></ul><p><strong>제3자 SDK를 통한 정보 수집</strong></p><ul><li><strong>Google AdMob(광고, 버전 1.5부터)</strong>: 광고 식별자(IDFA, 추적 동의 시), IP 주소 기반 대략적 위치, 광고 노출·클릭 정보, 기기 정보. <br>목적: 광고 게재, 맞춤 광고, 광고 성과 측정. Reckoner Pro를 구매하면 광고가 나오지 않습니다.</li><li><strong>Google Analytics for Firebase(분석, 버전 1.4부터)</strong>: 앱 사용 이벤트(실행, 화면, 종목·경기 모드, 버튼 등), 기기 모델, OS 버전, 언어, 국가, 앱 인스턴스 식별자, 인앱 구매 이벤트. 팀 이름·선수 이름·사진·점수·전적 내용은 보내지 않습니다. <br>목적: 서비스 이용 통계, 기능 개선.</li><li><strong>Firebase Remote Config(설정, 버전 1.5부터)</strong>: 앱 인스턴스 식별자, 앱 버전, 기기 언어·국가. <br>목적: 무료 인원·광고 횟수 같은 앱 설정을 업데이트 없이 바꾸기.</li></ul><p>SDK가 수집한 정보는 Google 서버로 전송되며, <a href="https://policies.google.com/privacy" rel="noopener">Google 개인정보처리방침</a>에 따라 처리됩니다.</p>
 
   <h2>2. 수집 및 이용 목적</h2>
-  <ul><li>앱 내 저장 정보: 점수판 기능 제공, 전적 보관, 사용자 설정 유지.</li><li>제3자 SDK: 서비스 이용 통계, 기능 개선.</li></ul>
+  <ul><li>앱 내 저장 정보: 점수판 기능 제공, 전적 보관, 사용자 설정 유지.</li><li>제3자 SDK: 광고 제공 및 성과 측정, 서비스 이용 통계, 앱 설정 관리, 기능 개선.</li></ul>
 
   <h2>3. 제3자 제공 및 처리위탁</h2>
-  <ul><li>앱은 별도의 개인정보를 제3자에게 제공하거나 처리위탁하지 않습니다.</li><li>제3자 SDK(Google Analytics)에서 수집된 정보는 Google이 자체 서버에서 처리하며, Google 정책을 따릅니다.</li><li>결과 카드는 사용자가 공유 화면에서 고른 곳으로만 전달됩니다.</li><li>공식 규칙 보기는 각 종목 협회의 웹페이지로, 설문은 Google 설문지로 연결되며, 그곳의 개인정보 처리는 각 운영자의 방침을 따릅니다.</li></ul>
+  <ul><li>앱은 별도의 개인정보를 제3자에게 제공하거나 처리위탁하지 않습니다.</li><li>제3자 SDK(Google AdMob, Analytics, Remote Config)에서 수집된 정보는 Google이 자체 서버에서 처리하며, Google 정책을 따릅니다.</li><li>결과 카드는 사용자가 공유 화면에서 고른 곳으로만 전달됩니다.</li><li>공식 규칙 보기는 각 종목 협회의 웹페이지로, 설문은 Google 설문지로 연결되며, 그곳의 개인정보 처리는 각 운영자의 방침을 따릅니다.</li></ul>
 
   <h2>4. 보유 및 파기</h2>
   <ul><li>앱 내 저장 정보는 기기에서만 보관되며, 설정의 &#x27;전체 데이터 삭제&#x27;를 실행하거나 앱을 삭제하면 모두 삭제됩니다.</li><li>제3자 SDK가 수집한 정보의 보유 기간은 Google 정책에 따릅니다.</li></ul>
 
   <h2>5. 결제</h2>
-  <ul><li>앱에는 결제 기능이 없습니다.</li></ul>
+  <ul><li>Reckoner Pro는 App Store 인앱 구매(한 번 결제)로 판매되며, 결제는 Apple이 처리합니다. 개발자는 카드 정보 등 결제 정보를 받지 않습니다.</li><li>구매 내역은 Apple 계정에 남아 &#x27;구매 복원&#x27;으로 다시 불러올 수 있습니다.</li></ul>
 
   <h2>6. 알림</h2>
   <ul><li>앱은 기기 내 로컬 알림만 사용합니다.</li><li>서버를 통한 푸시 알림은 제공하지 않습니다.</li><li>알림은 기기 설정에서 끌 수 있습니다.</li></ul>
 
   <h2>7. 이용자의 권리와 선택</h2>
-  <ul><li>기기 설정에서 로컬 네트워크·알림 권한을 언제든 바꿀 수 있습니다.</li><li>앱 삭제로 기기 내 저장된 모든 정보가 삭제됩니다.</li><li>분석 데이터 삭제는 문의 메일로 요청할 수 있습니다.</li></ul>
+  <ul><li>기기 설정에서 로컬 네트워크·알림·사진 권한을 언제든 바꿀 수 있습니다.</li><li>기기 설정 &gt; 개인정보 보호 및 보안 &gt; 추적에서 광고 추적 허용을 철회할 수 있습니다.</li><li><a href="https://adssettings.google.com" rel="noopener">Google 광고 설정</a>에서 맞춤 광고를 해제할 수 있습니다.</li><li>앱 삭제로 기기 내 저장된 모든 정보가 삭제됩니다.</li><li>분석 데이터 삭제는 문의 메일로 요청할 수 있습니다.</li></ul>
 
   <h2>8. 아동의 개인정보</h2>
   <ul><li>앱은 아동을 대상으로 하지 않으며, 14세 미만 아동의 개인정보를 고의로 수집하지 않습니다.</li></ul>
@@ -32,5 +32,5 @@ window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(argume
   <ul><li>개인정보처리방침이 변경될 경우 이 페이지에 게시합니다.</li></ul>
 
   <h2>10. 문의</h2>
-  <ul><li>개인정보 관련 문의: contact@importants-studio.com</li></ul><p class="meta">시행일: 2026년 11월 12일 · 앱: Reckoner (iOS, watchOS) · 운영: Importants Studio</p>
+  <ul><li>개인정보 관련 문의: contact@importants-studio.com</li></ul><p class="meta">시행일: 2026년 11월 24일 · 앱: Reckoner (iOS, watchOS) · 운영: Importants Studio</p>
 </div> </article> </main> <footer class="foot"><div class="wrap"> <div class="links"><a href="/about/">소개</a><a href="/contact/">문의</a><a href="https://importants-app.com/tools/">도구</a><a href="https://importants-app.com/days/">날짜·공휴일</a><a href="/privacy/">개인정보 처리방침</a></div> <div>Importants Studio · 사업자등록번호 789-07-03491 · contact@importants-studio.com</div> <div>© 2026 Importants Studio · 임폴턴츠 스튜디오</div> <details class="fam"><summary>패밀리 사이트</summary><ul><li><a href="https://importants-studio.com/">홈페이지</a></li><li><a href="https://importants-app.com/">앱 소개</a></li><li><a href="https://importants-app.com/tools/">웹 도구</a></li><li><a href="https://importants-app.com/blog/">블로그</a></li><li><a href="https://importants-studio.com/blogs/">정보 아카이브</a></li></ul></details> </div></footer> </body></html> 
