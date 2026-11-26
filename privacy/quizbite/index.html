@@ -5,16 +5,16 @@ window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(argume
   
 
   <h2>1. 수집하는 정보</h2>
-  <p><strong>앱에서 직접 수집·저장하는 정보</strong></p><ul><li>회원가입·로그인 없이 사용 가능합니다.</li><li>운영 서버가 없으며, 앱이 개발자에게 개인정보를 전송하지 않습니다.</li><li>기기에만 저장: 사용자가 입력한 별명, 퀴즈 진행 상황, 점수, 별 개수, 설정 등. 앱 삭제 시 함께 삭제되며, 개발자는 접근할 수 없습니다.</li></ul><p><strong>제3자 SDK를 통한 정보 수집</strong></p><ul><li><strong>Google AdMob(광고)</strong>: 광고 식별자(IDFA, 추적 동의 시), IP 주소 기반 대략적 위치, 광고 노출·클릭 정보, 기기 정보. <br>목적: 광고 게재, 맞춤 광고, 광고 성과 측정.</li><li><strong>Google Analytics for Firebase(분석)</strong>: 앱 사용 이벤트(실행, 화면, 버튼 등), 기기 모델, OS 버전, 언어, 국가, 앱 인스턴스 식별자, 인앱 구매 이벤트. <br>목적: 서비스 이용 통계, 기능 개선.</li><li><strong>Firebase Crashlytics(오류 수집)</strong>: 충돌 로그, 기기 상태, 앱 버전, 설치 식별자. <br>목적: 오류 분석, 안정성 개선.</li></ul><p>SDK가 수집한 정보는 Google 서버로 전송되며, <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>에 따라 처리됩니다.</p>
+  <p><strong>앱에서 직접 수집·저장하는 정보</strong></p><ul><li>회원가입·로그인 없이 사용 가능합니다.</li><li>기기에만 저장: 두뇌 검사·뇌 운동 기록, 여섯 칸 단계, 포인트, 설정 등. 앱 삭제 시 함께 삭제되며, 개발자는 접근할 수 없습니다.</li></ul><p><strong>운영 서버에 저장하는 정보(2.0.0 버전부터)</strong></p><ul><li><strong>친구 도전·순위</strong>(사용자가 친구 기능을 쓸 때만): 사용자가 입력한 이름(12자 이내), 여섯 칸 단계와 두뇌 지수, 도전 코드, 기기에서 만든 임의 번호를 한 번 더 바꾼 값(기기·사람을 알아볼 수 없는 값). 같은 도전 코드를 가진 친구에게 이름과 두뇌 지수가 보입니다.</li><li><strong>웹 도전 페이지</strong>: 링크를 받은 사람이 입력한 이름(12자 이내)과 맞힌 문제 수. 도전장을 만든 사람에게 보입니다. 페이지를 연 횟수·시작 횟수·앱 받기 누른 횟수는 날짜별 숫자로만 남깁니다.</li><li><strong>문제 오류 신고</strong>: 문제 번호와 신고 사유만 저장합니다.</li><li><strong>남용 방지</strong>: 짧은 시간에 너무 많은 요청을 막기 위해 IP 주소를 되돌릴 수 없는 값으로 바꿔 하루 동안만 보관합니다.</li><li>서버는 Cloudflare(미국 등)에서 운영합니다. 이메일·전화번호·광고 식별자는 서버로 보내지 않습니다.</li></ul><p><strong>제3자 SDK를 통한 정보 수집</strong></p><ul><li><strong>Google AdMob(광고)</strong>: 광고 식별자(IDFA, 추적 동의 시), IP 주소 기반 대략적 위치, 광고 노출·클릭 정보, 기기 정보. <br>목적: 광고 게재, 맞춤 광고, 광고 성과 측정.</li><li><strong>Google Analytics for Firebase(분석)</strong>: 앱 사용 이벤트(실행, 화면, 버튼 등), 기기 모델, OS 버전, 언어, 국가, 앱 인스턴스 식별자, 인앱 구매 이벤트. <br>목적: 서비스 이용 통계, 기능 개선.</li><li><strong>Firebase Crashlytics(오류 수집)</strong>: 충돌 로그, 기기 상태, 앱 버전, 설치 식별자. <br>목적: 오류 분석, 안정성 개선.</li></ul><p>SDK가 수집한 정보는 Google 서버로 전송되며, <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>에 따라 처리됩니다.</p>
 
   <h2>2. 수집 및 이용 목적</h2>
-  <ul><li>앱 내 저장 정보: 퀴즈 서비스 제공, 이용 기록 관리, 사용자 설정 유지.</li><li>제3자 SDK: 광고 제공 및 성과 측정, 서비스 이용 통계, 앱 오류 분석 및 개선.</li></ul>
+  <ul><li>앱 내 저장 정보: 두뇌 검사·뇌 운동 제공, 이용 기록 관리, 사용자 설정 유지.</li><li>운영 서버 저장 정보: 친구 도전·순위 보여 주기, 문제 오류 수정, 남용 방지.</li><li>제3자 SDK: 광고 제공 및 성과 측정, 서비스 이용 통계, 앱 오류 분석 및 개선.</li></ul>
 
   <h2>3. 제3자 제공 및 처리위탁</h2>
-  <ul><li>앱은 별도의 개인정보를 제3자에게 제공하거나 처리위탁하지 않습니다.</li><li>제3자 SDK(Google AdMob, Analytics, Crashlytics)에서 수집된 정보는 Google이 자체 서버에서 처리하며, Google 정책을 따릅니다.</li></ul>
+  <ul><li>앱은 별도의 개인정보를 제3자에게 제공하지 않습니다.</li><li>처리위탁: 운영 서버 보관 — Cloudflare, Inc.(친구 도전·순위, 오류 신고 저장).</li><li>제3자 SDK(Google AdMob, Analytics, Crashlytics)에서 수집된 정보는 Google이 자체 서버에서 처리하며, Google 정책을 따릅니다.</li></ul>
 
   <h2>4. 보유 및 파기</h2>
-  <ul><li>앱 내 저장 정보는 기기에서만 보관되며, 앱 삭제 시 모두 삭제됩니다.</li><li>제3자 SDK가 수집한 정보의 보유 기간은 Google 정책에 따릅니다.</li></ul>
+  <ul><li>앱 내 저장 정보는 기기에서만 보관되며, 앱 삭제 시 모두 삭제됩니다.</li><li>친구 도전·순위와 웹 도전 기록은 마지막으로 쓴 날부터 180일이 지나면 자동으로 삭제됩니다. 더 일찍 지우고 싶으면 아래 문의 주소로 요청해 주세요.</li><li>남용 방지용 값은 하루 뒤 삭제됩니다. 오류 신고(문제 번호·사유)는 문제를 고치는 데 필요한 동안 보관합니다.</li><li>제3자 SDK가 수집한 정보의 보유 기간은 Google 정책에 따릅니다.</li></ul>
 
   <h2>5. 결제</h2>
   <ul><li>모든 결제는 Apple 인앱 결제로 처리되며, 개발자는 카드번호 등 결제 정보를 수집·보관하지 않습니다.</li><li>구매 복원은 Apple 영수증으로 확인합니다.</li></ul>
@@ -32,5 +32,5 @@ window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(argume
   <ul><li>개인정보처리방침이 변경될 경우 이 페이지에 게시합니다.</li></ul>
 
   <h2>10. 문의</h2>
-  <ul><li>개인정보 관련 문의: contact@importants-studio.com</li></ul><p class="meta">시행일: 2026년 10월 14일 · 앱: 퀴즈 한입 (Quiz Bite, iOS) · 운영: Importants Studio</p>
+  <ul><li>개인정보 관련 문의: contact@importants-studio.com</li></ul><p class="meta">시행일: 2026년 10월 14일 · 개정: 2.0.0 버전부터(2026년 11월 26일, 운영 서버 항목 추가) · 앱: 퀴즈 한입 (Quiz Bite, iOS) · 운영: Importants Studio</p>
 </div> </article> </main> <footer class="foot"><div class="wrap"> <div class="links"><a href="/about/">소개</a><a href="/contact/">문의</a><a href="https://importants-app.com/tools/">도구</a><a href="https://importants-app.com/days/">날짜·공휴일</a><a href="/privacy/">개인정보 처리방침</a></div> <div>Importants Studio · 사업자등록번호 789-07-03491 · contact@importants-studio.com</div> <div>© 2026 Importants Studio · 임폴턴츠 스튜디오</div> <details class="fam"><summary>패밀리 사이트</summary><ul><li><a href="https://importants-studio.com/">홈페이지</a></li><li><a href="https://importants-app.com/">앱 소개</a></li><li><a href="https://importants-app.com/tools/">웹 도구</a></li><li><a href="https://importants-app.com/blog/">블로그</a></li><li><a href="https://importants-studio.com/blogs/">정보 아카이브</a></li></ul></details> </div></footer> </body></html> 
